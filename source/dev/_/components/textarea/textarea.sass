@@ -1,0 +1,32 @@
+@import ../../sys/sass/vars
+
+.textarea
+	&__wrap
+		position: relative
+	&__label
+		font-size: 13px
+		font-weight: 600
+		display: block
+	&__area
+		width: 100%
+		min-height: 100px
+		color: $cMain
+		font-size: 14px
+		font-family: $ffMain
+		font-weight: 400
+		background: transparent
+		transition: .3s
+		position: relative
+		resize: none
+		&::placeholder
+			color: $cMain
+			font-size: 14px
+			font-family: $ffMain
+			font-weight: 400
+			transition: .3s
+	&.--error
+		.textarea
+			&__area
+				border: 1px solid #ff1d1d
+				&::placeholder
+					color: #ff1d1d

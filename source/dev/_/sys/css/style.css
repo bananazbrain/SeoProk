@@ -1,0 +1,173 @@
+*, :before, :after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  color: #000;
+  font-size: 16px;
+  font-family: "Tahoma", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font: inherit;
+  display: inline;
+}
+
+ol, ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+li {
+  display: block;
+  list-style-image: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  outline: none;
+  transition: 0.3s;
+  font-weight: 600;
+  border-bottom: 1px solid transparent;
+}
+
+input, textarea, button {
+  outline: none;
+  appearance: none;
+}
+
+var {
+  font-style: normal;
+}
+
+strong {
+  font-weight: 700;
+}
+
+i {
+  font-style: normal;
+}
+
+u {
+  text-decoration: none;
+}
+
+picture {
+  display: block;
+}
+
+img {
+  display: block;
+  max-width: 100% !important;
+  max-height: 100% !important;
+}
+
+svg {
+  display: block;
+}
+
+path, circle, rect, line {
+  transition: 0.3s;
+}
+
+.case {
+  position: relative;
+  width: 1190px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+}
+.case .case {
+  padding-left: 0;
+  padding-right: 0;
+}
+@media screen and (max-width: 1220px) {
+  .case {
+    width: 960px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .case {
+    width: 730px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .case {
+    width: 100%;
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid {
+  display: grid;
+}
+
+.h1 {
+  font-size: 0;
+  font-weight: 0;
+  line-height: 0px;
+}
+
+.h2 {
+  font-size: 0;
+  font-weight: 0;
+  line-height: 0px;
+}
+
+.h3 {
+  font-size: 0;
+  font-weight: 0;
+  line-height: 0px;
+}
+
+.t1 {
+  font-size: 0;
+  font-weight: 0;
+  line-height: 0px;
+}
+
+.inner {
+  overflow: hidden;
+}
+
+.overflow-disable {
+  overflow: hidden;
+}
+
+.bgw {
+  z-index: 1;
+  position: relative;
+}
+
+.bg {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+.bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}

@@ -1,0 +1,33 @@
+.textarea__wrap {
+  position: relative;
+}
+.textarea__label {
+  font-size: 13px;
+  font-weight: 600;
+  display: block;
+}
+.textarea__area {
+  width: 100%;
+  min-height: 100px;
+  color: #000;
+  font-size: 14px;
+  font-family: "Tahoma", sans-serif;
+  font-weight: 400;
+  background: transparent;
+  transition: 0.3s;
+  position: relative;
+  resize: none;
+}
+.textarea__area::placeholder {
+  color: #000;
+  font-size: 14px;
+  font-family: "Tahoma", sans-serif;
+  font-weight: 400;
+  transition: 0.3s;
+}
+.textarea.--error .textarea__area {
+  border: 1px solid #ff1d1d;
+}
+.textarea.--error .textarea__area::placeholder {
+  color: #ff1d1d;
+}

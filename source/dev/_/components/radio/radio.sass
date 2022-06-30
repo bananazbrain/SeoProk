@@ -1,0 +1,43 @@
+@import ../../sys/sass/vars
+
+.radio
+  cursor: pointer
+  &__input
+    display: none
+  &__wrap
+    position: relative
+    padding-left: 15px
+    &.--bottom
+      &:before, &:after
+        margin-top: 20px
+    &:before, &:after
+      content: ''
+      position: absolute
+      transition: .3s
+    &:before
+      width: 29px
+      height: 29px
+      top: 0
+      left: 0
+      background: #fff
+      border: 1px solid #fff
+      border-radius: 50%
+    &:after
+      z-index: 1
+      width: 11px
+      height: 11px
+      top: 9px
+      left: 9px
+      background: #fff
+      border-radius: 50%
+      opacity: 0
+      transform: scale(0)
+  &.--checked
+    .radio
+      &__wrap
+        &:before
+          background: #000
+          border-color: #000
+        &:after
+          opacity: 1
+          transform: scale(1)

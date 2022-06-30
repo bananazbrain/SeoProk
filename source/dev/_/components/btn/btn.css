@@ -1,0 +1,19 @@
+.btn {
+  z-index: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  color: #000;
+  font-size: 16px;
+  font-family: "Tahoma", sans-serif;
+  font-weight: 400;
+  overflow: hidden;
+  background: transparent;
+  transition: 0.3s;
+  border: none;
+  outline: none;
+  width: 100%;
+}

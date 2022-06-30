@@ -1,0 +1,36 @@
+.input {
+  display: block;
+  transition: 0.3s;
+  position: relative;
+}
+.input__wrap {
+  position: relative;
+}
+.input__label {
+  font-size: 13px;
+  font-weight: 600;
+  display: block;
+}
+.input__area {
+  width: 100%;
+  color: #000;
+  font-size: 14px;
+  font-family: "Tahoma", sans-serif;
+  font-weight: 400;
+  background: transparent;
+  transition: 0.3s;
+  position: relative;
+}
+.input__area::placeholder {
+  color: #000;
+  font-size: 14px;
+  font-family: "Tahoma", sans-serif;
+  font-weight: 400;
+  transition: 0.3s;
+}
+.input.--error .input__area {
+  border: 1px solid #ff1d1d;
+}
+.input.--error .input__area::placeholder {
+  color: #ff1d1d;
+}
