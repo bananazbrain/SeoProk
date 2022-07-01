@@ -24,6 +24,9 @@
 .btn.--green:hover {
   background: rgba(9, 181, 89, 0.7);
 }
+.btn.--h-dark:hover {
+  background: #272727;
+}
 .btn.--sm {
   min-height: 46px;
 }

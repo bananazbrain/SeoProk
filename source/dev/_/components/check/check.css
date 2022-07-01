@@ -1,0 +1,12 @@
+.check {
+  cursor: pointer;
+  transition: 0.3s;
+}
+.check__input {
+  display: none;
+}
+.check__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}

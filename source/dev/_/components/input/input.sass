@@ -1,1 +1,51 @@
 @import ../../sys/sass/vars
+
+input
+  appearance: none
+  -webkit-appearance: none
+  -moz-appearance: none
+  border-radius: 0px
+  -webkit-border-radius: 0px
+  -moz-border-radius: 0px
+  outline: none !important
+  -webkit-tap-highlight-color: transparent
+  &[type=text], &[type=tel], &[type=email]
+    appearance: none
+    -webkit-appearance: none
+    -moz-appearance: none
+    border-radius: 0px
+    -webkit-border-radius: 0px
+    -moz-border-radius: 0px
+    outline: none !important
+    -webkit-tap-highlight-color: transparent
+  &[type=number]
+    &::-webkit-outer-spin-button, &::-webkit-inner-spin-button
+      appearance: none
+      -webkit-appearance: none
+      -moz-appearance: none
+
+.input
+  width: 100%
+  display: block
+  transition: .3s
+  position: relative
+  &__wrap
+    position: relative
+  &__area
+    width: 100%
+    color: $main
+    font-size: $fzMain
+    font-family: $ffMain
+    font-weight: 400
+    transition: .3s
+    background: transparent
+    position: relative
+    &::placeholder
+      color: $main
+      font-size: $fzMain
+      font-family: $ffMain
+      font-weight: 400
+      transition: .3s
+    &:focus
+      &::placeholder
+        opacity: 0

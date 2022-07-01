@@ -1,0 +1,37 @@
+.intro__info {
+  width: 492px;
+}
+.intro__title {
+  margin-bottom: 15px;
+}
+.intro__subtitle {
+  margin-bottom: 30px;
+}
+.intro__arrow {
+  width: 37px;
+  height: 37px;
+  margin-bottom: 35px;
+  background: #09B559;
+  border: 1px solid #09B559;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.intro__arrow:hover {
+  background: transparent;
+}
+.intro__arrow:hover svg path {
+  fill: #09B559;
+}
+.intro__desc {
+  margin-bottom: 14px;
+}
+.intro__btn {
+  font-size: 18px;
+  font-weight: 400;
+}
+.intro__btn img {
+  margin-left: 10px;
+}

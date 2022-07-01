@@ -6,3 +6,7 @@ include ../../blocks/header/header
 +style('footer', 'blocks')
 include ../../blocks/footer/footer
 
+//- intro 
++style('intro', 'blocks')
+include ../../blocks/intro/intro
+

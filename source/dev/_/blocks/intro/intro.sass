@@ -1,0 +1,41 @@
+@import ../../sys/sass/vars
+
+.intro
+	&__info
+		width: 492px
+	&__title
+		margin-bottom: 15px
+	&__subtitle
+		margin-bottom: 30px
+	&__arrow
+		width: 37px
+		height: 37px
+		margin-bottom: 35px
+		background: $green
+		border: 1px solid $green
+		transition: .3s
+		display: flex
+		align-items: center
+		justify-content: center
+		cursor: pointer
+		&:hover
+			background: transparent
+			svg
+				path
+					fill: $green
+	&__desc
+		margin-bottom: 14px
+	&__btn
+		font-size: 18px
+		font-weight: 400
+		img
+			margin-left: 10px
+
+@media screen and (max-width: 1220px)
+	// .intro
+
+@media screen and (max-width: 992px)
+	// .intro
+
+@media screen and (max-width: 767px)
+	// .intro
