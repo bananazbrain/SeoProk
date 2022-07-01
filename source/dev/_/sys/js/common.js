@@ -36,4 +36,25 @@ document.addEventListener('DOMContentLoaded', function () {
       animatedBlocks();
     });
   }, 500);
+
+  // HEADER MENU NAV
+  let menuNav = document.querySelector('.header__main');
+  let menuHam = document.querySelector('.ham');
+
+  if (menuHam) {
+    for (let i = 0; i < 3; i++) {
+      let div = document.createElement('div');
+      menuHam.append(div);
+    }
+
+    menuHam.addEventListener('click', () => {
+      menuNav.classList.toggle('--show');
+      menuHam.classList.toggle('--toggle');
+
+      html.classList.toggle('overflow-disable');
+      body.classList.toggle('overflow-disable');
+      inner.classList.toggle('overflow-disable');
+    });
+  }
+
 })

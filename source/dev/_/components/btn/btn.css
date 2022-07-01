@@ -1,19 +1,32 @@
 .btn {
   z-index: 1;
+  width: 100%;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   cursor: pointer;
-  color: #000;
+  color: #272727;
   font-size: 16px;
-  font-family: "Tahoma", sans-serif;
-  font-weight: 400;
+  font-family: "OpenSans", sans-serif;
+  font-weight: 700;
   overflow: hidden;
   background: transparent;
   transition: 0.3s;
   border: none;
   outline: none;
-  width: 100%;
+}
+.btn.--green {
+  color: #fff;
+  background: #09B559;
+}
+.btn.--green:hover {
+  background: rgba(9, 181, 89, 0.7);
+}
+.btn.--sm {
+  min-height: 46px;
+}
+.btn.--md {
+  min-height: 50px;
 }

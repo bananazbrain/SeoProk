@@ -2,19 +2,29 @@
 
 .btn
 	z-index: 1
+	width: 100%
 	position: relative
 	display: flex
 	align-items: center
 	justify-content: center
 	text-align: center
 	cursor: pointer
-	color: $cMain
+	color: $main
 	font-size: $fzMain
 	font-family: $ffMain
-	font-weight: 400
+	font-weight: 700
 	overflow: hidden
 	background: transparent
 	transition: .3s
 	border: none
 	outline: none
-	width: 100%
+	&.--green
+		color: #fff
+		background: $green
+		&:hover
+			background: rgba($green, 70%)
+
+	&.--sm
+		min-height: 46px
+	&.--md
+		min-height: 50px

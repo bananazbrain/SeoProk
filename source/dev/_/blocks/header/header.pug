@@ -2,4 +2,57 @@ include ../../sys/pug/vars
 
 header.header
 	.case
-		
+		.header__wrap
+			a.header__logo.logo(href="index.html")
+				img(src="_/uploads/logos/logo.svg", alt="")
+			.header__main
+				.header__panel.h-panel
+					.h-panel__nav
+						ul
+							li
+								a(href="") О нас
+							li
+								a(href="") Акции
+							li
+								a(href="") Работы
+							li
+								a(href="") Кейсы
+							li
+								a(href="") Контакты
+					a.h-panel__tel(href="tel:79298611011")
+						.h-panel__tel-icon
+							img(src="_/uploads/icons/tel.svg", alt="")
+						.h-panel__tel-text +7 929 861-10-11
+					.h-panel__socials.socials.--green
+						a.socials__item(href="" target="_blank")
+							img(src="_/uploads/icons/socials/insta.png", alt="")
+						a.socials__item(href="" target="_blank")
+							img(src="_/uploads/icons/socials/tg.png", alt="")
+						a.socials__item(href="" target="_blank")
+							img(src="_/uploads/icons/socials/wa.svg", alt="")
+					a.h-panel__btn.btn.--green.--sm(href="javascript:;" data-src="#modal-callback" data-popup="") Заказать звонок
+				.header__bar.h-bar
+					.h-bar__nav
+						ul
+							li
+								a(href="") ПРОДВИЖЕНИЕ САЙТОВ
+							li
+								a(href="") СОЗДАНИЕ САЙТОВ
+							li
+								a(href="") КОНТЕКСТНАЯ РЕКЛАМА
+							li.has-subnav
+								a(href="") 1С-Битрикс
+								ul.subnav
+									li
+										a(href="") 1С-Битрикс
+									li
+										a(href="") 1С-Битрикс24
+							li
+								a(href="") UX/UI
+							li
+								a(href="") КАЛЬКУЛЯТОР
+					a.h-bar__dev(href="https://xn----8sbonicej5a9gsc.xn--p1ai/" target="_blank")
+						img(src="_/uploads/logos/logo-dev.svg", alt="")
+			a.header__callback(href="javascript:;" data-src="#modal-callback" data-popup="")
+				img(src="_/uploads/icons/tel-white.svg", alt="")
+			.header__ham.ham

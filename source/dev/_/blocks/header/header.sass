@@ -1,13 +1,175 @@
 @import ../../sys/sass/vars
 
-// .header
+.header
+	padding-bottom: 100px
+	&__wrap
+		display: flex
+		flex-wrap: wrap
+	&__logo
+		top: 18px
+		max-width: 110px
+		position: relative
+	&__main
+		width: 100%
+		max-width: calc( 100% - 110px )
+	&__panel
+		padding: 20px 0 15px
+		background: #fff
+	&__bar
+		padding: 11px 0
+		position: relative
+		&:before
+			z-index: -1
+			content: ""
+			top: 0
+			left: 50%
+			width: 1000%
+			height: 100%
+			transform: translateX(-50%)
+			background: $gray
+			position: absolute
+	&__callback
+		display: none
+	&__ham
+		margin-left: auto
+
+.h-panel
+	display: flex
+	flex-wrap: wrap
+	align-items: center
+	&__nav
+		margin-left: auto
+		ul
+			li
+				margin-right: 35px
+				&:last-of-type
+					margin-right: 0
+				a
+					color: #6B6B6B
+					font-family: $ffRoboto
+				&:hover
+					a
+						color: $green
+	&__tel
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		margin-left: 97px
+		&-icon
+			width: 22px
+		&-text
+			color: $green
+			font-weight: 700
+			letter-spacing: 0.2px
+			width: calc( 100% - 22px )
+			padding-left: 7px
+	&__socials
+		margin: 0 96px
+	&__btn
+		max-width: 177px
+		letter-spacing: 0.5px
+
+.h-bar
+	display: flex
+	flex-wrap: wrap
+	align-items: center
+	justify-content: flex-end
+	&__nav
+		ul
+			li
+				margin-right: 30px
+				&:last-of-type
+					margin-right: 0
+				&.has-subnav
+					position: relative
+					&:before
+						content: ""
+						left: 0
+						bottom: -20px
+						width: 100%
+						height: 20px
+						background: transparent
+						position: absolute
+						cursor: pointer
+					a
+						color: $green
+					ul.subnav
+						z-index: 10
+						top: 40px
+						left: -15px
+						padding: 18px 13px 22px
+						max-width: 145px
+						width: max-content
+						background: $gray
+						flex-direction: column
+						position: absolute
+						transition: .3s
+						opacity: 0
+						visibility: hidden
+						transform: translateY(-10px)
+						li
+							margin-right: 0
+							margin-bottom: 17px
+							&:last-of-type
+								margin-bottom: 0
+							a
+								color: #7D7D7D
+							&:hover
+								a
+									color: $green
+					&:hover
+						ul.subnav
+							opacity: 1
+							visibility: visible
+							transform: translateY(0)
+				a
+					font-weight: 700
+					font-family: $ffRoboto
+					text-transform: uppercase
+				&:hover
+					a
+						color: $green
+	&__dev
+		max-width: 40px
+		margin-left: 106px
+
+.ham
+	width: 27px
+	display: none
+	flex-direction: column
+	cursor: pointer
+	transition: .3s
+	div
+		width: 27px
+		height: 3px
+		background: $green
+		position: relative
+		transition: .3s
+		margin-bottom: 5px
+		&:last-of-type
+			margin-bottom: 0
+	&:hover
+		div
+			background: $main
+	&.--toggle
+		div
+			left: -1px
+			background: $dark-gray
+			&:nth-of-type(1)
+				top: 8px
+				transform: rotate(45deg)
+			&:nth-of-type(2)
+				opacity: 0
+				visibility: hidden
+			&:nth-of-type(3)
+				top: -8px
+				transform: rotate(-45deg)
 
 @media screen and (max-width: 1220px)
 	// .header
-		
+
 @media screen and (max-width: 992px)
 	// .header
-		
+
 @media screen and (max-width: 767px)
 	// .header
-		

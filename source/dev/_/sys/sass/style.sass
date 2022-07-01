@@ -3,7 +3,7 @@
 @import reset
 @import grid
 
-// @import ../../components/btn/btn
+@import ../../components/btn/btn
 // @import ../../components/checkbox/checkbox
 // @import ../../components/radio/radio
 // @import ../../components/input/input
@@ -48,6 +48,32 @@
 
 .overflow-disable
 	overflow: hidden
+
+.logo
+	width: 100%
+	display: block
+
+.socials
+	display: flex
+	flex-wrap: wrap
+	align-items: center
+	&__item
+		width: 34px
+		height: 34px
+		border-radius: 50%
+		overflow: hidden
+		display: flex
+		align-items: center
+		justify-content: center
+		margin-right: 12px
+		&:last-of-type
+			margin-right: 0
+	&.--green
+		.socials
+			&__item
+				background: $green
+				&:hover
+					background: rgba($green, 70%)
 
 // ANIMATION
 .fadeIn

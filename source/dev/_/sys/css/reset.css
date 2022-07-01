@@ -7,16 +7,23 @@
 
 html, body {
   height: 100%;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+}
+
+html.with-fancybox {
+  overflow: hidden;
 }
 
 body {
-  color: #000;
+  color: #272727;
+  font-weight: 400;
   font-size: 16px;
-  font-family: "Tahoma", sans-serif;
+  font-family: "OpenSans", sans-serif;
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  font-weight: 400;
+  background: #fff;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -37,12 +44,10 @@ li {
 }
 
 a {
-  color: #000;
+  color: #272727;
   text-decoration: none;
   outline: none;
   transition: 0.3s;
-  font-weight: 600;
-  border-bottom: 1px solid transparent;
 }
 
 input, textarea, button {
@@ -74,6 +79,10 @@ img {
   display: block;
   max-width: 100% !important;
   max-height: 100% !important;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
 }
 
 svg {

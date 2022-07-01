@@ -1,11 +1,12 @@
 .case {
   position: relative;
-  width: 1190px;
+  width: 1330px;
   padding-left: 10px;
   padding-right: 10px;
   margin: 0 auto;
 }
 .case .case {
+  width: auto;
   padding-left: 0;
   padding-right: 0;
 }
@@ -21,6 +22,16 @@
 }
 @media screen and (max-width: 767px) {
   .case {
+    width: 560px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .case {
+    width: 390px;
+  }
+}
+@media screen and (max-width: 410px) {
+  .case {
     width: 100%;
   }
 }
@@ -28,8 +39,4 @@
 .row {
   display: flex;
   flex-wrap: wrap;
-}
-
-.grid {
-  display: grid;
 }
