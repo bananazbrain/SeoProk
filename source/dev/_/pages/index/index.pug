@@ -19,20 +19,29 @@ block content
 						.intro__fields
 							.intro__input.input.--b-black.--required
 								.input__wrap
-									.input__area(type="text" name="name" placeholder="Имя")
+									input.input__area(type="text" name="name" placeholder="Имя" autocomplete="off")
 							.intro__input.input.--b-black.--required
 								.input__wrap
-									.input__area(type="text" name="site" placeholder="Адрес сайта")
-							.intro__btn.btn.--green.--h-dark.--sm Получить предложение
-								img(src="_/uploads/icons/arrow-right.svg", alt="")
-							.intro__check.check.--checkbox.--required
-								input.check__input(type="checkbox" name="has-site")
-								.check__wrap
-									.check__point
-									.check__text Нет сайта
-
+									input.input__area(type="text" name="site" placeholder="Адрес сайта" autocomplete="off")
+							.intro__actions
+								.intro__btn.btn.--green.--h-dark.--sm Получить предложение
+									img(src="_/uploads/icons/arrow-right.svg", alt="")
+								.intro__check.check.--checkbox.--sq.--required
+									input.check__input(type="checkbox" name="has-site")
+									.check__wrap
+										.check__point
+										.check__text Нет сайта
 				.intro__preview
 					.intro__img
 						img(src="_/uploads/intro-img.svg", alt="")
 					.intro__shape
 						img(src="_/uploads/intro-shape.png", alt="")
+				.intro__circle
+					.intro__circle-item
+						img(src="_/uploads/intro-circle.png", alt="")
+					.intro__circle-item
+						img(src="_/uploads/intro-circle-2.png", alt="")
+					.intro__circle-item
+						img(src="_/uploads/intro-circle-3.png", alt="")
+					.intro__circle-item
+						img(src="_/uploads/intro-circle-4.png", alt="")

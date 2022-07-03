@@ -8,6 +8,39 @@
   &__wrap
     display: flex
     flex-wrap: wrap
+    align-items: center
     position: relative
+  &__point
+    position: relative
+  &__text
+    font-size: 18px
+    font-weight: 400
 
-  // &.--checked
+  &.--sq
+    .check
+      &__point
+        width: 29px
+        height: 29px
+        border: 1px solid $main
+        &:before
+          content: ""
+          width: 18px
+          height: 13px
+          top: 50%
+          left: 50%
+          transform: translate(-50%, -50%) scale(0)
+          transition: .3s
+          position: absolute
+          background: url('../../sys/imgs/check.svg') no-repeat
+          opacity: 0
+          visibility: hidden
+      &__text
+        width: calc( 100% - 29px )
+        padding-left: 14px
+    &.--checked
+      .check
+        &__point
+          &:before
+            opacity: 1
+            visibility: visible
+            transform: translate(-50%, -50%) scale(1)

@@ -1,11 +1,19 @@
 @import ../../sys/sass/vars
 
 .intro
+	padding: 62px 0 130px
+	background: $grad-green-horz
+	&__wrap
+		display: flex
+		flex-wrap: wrap
+		position: relative
 	&__info
 		width: 492px
+		margin-left: 52px
 	&__title
-		margin-bottom: 15px
+		margin-bottom: 13px
 	&__subtitle
+		letter-spacing: 0.3px
 		margin-bottom: 30px
 	&__arrow
 		width: 37px
@@ -24,12 +32,57 @@
 				path
 					fill: $green
 	&__desc
-		margin-bottom: 14px
+		margin-bottom: 18px
+	&__input
+		margin-bottom: 20px
+		&:last-of-type
+			margin-bottom: 0
+	&__actions
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		margin-top: 33px
 	&__btn
 		font-size: 18px
 		font-weight: 400
+		max-width: 273px
 		img
 			margin-left: 10px
+	&__check
+		width: calc( 100% - 273px )
+		padding-left: 80px
+	&__preview
+		top: -40px
+		right: -15px
+		width: calc( 100% - 492px - 52px)
+		position: relative
+	&__img
+		width: 780px
+	&__shape
+		z-index: -1
+		width: 654px
+		top: 55px
+		left: 125px
+		position: absolute
+	&__circle
+		&-item
+			position: absolute
+			&:nth-of-type(1)
+				z-index: -1
+				top: -30px
+				left: -75px
+			&:nth-of-type(2)
+				z-index: -1
+				left: 50%
+				bottom: 140px
+				transform: translateX(-50%)
+				margin-left: -40px
+			&:nth-of-type(3)
+				top: -60px
+				right: -245px
+			&:nth-of-type(4)
+				right: -400px
+				bottom: -75px
 
 @media screen and (max-width: 1220px)
 	// .intro

@@ -49,3 +49,17 @@ input
     &:focus
       &::placeholder
         opacity: 0
+
+  &.--b-black
+    .input
+      &__area
+        font-size: 18px
+        padding-bottom: 8px
+        border-bottom: 1px solid $main
+        &::placeholder
+          color: #B7B7B7
+          font-size: 18px
+    &.--error
+      .input
+        &__area
+          border-bottom-color: $red

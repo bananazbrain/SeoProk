@@ -229,6 +229,18 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
 .input__area:focus::placeholder {
   opacity: 0;
 }
+.input.--b-black .input__area {
+  font-size: 18px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #272727;
+}
+.input.--b-black .input__area::placeholder {
+  color: #B7B7B7;
+  font-size: 18px;
+}
+.input.--b-black.--error .input__area {
+  border-bottom-color: #C00000;
+}
 
 .check {
   cursor: pointer;
@@ -240,7 +252,42 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
 .check__wrap {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   position: relative;
+}
+.check__point {
+  position: relative;
+}
+.check__text {
+  font-size: 18px;
+  font-weight: 400;
+}
+.check.--sq .check__point {
+  width: 29px;
+  height: 29px;
+  border: 1px solid #272727;
+}
+.check.--sq .check__point:before {
+  content: "";
+  width: 18px;
+  height: 13px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 0.3s;
+  position: absolute;
+  background: url("../../sys/imgs/check.svg") no-repeat;
+  opacity: 0;
+  visibility: hidden;
+}
+.check.--sq .check__text {
+  width: calc( 100% - 29px );
+  padding-left: 14px;
+}
+.check.--sq.--checked .check__point:before {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .h1 {

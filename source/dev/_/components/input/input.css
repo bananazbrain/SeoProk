@@ -53,3 +53,15 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
 .input__area:focus::placeholder {
   opacity: 0;
 }
+.input.--b-black .input__area {
+  font-size: 18px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #272727;
+}
+.input.--b-black .input__area::placeholder {
+  color: #B7B7B7;
+  font-size: 18px;
+}
+.input.--b-black.--error .input__area {
+  border-bottom-color: #C00000;
+}

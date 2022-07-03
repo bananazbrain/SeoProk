@@ -11,6 +11,14 @@ let cls = {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
+  // CHECK INIT
+  let checks = document.querySelectorAll('.check');
+  if (checks) {
+    checks.forEach((check) => {
+      new Check(check);
+    });
+  }
+
   // ANIMATION
   let anBlocks = document.querySelectorAll('.an');
 
