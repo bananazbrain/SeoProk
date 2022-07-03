@@ -38,3 +38,7 @@ include ../../blocks/seo/seo
 +style('calc', 'blocks')
 include ../../blocks/calc/calc
 
+//- steps 
++style('steps', 'blocks')
+include ../../blocks/steps/steps
+

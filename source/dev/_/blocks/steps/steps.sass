@@ -1,0 +1,43 @@
+@import ../../sys/sass/vars
+
+.steps
+	padding: 87px 0
+	&__title
+		margin-bottom: 26px
+	&__text
+		width: 100%
+		max-width: 650px
+		margin-bottom: 47px
+		margin-left: 5px
+	&__list
+		margin-left: 3px
+	&__item
+		display: flex
+		flex-wrap: wrap
+		margin-bottom: 25px
+		&:last-of-type
+			margin-bottom: 0
+	&__img
+		width: 154px
+		min-height: 154px
+		background: $green
+		display: flex
+		align-items: center
+		justify-content: center
+	&__info
+		width: calc( 100% - 154px )
+		background: $gray
+		padding: 30px 67px
+	&__name
+		margin-bottom: 15px
+	&__desc
+		line-height: 25px
+
+@media screen and (max-width: 1220px)
+	// .steps
+
+@media screen and (max-width: 992px)
+	// .steps
+
+@media screen and (max-width: 767px)
+	// .steps
