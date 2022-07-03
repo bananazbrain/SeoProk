@@ -55,9 +55,6 @@
   font-weight: 400;
   max-width: 273px;
 }
-.intro__btn img {
-  margin-left: 10px;
-}
 .intro__check {
   width: calc( 100% - 273px );
   padding-left: 80px;

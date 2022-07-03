@@ -157,6 +157,9 @@ path, circle, rect, line {
   border: none;
   outline: none;
 }
+.btn img {
+  margin-left: 10px;
+}
 .btn.--white {
   color: #272727;
   background: #fff;

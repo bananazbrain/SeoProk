@@ -26,3 +26,7 @@ include ../../blocks/price/price
 +style('voucher', 'blocks')
 include ../../blocks/voucher/voucher
 
+//- include 
++style('include', 'blocks')
+include ../../blocks/include/include
+

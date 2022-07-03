@@ -1,0 +1,63 @@
+@import ../../sys/sass/vars
+
+.include
+	padding-bottom: 90px
+	&__title
+		margin-bottom: 45px
+	&__list
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+	&__col
+		width: calc( 50% - 9px )
+		margin: 0 0 -45px
+	&__item
+		margin-bottom: 50px
+	&__head
+		margin-bottom: 30px
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		&-icon
+			width: 49px
+		&-title
+			width: calc( 100% - 49px )
+			margin-top: -5px
+			padding-left: 14px
+			font-size: 33px
+			font-weight: 700
+	&__links
+		padding-left: 65px
+	&__link
+		margin-bottom: 18px
+		transition: .3s
+		cursor: pointer
+		&:last-of-type
+			margin-bottom: 0
+		&:hover
+			color: $green
+	&__subtitle
+		margin-bottom: 24px
+	&__form
+		width: 100%
+		max-width: 482px
+		margin-top: 110px
+		margin-left: 65px
+	&__input
+		margin-bottom: 17px
+		&:last-of-type
+			margin-bottom: 0
+	&__btn
+		font-size: 18px
+		font-weight: 400
+		max-width: 273px
+		margin-top: 33px
+
+@media screen and (max-width: 1220px)
+	// .include
+
+@media screen and (max-width: 992px)
+	// .include
+
+@media screen and (max-width: 767px)
+	// .include

@@ -18,7 +18,7 @@ block content
 						.intro__desc.h6 Напишите нам и мы соберём «продажные ключи» для вашего бизнеса и определим позиции
 						.intro__fields
 							.intro__inputs
-								.intro__input.input.--b-black.--required
+								.intro__input.input.--b-black.--required.--name
 									.input__wrap
 										input.input__area(type="text" name="name" placeholder="Имя" autocomplete="off")
 								.intro__input.input.--b-black.--required
@@ -58,3 +58,6 @@ block content
 
 	+style('voucher', 'blocks')
 	include ../../blocks/voucher/voucher
+
+	+style('include', 'blocks')
+	include ../../blocks/include/include
