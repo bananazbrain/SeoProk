@@ -30,3 +30,7 @@ include ../../blocks/voucher/voucher
 +style('include', 'blocks')
 include ../../blocks/include/include
 
+//- seo 
++style('seo', 'blocks')
+include ../../blocks/seo/seo
+

@@ -1,0 +1,46 @@
+@import ../../sys/sass/vars
+
+.seo
+	padding: 72px 0 100px
+	background: #F1F1F1
+	&__title
+		margin-bottom: 48px
+	&__list
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		margin-bottom: -20px
+	&__item
+		width: calc( 50% - 9.5px )
+		min-height: 313px
+		margin-bottom: 20px
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		&.--reverse
+			.seo
+				&__img
+					order: 1
+				&__info
+					order: 2
+	&__info
+		color: #fff
+		background: $green
+		width: calc( 50% - 9.5px )
+		padding: 30px 42px 50px
+		word-break: break-word
+	&__img
+		background: #fff
+		width: calc( 50% - 9.5px )
+		display: flex
+		align-items: center
+		justify-content: center
+
+@media screen and (max-width: 1220px)
+	// .seo
+
+@media screen and (max-width: 992px)
+	// .seo
+
+@media screen and (max-width: 767px)
+	// .seo
