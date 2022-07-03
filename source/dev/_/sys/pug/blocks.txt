@@ -14,3 +14,7 @@ include ../../blocks/intro/intro
 +style('offer', 'blocks')
 include ../../blocks/offer/offer
 
+//- certs 
++style('certs', 'blocks')
+include ../../blocks/certs/certs
+

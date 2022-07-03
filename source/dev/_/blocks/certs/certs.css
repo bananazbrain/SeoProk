@@ -1,0 +1,35 @@
+.certs {
+  padding: 87px 0;
+}
+.certs__title {
+  margin-bottom: 30px;
+}
+.certs__text {
+  margin-bottom: 50px;
+}
+.certs__list {
+  width: 100%;
+  max-width: 1135px;
+  margin: 0 auto;
+}
+.certs__list-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -25px -50px;
+}
+.certs__item {
+  width: calc( 100% / 4 - 50px);
+  margin: 0 25px 50px;
+  box-shadow: 0px 4px 19px rgba(39, 39, 39, 0.1);
+}
+.certs__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.certs__item.w2 {
+  width: calc( 50% - 50px);
+}
+.certs__item:hover {
+  transform: translateY(-5px);
+}

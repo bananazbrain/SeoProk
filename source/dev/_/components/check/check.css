@@ -76,3 +76,9 @@
 .check.--icon.--checked .check__text {
   color: #09B559;
 }
+.check.--icon.--checked:hover .check__icon {
+  transform: translateY(0);
+}
+.check.--icon:hover .check__icon {
+  transform: translateY(-3px);
+}
