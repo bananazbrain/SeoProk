@@ -34,3 +34,7 @@ include ../../blocks/include/include
 +style('seo', 'blocks')
 include ../../blocks/seo/seo
 
+//- calc 
++style('calc', 'blocks')
+include ../../blocks/calc/calc
+

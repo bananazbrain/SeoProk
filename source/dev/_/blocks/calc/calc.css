@@ -1,0 +1,24 @@
+.calc {
+  color: #fff;
+  background: #272727;
+  padding: 65px 0 75px;
+  min-height: 640px;
+}
+.calc__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.calc__info {
+  width: 645px;
+}
+.calc__title {
+  margin-bottom: 22px;
+}
+.calc__subtitle {
+  font-weight: 400;
+}
+.calc__subtitle u {
+  font-weight: 700;
+  color: #09B559;
+}
