@@ -50,3 +50,7 @@ include ../../blocks/start/start
 +style('video', 'blocks')
 include ../../blocks/video/video
 
+//- get 
++style('get', 'blocks')
+include ../../blocks/get/get
+

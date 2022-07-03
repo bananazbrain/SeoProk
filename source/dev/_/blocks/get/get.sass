@@ -1,0 +1,52 @@
+@import ../../sys/sass/vars
+
+.get
+	padding-bottom: 87px
+	&__title
+		margin-left: 2px
+		margin-bottom: 48px
+	&__list
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		margin-bottom: -42px
+	&__item
+		width: calc( 50% - 32px )
+		margin-bottom: 42px
+		display: flex
+		flex-wrap: wrap
+	&__img
+		width: 85px
+		position: relative
+		&:before
+			content: ""
+			top: 0
+			left: 0
+			width: 85px
+			height: 95px
+			position: absolute
+			background: url('../../sys/imgs/cube-4.svg') no-repeat
+		img
+			top: 15px
+			left: 50%
+			transform: translateX(-50%)
+			position: relative
+	&__info
+		width: calc( 100% - 85px )
+		padding-top: 34px
+		padding-left: 40px
+	&__name
+		font-size: 18px
+		font-weight: 700
+		margin-bottom: 23px
+	&__text
+		line-height: 33px
+
+@media screen and (max-width: 1220px)
+	// .get
+
+@media screen and (max-width: 992px)
+	// .get
+
+@media screen and (max-width: 767px)
+	// .get

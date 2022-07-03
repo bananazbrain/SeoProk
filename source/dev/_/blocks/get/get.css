@@ -1,0 +1,51 @@
+.get {
+  padding-bottom: 87px;
+}
+.get__title {
+  margin-left: 2px;
+  margin-bottom: 48px;
+}
+.get__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: -42px;
+}
+.get__item {
+  width: calc( 50% - 32px );
+  margin-bottom: 42px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.get__img {
+  width: 85px;
+  position: relative;
+}
+.get__img:before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 85px;
+  height: 95px;
+  position: absolute;
+  background: url("../../sys/imgs/cube-4.svg") no-repeat;
+}
+.get__img img {
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+}
+.get__info {
+  width: calc( 100% - 85px );
+  padding-top: 34px;
+  padding-left: 40px;
+}
+.get__name {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 23px;
+}
+.get__text {
+  line-height: 33px;
+}
