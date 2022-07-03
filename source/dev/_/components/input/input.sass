@@ -36,7 +36,6 @@ input
     color: $main
     font-size: $fzMain
     font-family: $ffMain
-    font-weight: 400
     transition: .3s
     background: transparent
     position: relative
@@ -44,7 +43,6 @@ input
       color: $main
       font-size: $fzMain
       font-family: $ffMain
-      font-weight: 400
       transition: .3s
     &:focus
       &::placeholder
@@ -58,6 +56,21 @@ input
         border-bottom: 1px solid $main
         &::placeholder
           color: #B7B7B7
+          font-size: 18px
+    &.--error
+      .input
+        &__area
+          border-bottom-color: $red
+
+  &.--b-white
+    .input
+      &__area
+        color: #fff
+        font-size: 18px
+        padding-bottom: 8px
+        border-bottom: 1px solid rgba(#fff, .44)
+        &::placeholder
+          color: rgba(#fff, .44)
           font-size: 18px
     &.--error
       .input

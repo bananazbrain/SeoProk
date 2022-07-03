@@ -37,8 +37,7 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
   width: 100%;
   color: #272727;
   font-size: 16px;
-  font-family: "OpenSans", sans-serif;
-  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
   transition: 0.3s;
   background: transparent;
   position: relative;
@@ -46,8 +45,7 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
 .input__area::placeholder {
   color: #272727;
   font-size: 16px;
-  font-family: "OpenSans", sans-serif;
-  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
   transition: 0.3s;
 }
 .input__area:focus::placeholder {
@@ -63,5 +61,18 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
   font-size: 18px;
 }
 .input.--b-black.--error .input__area {
+  border-bottom-color: #C00000;
+}
+.input.--b-white .input__area {
+  color: #fff;
+  font-size: 18px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.44);
+}
+.input.--b-white .input__area::placeholder {
+  color: rgba(255, 255, 255, 0.44);
+  font-size: 18px;
+}
+.input.--b-white.--error .input__area {
   border-bottom-color: #C00000;
 }

@@ -4,6 +4,7 @@
 }
 .header__logo {
   top: 18px;
+  left: 2px;
   max-width: 110px;
   position: relative;
 }
@@ -70,7 +71,6 @@
 .h-panel__tel-text {
   color: #09B559;
   font-weight: 700;
-  letter-spacing: 0.2px;
   width: calc( 100% - 22px );
   padding-left: 7px;
 }
@@ -79,7 +79,6 @@
 }
 .h-panel__btn {
   max-width: 177px;
-  letter-spacing: 0.5px;
 }
 
 .h-bar {
@@ -127,7 +126,7 @@
 }
 .h-bar__nav ul li.has-subnav ul.subnav li {
   margin-right: 0;
-  margin-bottom: 17px;
+  margin-bottom: 14px;
 }
 .h-bar__nav ul li.has-subnav ul.subnav li:last-of-type {
   margin-bottom: 0;

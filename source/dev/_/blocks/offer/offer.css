@@ -1,0 +1,73 @@
+.offer {
+  color: #fff;
+  background: #2C2C2C;
+  padding: 65px 0 92px;
+}
+.offer__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.offer__img {
+  width: 690px;
+  margin-top: 60px;
+  margin-left: -10px;
+  position: relative;
+  left: 18px;
+}
+.offer__info {
+  width: calc( 100% - 690px + 10px );
+  text-align: right;
+}
+.offer__title {
+  margin-bottom: 45px;
+}
+.offer__fields {
+  width: 100%;
+  max-width: 481px;
+  margin-left: auto;
+}
+.offer__pick-title {
+  color: #09B559;
+  margin-bottom: 23px;
+}
+.offer__pick-checks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin-bottom: 48px;
+}
+.offer__pick-check {
+  margin-right: 45px;
+}
+.offer__pick-check:last-of-type {
+  margin-right: 0;
+}
+.offer__input {
+  margin-bottom: 18px;
+}
+.offer__input:last-of-type {
+  margin-bottom: 0;
+}
+.offer__input.--hide {
+  opacity: 0;
+  height: 0;
+  margin-bottom: 0;
+  visibility: hidden;
+}
+.offer__input.--show {
+  opacity: 1;
+  height: auto;
+  margin-bottom: 14px;
+  visibility: visible;
+}
+.offer__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 33px;
+}
+.offer__btn {
+  max-width: 244px;
+}

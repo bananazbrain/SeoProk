@@ -1,5 +1,5 @@
 .intro {
-  padding: 62px 0 130px;
+  padding: 62px 0 97px;
   background: linear-gradient(107.58deg, rgba(252, 252, 252, 0) 37.26%, rgba(9, 181, 89, 0.68) 84.78%);
 }
 .intro__wrap {
@@ -15,7 +15,6 @@
   margin-bottom: 13px;
 }
 .intro__subtitle {
-  letter-spacing: 0.3px;
   margin-bottom: 30px;
 }
 .intro__arrow {
@@ -40,7 +39,7 @@
   margin-bottom: 18px;
 }
 .intro__input {
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 }
 .intro__input:last-of-type {
   margin-bottom: 0;

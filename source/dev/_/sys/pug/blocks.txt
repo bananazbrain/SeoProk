@@ -10,3 +10,7 @@ include ../../blocks/footer/footer
 +style('intro', 'blocks')
 include ../../blocks/intro/intro
 
+//- offer 
++style('offer', 'blocks')
+include ../../blocks/offer/offer
+

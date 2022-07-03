@@ -14,9 +14,13 @@
 .check__point {
   position: relative;
 }
+.check__icon {
+  transition: 0.3s;
+}
 .check__text {
   font-size: 18px;
   font-weight: 400;
+  transition: 0.3s;
 }
 .check.--sq .check__point {
   width: 29px;
@@ -38,10 +42,37 @@
 }
 .check.--sq .check__text {
   width: calc( 100% - 29px );
-  padding-left: 14px;
+  padding-left: 15px;
+}
+.check.--sq.--white .check__point {
+  border-color: #fff;
+}
+.check.--sq.--white .check__point:before {
+  background: url("../../sys/imgs/check-white.svg") no-repeat;
 }
 .check.--sq.--checked .check__point:before {
   opacity: 1;
   visibility: visible;
   transform: translate(-50%, -50%) scale(1);
+}
+.check.--icon .check__wrap {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.check.--icon .check__icon {
+  height: 41px;
+}
+.check.--icon .check__text {
+  font-size: 14px;
+  font-weight: 700;
+}
+.check.--icon.--checked .check__icon svg path[fill], .check.--icon.--checked .check__icon svg rect[fill], .check.--icon.--checked .check__icon svg circle[fill], .check.--icon.--checked .check__icon svg line[fill] {
+  fill: #09B559;
+}
+.check.--icon.--checked .check__icon svg path[stroke], .check.--icon.--checked .check__icon svg rect[stroke], .check.--icon.--checked .check__icon svg circle[stroke], .check.--icon.--checked .check__icon svg line[stroke] {
+  stroke: #09B559;
+}
+.check.--icon.--checked .check__text {
+  color: #09B559;
 }

@@ -21,7 +21,7 @@ body {
   color: #272727;
   font-weight: 400;
   font-size: 16px;
-  font-family: "OpenSans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -149,13 +149,21 @@ path, circle, rect, line {
   cursor: pointer;
   color: #272727;
   font-size: 16px;
-  font-family: "OpenSans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 700;
   overflow: hidden;
   background: transparent;
   transition: 0.3s;
   border: none;
   outline: none;
+}
+.btn.--white {
+  color: #272727;
+  background: #fff;
+}
+.btn.--white:hover {
+  color: #fff;
+  background: #09B559;
 }
 .btn.--green {
   color: #fff;
@@ -213,8 +221,7 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
   width: 100%;
   color: #272727;
   font-size: 16px;
-  font-family: "OpenSans", sans-serif;
-  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
   transition: 0.3s;
   background: transparent;
   position: relative;
@@ -222,8 +229,7 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
 .input__area::placeholder {
   color: #272727;
   font-size: 16px;
-  font-family: "OpenSans", sans-serif;
-  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
   transition: 0.3s;
 }
 .input__area:focus::placeholder {
@@ -239,6 +245,19 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
   font-size: 18px;
 }
 .input.--b-black.--error .input__area {
+  border-bottom-color: #C00000;
+}
+.input.--b-white .input__area {
+  color: #fff;
+  font-size: 18px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.44);
+}
+.input.--b-white .input__area::placeholder {
+  color: rgba(255, 255, 255, 0.44);
+  font-size: 18px;
+}
+.input.--b-white.--error .input__area {
   border-bottom-color: #C00000;
 }
 
@@ -258,9 +277,13 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
 .check__point {
   position: relative;
 }
+.check__icon {
+  transition: 0.3s;
+}
 .check__text {
   font-size: 18px;
   font-weight: 400;
+  transition: 0.3s;
 }
 .check.--sq .check__point {
   width: 29px;
@@ -282,18 +305,45 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
 }
 .check.--sq .check__text {
   width: calc( 100% - 29px );
-  padding-left: 14px;
+  padding-left: 15px;
+}
+.check.--sq.--white .check__point {
+  border-color: #fff;
+}
+.check.--sq.--white .check__point:before {
+  background: url("../../sys/imgs/check-white.svg") no-repeat;
 }
 .check.--sq.--checked .check__point:before {
   opacity: 1;
   visibility: visible;
   transform: translate(-50%, -50%) scale(1);
 }
+.check.--icon .check__wrap {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.check.--icon .check__icon {
+  height: 41px;
+}
+.check.--icon .check__text {
+  font-size: 14px;
+  font-weight: 700;
+}
+.check.--icon.--checked .check__icon svg path[fill], .check.--icon.--checked .check__icon svg rect[fill], .check.--icon.--checked .check__icon svg circle[fill], .check.--icon.--checked .check__icon svg line[fill] {
+  fill: #09B559;
+}
+.check.--icon.--checked .check__icon svg path[stroke], .check.--icon.--checked .check__icon svg rect[stroke], .check.--icon.--checked .check__icon svg circle[stroke], .check.--icon.--checked .check__icon svg line[stroke] {
+  stroke: #09B559;
+}
+.check.--icon.--checked .check__text {
+  color: #09B559;
+}
 
 .h1 {
   font-size: 50px;
   font-weight: 700;
-  line-height: 74px;
+  line-height: 73px;
 }
 
 .h2 {

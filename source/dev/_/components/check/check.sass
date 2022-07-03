@@ -12,9 +12,12 @@
     position: relative
   &__point
     position: relative
+  &__icon
+    transition: .3s
   &__text
     font-size: 18px
     font-weight: 400
+    transition: .3s
 
   &.--sq
     .check
@@ -36,7 +39,13 @@
           visibility: hidden
       &__text
         width: calc( 100% - 29px )
-        padding-left: 14px
+        padding-left: 15px
+    &.--white
+      .check
+        &__point
+          border-color: #fff
+          &:before
+            background: url('../../sys/imgs/check-white.svg') no-repeat
     &.--checked
       .check
         &__point
@@ -44,3 +53,26 @@
             opacity: 1
             visibility: visible
             transform: translate(-50%, -50%) scale(1)
+
+  &.--icon
+    .check
+      &__wrap
+        align-items: center
+        justify-content: center
+        flex-direction: column
+      &__icon
+        height: 41px
+      &__text
+        font-size: 14px
+        font-weight: 700
+    &.--checked
+      .check
+        &__icon
+          svg
+            path, rect, circle, line
+              &[fill]
+                fill: $green
+              &[stroke]
+                stroke: $green
+        &__text
+          color: $green
