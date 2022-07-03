@@ -2,9 +2,13 @@
   padding: 88px 0;
 }
 .price__title {
-  margin-bottom: 48px;
+  margin-bottom: 46px;
 }
 .price__list {
+  left: 3px;
+  position: relative;
+}
+.price__list-wrap {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -15px -30px;
@@ -30,7 +34,7 @@
   color: #fff;
   background: #272727;
   padding: 15px 30px 25px;
-  min-height: 330px;
+  min-height: 328px;
   transition: 0.3s;
 }
 .price__rate {
@@ -50,6 +54,7 @@
   color: #09B559;
 }
 .price__name {
+  min-height: 72px;
   margin-bottom: 14px;
   text-transform: uppercase;
 }
@@ -59,19 +64,19 @@
 }
 .price__main {
   background: #fff;
-  padding: 15px 30px 25px;
+  padding: 6px 30px 25px;
   transition: 0.3s;
+}
+.price__desc {
+  font-weight: 700;
+  margin-left: 35px;
 }
 .price__value {
   font-size: 21px;
-  font-weight: 700;
 }
 .price__value u {
   font-size: 28px;
 }
-.price__note {
-  font-weight: 700;
-}
 .price__btn {
-  margin-top: 6px;
+  margin-top: 8px;
 }

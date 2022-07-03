@@ -3,8 +3,11 @@
 .price
 	padding: 88px 0
 	&__title
-		margin-bottom: 48px
+		margin-bottom: 46px
 	&__list
+		left: 3px
+		position: relative
+	&__list-wrap
 		display: flex
 		flex-wrap: wrap
 		margin: 0 -15px -30px
@@ -29,7 +32,7 @@
 		color: #fff
 		background: $main
 		padding: 15px 30px 25px
-		min-height: 330px
+		min-height: 328px
 		transition: .3s
 	&__rate
 		display: flex
@@ -45,6 +48,7 @@
 			font-weight: 700
 			color: $green
 	&__name
+		min-height: 72px
 		margin-bottom: 14px
 		text-transform: uppercase
 	&__text
@@ -52,17 +56,17 @@
 		line-height: 25px
 	&__main
 		background: #fff
-		padding: 15px 30px 25px
+		padding: 6px 30px 25px
 		transition: .3s
+	&__desc
+		font-weight: 700
+		margin-left: 35px
 	&__value
 		font-size: 21px
-		font-weight: 700
 		u
 			font-size: 28px
-	&__note
-		font-weight: 700
 	&__btn
-		margin-top: 6px
+		margin-top: 8px
 
 @media screen and (max-width: 1220px)
 	// .price

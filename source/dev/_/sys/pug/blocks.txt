@@ -22,3 +22,7 @@ include ../../blocks/certs/certs
 +style('price', 'blocks')
 include ../../blocks/price/price
 
+//- voucher 
++style('voucher', 'blocks')
+include ../../blocks/voucher/voucher
+
