@@ -445,6 +445,22 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
   object-fit: cover;
 }
 
+.swiper-button-prev, .swiper-button-next {
+  z-index: 50;
+  width: auto;
+  transition: 0.3s;
+}
+.swiper-button-prev:before, .swiper-button-prev:after, .swiper-button-next:before, .swiper-button-next:after {
+  display: none;
+}
+.swiper-button-prev.--black:hover svg path, .swiper-button-next.--black:hover svg path {
+  stroke: #09B559;
+}
+
+.swiper-button-prev img {
+  transform: scale(-1, 1);
+}
+
 .fadeIn {
   opacity: 0;
 }

@@ -65,4 +65,19 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  // VIDEO SLIDER
+  let videoSlider = document.querySelector('.video__slider-inner');
+
+  if (videoSlider) {
+    let videoSliderSwiper = new Swiper(videoSlider, {
+      slidesPerView: 3,
+      spaceBetween: 33,
+      speed: 900,
+      navigation: {
+        prevEl: '.video__slider-arrow.swiper-button-prev',
+        nextEl: '.video__slider-arrow.swiper-button-next',
+      },
+    });
+  }
+
 })

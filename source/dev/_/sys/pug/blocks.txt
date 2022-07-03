@@ -46,3 +46,7 @@ include ../../blocks/steps/steps
 +style('start', 'blocks')
 include ../../blocks/start/start
 
+//- video 
++style('video', 'blocks')
+include ../../blocks/video/video
+
