@@ -42,3 +42,7 @@ include ../../blocks/calc/calc
 +style('steps', 'blocks')
 include ../../blocks/steps/steps
 
+//- start 
++style('start', 'blocks')
+include ../../blocks/start/start
+

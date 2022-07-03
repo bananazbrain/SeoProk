@@ -1,0 +1,39 @@
+.start {
+  color: #fff;
+}
+.start__wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.start__info {
+  width: calc( 100% - 862px + 303px);
+  padding: 44px 128px 88px 0;
+  background: #272727;
+  position: relative;
+}
+.start__info:before {
+  z-index: -1;
+  content: "";
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #272727;
+  position: absolute;
+}
+.start__title {
+  margin-bottom: 46px;
+}
+.start__desc {
+  font-style: italic;
+  margin-bottom: 46px;
+}
+.start__btn {
+  font-size: 18px;
+  font-weight: 400;
+  max-width: 254px;
+}
+.start__img {
+  width: 862px;
+  margin-right: -303px;
+}

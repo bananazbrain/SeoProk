@@ -17,7 +17,7 @@
   border: none;
   outline: none;
 }
-.btn img {
+.btn svg {
   margin-left: 10px;
 }
 .btn.--white {
@@ -37,6 +37,13 @@
 }
 .btn.--h-dark:hover {
   background: #272727;
+}
+.btn.--h-white:hover {
+  color: #09B559;
+  background: #fff;
+}
+.btn.--h-white:hover svg path {
+  fill: #09B559;
 }
 .btn.--sm {
   min-height: 46px;

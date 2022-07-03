@@ -1,0 +1,43 @@
+@import ../../sys/sass/vars
+
+.start
+	color: #fff
+
+	&__wrap
+		display: flex
+		flex-wrap: wrap
+	&__info
+		width: calc( 100% - 862px + 303px)
+		padding: 44px 128px 88px 0
+		background: $main
+		position: relative
+		&:before
+			z-index: -1
+			content: ""
+			top: 0
+			left: -100%
+			width: 100%
+			height: 100%
+			background: $main
+			position: absolute
+	&__title
+		margin-bottom: 46px
+	&__desc
+		font-style: italic
+		margin-bottom: 46px
+	&__btn
+		font-size: 18px
+		font-weight: 400
+		max-width: 254px
+	&__img
+		width: 862px
+		margin-right: -303px
+
+@media screen and (max-width: 1220px)
+	// .start
+
+@media screen and (max-width: 992px)
+	// .start
+
+@media screen and (max-width: 767px)
+	// .start
