@@ -1,0 +1,74 @@
+@import ../../sys/sass/vars
+
+.price
+	padding: 88px 0
+	&__title
+		margin-bottom: 48px
+	&__list
+		display: flex
+		flex-wrap: wrap
+		margin: 0 -15px -30px
+	&__item
+		width: calc( 100% / 4 - 30px)
+		min-height: 480px
+		margin: 0 15px 30px
+		display: flex
+		flex-direction: column
+		box-shadow: 0px 4px 19px rgba($main, 0.08)
+		transition: .3s
+		cursor: pointer
+		&:hover
+			.price
+				&__main
+					background: $green
+				&__btn
+					&.--green
+						color: $main
+						background: #fff
+	&__info
+		color: #fff
+		background: $main
+		padding: 15px 30px 25px
+		min-height: 330px
+		transition: .3s
+	&__rate
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		margin-bottom: 25px
+		&-icon
+			width: 47px
+		&-title
+			width: calc( 100% - 47px )
+			padding-left: 20px
+			font-size: 18px
+			font-weight: 700
+			color: $green
+	&__name
+		margin-bottom: 14px
+		text-transform: uppercase
+	&__text
+		opacity: .6
+		line-height: 25px
+	&__main
+		background: #fff
+		padding: 15px 30px 25px
+		transition: .3s
+	&__value
+		font-size: 21px
+		font-weight: 700
+		u
+			font-size: 28px
+	&__note
+		font-weight: 700
+	&__btn
+		margin-top: 6px
+
+@media screen and (max-width: 1220px)
+	// .price
+
+@media screen and (max-width: 992px)
+	// .price
+
+@media screen and (max-width: 767px)
+	// .price

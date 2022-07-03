@@ -395,6 +395,10 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
   overflow: hidden;
 }
 
+.pad-none {
+  padding: 0 !important;
+}
+
 .logo {
   width: 100%;
   display: block;

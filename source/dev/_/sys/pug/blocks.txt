@@ -18,3 +18,7 @@ include ../../blocks/offer/offer
 +style('certs', 'blocks')
 include ../../blocks/certs/certs
 
+//- price 
++style('price', 'blocks')
+include ../../blocks/price/price
+

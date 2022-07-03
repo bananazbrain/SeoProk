@@ -1,11 +1,12 @@
 .certs {
-  padding: 87px 0;
+  padding: 88px 0;
 }
 .certs__title {
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 }
 .certs__text {
-  margin-bottom: 50px;
+  margin-bottom: 54px;
+  line-height: 26px;
 }
 .certs__list {
   width: 100%;
@@ -15,10 +16,12 @@
 .certs__list-wrap {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   margin: 0 -25px -50px;
 }
 .certs__item {
   width: calc( 100% / 4 - 50px);
+  height: 347px;
   margin: 0 25px 50px;
   box-shadow: 0px 4px 19px rgba(39, 39, 39, 0.1);
 }
@@ -28,7 +31,8 @@
   object-fit: cover;
 }
 .certs__item.w2 {
-  width: calc( 50% - 50px);
+  width: calc( 50% - 62px);
+  height: 372px;
 }
 .certs__item:hover {
   transform: translateY(-5px);
