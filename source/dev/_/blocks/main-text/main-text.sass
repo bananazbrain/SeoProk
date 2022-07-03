@@ -1,0 +1,59 @@
+@import ../../sys/sass/vars
+
+.main-text
+	padding: 88px 0 88px
+	&__wrap
+		display: flex
+		flex-wrap: wrap
+		align-items: flex-start
+	&__info
+		width: 585px
+		color: #fff
+		background: $main
+		padding: 66px 36px 96px 12px
+		position: relative
+		&:before
+			z-index: -1
+			content: ""
+			width: 1000%
+			height: 100%
+			top: 0
+			right: -5px
+			background: $main
+			position: absolute
+	&__title
+		line-height: 48px
+		margin-bottom: 52px
+	&__line
+		width: 531px
+		height: 1px
+		background: #fff
+		position: relative
+		&:before
+			content: ""
+			top: 50%
+			left: -8px
+			width: 15px
+			height: 15px
+			border-radius: 50%
+			background: #fff
+			position: absolute
+			transform: translateY(-50%)
+	&__text
+		line-height: 33px
+		width: calc( 100% - 585px )
+		margin-top: 34px
+		padding-left: 40px
+		p
+			margin-bottom: 25px
+			&:last-of-type
+				margin-bottom: 0
+
+@media screen and (max-width: 1220px)
+	// .main-text
+
+@media screen and (max-width: 992px)
+	// .main-text
+
+@media screen and (max-width: 767px)
+	// .main-text

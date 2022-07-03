@@ -58,3 +58,7 @@ include ../../blocks/get/get
 +style('faq', 'blocks')
 include ../../blocks/faq/faq
 
+//- main-text 
++style('main-text', 'blocks')
+include ../../blocks/main-text/main-text
+
