@@ -1,7 +1,72 @@
 @import ../../sys/sass/vars
 
 .voucher
-	padding: 88px 0
+	padding: 86px 0
+	&__title
+		margin-bottom: 45px
+	&__list
+		margin: 0 auto -30px
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+	&__item
+		width: calc( 50% - 17px )
+		border: 1px solid $main
+		margin-bottom: 30px
+		display: flex
+		flex-direction: column
+		box-shadow: 0px 4px 19px rgba($main, 0.08)
+		transition: .3s
+		cursor: pointer
+		&:hover
+			border-color: $green
+			.voucher
+				&__main
+					background: $green
+				&__line
+					background: #fff
+					&:before
+						left: 0
+	&__info
+		min-height: 173px
+		padding: 40px 48px 12px
+	&__name
+		margin-bottom: 10px
+		text-transform: uppercase
+	&__text
+		margin-left: 3px
+		line-height: 25px
+	&__main
+		color: #fff
+		background: $main
+		padding: 10px 48px 12px
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		margin-top: auto
+		transition: .3s
+	&__value
+		width: calc( 100% - 413px )
+		padding-right: 26px
+		font-size: 23px
+		font-weight: 700
+	&__line
+		width: 413px
+		height: 1px
+		transition: .3s
+		background: transparent
+		position: relative
+		&:before
+			content: ""
+			position: absolute
+			width: 15px
+			height: 15px
+			border-radius: 50%
+			background: #fff
+			top: 50%
+			transform: translateY(-50%)
+			transition: .5s
+			left: 98%
 
 @media screen and (max-width: 1220px)
 	// .voucher
