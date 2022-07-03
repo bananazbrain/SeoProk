@@ -54,3 +54,7 @@ include ../../blocks/video/video
 +style('get', 'blocks')
 include ../../blocks/get/get
 
+//- faq 
++style('faq', 'blocks')
+include ../../blocks/faq/faq
+

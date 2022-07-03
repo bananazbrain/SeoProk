@@ -1,0 +1,83 @@
+@import ../../sys/sass/vars
+
+.faq
+	background: $gray
+	padding: 51px 0 96px
+	&__title
+		margin-left: 6px
+		margin-bottom: 30px
+	&__text
+		width: 100%
+		max-width: 545px
+		margin-bottom: 44px
+	&__list
+		margin-left: 5px
+	&__item
+		cursor: pointer
+		background: #fff
+		box-shadow: 0px 4px 14px rgba($main, 0.08)
+		margin-bottom: 21px
+		transition: .3s
+		&:last-of-type
+			margin-bottom: 0
+		&:hover
+			.faq
+				&__question
+					&-title
+						color: $green
+		&.--active
+			.faq
+				&__question
+					&-icon
+						background: $main
+						img
+							transform: scale(1, -1)
+					&-title
+						color: $green
+				&__answer
+					height: auto
+					opacity: 1
+					padding: 2px 77px 51px
+					visibility: visible
+	&__question
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		position: relative
+		min-height: 93px
+		&-icon
+			width: 36px
+			height: 39px
+			background: $green
+			display: flex
+			align-items: center
+			justify-content: center
+			position: absolute
+			top: 0
+			left: 0
+			img
+				transition: .3s
+		&-title
+			font-size: 18px
+			line-height: 26px
+			padding: 0 77px
+			transition: .3s
+	&__answer
+		height: 0
+		opacity: 0
+		padding: 0 77px
+		visibility: hidden
+		transition: .3s
+		&-text
+			font-size: 18px
+			line-height: 33px
+			transition: .3s
+
+@media screen and (max-width: 1220px)
+	// .faq
+
+@media screen and (max-width: 992px)
+	// .faq
+
+@media screen and (max-width: 767px)
+	// .faq

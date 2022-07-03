@@ -80,4 +80,17 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  // FAQ TOGGLES
+  let faqs = document.querySelectorAll('.faq__item');
+  if (faqs) {
+    faqs.forEach((faq) => {
+      faq.question = faq.querySelector('.faq__question');
+      faq.answer = faq.querySelector('.faq__answer');
+
+      faq.question.addEventListener('click', () => {
+        faq.classList.toggle(cls.active);
+      });
+    });
+  }
+
 })
