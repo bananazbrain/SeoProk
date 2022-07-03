@@ -1,13 +1,42 @@
 @import ../../sys/sass/vars
 
-// .footer
+.footer
+	&__panel
+		color: #fff
+		background: #393939
+		padding: 40px 0 48px
+	&__nav
+		display: flex
+		flex-wrap: wrap
+		&-col
+			max-width: 620px
+			ul
+				margin-bottom: -18px
+				li
+					width: 50%
+					margin-bottom: 18px
+					a
+						color: #fff
+						font-weight: 700
+						text-transform: uppercase
+						border-bottom: 1px solid transparent
+					&:hover
+						a
+							border-color: #fff
+			&.--sm
+				ul
+					flex-direction: column
+					li
+						width: 100%
+						a
+							font-weight: 300
+							text-transform: none
 
 @media screen and (max-width: 1220px)
 	// .footer
-		
+
 @media screen and (max-width: 992px)
 	// .footer
-		
+
 @media screen and (max-width: 767px)
 	// .footer
-		
