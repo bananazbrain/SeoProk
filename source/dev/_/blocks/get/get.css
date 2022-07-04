@@ -1,19 +1,19 @@
 .get {
-  padding-bottom: 82px;
+  padding-bottom: 80px;
 }
 .get__title {
   margin-left: 2px;
-  margin-bottom: 48px;
+  margin-bottom: 45px;
 }
 .get__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: -42px;
+  margin-bottom: -43px;
 }
 .get__item {
-  width: calc( 50% - 32px );
-  margin-bottom: 42px;
+  width: calc( 50% - 31px );
+  margin-bottom: 43px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -56,5 +56,33 @@
   }
   .get__info {
     padding-left: 30px;
+  }
+}
+@media screen and (max-width: 1220px) {
+  .get__item {
+    width: calc( 50% - 30px );
+  }
+  .get__item:nth-of-type(1) .get__img img, .get__item:nth-of-type(2) .get__img img {
+    top: 8px;
+  }
+  .get__img {
+    width: 70px;
+  }
+  .get__img img {
+    top: 11px;
+  }
+  .get__img:before {
+    width: 70px;
+    height: 78px;
+    background-size: contain;
+  }
+  .get__info {
+    width: calc( 100% - 70px );
+    padding-top: 15px;
+    padding-left: 15px;
+  }
+  .get__text {
+    font-size: 16px;
+    line-height: 28px;
   }
 }

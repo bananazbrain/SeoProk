@@ -4,19 +4,21 @@
 	&__wrap
 		display: flex
 		flex-wrap: wrap
+		align-items: center
 	&__logo
-		top: 18px
+		top: 2px
 		left: 2px
 		max-width: 110px
 		position: relative
 	&__main
 		width: 100%
 		max-width: calc( 100% - 110px )
+		padding-left: 20px
 	&__panel
-		padding: 20px 0 15px
+		padding: 19px 0 15px
 		background: #fff
 	&__bar
-		padding: 11px 0
+		padding: 13px 0 10px
 		position: relative
 		&:before
 			z-index: -1
@@ -179,7 +181,76 @@
 			margin-left: 50px
 
 @media screen and (max-width: 1220px)
-	// .header
+	.header
+		&__logo
+			max-width: 95px
+		&__main
+			max-width: calc( 100% - 95px )
+			padding-left: 10px
+
+	.h-panel
+		&__nav
+			ul
+				li
+					margin-right: 25px
+		&__tel
+			margin-left: 40px
+			&-icon
+				z-index: 1
+				width: 34px
+				height: 34px
+				border-radius: 50%
+				background: $green
+				display: flex
+				align-items: center
+				justify-content: center
+				position: relative
+				transition: .3s
+				svg
+					width: 19px
+					path
+						fill: #fff
+				&:before, &:after
+					z-index: -1
+					content: ""
+					top: 50%
+					left: 50%
+					transform: translate(-50%, -50%)
+					border-radius: 50%
+					position: absolute
+					transition: .3s
+				&:before
+					width: 50px
+					height: 50px
+					background: rgba($green, 15%)
+				&:after
+					width: 42px
+					height: 42px
+					background: rgba($green, 15%)
+				&:hover
+					&:before, &:after
+						width: 34px
+						height: 34px
+			&-text
+				display: none
+		&__socials
+			margin: 0 40px
+		&__btn
+			max-width: 165px
+
+	.h-bar
+		&__nav
+			ul
+				li
+					margin-right: 15px
+					a
+						font-size: 14px
+					&.has-subnav
+						ul.subnav
+							top: 38px
+							padding: 15px 13px
+		&__dev
+			margin-left: 20px
 
 @media screen and (max-width: 992px)
 	// .header

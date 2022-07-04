@@ -18,12 +18,13 @@
 		width: calc( 100% - 690px + 10px )
 		text-align: right
 	&__title
-		margin-bottom: 45px
+		margin-bottom: 44px
 	&__fields
 		width: 100%
 		max-width: 481px
 		margin-left: auto
 	&__pick
+		margin-bottom: 48px
 		&-title
 			color: $green
 			margin-bottom: 23px
@@ -31,7 +32,6 @@
 			display: flex
 			flex-wrap: wrap
 			justify-content: flex-end
-			margin-bottom: 48px
 		&-check
 			margin-right: 45px
 			&:last-of-type
@@ -69,7 +69,31 @@
 			width: calc( 100% - 550px)
 
 @media screen and (max-width: 1220px)
-	// .offer
+	.offer
+		padding: 50px 0 80px
+		&__info
+			order: 1
+			width: 100%
+		&__fields
+			max-width: 400px
+		&__pick
+			margin-bottom: 40px
+		&__actions
+			flex-direction: column
+			align-items: flex-start
+		&__btn
+			max-width: 100%
+			margin-bottom: 20px
+		&__check
+			width: 100%
+			max-width: 120px
+		&__img
+			order: 2
+			width: 500px
+			left: 10px
+			bottom: 0
+			margin-left: 0
+			position: absolute
 
 @media screen and (max-width: 992px)
 	// .offer

@@ -1,9 +1,10 @@
 .header__wrap {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 .header__logo {
-  top: 18px;
+  top: 2px;
   left: 2px;
   max-width: 110px;
   position: relative;
@@ -11,13 +12,14 @@
 .header__main {
   width: 100%;
   max-width: calc( 100% - 110px );
+  padding-left: 20px;
 }
 .header__panel {
-  padding: 20px 0 15px;
+  padding: 19px 0 15px;
   background: #fff;
 }
 .header__bar {
-  padding: 11px 0;
+  padding: 13px 0 10px;
   position: relative;
 }
 .header__bar:before {
@@ -207,5 +209,86 @@
 
   .h-bar__dev {
     margin-left: 50px;
+  }
+}
+@media screen and (max-width: 1220px) {
+  .header__logo {
+    max-width: 95px;
+  }
+  .header__main {
+    max-width: calc( 100% - 95px );
+    padding-left: 10px;
+  }
+
+  .h-panel__nav ul li {
+    margin-right: 25px;
+  }
+  .h-panel__tel {
+    margin-left: 40px;
+  }
+  .h-panel__tel-icon {
+    z-index: 1;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #09B559;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: 0.3s;
+  }
+  .h-panel__tel-icon svg {
+    width: 19px;
+  }
+  .h-panel__tel-icon svg path {
+    fill: #fff;
+  }
+  .h-panel__tel-icon:before, .h-panel__tel-icon:after {
+    z-index: -1;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    position: absolute;
+    transition: 0.3s;
+  }
+  .h-panel__tel-icon:before {
+    width: 50px;
+    height: 50px;
+    background: rgba(9, 181, 89, 0.15);
+  }
+  .h-panel__tel-icon:after {
+    width: 42px;
+    height: 42px;
+    background: rgba(9, 181, 89, 0.15);
+  }
+  .h-panel__tel-icon:hover:before, .h-panel__tel-icon:hover:after {
+    width: 34px;
+    height: 34px;
+  }
+  .h-panel__tel-text {
+    display: none;
+  }
+  .h-panel__socials {
+    margin: 0 40px;
+  }
+  .h-panel__btn {
+    max-width: 165px;
+  }
+
+  .h-bar__nav ul li {
+    margin-right: 15px;
+  }
+  .h-bar__nav ul li a {
+    font-size: 14px;
+  }
+  .h-bar__nav ul li.has-subnav ul.subnav {
+    top: 38px;
+    padding: 15px 13px;
+  }
+  .h-bar__dev {
+    margin-left: 20px;
   }
 }

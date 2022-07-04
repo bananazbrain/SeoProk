@@ -87,3 +87,8 @@
     margin-left: 0;
   }
 }
+@media screen and (max-width: 1220px) {
+  .faq {
+    padding: 50px 0 80px;
+  }
+}

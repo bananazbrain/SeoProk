@@ -37,3 +37,24 @@
 .certs__item:hover {
   transform: translateY(-5px);
 }
+
+@media screen and (max-width: 1220px) {
+  .certs {
+    padding: 60px 0 75px;
+  }
+  .certs__list {
+    max-width: 100%;
+  }
+  .certs__list-wrap {
+    margin: 0 -10px -30px;
+  }
+  .certs__item {
+    width: calc( 100% / 4 - 20px);
+    height: 315px;
+    margin: 0 10px 30px;
+  }
+  .certs__item.w2 {
+    width: calc( 50% - 20px);
+    height: 325px;
+  }
+}

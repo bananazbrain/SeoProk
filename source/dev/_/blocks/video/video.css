@@ -1,5 +1,5 @@
 .video {
-  padding: 88px 0 85px;
+  padding: 84px 0;
 }
 .video__title {
   margin-bottom: 46px;
@@ -12,7 +12,7 @@
 }
 .video__slider-img {
   height: 210px;
-  margin-bottom: 28px;
+  margin-bottom: 30px;
 }
 .video__slider-img img {
   width: 100%;
@@ -32,5 +32,20 @@
 @media screen and (max-width: 1360px) {
   .video__slider-inner {
     width: 1090px;
+  }
+}
+@media screen and (max-width: 1220px) {
+  .video__slider-inner {
+    width: 870px;
+  }
+  .video__slider-img {
+    height: 160px;
+    margin-bottom: 20px;
+  }
+  .video__slider-name {
+    font-size: 16px;
+  }
+  .video__slider-name br {
+    display: none;
   }
 }

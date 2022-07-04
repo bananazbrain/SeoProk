@@ -1,8 +1,8 @@
 .voucher {
-  padding: 86px 0;
+  padding: 86px 0 84px;
 }
 .voucher__title {
-  margin-bottom: 45px;
+  margin-bottom: 47px;
 }
 .voucher__list {
   margin: 0 auto -30px;
@@ -82,7 +82,39 @@
 }
 
 @media screen and (max-width: 1360px) {
+  .voucher__value {
+    width: calc( 100% - 340px );
+  }
   .voucher__line {
     width: 340px;
+  }
+}
+@media screen and (max-width: 1220px) {
+  .voucher {
+    padding: 70px 0 80px;
+  }
+  .voucher__list {
+    margin-bottom: -20px;
+  }
+  .voucher__item {
+    width: calc( 50% - 10px );
+    margin-bottom: 20px;
+  }
+  .voucher__info {
+    padding: 20px 25px;
+  }
+  .voucher__text br {
+    display: none;
+  }
+  .voucher__main {
+    padding: 10px 25px;
+  }
+  .voucher__value {
+    font-size: 20px;
+    padding-right: 20px;
+    width: calc( 100% - 300px );
+  }
+  .voucher__line {
+    width: 300px;
   }
 }

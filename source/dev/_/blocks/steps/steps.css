@@ -2,7 +2,7 @@
   padding: 87px 0;
 }
 .steps__title {
-  margin-bottom: 26px;
+  margin-bottom: 24px;
 }
 .steps__text {
   width: 100%;
@@ -39,4 +39,16 @@
 }
 .steps__desc {
   line-height: 25px;
+}
+
+@media screen and (max-width: 1220px) {
+  .steps {
+    padding: 75px 0;
+  }
+  .steps__info {
+    padding: 30px 45px;
+  }
+  .steps__desc br {
+    display: none;
+  }
 }

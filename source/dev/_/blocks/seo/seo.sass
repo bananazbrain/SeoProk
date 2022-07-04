@@ -4,7 +4,7 @@
 	padding: 72px 0 100px
 	background: #F1F1F1
 	&__title
-		margin-bottom: 48px
+		margin-bottom: 46px
 	&__list
 		display: flex
 		flex-wrap: wrap
@@ -46,7 +46,41 @@
 			width: calc( 45% - 9.5px )
 
 @media screen and (max-width: 1220px)
-	// .seo
+	.seo
+		padding: 70px 0 90px
+		&__item
+			padding: 30px
+			min-height: auto
+			flex-direction: column
+			justify-content: flex-start
+			background: $green
+			&.--reverse
+				.seo
+					&__info
+						order: 1
+					&__img
+						order: 2
+		&__info
+			padding: 0
+			min-height: 72px
+			margin-bottom: 20px
+			width: auto
+			background: transparent
+			br
+				display: none
+		&__img
+			height: 110px
+			width: auto
+			margin-top: auto
+			justify-content: flex-end
+			background: transparent
+			svg
+				height: 100%
+				path, rect, circle, line
+					&[fill]
+						fill: #fff
+					&[stroke]
+						stroke: #fff
 
 @media screen and (max-width: 992px)
 	// .seo

@@ -20,12 +20,15 @@
   text-align: right;
 }
 .offer__title {
-  margin-bottom: 45px;
+  margin-bottom: 44px;
 }
 .offer__fields {
   width: 100%;
   max-width: 481px;
   margin-left: auto;
+}
+.offer__pick {
+  margin-bottom: 48px;
 }
 .offer__pick-title {
   color: #09B559;
@@ -35,7 +38,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  margin-bottom: 48px;
 }
 .offer__pick-check {
   margin-right: 45px;
@@ -80,5 +82,40 @@
   }
   .offer__info {
     width: calc( 100% - 550px);
+  }
+}
+@media screen and (max-width: 1220px) {
+  .offer {
+    padding: 50px 0 80px;
+  }
+  .offer__info {
+    order: 1;
+    width: 100%;
+  }
+  .offer__fields {
+    max-width: 400px;
+  }
+  .offer__pick {
+    margin-bottom: 40px;
+  }
+  .offer__actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .offer__btn {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .offer__check {
+    width: 100%;
+    max-width: 120px;
+  }
+  .offer__img {
+    order: 2;
+    width: 500px;
+    left: 10px;
+    bottom: 0;
+    margin-left: 0;
+    position: absolute;
   }
 }

@@ -1,5 +1,5 @@
 .main-text {
-  padding: 88px 0 83px;
+  padding: 85px 0 82px;
 }
 .main-text__wrap {
   display: flex;
@@ -55,4 +55,21 @@
 }
 .main-text__text p:last-of-type {
   margin-bottom: 0;
+}
+
+@media screen and (max-width: 1220px) {
+  .main-text {
+    padding: 65px 0 80px;
+  }
+  .main-text__info {
+    width: 800px;
+    padding: 60px 30px 90px 10px;
+  }
+  .main-text__title br {
+    display: none;
+  }
+  .main-text__text {
+    width: 800px;
+    padding-left: 0;
+  }
 }

@@ -101,7 +101,6 @@ path, circle, rect, line {
   padding-left: 10px;
   padding-right: 10px;
   margin: 0 auto;
-  border: 1px solid red;
 }
 .case .case {
   width: auto;
@@ -378,6 +377,18 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
   transform: translateY(-3px);
 }
 
+@media screen and (max-width: 1220px) {
+  .check__text {
+    font-size: 16px;
+  }
+  .check.--sq .check__point {
+    width: 25px;
+    height: 25px;
+  }
+  .check.--sq .check__point:before {
+    width: 16px;
+  }
+}
 .h1 {
   font-size: 50px;
   font-weight: 700;
@@ -493,4 +504,26 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
 .fadeIn.--loaded {
   opacity: 1;
   transition: opacity 1.5s;
+}
+
+@media screen and (max-width: 1220px) {
+  .h1 {
+    font-size: 45px;
+    line-height: 65px;
+  }
+
+  .h3 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .h4 {
+    font-size: 25px;
+    line-height: 36px;
+  }
+
+  .h5 {
+    font-size: 21px;
+    line-height: 31px;
+  }
 }

@@ -1,5 +1,5 @@
 .include {
-  padding-bottom: 86px;
+  padding-bottom: 87px;
 }
 .include__title {
   margin-bottom: 45px;
@@ -66,4 +66,35 @@
   font-weight: 400;
   max-width: 273px;
   margin-top: 33px;
+}
+
+@media screen and (max-width: 1220px) {
+  .include {
+    padding-bottom: 80px;
+  }
+  .include__col {
+    width: calc( 50% - 20px );
+  }
+  .include__head {
+    margin-bottom: 20px;
+  }
+  .include__head-icon {
+    width: 42px;
+  }
+  .include__head-title {
+    width: calc( 100% - 42px );
+    font-size: 28px;
+  }
+  .include__links {
+    padding-left: 58px;
+    padding-right: 20px;
+  }
+  .include__link {
+    margin-bottom: 14px;
+  }
+  .include__form {
+    max-width: 392px;
+    margin-top: 80px;
+    margin-left: 58px;
+  }
 }

@@ -95,3 +95,28 @@
     margin-left: 10px;
   }
 }
+@media screen and (max-width: 1220px) {
+  .price {
+    padding: 60px 0;
+  }
+  .price__list-wrap {
+    margin: 0 -10px -20px;
+  }
+  .price__item {
+    width: calc( 100% / 2 - 20px);
+    margin: 0 10px 20px;
+    min-height: auto;
+  }
+  .price__info {
+    min-height: 250px;
+  }
+  .price__name {
+    min-height: auto;
+  }
+  .price__name br {
+    display: none;
+  }
+  .price__desc {
+    margin-left: 35px;
+  }
+}

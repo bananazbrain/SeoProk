@@ -77,8 +77,58 @@ document.addEventListener('DOMContentLoaded', function () {
         prevEl: '.video__slider-arrow.swiper-button-prev',
         nextEl: '.video__slider-arrow.swiper-button-next',
       },
+      breakpoints: {
+        993: {
+          spaceBetween: 20,
+        }
+      }
     });
   }
+
+  // MOBILE SLIDRES
+  function MobileSlider(windowSize, wrap, list, items, options = { slidesPerView: 1 }) {
+    this.wrap = document.querySelector(wrap);
+
+    if (this.wrap) {
+      this.list = document.querySelector(list);
+      this.items = document.querySelectorAll(items);
+      this.slider = null;
+      this.options = options;
+
+      this.toggleSlider = () => {
+        if (window.innerWidth <= windowSize) {
+          if (!this.wrap.classList.contains('swiper')) {
+            this.wrap.classList.add('swiper');
+            this.list.classList.add('swiper-wrapper');
+            this.items.forEach((item) => {
+              item.classList.add('swiper-slide')
+            });
+            this.slider = new Swiper(this.wrap, this.options);
+          }
+        } else {
+          if (this.wrap.classList.contains('swiper')) {
+            this.wrap.classList.remove('swiper');
+            this.list.classList.remove('swiper-wrapper');
+            this.items.forEach((item) => {
+              item.classList.remove('swiper-slide')
+            });
+
+            if (this.slider != null) {
+              this.slider.destory(false, true);
+            }
+          }
+        }
+      }
+
+      this.toggleSlider();
+
+      window.addEventListener('resize', this.toggleSlider);
+    }
+  }
+
+  // new MobileSlider(1220, '.price__list', '.price__list-wrap', '.price__item', {
+  //   slidesPerView: 3,
+  // });
 
   // FAQ TOGGLES
   let faqs = document.querySelectorAll('.faq__item');
