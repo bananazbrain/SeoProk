@@ -119,3 +119,24 @@
     position: absolute;
   }
 }
+@media screen and (max-width: 992px) {
+  .offer {
+    padding: 50px 0 60px;
+  }
+  .offer__info {
+    text-align: left;
+  }
+  .offer__fields {
+    margin-right: auto;
+    margin-left: 0;
+  }
+  .offer__pick-checks {
+    justify-content: flex-start;
+  }
+  .offer__btn {
+    margin-bottom: 30px;
+  }
+  .offer__img {
+    display: none;
+  }
+}

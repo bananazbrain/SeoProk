@@ -31,9 +31,53 @@
 			background: $gray
 			position: absolute
 	&__callback
+		z-index: 1
+		width: 34px
+		height: 34px
+		border-radius: 50%
+		background: $green
 		display: none
-	&__ham
-		margin-left: auto
+		align-items: center
+		justify-content: center
+		position: relative
+		transition: .3s
+		img
+			width: 19px
+			path
+				fill: #fff
+		&:before, &:after
+			z-index: -1
+			content: ""
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			border-radius: 50%
+			position: absolute
+			transition: .3s
+		&:before
+			width: 50px
+			height: 50px
+			background: rgba($green, 15%)
+		&:after
+			width: 42px
+			height: 42px
+			background: rgba($green, 15%)
+		&:hover
+			&:before, &:after
+				width: 34px
+				height: 34px
+	&__bg
+		z-index: 10
+		width: 100%
+		height: 100vh
+		background: #fff
+		position: fixed
+		transition: .3s
+		opacity: 0
+		visibility: hidden
+		&.--active
+			opacity: 1
+			visibility: visible
 
 .h-panel
 	display: flex
@@ -164,6 +208,9 @@
 			&:nth-of-type(3)
 				top: -8px
 				transform: rotate(-45deg)
+		&:hover
+			div
+				background: $main
 
 @media screen and (max-width: 1360px)
 	.header
@@ -231,6 +278,7 @@
 					&:before, &:after
 						width: 34px
 						height: 34px
+
 			&-text
 				display: none
 		&__socials
@@ -253,7 +301,100 @@
 			margin-left: 20px
 
 @media screen and (max-width: 992px)
-	// .header
+	.header
+		&__logo
+			top: 0
+			max-width: 90px
+		&__main
+			max-width: calc( 100% - 95px - 27px )
+			padding-right: 30px
+		&__panel
+			padding: 0
+		&__bar
+			padding: 0
+
+	.h-panel
+		&__nav
+			top: 350px
+			left: 10px
+			padding-top: 23px
+			border-top: 1px solid $dark-gray
+			ul
+				flex-direction: column
+				li
+					margin-right: 0
+					margin-bottom: 20px
+					&:last-of-type
+						margin-bottom: 0
+					a
+						font-size: 16px
+		&__tel
+			margin-left: auto
+			&-icon
+				width: 22px
+				height: auto
+				background: transparent
+				svg
+					path
+						fill: $green
+				&:before, &:after
+					display: none
+			&-text
+				display: block
+		&__socials
+			margin: 0 30px
+			.socials
+				&__item
+					width: 30px
+					height: 30px
+					img
+						width: 17px
+		&__btn
+			font-size: 14px
+			max-width: 140px
+			&.--sm
+				min-height: 42px
+
+	.h-bar
+		&:before
+			display: none
+		&__nav
+			top: 50px
+			left: -100px
+			padding-bottom: 23px
+			ul
+				flex-direction: column
+				li
+					margin-right: 0
+					margin-bottom: 15px
+					&.has-subnav
+						&:before
+							display: none
+					&:last-of-type
+						margin-bottom: 0
+
+		&__dev
+			display: none
+
+	.ham
+		display: flex
+
+	.menu-fix
+		z-index: 11
+		width: 100%
+		opacity: 0
+		visibility: hidden
+		transition: .3s
+		position: absolute
+		&.--active
+			opacity: 1
+			visibility: visible
 
 @media screen and (max-width: 767px)
-	// .header
+	.header
+		&__main
+			opacity: 0
+			visibility: hidden
+			position: fixed
+		&__callback
+			display: flex

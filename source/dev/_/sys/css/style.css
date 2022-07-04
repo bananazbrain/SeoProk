@@ -101,7 +101,6 @@ path, circle, rect, line {
   padding-left: 10px;
   padding-right: 10px;
   margin: 0 auto;
-  border: 1px solid red;
 }
 .case .case {
   width: auto;
@@ -539,6 +538,16 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
   }
 }
 @media screen and (max-width: 992px) {
+  .h1 {
+    font-size: 42px;
+    line-height: 55px;
+  }
+
+  .h2 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
   .h3 {
     font-size: 26px;
     line-height: 38px;

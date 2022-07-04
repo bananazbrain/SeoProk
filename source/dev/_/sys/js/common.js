@@ -8,6 +8,7 @@ let cls = {
   show: '--show',
   hide: '--hide',
   active: '--active',
+  toggle: '--toggle',
 }
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -47,6 +48,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // HEADER MENU NAV
   let menuNav = document.querySelector('.header__main');
+  let menuBg = document.querySelector('.header__bg');
+  let menuElemsFix = document.querySelectorAll('.menu-fix');
   let menuHam = document.querySelector('.ham');
 
   if (menuHam) {
@@ -56,9 +59,11 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     menuHam.addEventListener('click', () => {
-      menuNav.classList.toggle('--show');
-      menuHam.classList.toggle('--toggle');
-
+      menuHam.classList.toggle(cls.toggle)
+      menuBg.classList.toggle(cls.active)
+      menuElemsFix.forEach((elemFix) => {
+        elemFix.classList.toggle(cls.active)
+      })
       html.classList.toggle('overflow-disable');
       body.classList.toggle('overflow-disable');
       inner.classList.toggle('overflow-disable');
