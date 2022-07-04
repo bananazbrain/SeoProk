@@ -86,3 +86,24 @@
     line-height: 28px;
   }
 }
+@media screen and (max-width: 992px) {
+  .get {
+    padding-bottom: 70px;
+  }
+  .get__title {
+    margin-left: 0;
+    margin-right: 100px;
+  }
+  .get__item {
+    width: 100%;
+  }
+  .get__info {
+    padding-top: 5px;
+  }
+  .get__name {
+    margin-bottom: 15px;
+  }
+  .get__name br {
+    display: none;
+  }
+}

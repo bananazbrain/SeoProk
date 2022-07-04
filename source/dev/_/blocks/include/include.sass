@@ -26,6 +26,17 @@
 			padding-left: 14px
 			font-size: 33px
 			font-weight: 700
+		&-arrow
+			width: 45px
+			height: 45px
+			border-radius: 50%
+			background: $gray
+			display: none
+			align-items: center
+			justify-content: center
+			transition: .3s
+			svg
+				transition: .3s
 	&__links
 		padding-left: 65px
 	&__link
@@ -76,7 +87,57 @@
 			margin-left: 58px
 
 @media screen and (max-width: 992px)
-	// .include
+	.include
+		&__col
+			width: 100%
+			margin-bottom: 35px
+			&:last-of-type
+				margin-bottom: 0
+		&__item
+			margin-bottom: 35px
+			cursor: pointer
+			transition: .3s
+			&:last-of-type
+				margin-bottom: 0
+			&:hover
+				.include
+					&__head
+						&-title
+							color: $green
+			&.--active
+				.include
+					&__head
+						&-title
+							color: $green
+						&-arrow
+							svg
+								transform: scale(1, -1)
+								path
+									stroke: $green
+					&__links
+						height: auto
+						opacity: 1
+						visibility: visible
+						padding-top: 25px
+						padding-left: 0
+						padding-right: 0
+		&__head
+			margin-bottom: 0
+			&-title
+				font-size: 24px
+				width: calc( 100% - 42px - 45px )
+				padding-left: 25px
+				transition: .3s
+			&-arrow
+				display: flex
+		&__links
+			height: 0
+			opacity: 0
+			visibility: hidden
+			transition: .3s
+		&__form
+			max-width: 400px
+			margin-left: 0
 
 @media screen and (max-width: 767px)
 	// .include

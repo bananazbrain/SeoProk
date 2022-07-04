@@ -95,3 +95,16 @@
     stroke: #fff;
   }
 }
+@media screen and (max-width: 992px) {
+  .seo {
+    padding: 50px 0 70px;
+  }
+  .seo__img {
+    width: 85px;
+    height: 100px;
+    margin-left: auto;
+  }
+  .seo__img svg {
+    width: 100%;
+  }
+}

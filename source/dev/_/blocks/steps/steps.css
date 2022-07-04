@@ -52,3 +52,33 @@
     display: none;
   }
 }
+@media screen and (max-width: 992px) {
+  .steps {
+    padding: 80px 0;
+  }
+  .steps__text {
+    margin-left: 0;
+  }
+  .steps__list {
+    margin-left: 0;
+  }
+  .steps__item {
+    position: relative;
+    margin-bottom: 50px;
+  }
+  .steps__img {
+    top: -25px;
+    left: 25px;
+    width: 120px;
+    height: 120px;
+    min-height: auto;
+    position: absolute;
+  }
+  .steps__img img {
+    height: 65px;
+  }
+  .steps__info {
+    width: 100%;
+    padding: 110px 25px 30px;
+  }
+}

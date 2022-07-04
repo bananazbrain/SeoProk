@@ -119,4 +119,41 @@
   .price__desc {
     margin-left: 35px;
   }
+  .price__pagination {
+    display: none;
+  }
+}
+@media screen and (max-width: 992px) {
+  .price__title {
+    width: calc( 100% - 100px );
+  }
+  .price__list {
+    left: 0;
+    padding: 15px 10px;
+    margin: -15px -10px;
+    overflow: visible;
+  }
+  .price__list-wrap {
+    margin: 0;
+    flex-wrap: nowrap;
+  }
+  .price__item {
+    margin: 0;
+    height: auto;
+  }
+  .price__info {
+    min-height: 300px;
+    height: calc( 100% - 150px );
+  }
+  .price__main {
+    min-height: 150px;
+  }
+  .price__pagination {
+    top: 0;
+    right: 10px;
+    left: auto;
+    bottom: auto;
+    display: flex;
+    justify-content: flex-end;
+  }
 }

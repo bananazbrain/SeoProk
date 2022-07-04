@@ -154,7 +154,64 @@
 				font-size: 13px
 
 @media screen and (max-width: 992px)
-	// .footer
+	.footer
+		&__nav
+			&-main
+				width: 480px
+				margin-right: 100px
+		&__inner
+			padding-bottom: 20px
+		&__info
+			order: 1
+			padding-left: 0
+			max-width: 100%
+		&__contacts
+			flex-direction: column
+			justify-content: center
+			&-item
+				width: 100%
+				margin-bottom: 25px
+				flex-direction: column
+				justify-content: center
+				text-align: center
+				&:last-of-type
+					margin-bottom: 0
+			&-icon
+				margin-bottom: 8px
+				margin-right: 0
+			&-text
+				font-size: 16px
+				max-width: 230px
+		&__elems
+			margin-top: 10px
+			position: relative
+		&__text
+			top: 0
+			margin: 0 auto
+			text-align: center
+		&__socials
+			top: 155px
+			left: 50%
+			transform: translateX(-50%)
+			position: absolute
+		&__btns
+			order: 2
+			margin-bottom: 70px
+			justify-content: center
+		&__logo
+			order: 3
+			margin: 35px auto 0
+		&__bar
+			padding-top: 20px
+			flex-direction: column
+			justify-content: center
+			text-align: center
+			&-item
+				width: 100%
+				font-size: 14px
+				margin-bottom: 10px
+				&:last-of-type
+					margin-bottom: 0
 
 @media screen and (max-width: 767px)
 	// .footer

@@ -63,7 +63,27 @@
 			padding-left: 0
 
 @media screen and (max-width: 992px)
-	// .main-text
+	.main-text
+		padding: 50px 0 70px
+		&__info
+			color: $main
+			padding: 0
+			background: transparent
+			&:before
+				display: none
+		&__title
+			line-height: 38px
+			margin-bottom: 34px
+		&__line
+			width: 100%
+			background: $main
+			&:before
+				left: 0
+				background: $main
+		&__text
+			line-height: 27px
+			p
+				margin-bottom: 20px
 
 @media screen and (max-width: 767px)
 	// .main-text

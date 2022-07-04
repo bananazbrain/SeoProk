@@ -78,6 +78,9 @@ document.addEventListener('DOMContentLoaded', function () {
         nextEl: '.video__slider-arrow.swiper-button-next',
       },
       breakpoints: {
+        768: {
+          slidesPerView: 2,
+        },
         993: {
           spaceBetween: 20,
         }
@@ -126,9 +129,14 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
-  // new MobileSlider(1220, '.price__list', '.price__list-wrap', '.price__item', {
-  //   slidesPerView: 3,
-  // });
+  new MobileSlider(992, '.price__list', '.price__list-wrap', '.price__item', {
+    slidesPerView: 2,
+    spaceBetween: 20,
+    pagination: {
+      el: ".price__pagination.swiper-pagination",
+      type: "fraction",
+    }
+  });
 
   // FAQ TOGGLES
   let faqs = document.querySelectorAll('.faq__item');

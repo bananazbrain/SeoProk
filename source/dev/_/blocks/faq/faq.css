@@ -92,3 +92,21 @@
     padding: 50px 0 80px;
   }
 }
+@media screen and (max-width: 992px) {
+  .faq {
+    padding: 50px 0 70px;
+  }
+  .faq__title br {
+    display: none;
+  }
+  .faq__question {
+    min-height: 88px;
+  }
+  .faq__question-title {
+    padding: 15px 77px;
+  }
+  .faq__answer-text {
+    font-size: 17px;
+    line-height: 27px;
+  }
+}

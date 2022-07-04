@@ -49,3 +49,17 @@
     display: none;
   }
 }
+@media screen and (max-width: 992px) {
+  .video {
+    padding: 70px 0;
+  }
+  .video__slider-inner {
+    width: 630px;
+  }
+  .video__slider-img {
+    margin-bottom: 15px;
+  }
+  .video__slider-arrow {
+    margin-top: -5px;
+  }
+}

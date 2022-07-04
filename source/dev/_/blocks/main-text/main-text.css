@@ -73,3 +73,34 @@
     padding-left: 0;
   }
 }
+@media screen and (max-width: 992px) {
+  .main-text {
+    padding: 50px 0 70px;
+  }
+  .main-text__info {
+    color: #272727;
+    padding: 0;
+    background: transparent;
+  }
+  .main-text__info:before {
+    display: none;
+  }
+  .main-text__title {
+    line-height: 38px;
+    margin-bottom: 34px;
+  }
+  .main-text__line {
+    width: 100%;
+    background: #272727;
+  }
+  .main-text__line:before {
+    left: 0;
+    background: #272727;
+  }
+  .main-text__text {
+    line-height: 27px;
+  }
+  .main-text__text p {
+    margin-bottom: 20px;
+  }
+}
