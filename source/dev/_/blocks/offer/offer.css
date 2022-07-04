@@ -71,3 +71,14 @@
 .offer__btn {
   max-width: 244px;
 }
+
+@media screen and (max-width: 1360px) {
+  .offer__img {
+    width: 620px;
+    left: 70px;
+    margin-left: -70px;
+  }
+  .offer__info {
+    width: calc( 100% - 550px);
+  }
+}

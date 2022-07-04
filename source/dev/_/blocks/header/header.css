@@ -192,3 +192,20 @@
   top: -8px;
   transform: rotate(-45deg);
 }
+
+@media screen and (max-width: 1360px) {
+  .header__logo {
+    left: 0;
+  }
+
+  .h-panel__tel {
+    margin-left: 50px;
+  }
+  .h-panel__socials {
+    margin: 0 50px;
+  }
+
+  .h-bar__dev {
+    margin-left: 50px;
+  }
+}

@@ -49,3 +49,12 @@
 .get__text {
   line-height: 33px;
 }
+
+@media screen and (max-width: 1360px) {
+  .get__item {
+    width: calc( 50% - 20px );
+  }
+  .get__info {
+    padding-left: 30px;
+  }
+}

@@ -51,6 +51,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: space-between;
   margin-top: auto;
   transition: 0.3s;
 }
@@ -78,4 +79,10 @@
   transform: translateY(-50%);
   transition: 0.5s;
   left: 98%;
+}
+
+@media screen and (max-width: 1360px) {
+  .voucher__line {
+    width: 340px;
+  }
 }

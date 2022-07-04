@@ -81,3 +81,9 @@
   line-height: 33px;
   transition: 0.3s;
 }
+
+@media screen and (max-width: 1360px) {
+  .faq__title {
+    margin-left: 0;
+  }
+}

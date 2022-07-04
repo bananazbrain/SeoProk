@@ -136,3 +136,12 @@
 .footer__bar-item a:hover {
   opacity: 1;
 }
+
+@media screen and (max-width: 1360px) {
+  .footer__info {
+    max-width: 840px;
+  }
+  .footer__contacts-text {
+    max-width: 300px;
+  }
+}

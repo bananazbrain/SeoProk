@@ -39,3 +39,15 @@
   align-items: center;
   justify-content: center;
 }
+
+@media screen and (max-width: 1360px) {
+  .seo__item {
+    min-height: 260px;
+  }
+  .seo__info {
+    width: calc( 55% - 9.5px );
+  }
+  .seo__img {
+    width: calc( 45% - 9.5px );
+  }
+}

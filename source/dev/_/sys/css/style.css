@@ -101,11 +101,17 @@ path, circle, rect, line {
   padding-left: 10px;
   padding-right: 10px;
   margin: 0 auto;
+  border: 1px solid red;
 }
 .case .case {
   width: auto;
   padding-left: 0;
   padding-right: 0;
+}
+@media screen and (max-width: 1360px) {
+  .case {
+    width: 1200px;
+  }
 }
 @media screen and (max-width: 1220px) {
   .case {

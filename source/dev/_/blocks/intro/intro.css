@@ -98,3 +98,12 @@
   right: -400px;
   bottom: -75px;
 }
+
+@media screen and (max-width: 1360px) {
+  .intro__info {
+    margin-left: 0;
+  }
+  .intro__preview {
+    width: calc( 100% - 492px );
+  }
+}

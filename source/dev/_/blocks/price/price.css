@@ -80,3 +80,18 @@
 .price__btn {
   margin-top: 8px;
 }
+
+@media screen and (max-width: 1360px) {
+  .price__info {
+    padding: 15px 20px 25px;
+  }
+  .price__name {
+    font-size: 22px;
+  }
+  .price__main {
+    padding: 6px 20px 25px;
+  }
+  .price__desc {
+    margin-left: 10px;
+  }
+}
