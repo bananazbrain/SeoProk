@@ -28,6 +28,22 @@
   color: #fff;
   background: #09B559;
 }
+.btn.--b-white {
+  color: #fff;
+  border: 1px solid #fff;
+}
+.btn.--b-white:hover {
+  color: #09B559;
+  background: #fff;
+}
+.btn.--g-white {
+  color: #09B559;
+  background: #fff;
+}
+.btn.--g-white:hover {
+  color: #fff;
+  background: #272727;
+}
 .btn.--green {
   color: #fff;
   background: #09B559;

@@ -168,6 +168,22 @@ path, circle, rect, line {
   color: #fff;
   background: #09B559;
 }
+.btn.--b-white {
+  color: #fff;
+  border: 1px solid #fff;
+}
+.btn.--b-white:hover {
+  color: #09B559;
+  background: #fff;
+}
+.btn.--g-white {
+  color: #09B559;
+  background: #fff;
+}
+.btn.--g-white:hover {
+  color: #fff;
+  background: #272727;
+}
 .btn.--green {
   color: #fff;
   background: #09B559;
@@ -427,10 +443,14 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
   display: flex;
   align-items: center;
   justify-content: center;
+  background: #fff;
   margin-right: 12px;
 }
 .socials__item:last-of-type {
   margin-right: 0;
+}
+.socials__item:hover {
+  background: #272727;
 }
 .socials.--green .socials__item {
   background: #09B559;

@@ -8,29 +8,110 @@
 	&__nav
 		display: flex
 		flex-wrap: wrap
-		&-col
-			max-width: 620px
+		&-main
+			width: 540px
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between
+			margin-right: 114px
 			ul
-				margin-bottom: -18px
+				flex-direction: column
 				li
-					width: 50%
-					margin-bottom: 18px
+					margin-bottom: 14px
+					&:last-of-type
+						margin-bottom: 0
 					a
 						color: #fff
 						font-weight: 700
+						line-height: 25px
 						text-transform: uppercase
 						border-bottom: 1px solid transparent
 					&:hover
 						a
 							border-color: #fff
-			&.--sm
-				ul
-					flex-direction: column
-					li
-						width: 100%
+		&-sub
+			ul
+				flex-direction: column
+				li
+					margin-bottom: 8px
+					&:last-of-type
+						margin-bottom: 0
+					a
+						color: #fff
+						font-weight: 300
+						border-bottom: 1px solid transparent
+					&:hover
 						a
-							font-weight: 300
-							text-transform: none
+							border-color: #fff
+	&__main
+		color: #fff
+		background: $green
+		padding: 24px 0 28px
+	&__inner
+		display: flex
+		flex-wrap: wrap
+		padding-bottom: 13px
+	&__logo
+		max-width: 104px
+		margin-left: 2px
+		margin-right: 26px
+	&__info
+		width: 100%
+		max-width: 916px
+		margin-top: 13px
+	&__contacts
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		justify-content: space-between
+		&-item
+			display: flex
+			flex-wrap: wrap
+			align-items: center
+			font-weight: 700
+		&-icon
+			margin-right: 17px
+		&-text
+			a
+				color: #fff
+	&__elems
+		margin-top: 17px
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+	&__text
+		font-size: 14px
+		line-height: 23px
+		width: 100%
+		max-width: 350px
+		margin-right: 61px
+		position: relative
+		top: 10px
+	&__btns
+		width: 100%
+		max-width: 177px
+		margin-top: 10px
+		margin-left: auto
+	&__btn
+		margin-bottom: 8px
+		&:last-of-type
+			margin-bottom: 0
+	&__bar
+		padding-top: 26px
+		border-top: 1px solid rgba(#fff, .5)
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		justify-content: space-between
+		&-item
+			font-weight: 300
+			p
+				opacity: .6
+			a
+				opacity: .6
+				color: #fff
+				&:hover
+					opacity: 1
 
 @media screen and (max-width: 1220px)
 	// .footer
