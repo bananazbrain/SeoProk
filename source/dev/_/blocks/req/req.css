@@ -28,3 +28,28 @@
 .req__info {
   line-height: 29px;
 }
+
+@media screen and (max-width: 1360px) {
+  .req__text {
+    max-width: 1050px;
+  }
+}
+@media screen and (max-width: 1220px) {
+  .req {
+    padding: 80px 0;
+  }
+  .req__title {
+    margin-bottom: 55px;
+  }
+  .req__text {
+    margin-bottom: 55px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .req {
+    padding: 70px 0;
+  }
+  .req__info {
+    font-size: 16px;
+  }
+}
