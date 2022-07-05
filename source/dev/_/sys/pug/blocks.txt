@@ -66,3 +66,7 @@ include ../../blocks/main-text/main-text
 +style('blog', 'blocks')
 include ../../blocks/blog/blog
 
+//- req 
++style('req', 'blocks')
+include ../../blocks/req/req
+

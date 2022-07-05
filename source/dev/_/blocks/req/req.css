@@ -1,0 +1,30 @@
+.req {
+  padding: 95px 0 82px;
+}
+.req__wrap {
+  margin-left: 3px;
+}
+.req__title {
+  margin-bottom: 65px;
+}
+.req__title a {
+  color: #09B559;
+  border-bottom: 1px solid #09B559;
+}
+.req__title a:hover {
+  border-color: transparent;
+}
+.req__text {
+  font-weight: 700;
+  margin-bottom: 68px;
+}
+.req__text a {
+  color: #09B559;
+  border-bottom: 1px solid #09B559;
+}
+.req__text a:hover {
+  border-color: transparent;
+}
+.req__info {
+  line-height: 29px;
+}
