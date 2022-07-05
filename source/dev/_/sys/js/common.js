@@ -87,8 +87,38 @@ document.addEventListener('DOMContentLoaded', function () {
           slidesPerView: 2,
         },
         993: {
+          slidesPerView: 3,
           spaceBetween: 20,
-        }
+        },
+        1220: {
+          spaceBetween: 33,
+        },
+      }
+    });
+  }
+
+  // BLOG SLIDER
+  let blogSlider = document.querySelector('.blog__slider-inner');
+
+  if (blogSlider) {
+    let blogSliderSwiper = new Swiper(blogSlider, {
+      slidesPerView: 3,
+      spaceBetween: 34,
+      autoHeight: true,
+      speed: 900,
+      navigation: {
+        prevEl: '.blog__slider-arrow.swiper-button-prev',
+        nextEl: '.blog__slider-arrow.swiper-button-next',
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1220: {
+          slidesPerView: 3,
+          spaceBetween: 34,
+        },
       }
     });
   }

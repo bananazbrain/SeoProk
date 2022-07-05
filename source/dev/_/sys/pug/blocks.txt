@@ -62,3 +62,7 @@ include ../../blocks/faq/faq
 +style('main-text', 'blocks')
 include ../../blocks/main-text/main-text
 
+//- blog 
++style('blog', 'blocks')
+include ../../blocks/blog/blog
+

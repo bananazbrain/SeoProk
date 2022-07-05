@@ -202,6 +202,9 @@
   .intro__preview {
     width: calc( 100% - 492px );
   }
+  .intro__stat {
+    width: 490px;
+  }
 }
 @media screen and (max-width: 1220px) {
   .intro {
@@ -255,6 +258,48 @@
     right: -50px;
     bottom: -90px;
   }
+  .intro__stat {
+    width: 430px;
+  }
+  .intro__stat-item:nth-of-type(1) {
+    margin-left: 120px;
+  }
+  .intro__stat-item:nth-of-type(2) {
+    margin-top: -40px;
+  }
+  .intro__stat-item:nth-of-type(3) {
+    margin-top: -100px;
+  }
+  .intro.--about {
+    padding: 70px 0 80px;
+  }
+  .intro.--about .intro__info {
+    width: 490px;
+  }
+  .intro.--about .intro__desc {
+    max-width: 490px;
+  }
+  .intro.--about .intro__text br {
+    display: none;
+  }
+  .intro.--about .intro__preview {
+    width: calc( 100% - 490px );
+  }
+  .intro.--about .intro__shape {
+    top: 0;
+    left: 0;
+    width: 460px;
+  }
+  .intro.--about .intro__circle-item:nth-of-type(2) {
+    width: 120px;
+    height: 120px;
+    bottom: -80px;
+    display: block;
+  }
+  .intro.--about .intro__circle-item:nth-of-type(4) {
+    width: 150px;
+    height: 150px;
+  }
 }
 @media screen and (max-width: 992px) {
   .intro__subtitle {
@@ -270,5 +315,58 @@
   .intro__circle-item:nth-of-type(4) {
     width: 120px;
     height: 120px;
+  }
+  .intro__stat {
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .intro__stat-item:nth-of-type(1) {
+    margin-left: 0;
+  }
+  .intro__stat-item:nth-of-type(2) {
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .intro__stat-item:nth-of-type(3) {
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .intro.--about {
+    padding: 60px 0 70px;
+  }
+  .intro.--about .intro__info {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .intro.--about .intro__title {
+    margin-bottom: 25px;
+  }
+  .intro.--about .intro__desc {
+    margin-left: 0;
+    margin-bottom: 25px;
+  }
+  .intro.--about .intro__text {
+    margin-left: 0;
+    max-width: 670px;
+  }
+  .intro.--about .intro__preview {
+    width: 100%;
+  }
+  .intro.--about .intro__shape {
+    top: -370px;
+    left: 440px;
+  }
+  .intro.--about .intro__circle-item:nth-of-type(2) {
+    left: 120px;
+    bottom: 90px;
+  }
+  .intro.--about .intro__circle-item:nth-of-type(4) {
+    right: -40px;
+    bottom: 100px;
   }
 }

@@ -1,0 +1,84 @@
+@import ../../sys/sass/vars
+
+.blog
+	padding: 80px 0
+	&__title
+		margin-bottom: 56px
+	&__slider
+		&-inner
+			width: 100%
+			max-width: 1148px
+		&-item
+			min-height: 396px
+			background: #F1F1F1
+			padding: 34px 30px 40px 36px
+			display: flex
+			flex-direction: column
+		&-name
+			line-height: 34px
+			margin-bottom: 29px
+		&-text
+			line-height: 28px
+		&-info
+			color: $green
+			padding-top: 28px
+			margin-top: auto
+			display: flex
+			flex-wrap: wrap
+			align-items: center
+			justify-content: space-between
+		&-date
+			font-weight: 700
+			margin-left: 5px
+		&-more
+			margin-right: 5px
+			color: $green
+			border-bottom: 1px solid $green
+			&:hover
+				color: $main
+				border-bottom-color: $main
+		&-arrow
+			margin-top: 0
+			transform: translateY(50%)
+
+@media screen and (max-width: 1360px)
+	.blog
+		&__slider
+			&-inner
+				width: 1090px
+			&-item
+				padding: 25px 20px 30px 30px
+			&-name
+				margin-bottom: 20px
+
+@media screen and (max-width: 1220px)
+	.blog
+		&__slider
+			&-inner
+				width: 870px
+			&-item
+				padding: 34px 30px 40px 36px
+
+@media screen and (max-width: 992px)
+	.blog
+		&__title
+			margin-bottom: 47px
+		&__slider
+			&-inner
+				width: 630px
+			&-item
+				min-height: 370px
+				padding: 20px 25px 25px
+			&-name
+				font-size: 20px
+				line-height: 28px
+				br
+					display: none
+			&-text
+				line-height: 25px
+			&-info
+				padding-top: 20px
+				font-size: 14px
+
+@media screen and (max-width: 767px)
+	// .blog
