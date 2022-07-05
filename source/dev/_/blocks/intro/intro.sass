@@ -81,6 +81,91 @@
 				right: -400px
 				bottom: -75px
 
+	&__stat
+		z-index: 1
+		width: 533px
+		margin-left: auto
+		position: relative
+		&-item
+			width: 100%
+			max-width: 115px
+			position: relative
+			&:nth-of-type(1)
+				margin-left: 145px
+			&:nth-of-type(2)
+				margin-top: -118px
+				margin-left: auto
+			&:nth-of-type(3)
+				margin-top: -60px
+				margin-left: 3px
+			&.wide
+				max-width: 143px
+				.intro
+					&__stat
+						&-value
+							width: 143px
+							height: 143px
+			&.sm
+				.intro
+					&__stat
+						&-value
+							font-size: 30px
+		&-value
+			font-size: 40px
+			font-weight: 700
+			width: 115px
+			height: 115px
+			margin-bottom: 12px
+			border-radius: 50%
+			color: $green
+			background: #fff
+			box-shadow: -5px -4px 22px rgba(255, 255, 255, 0.25), 0px 4px 14px rgba(15, 79, 45, 0.12)
+			display: flex
+			align-items: center
+			justify-content: center
+			text-align: center
+		&-text
+			font-weight: 700
+			line-height: 24px
+			text-align: center
+
+	&.--about
+		padding: 96px 0 83px
+		.intro
+			&__info
+				width: 690px
+				margin-left: 0
+			&__title
+				margin-bottom: 33px
+			&__desc
+				margin-left: 3px
+				margin-bottom: 35px
+			&__text
+				margin-left: 3px
+			&__preview
+				top: 0
+				right: 0
+				width: calc( 100% - 690px )
+			&__shape
+				top: -60px
+				left: 40px
+				width: 510px
+			&__circle
+				&-item
+					&:nth-of-type(1)
+						top: -65px
+					&:nth-of-type(2)
+						bottom: -20px
+					&:nth-of-type(3)
+						top: -96px
+					&:nth-of-type(4)
+						width: 205px
+						height: 205px
+						border-radius: 50%
+						right: 34px
+						bottom: -70px
+						background: linear-gradient(149.21deg, rgba(255, 255, 255, 0.42) 2%, rgba(255, 255, 255, 0) 87.78%)
+
 @media screen and (max-width: 1360px)
 	.intro
 		&__info
