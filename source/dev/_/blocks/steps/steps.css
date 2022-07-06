@@ -37,6 +37,9 @@
 .steps__name {
   margin-bottom: 15px;
 }
+.steps__name br {
+  display: none;
+}
 .steps__desc {
   line-height: 25px;
 }
@@ -99,5 +102,30 @@
   }
   .steps__info {
     padding: 90px 25px 30px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .steps__text {
+    padding-right: 0;
+  }
+  .steps__info {
+    padding: 50px 20px 25px;
+  }
+  .steps__img {
+    width: 65px;
+    height: 65px;
+    left: 15px;
+  }
+  .steps__img img {
+    height: 35px;
+  }
+  .steps__name {
+    margin-bottom: 12px;
+  }
+  .steps__name br {
+    display: block;
+  }
+  .steps__desc {
+    font-size: 14px;
   }
 }

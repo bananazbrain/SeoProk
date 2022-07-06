@@ -138,3 +138,26 @@
     width: calc( 100% - 55px );
   }
 }
+@media screen and (max-width: 580px) {
+  .get__img {
+    width: 45px;
+  }
+  .get__img img {
+    top: 5px;
+    width: 21px;
+  }
+  .get__img:before {
+    width: 45px;
+  }
+  .get__info {
+    width: calc( 100% - 45px );
+    padding-left: 18px;
+  }
+  .get__text {
+    font-size: 14px;
+    line-height: 25px;
+    position: relative;
+    left: -63px;
+    width: calc( 100% + 63px );
+  }
+}

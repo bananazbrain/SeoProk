@@ -76,3 +76,9 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
 .input.--b-white.--error .input__area {
   border-bottom-color: #C00000;
 }
+
+@media screen and (max-width: 580px) {
+  .input.--b-white .input__area {
+    border-bottom-color: #fff;
+  }
+}

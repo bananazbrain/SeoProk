@@ -153,3 +153,14 @@
     margin-top: 48px;
   }
 }
+@media screen and (max-width: 580px) {
+  .offer {
+    padding: 34px 0 45px;
+  }
+  .offer__title {
+    margin-bottom: 23px;
+  }
+  .offer__pick-title {
+    margin-bottom: 40px;
+  }
+}

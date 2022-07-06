@@ -34,6 +34,8 @@
 	&__name
 		margin-bottom: 10px
 		text-transform: uppercase
+		br
+			display: none
 	&__text
 		margin-left: 3px
 		line-height: 25px
@@ -141,4 +143,21 @@
 			width: 370px
 
 @media screen and (max-width: 580px)
-	// .voucher
+	.voucher
+		&__info
+			min-height: 210px
+			padding: 23px 30px 20px 12px
+		&__name
+			font-size: 23px
+			line-height: 36px
+			margin-bottom: 16px
+			br
+				display: block
+		&__main
+			padding: 11px 12px
+		&__value
+			width: calc( 100% - 230px )
+		&__line
+			width: 230px
+			&:before
+				left: 94%

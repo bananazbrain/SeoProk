@@ -110,3 +110,16 @@
     line-height: 32px;
   }
 }
+@media screen and (max-width: 580px) {
+  .main-text__title {
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 30px;
+  }
+  .main-text__text {
+    margin-top: 30px;
+  }
+  .main-text__text p {
+    margin-bottom: 15px;
+  }
+}

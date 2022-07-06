@@ -588,10 +588,45 @@
   }
 }
 @media screen and (max-width: 580px) {
+  .header__logo {
+    max-width: 60px;
+  }
+  .header__callback {
+    width: 32px;
+    height: 32px;
+    margin: 0 30px;
+  }
+  .header__callback img {
+    width: 17px;
+  }
+  .header__callback:before {
+    width: 45px;
+    height: 45px;
+  }
+  .header__callback:after {
+    width: 40px;
+    height: 40px;
+  }
+
   .ham:hover div {
     background: #09B559;
   }
   .ham.--toggle:hover div {
     background: #CCCCCC;
+  }
+
+  @keyframes pulse {
+    0% {
+      width: 32px;
+      height: 32px;
+    }
+    50% {
+      width: 45px;
+      height: 45px;
+    }
+    100% {
+      width: 32px;
+      height: 32px;
+    }
   }
 }

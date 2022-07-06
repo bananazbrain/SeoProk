@@ -49,6 +49,8 @@
 			color: $green
 	&__subtitle
 		margin-bottom: 24px
+		br
+			display: none
 	&__form
 		width: 100%
 		max-width: 482px
@@ -125,6 +127,7 @@
 				font-size: 24px
 				width: calc( 100% - 42px - 45px )
 				padding-left: 25px
+				padding-right: 25px
 				transition: .3s
 			&-arrow
 				display: flex
@@ -153,8 +156,31 @@
 			&-title
 				font-size: 20px
 				padding-left: 18px
+				padding-right: 18px
 		&__subtitle
-			font-size: 18px
+			font-size: 20px
+			line-height: 28px
 
 @media screen and (max-width: 580px)
-	// .include			
+	.include
+		&__title
+			padding-right: 50px
+		&__head
+			&-icon
+				width: 35px
+			&-title
+				font-size: 18px
+				width: calc( 100% - 35px - 32px )
+			&-arrow
+				width: 32px
+				height: 32px
+				svg
+					width: 15px
+		&__subtitle
+			br
+				display: block
+		&__input
+			margin-bottom: 14px
+		&__btn
+			max-width: 100%
+			margin-top: 42px

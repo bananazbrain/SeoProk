@@ -494,7 +494,21 @@
 			visibility: visible
 
 @media screen and (max-width: 580px)
-	// .header
+	.header
+		&__logo
+			max-width: 60px
+		&__callback
+			width: 32px
+			height: 32px
+			margin: 0 30px
+			img
+				width: 17px
+			&:before
+				width: 45px
+				height: 45px
+			&:after
+				width: 40px
+				height: 40px
 
 	.ham
 		&:hover
@@ -504,3 +518,14 @@
 			&:hover
 				div
 					background: $dark-gray
+
+	@keyframes pulse
+		0%
+			width: 32px
+			height: 32px
+		50%
+			width: 45px
+			height: 45px
+		100%
+			width: 32px
+			height: 32px

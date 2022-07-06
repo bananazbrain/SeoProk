@@ -63,3 +63,8 @@
     height: 245px;
   }
 }
+@media screen and (max-width: 767px) {
+  .certs__title {
+    margin-bottom: 23px;
+  }
+}

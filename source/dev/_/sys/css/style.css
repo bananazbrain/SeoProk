@@ -292,6 +292,11 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
   border-bottom-color: #C00000;
 }
 
+@media screen and (max-width: 580px) {
+  .input.--b-white .input__area {
+    border-bottom-color: #fff;
+  }
+}
 .check {
   cursor: pointer;
   transition: 0.3s;
@@ -594,10 +599,34 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
 
   .t1 {
     font-size: 16px;
-    line-height: 25px;
+    line-height: 26px;
   }
 
   .swiper-pagination-fraction {
     font-size: 25px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .h1 {
+    font-size: 30px;
+    line-height: 44px;
+  }
+
+  .h2 {
+    font-size: 23px;
+    line-height: 37px;
+  }
+
+  .h5 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .socials__item {
+    width: 32px;
+    height: 32px;
+  }
+  .socials__item img {
+    width: 17px;
   }
 }

@@ -204,3 +204,28 @@
     font-size: 14px;
   }
 }
+@media screen and (max-width: 580px) {
+  .price__title {
+    width: calc( 100% - 130px );
+    margin-bottom: 20px;
+  }
+  .price__pagination {
+    top: 38px;
+  }
+  .price__info {
+    min-height: 250px;
+    padding: 15px 35px 15px 20px;
+  }
+  .price__rate-title {
+    font-size: 14px;
+  }
+  .price__name {
+    font-size: 18px;
+  }
+  .price__value {
+    font-size: 17px;
+  }
+  .price__value u {
+    font-size: 23px;
+  }
+}

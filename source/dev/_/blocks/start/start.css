@@ -77,3 +77,14 @@
     max-width: 296px;
   }
 }
+@media screen and (max-width: 580px) {
+  .start__img {
+    height: 250px;
+  }
+  .start__title {
+    padding-right: 70px;
+  }
+  .start__btn {
+    max-width: 100%;
+  }
+}

@@ -125,3 +125,17 @@
     height: 75px;
   }
 }
+@media screen and (max-width: 580px) {
+  .seo {
+    padding: 34px 0 80px;
+  }
+  .seo__item {
+    width: 100%;
+    min-height: 200px;
+    padding: 20px 30px;
+  }
+  .seo__info {
+    margin-bottom: 0;
+    padding-right: 50px;
+  }
+}

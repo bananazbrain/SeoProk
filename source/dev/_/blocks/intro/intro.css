@@ -412,3 +412,45 @@
     bottom: -70px;
   }
 }
+@media screen and (max-width: 580px) {
+  .intro {
+    padding: 22px 0 80px;
+    background: #fff;
+  }
+  .intro__title {
+    margin-bottom: 11px;
+  }
+  .intro__subtitle {
+    width: calc( 100% - 37px );
+    padding-right: 120px;
+  }
+  .intro__arrow {
+    right: 0;
+    margin-top: -68px;
+    position: absolute;
+  }
+  .intro__form {
+    max-width: 100%;
+    padding-top: 20px;
+    border-top: 1px solid #CCCCCC;
+  }
+  .intro__desc {
+    margin-bottom: 11px;
+    padding-right: 50px;
+  }
+  .intro__input {
+    margin-bottom: 14px;
+  }
+  .intro__btn {
+    font-size: 18px;
+  }
+  .intro__img {
+    display: none;
+  }
+  .intro__shape {
+    display: none;
+  }
+  .intro__circle {
+    display: none;
+  }
+}
