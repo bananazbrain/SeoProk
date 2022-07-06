@@ -110,3 +110,32 @@
     line-height: 27px;
   }
 }
+@media screen and (max-width: 767px) {
+  .faq__title {
+    margin-bottom: 24px;
+  }
+  .faq__text {
+    margin-bottom: 40px;
+  }
+  .faq__text br {
+    display: none;
+  }
+  .faq__item {
+    margin-bottom: 18px;
+  }
+  .faq__item.--active .faq__answer {
+    padding: 2px 60px 30px;
+    margin-top: -10px;
+  }
+  .faq__question-title {
+    font-size: 16px;
+    line-height: 22px;
+    padding: 15px 60px;
+  }
+  .faq__answer {
+    padding: 0 60px;
+  }
+  .faq__answer-text {
+    font-size: 14px;
+  }
+}

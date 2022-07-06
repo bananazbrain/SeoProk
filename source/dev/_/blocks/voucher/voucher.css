@@ -155,3 +155,18 @@
     width: 550px;
   }
 }
+@media screen and (max-width: 767px) {
+  .voucher__title {
+    margin-bottom: 34px;
+  }
+  .voucher__text {
+    line-height: 22px;
+  }
+  .voucher__value {
+    font-size: 23px;
+    width: calc( 100% - 370px );
+  }
+  .voucher__line {
+    width: 370px;
+  }
+}

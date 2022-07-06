@@ -83,6 +83,9 @@ document.addEventListener('DOMContentLoaded', function () {
         nextEl: '.video__slider-arrow.swiper-button-next',
       },
       breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
         768: {
           slidesPerView: 2,
         },
@@ -182,6 +185,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
       faq.question.addEventListener('click', () => {
         faq.classList.toggle(cls.active);
+      });
+    });
+  }
+
+  // INCLUDE TOGGLES
+  let includeItems = document.querySelectorAll('.include__item');
+
+  if (includeItems && (document.body.offsetWidth < 992)) {
+    includeItems.forEach((includeItem) => {
+      includeItem.question = includeItem.querySelector('.include__head');
+      includeItem.answer = includeItem.querySelector('.include__links');
+
+      includeItem.question.addEventListener('click', () => {
+        includeItem.classList.toggle(cls.active);
       });
     });
   }

@@ -144,8 +144,6 @@
     opacity: 1;
     visibility: visible;
     padding-top: 25px;
-    padding-left: 0;
-    padding-right: 0;
   }
   .include__head {
     margin-bottom: 0;
@@ -164,9 +162,32 @@
     opacity: 0;
     visibility: hidden;
     transition: 0.3s;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .include__link {
+    transition: 0.3s;
   }
   .include__form {
     max-width: 400px;
     margin-left: 0;
+  }
+  .include__btn {
+    max-width: 300px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .include__col {
+    margin-bottom: 25px;
+  }
+  .include__item {
+    margin-bottom: 25px;
+  }
+  .include__head-title {
+    font-size: 20px;
+    padding-left: 18px;
+  }
+  .include__subtitle {
+    font-size: 18px;
   }
 }

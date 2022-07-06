@@ -63,3 +63,20 @@
     margin-top: -5px;
   }
 }
+@media screen and (max-width: 767px) {
+  .video__title {
+    padding-right: 60px;
+  }
+  .video__slider-inner {
+    width: 400px;
+  }
+  .video__slider-img {
+    height: 220px;
+  }
+  .video__slider-name {
+    padding-right: 40px;
+  }
+  .video__slider-arrow {
+    margin-top: 15px;
+  }
+}

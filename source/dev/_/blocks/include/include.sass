@@ -119,8 +119,6 @@
 						opacity: 1
 						visibility: visible
 						padding-top: 25px
-						padding-left: 0
-						padding-right: 0
 		&__head
 			margin-bottom: 0
 			&-title
@@ -135,9 +133,28 @@
 			opacity: 0
 			visibility: hidden
 			transition: .3s
+			padding-left: 0
+			padding-right: 0
+		&__link
+			transition: .3s
 		&__form
 			max-width: 400px
 			margin-left: 0
+		&__btn
+			max-width: 300px
 
 @media screen and (max-width: 767px)
-	// .include
+	.include
+		&__col
+			margin-bottom: 25px
+		&__item
+			margin-bottom: 25px
+		&__head
+			&-title
+				font-size: 20px
+				padding-left: 18px
+		&__subtitle
+			font-size: 18px
+
+@media screen and (max-width: 580px)
+	// .include			

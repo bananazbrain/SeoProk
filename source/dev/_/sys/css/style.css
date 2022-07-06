@@ -101,7 +101,6 @@ path, circle, rect, line {
   padding-left: 10px;
   padding-right: 10px;
   margin: 0 auto;
-  border: 1px solid red;
 }
 .case .case {
   width: auto;
@@ -316,6 +315,7 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
   font-size: 18px;
   font-weight: 400;
   transition: 0.3s;
+  -webkit-tap-highlight-color: transparent;
 }
 .check.--sq .check__point {
   width: 29px;
@@ -357,6 +357,9 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
 }
 .check.--icon .check__icon {
   height: 41px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .check.--icon .check__text {
   font-size: 14px;
@@ -378,16 +381,17 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
   transform: translateY(-3px);
 }
 
-@media screen and (max-width: 1220px) {
-  .check__text {
-    font-size: 16px;
+@media screen and (max-width: 767px) {
+  .check.--icon .check__icon {
+    width: 28px;
+    height: 31px;
+    margin-bottom: 7px;
   }
-  .check.--sq .check__point {
-    width: 25px;
-    height: 25px;
+  .check.--icon .check__icon svg {
+    width: 100%;
   }
-  .check.--sq .check__point:before {
-    width: 16px;
+  .check.--icon .check__text {
+    font-size: 13px;
   }
 }
 .h1 {
@@ -555,12 +559,42 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
   }
 
   .h4 {
-    font-size: 22px;
+    font-size: 21px;
     line-height: 30px;
   }
 
   .t1 {
     font-size: 17px;
     line-height: 27px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .h1 {
+    font-size: 35px;
+    line-height: 44px;
+  }
+
+  .h2 {
+    font-size: 27px;
+    line-height: 40px;
+  }
+
+  .h5 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .h6 {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .t1 {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .swiper-pagination-fraction {
+    font-size: 25px;
   }
 }

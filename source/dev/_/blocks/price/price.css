@@ -157,3 +157,50 @@
     justify-content: flex-end;
   }
 }
+@media screen and (max-width: 767px) {
+  .price__title {
+    margin-bottom: 30px;
+  }
+  .price__pagination {
+    top: 2px;
+  }
+  .price__info {
+    min-height: 270px;
+    padding: 15px 20px;
+  }
+  .price__rate {
+    margin-bottom: 20px;
+  }
+  .price__rate-icon {
+    width: 36px;
+  }
+  .price__rate-title {
+    font-size: 17px;
+    width: calc( 100% - 36px );
+    padding-left: 16px;
+  }
+  .price__name {
+    font-size: 20px;
+    margin-bottom: 11px;
+  }
+  .price__text {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .price__main {
+    min-height: auto;
+    padding: 6px 23px 20px;
+  }
+  .price__desc {
+    margin-left: 24px;
+  }
+  .price__value {
+    font-size: 18px;
+  }
+  .price__value u {
+    font-size: 25px;
+  }
+  .price__note {
+    font-size: 14px;
+  }
+}

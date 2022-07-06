@@ -106,10 +106,6 @@
     max-width: 100%;
     margin-bottom: 20px;
   }
-  .offer__check {
-    width: 100%;
-    max-width: 120px;
-  }
   .offer__img {
     order: 2;
     width: 500px;
@@ -138,5 +134,22 @@
   }
   .offer__img {
     display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .offer {
+    padding: 40px 0 55px;
+  }
+  .offer__title {
+    margin-bottom: 33px;
+  }
+  .offer__pick {
+    margin-bottom: 38px;
+  }
+  .offer__pick-check {
+    margin-right: 36px;
+  }
+  .offer__actions {
+    margin-top: 48px;
   }
 }

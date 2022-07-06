@@ -1,98 +1,103 @@
 @import ../../sys/sass/vars
 
 .check
-  cursor: pointer
-  transition: .3s
-  &__input
-    display: none
-  &__wrap
-    display: flex
-    flex-wrap: wrap
-    align-items: center
-    position: relative
-  &__point
-    position: relative
-  &__icon
-    transition: .3s
-  &__text
-    font-size: 18px
-    font-weight: 400
-    transition: .3s
+	cursor: pointer
+	transition: .3s
+	&__input
+		display: none
+	&__wrap
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		position: relative
+	&__point
+		position: relative
+	&__icon
+		transition: .3s
+	&__text
+		font-size: 18px
+		font-weight: 400
+		transition: .3s
+		-webkit-tap-highlight-color: transparent
 
-  &.--sq
-    .check
-      &__point
-        width: 29px
-        height: 29px
-        border: 1px solid $main
-        &:before
-          content: ""
-          width: 18px
-          height: 13px
-          top: 50%
-          left: 50%
-          transform: translate(-50%, -50%) scale(0)
-          transition: .3s
-          position: absolute
-          background: url('../../sys/imgs/check.svg') no-repeat
-          opacity: 0
-          visibility: hidden
-      &__text
-        width: calc( 100% - 29px )
-        padding-left: 15px
-    &.--white
-      .check
-        &__point
-          border-color: #fff
-          &:before
-            background: url('../../sys/imgs/check-white.svg') no-repeat
-    &.--checked
-      .check
-        &__point
-          &:before
-            opacity: 1
-            visibility: visible
-            transform: translate(-50%, -50%) scale(1)
+	&.--sq
+		.check
+			&__point
+				width: 29px
+				height: 29px
+				border: 1px solid $main
+				&:before
+					content: ""
+					width: 18px
+					height: 13px
+					top: 50%
+					left: 50%
+					transform: translate(-50%, -50%) scale(0)
+					transition: .3s
+					position: absolute
+					background: url('../../sys/imgs/check.svg') no-repeat
+					opacity: 0
+					visibility: hidden
+			&__text
+				width: calc( 100% - 29px )
+				padding-left: 15px
+		&.--white
+			.check
+				&__point
+					border-color: #fff
+					&:before
+						background: url('../../sys/imgs/check-white.svg') no-repeat
+		&.--checked
+			.check
+				&__point
+					&:before
+						opacity: 1
+						visibility: visible
+						transform: translate(-50%, -50%) scale(1)
 
-  &.--icon
-    .check
-      &__wrap
-        align-items: center
-        justify-content: center
-        flex-direction: column
-      &__icon
-        height: 41px
-      &__text
-        font-size: 14px
-        font-weight: 700
-    &.--checked
-      .check
-        &__icon
-          svg
-            path, rect, circle, line
-              &[fill]
-                fill: $green
-              &[stroke]
-                stroke: $green
-        &__text
-          color: $green
-      &:hover
-        .check
-          &__icon
-            transform: translateY(0)
-    &:hover
-      .check
-        &__icon
-          transform: translateY(-3px)
+	&.--icon
+		.check
+			&__wrap
+				align-items: center
+				justify-content: center
+				flex-direction: column
+			&__icon
+				height: 41px
+				display: flex
+				align-items: center
+				justify-content: center
+			&__text
+				font-size: 14px
+				font-weight: 700
+		&.--checked
+			.check
+				&__icon
+					svg
+						path, rect, circle, line
+							&[fill]
+								fill: $green
+							&[stroke]
+								stroke: $green
+				&__text
+					color: $green
+			&:hover
+				.check
+					&__icon
+						transform: translateY(0)
+		&:hover
+			.check
+				&__icon
+					transform: translateY(-3px)
 
-@media screen and (max-width: 1220px)
-  .check
-    &__text
-      font-size: 16px
-    &.--sq
-      .check
-        &__point
-          width: 25px
-          height: 25px
-          &:before
-            width: 16px
+@media screen and (max-width: 767px)
+	.check
+		&.--icon
+			.check
+				&__icon
+					width: 28px
+					height: 31px
+					margin-bottom: 7px
+					svg
+						width: 100%
+				&__text
+					font-size: 13px

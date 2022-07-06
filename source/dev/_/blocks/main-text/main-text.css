@@ -75,7 +75,7 @@
 }
 @media screen and (max-width: 992px) {
   .main-text {
-    padding: 50px 0 70px;
+    padding: 60px 0 55px;
   }
   .main-text__info {
     color: #272727;
@@ -102,5 +102,11 @@
   }
   .main-text__text p {
     margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .main-text__title {
+    font-size: 22px;
+    line-height: 32px;
   }
 }

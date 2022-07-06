@@ -21,6 +21,7 @@
   font-size: 18px;
   font-weight: 400;
   transition: 0.3s;
+  -webkit-tap-highlight-color: transparent;
 }
 .check.--sq .check__point {
   width: 29px;
@@ -62,6 +63,9 @@
 }
 .check.--icon .check__icon {
   height: 41px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .check.--icon .check__text {
   font-size: 14px;
@@ -83,15 +87,16 @@
   transform: translateY(-3px);
 }
 
-@media screen and (max-width: 1220px) {
-  .check__text {
-    font-size: 16px;
+@media screen and (max-width: 767px) {
+  .check.--icon .check__icon {
+    width: 28px;
+    height: 31px;
+    margin-bottom: 7px;
   }
-  .check.--sq .check__point {
-    width: 25px;
-    height: 25px;
+  .check.--icon .check__icon svg {
+    width: 100%;
   }
-  .check.--sq .check__point:before {
-    width: 16px;
+  .check.--icon .check__text {
+    font-size: 13px;
   }
 }

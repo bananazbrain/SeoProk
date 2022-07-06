@@ -82,3 +82,22 @@
     padding: 110px 25px 30px;
   }
 }
+@media screen and (max-width: 767px) {
+  .steps__text {
+    padding-right: 40px;
+    margin-bottom: 64px;
+  }
+  .steps__text br {
+    display: none;
+  }
+  .steps__img {
+    width: 100px;
+    height: 100px;
+  }
+  .steps__img img {
+    height: 55px;
+  }
+  .steps__info {
+    padding: 90px 25px 30px;
+  }
+}

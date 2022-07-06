@@ -66,3 +66,14 @@
     display: none;
   }
 }
+@media screen and (max-width: 767px) {
+  .start__title {
+    margin-bottom: 38px;
+  }
+  .start__desc {
+    font-size: 18px;
+  }
+  .start__btn {
+    max-width: 296px;
+  }
+}
