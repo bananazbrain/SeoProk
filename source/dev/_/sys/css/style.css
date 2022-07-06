@@ -468,6 +468,9 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
   background: #fff;
   margin-right: 12px;
 }
+.socials__item img {
+  width: 19px;
+}
 .socials__item:last-of-type {
   margin-right: 0;
 }

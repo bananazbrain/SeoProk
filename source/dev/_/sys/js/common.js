@@ -47,10 +47,12 @@ document.addEventListener('DOMContentLoaded', function () {
   }, 500);
 
   // HEADER MENU NAV
+  let menuHam = document.querySelector('.ham');
   let menuNav = document.querySelector('.header__main');
   let menuBg = document.querySelector('.header__bg');
   let menuElemsFix = document.querySelectorAll('.menu-fix');
-  let menuHam = document.querySelector('.ham');
+  let menuElemsHide = document.querySelectorAll('.menu-hide');
+  let menuElemsShow = document.querySelectorAll('.menu-show');
 
   if (menuHam) {
     for (let i = 0; i < 3; i++) {
@@ -68,6 +70,18 @@ document.addEventListener('DOMContentLoaded', function () {
       body.classList.toggle('overflow-disable');
       inner.classList.toggle('overflow-disable');
     });
+
+    if (document.body.offsetWidth < 768) {
+      menuHam.addEventListener('click', () => {
+        menuNav.classList.toggle(cls.active)
+        menuElemsHide.forEach((elemHide) => {
+          elemHide.classList.toggle(cls.hide)
+        })
+        menuElemsShow.forEach((elemShow) => {
+          elemShow.classList.toggle(cls.show)
+        })
+      })
+    }
   }
 
   // VIDEO SLIDER
@@ -190,17 +204,17 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // INCLUDE TOGGLES
-  let includeItems = document.querySelectorAll('.include__item');
+  // let includeItems = document.querySelectorAll('.include__item');
 
-  if (includeItems && (document.body.offsetWidth < 992)) {
-    includeItems.forEach((includeItem) => {
-      includeItem.question = includeItem.querySelector('.include__head');
-      includeItem.answer = includeItem.querySelector('.include__links');
+  // if (includeItems && (document.body.offsetWidth < 992)) {
+  //   includeItems.forEach((includeItem) => {
+  //     includeItem.question = includeItem.querySelector('.include__head');
+  //     includeItem.answer = includeItem.querySelector('.include__links');
 
-      includeItem.question.addEventListener('click', () => {
-        includeItem.classList.toggle(cls.active);
-      });
-    });
-  }
+  //     includeItem.question.addEventListener('click', () => {
+  //       includeItem.classList.toggle(cls.active);
+  //     });
+  //   });
+  // }
 
 })

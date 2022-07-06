@@ -5,6 +5,13 @@ header.header.an.fadeIn
 		.header__wrap
 			a.header__logo.logo(href="index.html")
 				img(src="_/uploads/logos/logo.svg", alt="")
+			.header__socials.socials.--green.menu-hide
+				a.socials__item(href="" target="_blank")
+					img(src="_/uploads/icons/socials/tg.svg", alt="")
+				a.socials__item(href="" target="_blank")
+					img(src="_/uploads/icons/socials/wa.svg", alt="")
+				a.socials__item(href="" target="_blank")
+					img(src="_/uploads/icons/socials/vk.svg", alt="")
 			.header__main
 				.header__panel.h-panel
 					.h-panel__nav.menu-fix
@@ -25,11 +32,11 @@ header.header.an.fadeIn
 						.h-panel__tel-text +7 929 861-10-11
 					.h-panel__socials.socials.--green
 						a.socials__item(href="" target="_blank")
-							img(src="_/uploads/icons/socials/insta.png", alt="")
-						a.socials__item(href="" target="_blank")
-							img(src="_/uploads/icons/socials/tg.png", alt="")
+							img(src="_/uploads/icons/socials/tg.svg", alt="")
 						a.socials__item(href="" target="_blank")
 							img(src="_/uploads/icons/socials/wa.svg", alt="")
+						a.socials__item(href="" target="_blank")
+							img(src="_/uploads/icons/socials/vk.svg", alt="")
 					a.h-panel__btn.btn.--green.--sm(href="javascript:;" data-src="#modal-callback" data-popup="") Заказать звонок
 				.header__bar.h-bar
 					.h-bar__nav.menu-fix
@@ -53,7 +60,8 @@ header.header.an.fadeIn
 								a(href="") КАЛЬКУЛЯТОР
 					a.h-bar__dev(href="https://xn----8sbonicej5a9gsc.xn--p1ai/" target="_blank")
 						img(src="_/uploads/logos/logo-dev.svg", alt="")
-			a.header__callback(href="javascript:;" data-src="#modal-callback" data-popup="")
+			a.header__callback(href="tel:79298611011").menu-hide
 				img(src="_/uploads/icons/tel-white.svg", alt="")
+			a.header__btn.btn.--green.--sm(href="javascript:;" data-src="#modal-callback" data-popup="").menu-show Заказать звонок
 			.header__ham.ham
 	.header__bg

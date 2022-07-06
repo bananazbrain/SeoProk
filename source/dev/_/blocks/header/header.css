@@ -9,6 +9,9 @@
   max-width: 110px;
   position: relative;
 }
+.header__socials {
+  display: none;
+}
 .header__main {
   width: 100%;
   max-width: calc( 100% - 110px );
@@ -75,6 +78,14 @@
 .header__callback:hover:before, .header__callback:hover:after {
   width: 34px;
   height: 34px;
+}
+.header__btn {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  pointer-events: none;
+  user-select: none;
+  max-width: 220px;
 }
 .header__bg {
   z-index: 10;
@@ -363,12 +374,15 @@
   }
 }
 @media screen and (max-width: 992px) {
+  .header {
+    padding: 10px 0 0;
+  }
   .header__logo {
     top: 0;
     max-width: 90px;
   }
   .header__main {
-    max-width: calc( 100% - 95px - 27px );
+    max-width: calc( 100% - 90px - 27px );
     padding-right: 30px;
   }
   .header__panel {
@@ -475,12 +489,109 @@
   }
 }
 @media screen and (max-width: 767px) {
-  .header__main {
-    opacity: 0;
-    visibility: hidden;
-    position: fixed;
+  .header {
+    background: #fff;
+  }
+  .header__logo {
+    max-width: 70px;
+  }
+  .header__socials {
+    display: flex;
+    margin-left: auto;
   }
   .header__callback {
     display: flex;
+    margin: 0 40px;
+  }
+  .header__main {
+    z-index: 11;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    height: calc( 100% - 84px );
+    max-width: 560px;
+    padding: 30px 10px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    transition: 0.3s;
+    opacity: 0;
+    visibility: hidden;
+    overflow: auto;
+    scrollbar-width: none;
+  }
+  .header__main::-webkit-scrollbar {
+    width: 0;
+  }
+  .header__main.--active {
+    opacity: 1;
+    visibility: visible;
+  }
+  .header__bar {
+    order: 1;
+  }
+  .header__panel {
+    order: 2;
+  }
+  .header__btn {
+    right: 60px;
+    pointer-events: all;
+    user-select: auto;
+  }
+  .header__btn.--sm {
+    min-height: 40px;
+  }
+  .header__bg {
+    bottom: 0;
+    height: calc( 100% - 84px );
+  }
+
+  .h-panel__nav {
+    padding: 25px 0;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #CCCCCC;
+  }
+  .h-panel__nav ul li {
+    margin-bottom: 10px;
+  }
+  .h-panel__tel {
+    margin-left: 0;
+    margin-right: auto;
+  }
+  .h-panel__socials {
+    margin: 0;
+  }
+  .h-panel__btn {
+    display: none;
+  }
+
+  .menu-fix {
+    top: 0 !important;
+    left: 0 !important;
+    position: relative;
+  }
+
+  .menu-hide {
+    opacity: 1;
+    visibility: visible;
+  }
+  .menu-hide.--hide {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .menu-show.--show {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@media screen and (max-width: 580px) {
+  .ham:hover div {
+    background: #09B559;
+  }
+  .ham.--toggle:hover div {
+    background: #CCCCCC;
   }
 }

@@ -10,6 +10,8 @@
 		left: 2px
 		max-width: 110px
 		position: relative
+	&__socials
+		display: none
 	&__main
 		width: 100%
 		max-width: calc( 100% - 110px )
@@ -67,6 +69,13 @@
 			&:before, &:after
 				width: 34px
 				height: 34px
+	&__btn
+		opacity: 0
+		visibility: hidden
+		position: absolute
+		pointer-events: none
+		user-select: none
+		max-width: 220px
 	&__bg
 		z-index: 10
 		width: 100%
@@ -314,11 +323,12 @@
 
 @media screen and (max-width: 992px)
 	.header
+		padding: 10px 0 0
 		&__logo
 			top: 0
 			max-width: 90px
 		&__main
-			max-width: calc( 100% - 95px - 27px )
+			max-width: calc( 100% - 90px - 27px )
 			padding-right: 30px
 		&__panel
 			padding: 0
@@ -404,12 +414,93 @@
 
 @media screen and (max-width: 767px)
 	.header
-		&__main
-			opacity: 0
-			visibility: hidden
-			position: fixed
+		background: #fff
+		&__logo
+			max-width: 70px
+		&__socials
+			display: flex
+			margin-left: auto
 		&__callback
 			display: flex
+			margin: 0 40px
+		&__main
+			z-index: 11
+			left: 0
+			right: 0
+			bottom: 0
+			margin: 0 auto
+			height: calc( 100% - 84px )
+			max-width: 560px
+			padding: 30px 10px
+			position: fixed
+			display: flex
+			flex-direction: column
+			background: #fff
+			transition: .3s
+			opacity: 0
+			visibility: hidden
+			overflow: auto
+			scrollbar-width: none
+			&::-webkit-scrollbar
+				width: 0
+			&.--active
+				opacity: 1
+				visibility: visible
+		&__bar
+			order: 1
+		&__panel
+			order: 2
+		&__btn
+			right: 60px
+			pointer-events: all
+			user-select: auto
+			&.--sm
+				min-height: 40px
+		&__bg
+			bottom: 0
+			height: calc( 100% - 84px )
+
+	.h-panel
+		&__nav
+			padding: 25px 0
+			margin-bottom: 25px
+			border-bottom: 1px solid $dark-gray
+			ul
+				li
+					margin-bottom: 10px
+		&__tel
+			margin-left: 0
+			margin-right: auto
+		&__socials
+			margin: 0
+		&__btn
+			display: none
+
+	.menu-fix
+		top: 0 !important
+		left: 0 !important
+		position: relative
+
+	.menu-hide
+		opacity: 1
+		visibility: visible
+		&.--hide
+			opacity: 0
+			visibility: hidden
+
+	.menu-show
+		&.--show
+			opacity: 1
+			visibility: visible
 
 @media screen and (max-width: 580px)
 	// .header
+
+	.ham
+		&:hover
+			div
+				background: $green
+		&.--toggle
+			&:hover
+				div
+					background: $dark-gray
