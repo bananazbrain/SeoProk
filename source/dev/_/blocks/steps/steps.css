@@ -120,12 +120,29 @@
     height: 35px;
   }
   .steps__name {
-    margin-bottom: 12px;
+    margin-bottom: 11px;
   }
   .steps__name br {
     display: block;
   }
   .steps__desc {
     font-size: 14px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .steps__title {
+    margin-left: 3px;
+  }
+  .steps__text {
+    line-height: 28px;
+    margin-bottom: 68px;
+  }
+  .steps__img {
+    left: 10px;
+    width: 59px;
+    height: 59px;
+  }
+  .steps__info {
+    padding: 47px 11px 20px;
   }
 }

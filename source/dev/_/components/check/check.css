@@ -100,3 +100,8 @@
     font-size: 13px;
   }
 }
+@media screen and (max-width: 390px) {
+  .check.--icon .check__text {
+    font-size: 11px;
+  }
+}

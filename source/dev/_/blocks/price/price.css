@@ -229,3 +229,32 @@
     font-size: 23px;
   }
 }
+@media screen and (max-width: 390px) {
+  .price__title {
+    width: calc( 100% - 60px );
+  }
+  .price__info {
+    padding: 11px 15px 15px 23px;
+  }
+  .price__text {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .price__value {
+    font-size: 16px;
+  }
+  .price__value u {
+    font-size: 21px;
+    margin-right: 2px;
+  }
+  .price__note {
+    font-size: 12px;
+  }
+  .price__btn {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  .price__btn.--md {
+    min-height: 38px;
+  }
+}

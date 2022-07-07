@@ -88,3 +88,17 @@
     max-width: 100%;
   }
 }
+@media screen and (max-width: 390px) {
+  .start {
+    padding-bottom: 83px;
+  }
+  .start__img {
+    height: 212px;
+  }
+  .start__title {
+    padding-right: 0;
+  }
+  .start__desc {
+    margin-bottom: 56px;
+  }
+}

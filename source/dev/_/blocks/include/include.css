@@ -4,6 +4,9 @@
 .include__title {
   margin-bottom: 45px;
 }
+.include__title br {
+  display: none;
+}
 .include__list {
   display: flex;
   flex-wrap: wrap;
@@ -182,10 +185,10 @@
 }
 @media screen and (max-width: 767px) {
   .include__col {
-    margin-bottom: 25px;
+    margin-bottom: 26px;
   }
   .include__item {
-    margin-bottom: 25px;
+    margin-bottom: 26px;
   }
   .include__head-title {
     font-size: 20px;
@@ -219,10 +222,36 @@
     display: block;
   }
   .include__input {
-    margin-bottom: 14px;
+    margin-bottom: 16px;
   }
   .include__btn {
     max-width: 100%;
-    margin-top: 42px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .include__title {
+    padding-right: 0;
+  }
+  .include__title br {
+    display: block;
+  }
+  .include__item.--active .include__links {
+    padding-top: 37px;
+  }
+  .include__links {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .include__link {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+  .include__form {
+    max-width: 100%;
+    margin-top: 82px;
+  }
+  .include__subtitle {
+    font-size: 18px;
   }
 }

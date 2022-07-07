@@ -183,14 +183,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
   new MobileSlider(992, '.price__list', '.price__list-wrap', '.price__item', {
     slidesPerView: 2,
-    spaceBetween: 20,
+    spaceBetween: 21,
     pagination: {
       el: ".price__pagination.swiper-pagination",
       type: "fraction",
     },
     breakpoints: {
       0: {
-        slidesPerView: 1.2,
+        slidesPerView: 1.25,
       },
       581: {
         slidesPerView: 2,

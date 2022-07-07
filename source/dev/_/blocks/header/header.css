@@ -607,6 +607,47 @@
     width: 40px;
     height: 40px;
   }
+  .header__btn {
+    max-width: 190px;
+  }
+  .header__main {
+    max-width: 390px;
+    height: calc( 100% - 74px );
+  }
+  .header__bg {
+    height: calc( 100% - 74px );
+  }
+
+  .h-panel__tel-icon {
+    width: 28px;
+    height: 28px;
+    background: #09B559;
+  }
+  .h-panel__tel-icon svg {
+    width: 14px;
+  }
+  .h-panel__tel-icon svg path {
+    fill: #fff;
+  }
+  .h-panel__tel-icon:before, .h-panel__tel-icon:after {
+    display: block;
+  }
+  .h-panel__tel-icon:before {
+    width: 40px;
+    height: 40px;
+  }
+  .h-panel__tel-icon:after {
+    width: 34px;
+    height: 34px;
+  }
+  .h-panel__tel-text {
+    width: calc( 100% - 28px );
+    padding-left: 16px;
+  }
+
+  .h-bar__nav ul li a {
+    font-size: 16px;
+  }
 
   .ham:hover div {
     background: #09B559;
@@ -628,5 +669,46 @@
       width: 32px;
       height: 32px;
     }
+  }
+}
+@media screen and (max-width: 390px) {
+  .header__logo {
+    max-width: 36px;
+  }
+  .header__socials {
+    margin-top: -1px;
+  }
+  .header__callback {
+    width: 28px;
+    height: 28px;
+    margin: -1px 36px 0;
+  }
+  .header__callback img {
+    width: 14px;
+  }
+  .header__btn {
+    font-size: 14px;
+    max-width: 172px;
+  }
+  .header__btn.--sm {
+    min-height: 35px;
+  }
+  .header__main {
+    max-width: 390px;
+    height: calc( 100% - 48px );
+  }
+  .header__bg {
+    height: calc( 100% - 48px );
+  }
+
+  .h-panel__tel-text {
+    font-size: 14px;
+  }
+  .h-panel__socials .socials__item {
+    width: 23px;
+    height: 23px;
+  }
+  .h-panel__socials .socials__item img {
+    width: 13px;
   }
 }

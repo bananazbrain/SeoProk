@@ -4,6 +4,8 @@
 	padding-bottom: 87px
 	&__title
 		margin-bottom: 45px
+		br
+			display: none
 	&__list
 		display: flex
 		flex-wrap: wrap
@@ -149,9 +151,9 @@
 @media screen and (max-width: 767px)
 	.include
 		&__col
-			margin-bottom: 25px
+			margin-bottom: 26px
 		&__item
-			margin-bottom: 25px
+			margin-bottom: 26px
 		&__head
 			&-title
 				font-size: 20px
@@ -180,7 +182,30 @@
 			br
 				display: block
 		&__input
-			margin-bottom: 14px
+			margin-bottom: 16px
 		&__btn
 			max-width: 100%
-			margin-top: 42px
+
+@media screen and (max-width: 390px)
+	.include
+		&__title
+			padding-right: 0
+			br
+				display: block
+		&__item
+			&.--active
+				.include
+					&__links
+						padding-top: 37px
+		&__links
+			padding-left: 5px
+			padding-right: 5px
+		&__link
+			font-size: 14px
+			line-height: 20px
+			margin-bottom: 20px
+		&__form
+			max-width: 100%
+			margin-top: 82px
+		&__subtitle
+			font-size: 18px

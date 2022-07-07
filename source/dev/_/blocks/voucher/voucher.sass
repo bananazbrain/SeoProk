@@ -108,7 +108,7 @@
 			margin: 0
 		&__item
 			width: 100%
-			margin: 0 0 27px
+			margin: 0 0 28px
 			box-shadow: none
 			border: none
 			&:last-of-type
@@ -161,3 +161,19 @@
 			width: 230px
 			&:before
 				left: 94%
+
+@media screen and (max-width: 390px)
+	.voucher
+		&__title
+			max-width: 140px
+		&__info
+			min-height: 227px
+			padding: 23px 12px 20px 10px
+		&__text
+			font-size: 14px
+		&__value
+			width: calc( 100% - 164px )
+		&__line
+			width: 164px
+			&:before
+				left: 92%

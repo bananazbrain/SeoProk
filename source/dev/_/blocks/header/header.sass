@@ -509,6 +509,42 @@
 			&:after
 				width: 40px
 				height: 40px
+		&__btn
+			max-width: 190px
+		&__main
+			max-width: 390px
+			height: calc( 100% - 74px )
+		&__bg
+			height: calc( 100% - 74px )
+
+	.h-panel
+		&__tel
+			&-icon
+				width: 28px
+				height: 28px
+				background: $green
+				svg
+					width: 14px
+					path
+						fill: #fff
+				&:before, &:after
+					display: block
+				&:before
+					width: 40px
+					height: 40px
+				&:after
+					width: 34px
+					height: 34px
+			&-text
+				width: calc( 100% - 28px )
+				padding-left: 16px
+
+	.h-bar
+		&__nav
+			ul
+				li
+					a
+						font-size: 16px
 
 	.ham
 		&:hover
@@ -529,3 +565,38 @@
 		100%
 			width: 32px
 			height: 32px
+
+@media screen and (max-width: 390px)
+	.header
+		&__logo
+			max-width: 36px
+		&__socials
+			margin-top: -1px
+		&__callback
+			width: 28px
+			height: 28px
+			margin: -1px 36px 0
+			img
+				width: 14px
+		&__btn
+			font-size: 14px
+			max-width: 172px
+			&.--sm
+				min-height: 35px
+		&__main
+			max-width: 390px
+			height: calc( 100% - 48px )
+		&__bg
+			height: calc( 100% - 48px )
+
+	.h-panel
+		&__tel
+			&-text
+				font-size: 14px
+		&__socials
+			.socials
+				&__item
+					width: 23px
+					height: 23px
+					img
+						width: 13px

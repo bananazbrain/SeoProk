@@ -454,3 +454,18 @@
     display: none;
   }
 }
+@media screen and (max-width: 390px) {
+  .intro__subtitle {
+    margin-bottom: 17px;
+    padding-right: 70px;
+  }
+  .intro__arrow {
+    margin-top: -62px;
+  }
+  .intro__form {
+    padding-top: 14px;
+  }
+  .intro__desc {
+    padding-right: 0;
+  }
+}

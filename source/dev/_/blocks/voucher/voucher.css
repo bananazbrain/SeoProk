@@ -131,7 +131,7 @@
   }
   .voucher__item {
     width: 100%;
-    margin: 0 0 27px;
+    margin: 0 0 28px;
     box-shadow: none;
     border: none;
   }
@@ -197,5 +197,26 @@
   }
   .voucher__line:before {
     left: 94%;
+  }
+}
+@media screen and (max-width: 390px) {
+  .voucher__title {
+    max-width: 140px;
+  }
+  .voucher__info {
+    min-height: 227px;
+    padding: 23px 12px 20px 10px;
+  }
+  .voucher__text {
+    font-size: 14px;
+  }
+  .voucher__value {
+    width: calc( 100% - 164px );
+  }
+  .voucher__line {
+    width: 164px;
+  }
+  .voucher__line:before {
+    left: 92%;
   }
 }

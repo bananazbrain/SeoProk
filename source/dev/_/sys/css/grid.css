@@ -1,8 +1,7 @@
 .case {
   position: relative;
   width: 1330px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 0 10px;
   margin: 0 auto;
 }
 .case .case {
@@ -35,9 +34,10 @@
     width: 390px;
   }
 }
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 390px) {
   .case {
     width: 100%;
+    padding: 0 12px;
   }
 }
 
