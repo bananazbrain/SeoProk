@@ -58,6 +58,10 @@
 
 .page
 	padding-top: 37px
+	padding-bottom: 80px
+	&__title
+		margin-bottom: 40px
+		display: block
 
 .page-text
 	padding: 38px 0 82px
@@ -192,6 +196,52 @@
 		height: 100%
 		object-fit: cover
 
+.pagination
+	display: flex
+	flex-wrap: wrap
+	align-items: center
+	justify-content: center
+	margin-top: 70px
+	&__arrow
+		width: 37px
+		height: 37px
+		display: flex
+		align-items: center
+		justify-content: center
+		border: 1px solid $main
+		background: $main
+		svg
+			path
+				fill: #fff
+		&:hover
+			background: $green
+			border-color: $green
+		&.--disabled
+			cursor: default
+			background: transparent
+			svg
+				path
+					fill: $main
+	&__links
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		margin: 0 20px
+	&__link
+		font-size: 18px
+		margin-right: 10px
+		&:last-of-type
+			margin-right: 0
+		&:hover
+			color: $green
+		&.--active
+			color: $green
+			font-weight: 700
+	&__inter
+		cursor: default
+		margin-right: 10px
+
+// SLIDER
 .swiper-button-prev, .swiper-button-next
 	z-index: 50
 	width: auto

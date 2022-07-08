@@ -170,8 +170,37 @@ document.addEventListener('DOMContentLoaded', function () {
         },
       }
     });
-
   }
+
+  // PRICE SLIDER
+  new SwiperIniter(992, 'more', 'price__list', 'price__list-wrap', 'price__item', {
+    slidesPerView: 2,
+    spaceBetween: 21,
+    speed: 900,
+    pagination: {
+      el: ".price__pagination.swiper-pagination",
+      type: "fraction",
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1.25,
+      },
+      581: {
+        slidesPerView: 2,
+      },
+    }
+  });
+
+  // CERTS SLIDER
+  new SwiperIniter(992, 'more', 'certs__list', 'certs__list-wrap', 'certs__item', {
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+    speed: 900,
+    navigation: {
+      prevEl: '.certs__arrow.swiper-button-prev',
+      nextEl: '.certs__arrow.swiper-button-next',
+    },
+  });
 
   // BLOG SLIDER
   let blogSlider = document.querySelector('.blog__slider-inner');
@@ -210,35 +239,16 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // PRICE SLIDER
-  new SwiperIniter(992, 'more', 'price__list', 'price__list-wrap', 'price__item', {
-    slidesPerView: 2,
-    spaceBetween: 21,
-    speed: 900,
-    pagination: {
-      el: ".price__pagination.swiper-pagination",
-      type: "fraction",
-    },
-    breakpoints: {
-      0: {
-        slidesPerView: 1.25,
-      },
-      581: {
-        slidesPerView: 2,
-      },
-    }
-  });
+  // WORKS SLIDER
+  let worksSlider = document.querySelector('.works__links');
 
-  // CERTS SLIDER
-  new SwiperIniter(992, 'more', 'certs__list', 'certs__list-wrap', 'certs__item', {
-    slidesPerView: 'auto',
-    spaceBetween: 20,
-    speed: 900,
-    navigation: {
-      prevEl: '.certs__arrow.swiper-button-prev',
-      nextEl: '.certs__arrow.swiper-button-next',
-    },
-  });
+  if (worksSlider) {
+    new SwiperIniter(580, 'less', 'works__links', 'works__links-wrap', 'works__link', {
+      slidesPerView: 'auto',
+      spaceBetween: 12,
+      speed: 900,
+    });
+  }
 
   // FAQ TOGGLES
   let faqs = document.querySelectorAll('.faq__item');

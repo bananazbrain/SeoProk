@@ -1,0 +1,14 @@
+extends ../../templates/default
+block vars
+	-
+		title = "Наши работы"
+
+block content
+
+	.page
+		.case
+			.page__title.h1 #[h1 Наши работы]
+
+		+style('works', 'blocks')
+		include ../../blocks/works/works
+		

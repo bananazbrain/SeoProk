@@ -70,3 +70,7 @@ include ../../blocks/blog/blog
 +style('req', 'blocks')
 include ../../blocks/req/req
 
+//- works 
++style('works', 'blocks')
+include ../../blocks/works/works
+
