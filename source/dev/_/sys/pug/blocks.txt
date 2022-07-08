@@ -82,3 +82,7 @@ include ../../blocks/cases/cases
 +style('case-item', 'blocks')
 include ../../blocks/case-item/case-item
 
+//- contacts 
++style('contacts', 'blocks')
+include ../../blocks/contacts/contacts
+

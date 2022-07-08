@@ -1,0 +1,12 @@
+extends ../../templates/default
+block vars
+	-
+		title = "Контакты"
+
+block content
+	.page
+		.case
+			.page__title.h1 #[h1 Контакты]
+
+	+style('contacts', 'blocks')
+	include ../../blocks/contacts/contacts
