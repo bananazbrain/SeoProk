@@ -391,6 +391,14 @@
   .header__bar {
     padding: 0;
   }
+  .header.--toggle .header__main, .header.--toggle .header__bg {
+    opacity: 1;
+    visibility: visible;
+  }
+  .header.--toggle .menu-fix {
+    opacity: 1;
+    visibility: visible;
+  }
 
   .h-panel__nav {
     top: 350px;
@@ -483,10 +491,6 @@
     transition: 0.3s;
     position: absolute;
   }
-  .menu-fix.--active {
-    opacity: 1;
-    visibility: visible;
-  }
 }
 @media screen and (max-width: 767px) {
   .header {
@@ -547,6 +551,14 @@
     bottom: 0;
     height: calc( 100% - 84px );
   }
+  .header.--toggle .menu-hide {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .header.--toggle .menu-show {
+    opacity: 1;
+    visibility: visible;
+  }
 
   .h-panel__nav {
     padding: 25px 0;
@@ -577,11 +589,6 @@
     opacity: 1;
     visibility: visible;
   }
-  .menu-hide.--hide {
-    opacity: 0;
-    visibility: hidden;
-  }
-
   .menu-show.--show {
     opacity: 1;
     visibility: visible;

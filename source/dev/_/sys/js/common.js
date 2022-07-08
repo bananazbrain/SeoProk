@@ -11,6 +11,71 @@ let cls = {
   toggle: '--toggle',
 }
 
+// MOBILE SLIDRES
+class SwiperIniter {
+  constructor(width, type = 'less', classSlider, classWrapper, classItems, options = {}) {
+    this.sliders = document.querySelectorAll('.' + classSlider);
+    this.width = width;
+    this.type = type;
+    this.classSlider = classSlider;
+    this.classWrapper = classWrapper;
+    this.classItems = classItems;
+    if (this.sliders.length == 0) {
+      return false;
+    }
+
+    this.options = options;
+
+    this.sliders.forEach((slider) => {
+      slider.el = {
+        wrapper: slider.querySelector('.' + classWrapper),
+        items: slider.querySelectorAll('.' + classItems),
+      };
+
+      this.init(slider);
+
+      window.addEventListener('resize', () => {
+        this.init(slider);
+      });
+      window.addEventListener('orientationchange', () => {
+        this.init(slider);
+      });
+    });
+  }
+
+  init(slider) {
+    this.condition = this.type == 'less' ? this.width < window.innerWidth : this.width >= window.innerWidth;
+
+    if (this.condition) {
+      slider.classList.add('swiper');
+      slider.el.wrapper.classList.add('swiper-wrapper');
+
+      slider.el.items.forEach((item) => {
+        item.classList.add('swiper-slide');
+      });
+      this.swiper = new Swiper(slider, this.options)
+    } else {
+      if (this.swiper) {
+        console.log(this.swiper);
+        slider.className = this.classSlider;
+        slider.removeAttribute('style');
+
+        slider.el.wrapper.className = this.classWrapper;
+        slider.el.wrapper.removeAttribute('style');
+
+        slider.el.items.forEach((item) => {
+          item.className = this.classItems;
+          item.removeAttribute('style');
+        });
+
+        if (this.swiper.destory) {
+          this.swiper.destory(true, true);
+        }
+      }
+    }
+  }
+}
+
 document.addEventListener('DOMContentLoaded', function () {
   // CHECK INIT
   let checks = document.querySelectorAll('.check');
@@ -48,11 +113,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // HEADER MENU NAV
   let menuHam = document.querySelector('.ham');
-  let menuNav = document.querySelector('.header__main');
-  let menuBg = document.querySelector('.header__bg');
-  let menuElemsFix = document.querySelectorAll('.menu-fix');
-  let menuElemsHide = document.querySelectorAll('.menu-hide');
-  let menuElemsShow = document.querySelectorAll('.menu-show');
+  let header = document.querySelector('.header');
 
   if (menuHam) {
     for (let i = 0; i < 3; i++) {
@@ -61,34 +122,33 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     menuHam.addEventListener('click', () => {
-      menuHam.classList.toggle(cls.toggle)
-      menuBg.classList.toggle(cls.active)
-      menuElemsFix.forEach((elemFix) => {
-        elemFix.classList.toggle(cls.active)
-      })
+      menuHam.classList.toggle(cls.toggle);
+      header.classList.toggle(cls.toggle);
       html.classList.toggle('overflow-disable');
       body.classList.toggle('overflow-disable');
       inner.classList.toggle('overflow-disable');
     });
+  }
 
-    if (document.body.offsetWidth < 768) {
-      menuHam.addEventListener('click', () => {
-        menuNav.classList.toggle(cls.active)
-        menuElemsHide.forEach((elemHide) => {
-          elemHide.classList.toggle(cls.hide)
-        })
-        menuElemsShow.forEach((elemShow) => {
-          elemShow.classList.toggle(cls.show)
-        })
-      })
-    }
+
+  let subNavs = document.querySelectorAll('.has-subnav');
+  if (subNavs.length > 0) {
+    subNavs.forEach((nav) => {
+      nav.link = nav.querySelector('a');
+
+      nav.link.addEventListener('click', (event) => {
+        event.preventDefault();
+
+        nav.classList.toggle('--open');
+      });
+    });
   }
 
   // VIDEO SLIDER
   let videoSlider = document.querySelector('.video__slider-inner');
 
   if (videoSlider) {
-    let videoSliderSwiper = new Swiper(videoSlider, {
+    new SwiperIniter(580, 'less', 'video__slider-inner', 'video__slider-wrap', 'video__slider-item', {
       slidesPerView: 3,
       spaceBetween: 33,
       speed: 900,
@@ -112,6 +172,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
       }
     });
+
   }
 
   // BLOG SLIDER
@@ -140,48 +201,10 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // MOBILE SLIDRES
-  function MobileSlider(windowSize, wrap, list, items, options = { slidesPerView: 1 }) {
-    this.wrap = document.querySelector(wrap);
 
-    if (this.wrap) {
-      this.list = document.querySelector(list);
-      this.items = document.querySelectorAll(items);
-      this.slider = null;
-      this.options = options;
 
-      this.toggleSlider = () => {
-        if (window.innerWidth <= windowSize) {
-          if (!this.wrap.classList.contains('swiper')) {
-            this.wrap.classList.add('swiper');
-            this.list.classList.add('swiper-wrapper');
-            this.items.forEach((item) => {
-              item.classList.add('swiper-slide')
-            });
-            this.slider = new Swiper(this.wrap, this.options);
-          }
-        } else {
-          if (this.wrap.classList.contains('swiper')) {
-            this.wrap.classList.remove('swiper');
-            this.list.classList.remove('swiper-wrapper');
-            this.items.forEach((item) => {
-              item.classList.remove('swiper-slide')
-            });
 
-            if (this.slider != null) {
-              this.slider.destory(false, true);
-            }
-          }
-        }
-      }
-
-      this.toggleSlider();
-
-      window.addEventListener('resize', this.toggleSlider);
-    }
-  }
-
-  new MobileSlider(992, '.price__list', '.price__list-wrap', '.price__item', {
+  new SwiperIniter(992, 'more', 'price__list', 'price__list-wrap', 'price__item', {
     slidesPerView: 2,
     spaceBetween: 21,
     pagination: {
@@ -198,6 +221,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
+
   // FAQ TOGGLES
   let faqs = document.querySelectorAll('.faq__item');
   if (faqs) {
@@ -212,17 +236,61 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // INCLUDE TOGGLES
-  let includeItems = document.querySelectorAll('.include__item');
+  // let includeItems = document.querySelectorAll('.include__item');
 
-  if (includeItems && (document.body.offsetWidth < 992)) {
-    includeItems.forEach((includeItem) => {
-      includeItem.question = includeItem.querySelector('.include__head');
-      includeItem.answer = includeItem.querySelector('.include__links');
+  // if (includeItems && (document.body.offsetWidth < 992)) {
+  //   includeItems.forEach((includeItem) => {
+  //     includeItem.question = includeItem.querySelector('.include__head');
+  //     includeItem.answer = includeItem.querySelector('.include__links');
 
-      includeItem.question.addEventListener('click', () => {
-        includeItem.classList.toggle(cls.active);
+  //     includeItem.question.addEventListener('click', () => {
+  //       includeItem.classList.toggle(cls.active);
+  //     });
+  //   });
+  // }
+
+  let toggs = document.querySelector('.toggs');
+  if (toggs) {
+
+    toggs.items = [];
+    toggs.currentItem = null;
+
+    console.log(toggs.children);
+    for (let el of toggs.children) {
+      console.log(el);
+      if (el.tagName.toLowerCase() == 'h5') {
+        toggs.currentItem = null;
+
+        toggs.currentItem = document.createElement('div');
+        toggs.currentItem.className = 'toggs__item';
+        toggs.currentItem.head = document.createElement('div');
+        toggs.currentItem.head.className = 'toggs__head';
+
+        toggs.currentItem.body = document.createElement('div');
+        toggs.currentItem.body.className = 'toggs__body';
+        toggs.currentItem.append(toggs.currentItem.head);
+        toggs.currentItem.append(toggs.currentItem.body);
+
+
+
+        toggs.items.push(toggs.currentItem);
+
+        toggs.currentItem.head.append(el);
+      } else {
+        toggs.currentItem.body.append(el);
+      }
+    }
+
+    toggs.innerHTML = '';
+    toggs.items.forEach((item) => {
+      item.head.addEventListener('click', () => {
+        item.classList.toggle('--open');
       });
+      toggs.append(item);
     });
+
+    console.log(toggs.items);
+    // toggs.app
   }
 
 })
