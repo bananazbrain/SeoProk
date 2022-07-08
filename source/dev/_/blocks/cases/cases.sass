@@ -97,6 +97,14 @@
 		&__item
 			width: calc( 100% / 3 - 17px)
 
+	.case-item
+		&__extra
+			&-list
+				gap: 30px 25px
+				grid-gap: 30px 25px
+			&-item
+				width: calc( 100% / 3 - 17px)
+
 	.case-elem
 		&__img
 			height: 190px
@@ -122,6 +130,18 @@
 			grid-gap: 25px
 		&__item
 			width: calc( 100% / 2 - 13px )
+
+	.case-item
+		&__main
+			h2
+				font-size: 26px
+				line-height: 38px
+		&__extra
+			&-list
+				gap: 25px
+				grid-gap: 25px
+			&-item
+				width: calc( 100% / 2 - 13px )
 
 	.case-elem
 		&__name
@@ -152,6 +172,11 @@
 				color: $green
 				background: transparent
 
+	.case-item
+		&__extra
+			.case-elem
+				min-height: 400px
+
 	.case-elem
 		min-height: 430px
 		&__info
@@ -171,6 +196,22 @@
 		&__item
 			width: 100%
 
+	.case-item
+		&__main
+			h2
+				font-size: 22px
+				line-height: 34px
+				margin-bottom: 28px
+			p
+				margin-bottom: 30px
+		&__extra
+			&-title
+				font-size: 23px
+				line-height: 34px
+				margin-bottom: 30px
+			&-item
+				width: 100%
+
 	.case-elem
 		min-height: 400px
 		&__name
@@ -184,6 +225,21 @@
 		&__list
 			gap: 13px
 			grid-gap: 13px
+
+	.case-item
+		padding-top: 5px
+		padding-bottom: 80px
+		&__main
+			padding-bottom: 81px
+			h2
+				font-size: 16px
+				line-height: 23px
+		&__extra
+			&-list
+				gap: 13px
+				grid-gap: 13px
+			.case-elem
+				min-height: 326px
 
 	.case-elem
 		min-height: 326px
