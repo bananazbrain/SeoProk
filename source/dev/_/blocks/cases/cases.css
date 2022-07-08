@@ -39,6 +39,43 @@
   width: calc( 100% / 3 - 24.7px);
 }
 
+.case-item {
+  padding-bottom: 88px;
+}
+.case-item__main {
+  padding-bottom: 84px;
+}
+.case-item__main h2 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 44px;
+  max-width: 960px;
+  margin-bottom: 20px;
+  display: block;
+}
+.case-item__main p {
+  color: #A8A8A8;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 37px;
+  display: block;
+}
+.case-item__main img {
+  width: 100%;
+}
+.case-item__extra-title {
+  margin-bottom: 57px;
+}
+.case-item__extra-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 37px;
+  grid-gap: 37px;
+}
+.case-item__extra-item {
+  width: calc( 100% / 3 - 24.7px);
+}
+
 .case-elem {
   min-height: 454px;
   box-shadow: 0px 2px 11px rgba(39, 39, 39, 0.04);

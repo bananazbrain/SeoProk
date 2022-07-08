@@ -78,3 +78,7 @@ include ../../blocks/works/works
 +style('cases', 'blocks')
 include ../../blocks/cases/cases
 
+//- case-item 
++style('case-item', 'blocks')
+include ../../blocks/case-item/case-item
+

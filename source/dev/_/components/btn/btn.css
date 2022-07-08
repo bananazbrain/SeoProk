@@ -28,6 +28,10 @@
   color: #fff;
   background: #09B559;
 }
+.btn.--black {
+  color: #fff;
+  background: #272727;
+}
 .btn.--b-white {
   color: #fff;
   border: 1px solid #fff;
