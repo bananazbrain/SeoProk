@@ -112,8 +112,8 @@ document.addEventListener('DOMContentLoaded', function () {
   }, 500);
 
   // HEADER MENU NAV
-  let menuHam = document.querySelector('.ham');
   let header = document.querySelector('.header');
+  let menuHam = document.querySelector('.ham');
 
   if (menuHam) {
     for (let i = 0; i < 3; i++) {
@@ -201,9 +201,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-
-
-
+  // MOBILE SLIDERS
   new SwiperIniter(992, 'more', 'price__list', 'price__list-wrap', 'price__item', {
     slidesPerView: 2,
     spaceBetween: 21,
