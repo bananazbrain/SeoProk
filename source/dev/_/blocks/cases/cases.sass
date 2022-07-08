@@ -58,10 +58,118 @@
 		margin-top: 20px
 
 @media screen and (max-width: 1220px)
-	// .cases
+	.cases
+		&__links
+			overflow: visible
+		&__list
+			gap: 30px 25px
+			grid-gap: 30px 25px
+		&__item
+			width: calc( 100% / 3 - 17px)
+
+	.case-elem
+		&__img
+			height: 190px
+		&__info
+			height: calc( 100% - 190px )
+		&__name
+			font-size: 17px
+			line-height: 24px
+		&__btn
+			font-size: 16px
+			margin-top: 15px
+			&.--md
+				min-height: 42px
 
 @media screen and (max-width: 992px)
-	// .cases
+	.cases
+		&__links
+			margin-bottom: 54px
+		&__link
+			padding: 10px 20px
+		&__list
+			gap: 25px
+			grid-gap: 25px
+		&__item
+			width: calc( 100% / 2 - 13px )
+
+	.case-elem
+		&__name
+			font-size: 18px
+			line-height: 26px
+		&__btn
+			font-size: 18px
+			&.--md
+				min-height: 50px
 
 @media screen and (max-width: 767px)
-	// .cases
+	.cases
+		&__links
+			overflow: hidden
+			border: 1px solid $main
+		&__links-wrap
+			padding: 0 10px
+			flex-direction: column
+		&__link
+			color: rgba($main, 50%)
+			padding: 10px 0
+			border-bottom: 1px solid $dark-gray
+			text-align: left
+			background: transparent
+			&.active
+				background: transparent
+			&:hover
+				color: $green
+				background: transparent
+
+	.case-elem
+		min-height: 430px
+		&__info
+			padding: 15px 20px
+		&__name
+			font-size: 15px
+			line-height: 22px
+		&__date
+			font-size: 15px
+		&__btn
+			font-size: 16px
+			&.--md
+				min-height: 40px
+
+@media screen and (max-width: 580px)
+	.cases
+		&__item
+			width: 100%
+
+	.case-elem
+		min-height: 400px
+		&__name
+			font-size: 16px
+
+@media screen and (max-width: 390px)
+	.cases
+		padding-bottom: 57px
+		&__links
+			margin-bottom: 33px
+		&__list
+			gap: 13px
+			grid-gap: 13px
+
+	.case-elem
+		min-height: 326px
+		&__img
+			height: 162px
+		&__info
+			padding: 13px 17px 16px
+			height: calc( 100% - 162px )
+		&__name
+			font-size: 13px
+			line-height: 19px
+		&__date
+			font-size: 13px
+			line-height: 19px
+		&__btn
+			font-size: 13px
+			max-width: 119px
+			&.--md
+				min-height: 36px

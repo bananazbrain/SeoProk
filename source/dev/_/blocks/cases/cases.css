@@ -69,3 +69,154 @@
   max-width: 165px;
   margin-top: 20px;
 }
+
+@media screen and (max-width: 1220px) {
+  .cases__links {
+    overflow: visible;
+  }
+  .cases__list {
+    gap: 30px 25px;
+    grid-gap: 30px 25px;
+  }
+  .cases__item {
+    width: calc( 100% / 3 - 17px);
+  }
+
+  .case-elem__img {
+    height: 190px;
+  }
+  .case-elem__info {
+    height: calc( 100% - 190px );
+  }
+  .case-elem__name {
+    font-size: 17px;
+    line-height: 24px;
+  }
+  .case-elem__btn {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+  .case-elem__btn.--md {
+    min-height: 42px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .cases__links {
+    margin-bottom: 54px;
+  }
+  .cases__link {
+    padding: 10px 20px;
+  }
+  .cases__list {
+    gap: 25px;
+    grid-gap: 25px;
+  }
+  .cases__item {
+    width: calc( 100% / 2 - 13px );
+  }
+
+  .case-elem__name {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .case-elem__btn {
+    font-size: 18px;
+  }
+  .case-elem__btn.--md {
+    min-height: 50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .cases__links {
+    overflow: hidden;
+    border: 1px solid #272727;
+  }
+  .cases__links-wrap {
+    padding: 0 10px;
+    flex-direction: column;
+  }
+  .cases__link {
+    color: rgba(39, 39, 39, 0.5);
+    padding: 10px 0;
+    border-bottom: 1px solid #CCCCCC;
+    text-align: left;
+    background: transparent;
+  }
+  .cases__link.active {
+    background: transparent;
+  }
+  .cases__link:hover {
+    color: #09B559;
+    background: transparent;
+  }
+
+  .case-elem {
+    min-height: 430px;
+  }
+  .case-elem__info {
+    padding: 15px 20px;
+  }
+  .case-elem__name {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .case-elem__date {
+    font-size: 15px;
+  }
+  .case-elem__btn {
+    font-size: 16px;
+  }
+  .case-elem__btn.--md {
+    min-height: 40px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .cases__item {
+    width: 100%;
+  }
+
+  .case-elem {
+    min-height: 400px;
+  }
+  .case-elem__name {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .cases {
+    padding-bottom: 57px;
+  }
+  .cases__links {
+    margin-bottom: 33px;
+  }
+  .cases__list {
+    gap: 13px;
+    grid-gap: 13px;
+  }
+
+  .case-elem {
+    min-height: 326px;
+  }
+  .case-elem__img {
+    height: 162px;
+  }
+  .case-elem__info {
+    padding: 13px 17px 16px;
+    height: calc( 100% - 162px );
+  }
+  .case-elem__name {
+    font-size: 13px;
+    line-height: 19px;
+  }
+  .case-elem__date {
+    font-size: 13px;
+    line-height: 19px;
+  }
+  .case-elem__btn {
+    font-size: 13px;
+    max-width: 119px;
+  }
+  .case-elem__btn.--md {
+    min-height: 36px;
+  }
+}
