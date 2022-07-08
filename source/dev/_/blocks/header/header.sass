@@ -75,7 +75,8 @@
 		position: absolute
 		pointer-events: none
 		user-select: none
-		max-width: 220px
+		max-width: 250px
+		right: 60px
 	&__bg
 		z-index: 10
 		width: 100%
@@ -327,122 +328,25 @@
 		&__logo
 			top: 0
 			max-width: 90px
-		&__main
-			max-width: calc( 100% - 90px - 27px )
-			padding-right: 30px
-		&__panel
-			padding: 0
-		&__bar
-			padding: 0
-		&.--toggle
-			.header
-				&__main, &__bg
-					opacity: 1
-					visibility: visible
-			.h-panel, .h-bar
-				&__nav
-					opacity: 1
-					visibility: visible
-
-	.h-panel
-		&__nav
-			z-index: 11
-			width: 100%
-			opacity: 0
-			visibility: hidden
-			transition: .3s
-			position: absolute
-			top: 350px
-			left: 10px
-			padding-top: 23px
-			border-top: 1px solid $dark-gray
-			ul
-				flex-direction: column
-				li
-					margin-right: 0
-					margin-bottom: 20px
-					&:last-of-type
-						margin-bottom: 0
-					a
-						font-size: 16px
-		&__tel
-			margin-left: auto
-			&-icon
-				width: 22px
-				height: auto
-				background: transparent
-				svg
-					path
-						fill: $green
-				&:before, &:after
-					display: none
-			&-text
-				display: block
-		&__socials
-			margin: 0 30px
-			.socials
-				&__item
-					width: 30px
-					height: 30px
-					img
-						width: 17px
-		&__btn
-			font-size: 14px
-			max-width: 140px
-			&.--sm
-				min-height: 42px
-
-	.h-bar
-		&:before
-			display: none
-		&__nav
-			z-index: 11
-			width: 100%
-			opacity: 0
-			visibility: hidden
-			transition: .3s
-			position: absolute
-			top: 50px
-			left: -100px
-			padding-bottom: 23px
-			ul
-				flex-direction: column
-				li
-					margin-right: 0
-					margin-bottom: 15px
-					&.has-subnav
-						&:before
-							display: none
-						// &:hover
-							// pointer-events: none
-					&:last-of-type
-						margin-bottom: 0
-		&__dev
-			display: none
-
-	.ham
-		display: flex
-
-@media screen and (max-width: 767px)
-	.header
-		background: #fff
-		&__logo
-			max-width: 70px
 		&__socials
 			display: flex
 			margin-left: auto
 		&__callback
 			display: flex
-			margin: 0 40px
+			margin: 0 50px
+		&__btn
+			z-index: 9
+			pointer-events: all
+			user-select: auto
 		&__main
 			z-index: 11
 			left: 0
 			right: 0
 			bottom: 0
 			margin: 0 auto
-			height: calc( 100% - 84px )
-			max-width: 560px
-			padding: 30px 10px
+			height: calc( 100% - 105px )
+			max-width: 730px
+			padding: 34px 10px
 			position: fixed
 			display: flex
 			flex-direction: column
@@ -454,63 +358,118 @@
 			scrollbar-width: none
 			&::-webkit-scrollbar
 				width: 0
-			&.--active
-				opacity: 1
-				visibility: visible
-		&__bar
-			order: 1
-		&__panel
-			order: 2
-		&__btn
-			right: 60px
-			pointer-events: all
-			user-select: auto
-			&.--sm
-				min-height: 40px
-		&__bg
-			bottom: 0
-			height: calc( 100% - 84px )
+
 		&.--toggle
 			.header
-				&__socials, &__callback
-					opacity: 0
-					visibility: hidden
+				&__main
+					opacity: 1
+					visibility: visible
 				&__btn
 					opacity: 1
 					visibility: visible
-			.h-panel, .h-bar
-				&__nav
-					top: 0
-					left: 0
-					position: relative
-			.menu-show
-				opacity: 1
-				visibility: visible
+				&__bg
+					opacity: 1
+					visibility: visible
+				&__socials, &__callback
+					opacity: 0
+					visibility: hidden
+				&__bar
+					order: 1
+					padding: 0 0 27px
+					border-bottom: 1px solid $dark-gray
+				&__panel
+					order: 2
+					padding: 25px 0 0
+
+	.h-bar
+		justify-content: flex-start
+		&:before
+			display: none
+		&__nav
+			ul
+				flex-direction: column
+				li
+					margin-right: 0
+					margin-bottom: 18px
+					&.has-subnav
+						margin-bottom: 20px
+						&:before
+							display: none
+						&:hover
+							ul.subnav
+								opacity: 0
+								visibility: hidden
+						&.--toggle
+							ul.subnav
+								padding-top: 18px
+								opacity: 1
+								min-height: 66px
+								visibility: visible
+						ul.subnav
+							height: 0
+							min-height: 0
+							width: 100%
+							max-width: 100%
+							padding: 0
+							top: 0
+							left: 0
+							flex-wrap: nowrap
+							transform: none
+							background: transparent
+							position: relative
+							li
+								margin-bottom: 6px
+								a
+									font-size: 14px
+					&:last-of-type
+						margin-bottom: 0
+					a
+						font-size: 16px
+		&__dev
+			display: none
 
 	.h-panel
+		align-items: flex-start
+		justify-content: flex-start
 		&__nav
-			top: 0
-			left: 0
-			position: relative
-			padding: 25px 0
-			margin-bottom: 25px
+			width: 100%
+			margin-left: 0
+			padding-bottom: 25px
+			margin-bottom: 32px
 			border-bottom: 1px solid $dark-gray
 			ul
+				flex-direction: column
 				li
-					margin-bottom: 10px
+					margin-right: 0
+					margin-bottom: 15px
+					&:last-of-type
+						margin-bottom: 0
 		&__tel
-			margin-left: 0
-			margin-right: auto
+			margin: 0
+			&-text
+				width: calc( 100% - 34px )
+				padding-left: 16px
+				display: block
 		&__socials
 			margin: 0
+			margin-left: auto
 		&__btn
 			display: none
 
-	.h-bar
-		&__nav
-			top: 0
-			left: 0
-			position: relative
+	.ham
+		display: flex
+
+@media screen and (max-width: 767px)
+	.header
+		background: #fff
+		&__logo
+			max-width: 70px
+		&__btn
+			max-width: 220px
+			&.--sm
+				min-height: 40px
+		&__main
+			max-width: 560px
 
 @media screen and (max-width: 580px)
 	.header
@@ -519,7 +478,7 @@
 		&__callback
 			width: 32px
 			height: 32px
-			margin: 0 30px
+			margin: 0 36px
 			img
 				width: 17px
 			&:before
@@ -529,14 +488,17 @@
 				width: 40px
 				height: 40px
 		&__btn
-			max-width: 190px
+			font-size: 14px
+			max-width: 200px
 		&__main
 			max-width: 390px
 			height: calc( 100% - 74px )
-		&__bg
-			height: calc( 100% - 74px )
 
 	.h-panel
+		&__nav
+			ul
+				li
+					margin-bottom: 11px
 		&__tel
 			&-icon
 				width: 28px
@@ -557,13 +519,6 @@
 			&-text
 				width: calc( 100% - 28px )
 				padding-left: 16px
-
-	.h-bar
-		&__nav
-			ul
-				li
-					a
-						font-size: 16px
 
 	.ham
 		&:hover
@@ -598,18 +553,16 @@
 			img
 				width: 14px
 		&__btn
-			font-size: 14px
 			max-width: 172px
 			&.--sm
 				min-height: 35px
 		&__main
 			max-width: 390px
 			height: calc( 100% - 48px )
-		&__bg
-			height: calc( 100% - 48px )
 
 	.h-panel
 		&__tel
+			margin-left: 8px
 			&-text
 				font-size: 14px
 		&__socials

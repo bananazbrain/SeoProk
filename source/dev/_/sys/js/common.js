@@ -130,7 +130,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-
   let subNavs = document.querySelectorAll('.has-subnav');
   if (subNavs.length > 0) {
     subNavs.forEach((nav) => {
@@ -138,8 +137,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       nav.link.addEventListener('click', (event) => {
         event.preventDefault();
-
-        nav.classList.toggle('--open');
+        nav.classList.toggle(cls.toggle);
       });
     });
   }

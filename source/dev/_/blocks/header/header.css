@@ -85,7 +85,8 @@
   position: absolute;
   pointer-events: none;
   user-select: none;
-  max-width: 220px;
+  max-width: 250px;
+  right: 60px;
 }
 .header__bg {
   z-index: 10;
@@ -381,113 +382,159 @@
     top: 0;
     max-width: 90px;
   }
-  .header__main {
-    max-width: calc( 100% - 90px - 27px );
-    padding-right: 30px;
-  }
-  .header__panel {
-    padding: 0;
-  }
-  .header__bar {
-    padding: 0;
-  }
-  .header.--toggle .header__main, .header.--toggle .header__bg {
-    opacity: 1;
-    visibility: visible;
-  }
-  .header.--toggle .h-panel__nav, .header.--toggle .h-bar__nav {
-    opacity: 1;
-    visibility: visible;
-  }
-
-  .h-panel__nav {
-    z-index: 11;
-    width: 100%;
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.3s;
-    position: absolute;
-    top: 350px;
-    left: 10px;
-    padding-top: 23px;
-    border-top: 1px solid #CCCCCC;
-  }
-  .h-panel__nav ul {
-    flex-direction: column;
-  }
-  .h-panel__nav ul li {
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-  .h-panel__nav ul li:last-of-type {
-    margin-bottom: 0;
-  }
-  .h-panel__nav ul li a {
-    font-size: 16px;
-  }
-  .h-panel__tel {
+  .header__socials {
+    display: flex;
     margin-left: auto;
   }
-  .h-panel__tel-icon {
-    width: 22px;
-    height: auto;
-    background: transparent;
+  .header__callback {
+    display: flex;
+    margin: 0 50px;
   }
-  .h-panel__tel-icon svg path {
-    fill: #09B559;
+  .header__btn {
+    z-index: 9;
+    pointer-events: all;
+    user-select: auto;
   }
-  .h-panel__tel-icon:before, .h-panel__tel-icon:after {
-    display: none;
-  }
-  .h-panel__tel-text {
-    display: block;
-  }
-  .h-panel__socials {
-    margin: 0 30px;
-  }
-  .h-panel__socials .socials__item {
-    width: 30px;
-    height: 30px;
-  }
-  .h-panel__socials .socials__item img {
-    width: 17px;
-  }
-  .h-panel__btn {
-    font-size: 14px;
-    max-width: 140px;
-  }
-  .h-panel__btn.--sm {
-    min-height: 42px;
-  }
-
-  .h-bar:before {
-    display: none;
-  }
-  .h-bar__nav {
+  .header__main {
     z-index: 11;
-    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    height: calc( 100% - 105px );
+    max-width: 730px;
+    padding: 34px 10px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    transition: 0.3s;
     opacity: 0;
     visibility: hidden;
-    transition: 0.3s;
-    position: absolute;
-    top: 50px;
-    left: -100px;
-    padding-bottom: 23px;
+    overflow: auto;
+    scrollbar-width: none;
+  }
+  .header__main::-webkit-scrollbar {
+    width: 0;
+  }
+  .header.--toggle .header__main {
+    opacity: 1;
+    visibility: visible;
+  }
+  .header.--toggle .header__btn {
+    opacity: 1;
+    visibility: visible;
+  }
+  .header.--toggle .header__bg {
+    opacity: 1;
+    visibility: visible;
+  }
+  .header.--toggle .header__socials, .header.--toggle .header__callback {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .header.--toggle .header__bar {
+    order: 1;
+    padding: 0 0 27px;
+    border-bottom: 1px solid #CCCCCC;
+  }
+  .header.--toggle .header__panel {
+    order: 2;
+    padding: 25px 0 0;
+  }
+
+  .h-bar {
+    justify-content: flex-start;
+  }
+  .h-bar:before {
+    display: none;
   }
   .h-bar__nav ul {
     flex-direction: column;
   }
   .h-bar__nav ul li {
     margin-right: 0;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
+  }
+  .h-bar__nav ul li.has-subnav {
+    margin-bottom: 20px;
   }
   .h-bar__nav ul li.has-subnav:before {
     display: none;
   }
+  .h-bar__nav ul li.has-subnav:hover ul.subnav {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .h-bar__nav ul li.has-subnav.--toggle ul.subnav {
+    padding-top: 18px;
+    opacity: 1;
+    min-height: 66px;
+    visibility: visible;
+  }
+  .h-bar__nav ul li.has-subnav ul.subnav {
+    height: 0;
+    min-height: 0;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    top: 0;
+    left: 0;
+    flex-wrap: nowrap;
+    transform: none;
+    background: transparent;
+    position: relative;
+  }
+  .h-bar__nav ul li.has-subnav ul.subnav li {
+    margin-bottom: 6px;
+  }
+  .h-bar__nav ul li.has-subnav ul.subnav li a {
+    font-size: 14px;
+  }
   .h-bar__nav ul li:last-of-type {
     margin-bottom: 0;
   }
+  .h-bar__nav ul li a {
+    font-size: 16px;
+  }
   .h-bar__dev {
+    display: none;
+  }
+
+  .h-panel {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .h-panel__nav {
+    width: 100%;
+    margin-left: 0;
+    padding-bottom: 25px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid #CCCCCC;
+  }
+  .h-panel__nav ul {
+    flex-direction: column;
+  }
+  .h-panel__nav ul li {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  .h-panel__nav ul li:last-of-type {
+    margin-bottom: 0;
+  }
+  .h-panel__tel {
+    margin: 0;
+  }
+  .h-panel__tel-text {
+    width: calc( 100% - 34px );
+    padding-left: 16px;
+    display: block;
+  }
+  .h-panel__socials {
+    margin: 0;
+    margin-left: auto;
+  }
+  .h-panel__btn {
     display: none;
   }
 
@@ -502,102 +549,14 @@
   .header__logo {
     max-width: 70px;
   }
-  .header__socials {
-    display: flex;
-    margin-left: auto;
-  }
-  .header__callback {
-    display: flex;
-    margin: 0 40px;
-  }
-  .header__main {
-    z-index: 11;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: 0 auto;
-    height: calc( 100% - 84px );
-    max-width: 560px;
-    padding: 30px 10px;
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    background: #fff;
-    transition: 0.3s;
-    opacity: 0;
-    visibility: hidden;
-    overflow: auto;
-    scrollbar-width: none;
-  }
-  .header__main::-webkit-scrollbar {
-    width: 0;
-  }
-  .header__main.--active {
-    opacity: 1;
-    visibility: visible;
-  }
-  .header__bar {
-    order: 1;
-  }
-  .header__panel {
-    order: 2;
-  }
   .header__btn {
-    right: 60px;
-    pointer-events: all;
-    user-select: auto;
+    max-width: 220px;
   }
   .header__btn.--sm {
     min-height: 40px;
   }
-  .header__bg {
-    bottom: 0;
-    height: calc( 100% - 84px );
-  }
-  .header.--toggle .header__socials, .header.--toggle .header__callback {
-    opacity: 0;
-    visibility: hidden;
-  }
-  .header.--toggle .header__btn {
-    opacity: 1;
-    visibility: visible;
-  }
-  .header.--toggle .h-panel__nav, .header.--toggle .h-bar__nav {
-    top: 0;
-    left: 0;
-    position: relative;
-  }
-  .header.--toggle .menu-show {
-    opacity: 1;
-    visibility: visible;
-  }
-
-  .h-panel__nav {
-    top: 0;
-    left: 0;
-    position: relative;
-    padding: 25px 0;
-    margin-bottom: 25px;
-    border-bottom: 1px solid #CCCCCC;
-  }
-  .h-panel__nav ul li {
-    margin-bottom: 10px;
-  }
-  .h-panel__tel {
-    margin-left: 0;
-    margin-right: auto;
-  }
-  .h-panel__socials {
-    margin: 0;
-  }
-  .h-panel__btn {
-    display: none;
-  }
-
-  .h-bar__nav {
-    top: 0;
-    left: 0;
-    position: relative;
+  .header__main {
+    max-width: 560px;
   }
 }
 @media screen and (max-width: 580px) {
@@ -607,7 +566,7 @@
   .header__callback {
     width: 32px;
     height: 32px;
-    margin: 0 30px;
+    margin: 0 36px;
   }
   .header__callback img {
     width: 17px;
@@ -621,16 +580,17 @@
     height: 40px;
   }
   .header__btn {
-    max-width: 190px;
+    font-size: 14px;
+    max-width: 200px;
   }
   .header__main {
     max-width: 390px;
     height: calc( 100% - 74px );
   }
-  .header__bg {
-    height: calc( 100% - 74px );
-  }
 
+  .h-panel__nav ul li {
+    margin-bottom: 11px;
+  }
   .h-panel__tel-icon {
     width: 28px;
     height: 28px;
@@ -656,10 +616,6 @@
   .h-panel__tel-text {
     width: calc( 100% - 28px );
     padding-left: 16px;
-  }
-
-  .h-bar__nav ul li a {
-    font-size: 16px;
   }
 
   .ham:hover div {
@@ -700,7 +656,6 @@
     width: 14px;
   }
   .header__btn {
-    font-size: 14px;
     max-width: 172px;
   }
   .header__btn.--sm {
@@ -710,10 +665,10 @@
     max-width: 390px;
     height: calc( 100% - 48px );
   }
-  .header__bg {
-    height: calc( 100% - 48px );
-  }
 
+  .h-panel__tel {
+    margin-left: 8px;
+  }
   .h-panel__tel-text {
     font-size: 14px;
   }
