@@ -1,0 +1,17 @@
+extends ../../templates/default
+block vars
+	-
+		title = "Кейсы"
+
+block content
+
+	.page
+		.case
+			.page__title.h1 #[h1 Кейсы]
+
+	+style('cases', 'blocks')
+	include ../../blocks/cases/cases
+
+	+style('offer', 'blocks')
+	include ../../blocks/offer/offer
+	

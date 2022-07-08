@@ -74,3 +74,7 @@ include ../../blocks/req/req
 +style('works', 'blocks')
 include ../../blocks/works/works
 
+//- cases 
++style('cases', 'blocks')
+include ../../blocks/cases/cases
+

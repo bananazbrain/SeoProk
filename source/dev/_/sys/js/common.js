@@ -250,6 +250,17 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  // CASES SLIDER
+  let casesSlider = document.querySelector('.cases__links');
+
+  if (casesSlider) {
+    new SwiperIniter(767, 'less', 'cases__links', 'cases__links-wrap', 'cases__link', {
+      slidesPerView: 'auto',
+      spaceBetween: 12,
+      speed: 900,
+    });
+  }
+
   // FAQ TOGGLES
   let faqs = document.querySelectorAll('.faq__item');
   if (faqs) {

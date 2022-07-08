@@ -1,0 +1,67 @@
+@import ../../sys/sass/vars
+
+.cases
+	padding-bottom: 88px
+	&__links
+		margin-bottom: 74px
+	&__link
+		width: auto !important
+		color: #fff
+		font-size: 18px
+		font-weight: 700
+		line-height: 26px
+		background: #ABABAB
+		padding: 13px 21px
+		transition: .3s
+		text-align: center
+		cursor: pointer
+		margin-right: 12px
+		&:last-of-type
+			margin-right: 0
+		&:hover
+			background: $green
+		&.wide
+			min-width: 137px
+		&.active
+			background: $green
+	&__list
+		display: flex
+		flex-wrap: wrap
+		gap: 37px
+		grid-gap: 37px
+	&__item
+		width: calc( 100% / 3 - 24.7px)
+
+.case-elem
+	min-height: 454px
+	box-shadow: 0px 2px 11px rgba($main, 0.04)
+	transition: .3s
+	&__img
+		height: 226px
+	&__info
+		height: calc( 100% - 226px )
+		padding: 17px 25px 23px 23px
+		background: #F1F1F1
+		display: flex
+		flex-direction: column
+	&__name
+		line-height: 26px
+	&__date
+		color: #A8A8A8
+		font-size: 18px
+		font-weight: 700
+		margin-top: auto
+	&__btn
+		font-size: 18px
+		font-weight: 400
+		max-width: 165px
+		margin-top: 20px
+
+@media screen and (max-width: 1220px)
+	// .cases
+
+@media screen and (max-width: 992px)
+	// .cases
+
+@media screen and (max-width: 767px)
+	// .cases
