@@ -53,6 +53,12 @@
 		right: -15px
 		width: calc( 100% - 492px - 52px)
 		position: relative
+		&-title
+			font-size: 28px
+			font-weight: 700
+			line-height: 38px
+			margin-bottom: 50px
+			display: none
 	&__img
 		width: 780px
 	&__shape
@@ -85,12 +91,6 @@
 		width: 533px
 		margin-left: auto
 		position: relative
-		&-title
-			font-size: 28px
-			font-weight: 700
-			line-height: 38px
-			margin-bottom: 50px
-			display: none
 		&-item
 			width: 100%
 			max-width: 115px
@@ -479,10 +479,12 @@
 			padding: 22px 0 0
 			.intro
 				&__preview
+					z-index: 1
 					color: #fff
 					background: $main
 					padding: 40px 0 74px
 					&:before
+						z-index: -1
 						content: ""
 						width: 150%
 						height: 100%
@@ -491,12 +493,13 @@
 						transform: translateX(-50%)
 						background: $main
 						position: absolute
+					&-title
+						color: #fff
+						display: block
 				&__stat
 					max-width: 100%
 					flex-direction: column
 					align-items: flex-start
-					&-title
-						display: block
 
 @media screen and (max-width: 390px)
 	.intro
@@ -509,7 +512,7 @@
 			padding-top: 14px
 		&__desc
 			padding-right: 0
-		&__stat
+		&__preview
 			&-title
 				font-size: 26px
 
