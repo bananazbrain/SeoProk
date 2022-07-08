@@ -16,7 +16,6 @@
 .certs__list-wrap {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin: 0 -25px -50px;
 }
 .certs__item {
@@ -36,6 +35,9 @@
 }
 .certs__item:hover {
   transform: translateY(-5px);
+}
+.certs__arrows {
+  display: none;
 }
 
 @media screen and (max-width: 1220px) {
@@ -59,8 +61,43 @@
   }
 }
 @media screen and (max-width: 992px) {
+  .certs__inner {
+    max-width: 550px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .certs__list-wrap {
+    margin: 0;
+    flex-wrap: nowrap;
+  }
+  .certs__item {
+    width: calc( 50% - 10px ) !important;
+    height: 380px;
+    margin: 0;
+  }
   .certs__item.w2 {
-    height: 245px;
+    width: 100% !important;
+    height: 380px;
+  }
+  .certs__item:hover {
+    transform: none;
+  }
+  .certs__arrows {
+    display: block;
+  }
+  .certs__arrow {
+    width: 42px;
+    height: 42px;
+  }
+  .certs__arrow svg {
+    width: 18px;
+    height: 100%;
+  }
+  .certs__arrow.swiper-button-prev {
+    left: -80px;
+  }
+  .certs__arrow.swiper-button-next {
+    right: -80px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -72,5 +109,68 @@
   }
   .certs__text {
     font-size: 14px;
+  }
+  .certs__inner {
+    max-width: 400px;
+  }
+  .certs__item {
+    height: 285px;
+  }
+  .certs__item.w2 {
+    height: 285px;
+  }
+  .certs__arrow.swiper-button-prev {
+    left: -65px;
+  }
+  .certs__arrow.swiper-button-next {
+    right: -65px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .certs__inner {
+    max-width: 280px;
+  }
+  .certs__item {
+    height: 200px;
+  }
+  .certs__item.w2 {
+    height: 200px;
+  }
+  .certs__arrow {
+    width: 32px;
+    height: 32px;
+  }
+  .certs__arrow.swiper-button-prev {
+    left: -50px;
+  }
+  .certs__arrow.swiper-button-next {
+    right: -50px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .certs__text {
+    margin-bottom: 36px;
+  }
+  .certs__inner {
+    max-width: 218px;
+  }
+  .certs__item {
+    height: 153px;
+  }
+  .certs__item.w2 {
+    height: 153px;
+  }
+  .certs__arrow {
+    width: 22px;
+    height: 22px;
+  }
+  .certs__arrow svg {
+    width: 12px;
+  }
+  .certs__arrow.swiper-button-prev {
+    left: -40px;
+  }
+  .certs__arrow.swiper-button-next {
+    right: -40px;
   }
 }

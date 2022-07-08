@@ -396,12 +396,22 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
     width: 28px;
     height: 31px;
     margin-bottom: 7px;
+    position: relative;
   }
   .check.--icon .check__icon svg {
     width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   .check.--icon .check__text {
     font-size: 13px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .check.--icon:hover .check__icon {
+    transform: translateY(0);
   }
 }
 @media screen and (max-width: 390px) {
@@ -638,6 +648,15 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
 }
 .swiper-button-prev.--black:hover svg path, .swiper-button-next.--black:hover svg path {
   stroke: #09B559;
+}
+.swiper-button-prev.--gray, .swiper-button-next.--gray {
+  border: 1px solid #B6B6B6;
+}
+.swiper-button-prev.--gray:hover, .swiper-button-next.--gray:hover {
+  border-color: #09B559;
+}
+.swiper-button-prev.--gray:hover svg path, .swiper-button-next.--gray:hover svg path {
+  fill: #09B559;
 }
 
 .swiper-button-prev img {

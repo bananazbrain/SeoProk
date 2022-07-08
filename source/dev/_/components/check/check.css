@@ -92,12 +92,22 @@
     width: 28px;
     height: 31px;
     margin-bottom: 7px;
+    position: relative;
   }
   .check.--icon .check__icon svg {
     width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   .check.--icon .check__text {
     font-size: 13px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .check.--icon:hover .check__icon {
+    transform: translateY(0);
   }
 }
 @media screen and (max-width: 390px) {

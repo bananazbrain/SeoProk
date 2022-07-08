@@ -199,10 +199,11 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // MOBILE SLIDERS
+  // PRICE SLIDER
   new SwiperIniter(992, 'more', 'price__list', 'price__list-wrap', 'price__item', {
     slidesPerView: 2,
     spaceBetween: 21,
+    speed: 900,
     pagination: {
       el: ".price__pagination.swiper-pagination",
       type: "fraction",
@@ -217,6 +218,16 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
+  // CERTS SLIDER
+  new SwiperIniter(992, 'more', 'certs__list', 'certs__list-wrap', 'certs__item', {
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+    speed: 900,
+    navigation: {
+      prevEl: '.certs__arrow.swiper-button-prev',
+      nextEl: '.certs__arrow.swiper-button-next',
+    },
+  });
 
   // FAQ TOGGLES
   let faqs = document.querySelectorAll('.faq__item');
