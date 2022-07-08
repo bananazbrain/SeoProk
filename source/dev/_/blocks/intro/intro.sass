@@ -80,16 +80,30 @@
 			&:nth-of-type(4)
 				right: -400px
 				bottom: -75px
-
 	&__stat
 		z-index: 1
 		width: 533px
 		margin-left: auto
 		position: relative
+		&-title
+			font-size: 28px
+			font-weight: 700
+			line-height: 38px
+			margin-bottom: 50px
+			display: none
 		&-item
 			width: 100%
 			max-width: 115px
 			position: relative
+			&:before
+				content: ""
+				top: 0
+				left: 0
+				height: 1px
+				background: url('../../sys/imgs/line-2.svg') repeat-x
+				opacity: .8
+				background-size: contain
+				position: absolute
 			&:nth-of-type(1)
 				margin-left: 145px
 			&:nth-of-type(2)
@@ -146,6 +160,23 @@
 				top: 0
 				right: 0
 				width: calc( 100% - 690px )
+			&__stat
+				&-item
+					&:nth-of-type(1)
+						&:before
+							top: 88px
+							left: 140px
+							width: 79px
+							transform: rotate(18deg)
+					&:nth-of-type(2)
+						&:before
+							top: 150px
+							left: -255px
+							width: 231px
+							transform: rotate(-18deg)
+					&:nth-of-type(3)
+						&:before
+							display: none
 			&__shape
 				top: -60px
 				left: 40px
@@ -174,6 +205,19 @@
 			width: calc( 100% - 492px )
 		&__stat
 			width: 490px
+
+		&.--about
+			.intro
+				&__stat
+					&-item
+						&:nth-of-type(1)
+							&:before
+								left: 125px
+								width: 70px
+						&:nth-of-type(2)
+							&:before
+								left: -222px
+								width: 220px
 
 @media screen and (max-width: 1220px)
 	.intro
@@ -219,13 +263,6 @@
 					bottom: -90px
 		&__stat
 			width: 430px
-			&-item
-				&:nth-of-type(1)
-					margin-left: 120px
-				&:nth-of-type(2)
-					margin-top: -40px
-				&:nth-of-type(3)
-					margin-top: -100px
 
 		&.--about
 			padding: 70px 0 80px
@@ -239,6 +276,21 @@
 						display: none
 				&__preview
 					width: calc( 100% - 490px )
+				&__stat
+					&-item
+						&:nth-of-type(1)
+							margin-left: 120px
+							&:before
+								top: 110px
+								transform: rotate(28deg)
+						&:nth-of-type(2)
+							margin-top: -40px
+							&:before
+								top: 130px
+								left: -155px
+								width: 150px
+						&:nth-of-type(3)
+							margin-top: -100px
 				&__shape
 					top: 0
 					left: 0
@@ -276,15 +328,6 @@
 			flex-wrap: wrap
 			align-items: center
 			justify-content: space-between
-			&-item
-				&:nth-of-type(1)
-					margin-left: 0
-				&:nth-of-type(2)
-					margin-top: 0
-					margin-left: 0
-				&:nth-of-type(3)
-					margin-top: 0
-					margin-left: 0
 
 		&.--about
 			padding: 60px 0 70px
@@ -302,6 +345,18 @@
 					max-width: 670px
 				&__preview
 					width: 100%
+				&__stat
+					&-item
+						&:before
+							display: none
+						&:nth-of-type(1)
+							margin-left: 0
+						&:nth-of-type(2)
+							margin-top: 0
+							margin-left: 0
+						&:nth-of-type(3)
+							margin-top: 0
+							margin-left: 0
 				&__shape
 					top: -370px
 					left: 440px
@@ -369,6 +424,9 @@
 		&__desc
 			margin-bottom: 11px
 			padding-right: 50px
+		&__text
+			font-size: 15px
+			line-height: 24px
 		&__input
 			margin-bottom: 14px
 		&__btn
@@ -379,6 +437,66 @@
 			display: none
 		&__circle
 			display: none
+		&__stat
+			&-item
+				max-width: 100% !important
+				margin-bottom: 23px
+				&:last-of-type
+					margin-bottom: 0
+			&-value
+				font-family: $ffRoboto
+				font-size: 50px !important
+				margin-bottom: 32px
+				width: auto !important
+				height: auto !important
+				border-radius: 0
+				box-shadow: none
+				background: transparent
+				align-items: flex-start
+				justify-content: flex-start
+				position: relative
+				&:before, &:after
+					content: ""
+					position: absolute
+					background: $green
+					left: 0
+				&:before
+					width: 100%
+					height: 1px
+					bottom: -15px
+				&:after
+					width: 16px
+					height: 16px
+					bottom: -22px
+					border-radius: 50%
+			&-text
+				font-size: 17px
+				font-weight: 400
+				text-align: left
+				max-width: 150px
+
+		&.--about
+			padding: 22px 0 0
+			.intro
+				&__preview
+					color: #fff
+					background: $main
+					padding: 40px 0 74px
+					&:before
+						content: ""
+						width: 150%
+						height: 100%
+						top: 0
+						left: 50%
+						transform: translateX(-50%)
+						background: $main
+						position: absolute
+				&__stat
+					max-width: 100%
+					flex-direction: column
+					align-items: flex-start
+					&-title
+						display: block
 
 @media screen and (max-width: 390px)
 	.intro
@@ -391,3 +509,27 @@
 			padding-top: 14px
 		&__desc
 			padding-right: 0
+		&__stat
+			&-title
+				font-size: 26px
+
+		&.--about
+			.intro
+				&__info
+					margin-bottom: 53px
+				&__title
+					margin-bottom: 23px
+				&__desc
+					line-height: 27px
+					margin-bottom: 23px
+					u
+						display: block
+				&__text
+					font-size: 14px
+				&__stat
+					&-value
+						padding-left: 26px
+					&-text
+						font-size: 14px
+						line-height: 22px
+						padding-left: 26px

@@ -4,12 +4,12 @@
 	background: $gray
 	padding: 51px 0 96px
 	&__title
-		margin-left: 6px
 		margin-bottom: 30px
 	&__text
 		width: 100%
 		max-width: 545px
-		margin-bottom: 44px
+		margin-bottom: 41px
+		line-height: 24px
 	&__list
 		margin-left: 5px
 	&__item
@@ -72,11 +72,6 @@
 			font-size: 18px
 			line-height: 33px
 			transition: .3s
-
-@media screen and (max-width: 1360px)
-	.faq
-		&__title
-			margin-left: 0
 
 @media screen and (max-width: 1220px)
 	.faq
@@ -147,6 +142,13 @@
 					width: 11px
 		&__answer
 			padding: 0 20px
+
+		&.--about
+			.faq
+				&__question
+					&-title
+						br
+							display: none
 
 @media screen and (max-width: 390px)
 	.faq

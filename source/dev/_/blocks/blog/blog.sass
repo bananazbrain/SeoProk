@@ -40,6 +40,8 @@
 		&-arrow
 			margin-top: 0
 			transform: translateY(50%)
+		&-pagination
+			display: none
 
 @media screen and (max-width: 1360px)
 	.blog
@@ -53,6 +55,7 @@
 
 @media screen and (max-width: 1220px)
 	.blog
+		margin-bottom: 20px
 		&__slider
 			&-inner
 				width: 870px
@@ -81,4 +84,46 @@
 				font-size: 14px
 
 @media screen and (max-width: 767px)
-	// .blog
+	.blog
+		margin-bottom: 0
+		&__slider
+			&-inner
+				width: auto
+				overflow: visible
+			&-item
+				min-height: 350px
+			&-name
+				font-size: 18px
+				line-height: 26px
+			&-text
+				font-size: 14px
+				line-height: 23px
+			&-arrows
+				display: none
+			&-pagination
+				margin-top: 46px
+				bottom: 0 !important
+				position: relative
+				display: flex
+				justify-content: center
+
+@media screen and (max-width: 580px)
+	.blog
+		&__title
+			margin-bottom: 40px
+
+@media screen and (max-width: 390px)
+	.blog
+		&__slider
+			&-item
+				min-height: 297px
+				padding: 23px 23px 25px
+			&-name
+				font-size: 16px
+				line-height: 24px
+				margin-bottom: 7px
+			&-text
+				font-size: 12px
+				line-height: 21px
+			&-info
+				font-size: 11px

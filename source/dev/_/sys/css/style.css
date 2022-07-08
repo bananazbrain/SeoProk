@@ -673,6 +673,15 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
   transition: 0.3s;
 }
 
+.swiper-pagination-bullets .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #09B559;
+  margin: 0 5.5px !important;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
 .fadeIn {
   opacity: 0;
 }

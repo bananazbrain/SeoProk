@@ -186,10 +186,21 @@ document.addEventListener('DOMContentLoaded', function () {
         prevEl: '.blog__slider-arrow.swiper-button-prev',
         nextEl: '.blog__slider-arrow.swiper-button-next',
       },
+      pagination: {
+        el: ".blog__slider-pagination.swiper-pagination",
+        type: "bullets",
+        clickable: true,
+      },
       breakpoints: {
+        0: {
+          slidesPerView: 1.2,
+          spaceBetween: 20,
+        },
+        581: {
+          slidesPerView: 1.5,
+        },
         768: {
           slidesPerView: 2,
-          spaceBetween: 20,
         },
         1220: {
           slidesPerView: 3,

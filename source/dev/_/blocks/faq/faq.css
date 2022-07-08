@@ -3,13 +3,13 @@
   padding: 51px 0 96px;
 }
 .faq__title {
-  margin-left: 6px;
   margin-bottom: 30px;
 }
 .faq__text {
   width: 100%;
   max-width: 545px;
-  margin-bottom: 44px;
+  margin-bottom: 41px;
+  line-height: 24px;
 }
 .faq__list {
   margin-left: 5px;
@@ -82,11 +82,6 @@
   transition: 0.3s;
 }
 
-@media screen and (max-width: 1360px) {
-  .faq__title {
-    margin-left: 0;
-  }
-}
 @media screen and (max-width: 1220px) {
   .faq {
     padding: 50px 0 80px;
@@ -168,6 +163,9 @@
   }
   .faq__answer {
     padding: 0 20px;
+  }
+  .faq.--about .faq__question-title br {
+    display: none;
   }
 }
 @media screen and (max-width: 390px) {
