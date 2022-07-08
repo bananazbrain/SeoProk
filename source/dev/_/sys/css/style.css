@@ -461,6 +461,10 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
   overflow: hidden;
 }
 
+.page {
+  padding-top: 37px;
+}
+
 .page-text {
   padding: 38px 0 82px;
 }
@@ -471,6 +475,16 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
   margin-left: 5px;
   margin-bottom: 39px;
   display: block;
+}
+.page-text h3 {
+  font-size: 18px;
+  line-height: 29px;
+  margin-left: 4px;
+  margin-bottom: 37px;
+  display: block;
+}
+.page-text h3:last-of-type {
+  margin-bottom: 0;
 }
 .page-text h4 {
   font-size: 18px;
@@ -512,9 +526,23 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
 .page-text p a:hover {
   border-color: transparent;
 }
-.page-text p a[href^=tel], .page-text p a[href^=mailto] {
+.page-text p a[href^=tel] {
   color: #272727;
   border-bottom: none;
+}
+.page-text p a[href^=mailto] {
+  border-bottom: none;
+}
+.page-text ul {
+  flex-direction: column;
+  margin-bottom: 26px;
+}
+.page-text ul li {
+  line-height: 26px;
+  margin-bottom: 26px;
+}
+.page-text ul li:last-of-type {
+  margin-bottom: 0;
 }
 .page-text__req-item {
   margin-bottom: 50px;
@@ -523,6 +551,33 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
   margin-bottom: 0;
 }
 .page-text__req-item:last-of-type {
+  margin-bottom: 0;
+}
+.page-text.--offer {
+  padding: 38px 0 125px;
+}
+.page-text.--offer h4 {
+  line-height: 38px;
+  margin-left: 7px;
+  margin-top: -10px;
+  margin-bottom: 28px;
+  max-width: 500px;
+}
+.page-text.--offer h5 {
+  margin-top: 62px;
+}
+.page-text.--offer p {
+  line-height: 26px;
+  margin-bottom: 26px;
+}
+.page-text.--offer .page-text__req {
+  margin-top: 90px;
+  margin-left: 4px;
+}
+.page-text.--offer .page-text__req-item p {
+  margin-bottom: 0;
+}
+.page-text.--offer .page-text__req-item:last-of-type {
   margin-bottom: 0;
 }
 
@@ -645,6 +700,9 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
 }
 .sitemap__list ul li.--done a {
   color: #09B559;
+}
+.sitemap__list ul li.--resp a {
+  color: #CCCCCC;
 }
 
 @media screen and (max-width: 1220px) {

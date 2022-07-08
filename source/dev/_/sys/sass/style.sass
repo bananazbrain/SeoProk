@@ -56,6 +56,9 @@
 .overflow-disable
 	overflow: hidden
 
+.page
+	padding-top: 37px
+
 .page-text
 	padding: 38px 0 82px
 	h1
@@ -65,6 +68,14 @@
 		margin-left: 5px
 		margin-bottom: 39px
 		display: block
+	h3
+		font-size: 18px
+		line-height: 29px
+		margin-left: 4px
+		margin-bottom: 37px
+		display: block
+		&:last-of-type
+			margin-bottom: 0
 	h4
 		font-size: 18px
 		font-weight: 700
@@ -97,9 +108,19 @@
 			border-bottom: 1px solid $green
 			&:hover
 				border-color: transparent
-			&[href^=tel], &[href^=mailto]
+			&[href^=tel]
 				color: $main
 				border-bottom: none
+			&[href^=mailto]
+				border-bottom: none
+	ul
+		flex-direction: column
+		margin-bottom: 26px
+		li
+			line-height: 26px
+			margin-bottom: 26px
+			&:last-of-type
+				margin-bottom: 0
 	&__req
 		&-item
 			margin-bottom: 50px
@@ -107,6 +128,29 @@
 				margin-bottom: 0
 			&:last-of-type
 				margin-bottom: 0
+
+	&.--offer
+		padding: 38px 0 125px
+		h4
+			line-height: 38px
+			margin-left: 7px
+			margin-top: -10px
+			margin-bottom: 28px
+			max-width: 500px
+		h5
+			margin-top: 62px
+		p
+			line-height: 26px
+			margin-bottom: 26px
+		.page-text
+			&__req
+				margin-top: 90px
+				margin-left: 4px
+				&-item
+					p
+						margin-bottom: 0
+					&:last-of-type
+						margin-bottom: 0
 
 .pad-none
 	padding: 0 !important
@@ -212,6 +256,9 @@
 				&.--done
 					a
 						color: $green
+				&.--resp
+					a
+						color: $dark-gray
 
 // RESPONSIVE
 @media screen and (max-width: 1220px)
