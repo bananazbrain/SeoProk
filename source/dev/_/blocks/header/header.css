@@ -80,13 +80,13 @@
   height: 34px;
 }
 .header__btn {
+  right: 60px;
+  max-width: 250px;
   opacity: 0;
   visibility: hidden;
   position: absolute;
   pointer-events: none;
   user-select: none;
-  max-width: 250px;
-  right: 60px;
 }
 .header__bg {
   z-index: 10;
