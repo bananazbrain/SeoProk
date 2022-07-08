@@ -243,7 +243,7 @@ document.addEventListener('DOMContentLoaded', function () {
   let worksSlider = document.querySelector('.works__links');
 
   if (worksSlider) {
-    new SwiperIniter(580, 'less', 'works__links', 'works__links-wrap', 'works__link', {
+    new SwiperIniter(767, 'less', 'works__links', 'works__links-wrap', 'works__link', {
       slidesPerView: 'auto',
       spaceBetween: 12,
       speed: 900,

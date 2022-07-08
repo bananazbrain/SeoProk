@@ -31,7 +31,7 @@
 		grid-gap: 37px
 	&__item
 		width: calc( 100% / 3 - 24.7px )
-		min-height: 412px
+		height: 412px
 		box-shadow: 0px 10px 25px rgba($main, 0.04)
 		transition: .3s
 		background: #fff
@@ -43,10 +43,60 @@
 			transform: translateY(-3px)
 
 @media screen and (max-width: 1220px)
-	// .works
+	.works
+		&__links
+			overflow: visible
+		&__item
+			height: 290px
 
 @media screen and (max-width: 992px)
-	// .works
+	.works
+		&__links
+			margin-bottom: 54px
+		&__link
+			padding: 10px 20px
+		&__list
+			gap: 25px
+			grid-gap: 25px
+		&__item
+			width: calc( 100% / 2 - 13px )
+			height: 340px
 
 @media screen and (max-width: 767px)
-	// .works
+	.works
+		&__links
+			overflow: hidden
+			border: 1px solid $main
+		&__links-wrap
+			padding: 0 10px
+			flex-direction: column
+		&__link
+			color: rgba($main, 50%)
+			padding: 10px 0
+			border-bottom: 1px solid $dark-gray
+			text-align: left
+			background: transparent
+			&.active
+				background: transparent
+			&:hover
+				color: $green
+				background: transparent
+		&__item
+			height: 260px
+
+@media screen and (max-width: 580px)
+	.works
+		&__item
+			height: 175px
+			&:hover
+				transform: none
+
+@media screen and (max-width: 390px)
+	.works
+		padding-bottom: 57px
+		&__list
+			gap: 13px
+			grid-gap: 13px
+		&__item
+			width: calc( 100% / 2 - 7px )
+			height: 142px
