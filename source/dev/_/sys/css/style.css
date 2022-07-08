@@ -451,6 +451,9 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
 }
 
 .inner {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
 }
 
@@ -602,6 +605,46 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
 .fadeIn.--loaded {
   opacity: 1;
   transition: opacity 1.5s;
+}
+
+.modal {
+  width: 100%;
+  background: rgba(39, 39, 39, 0.4);
+  margin: 0 auto;
+  position: relative;
+  transition: 0.3s;
+  display: none;
+}
+
+.sitemap {
+  padding: 100px 0;
+}
+.sitemap__title {
+  margin-bottom: 40px;
+}
+.sitemap__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.sitemap__list ul {
+  flex-direction: column;
+}
+.sitemap__list ul li {
+  margin-bottom: 15px;
+}
+.sitemap__list ul li:last-of-type {
+  margin-bottom: 0;
+}
+.sitemap__list ul li a {
+  font-size: 20px;
+  font-weight: 500;
+}
+.sitemap__list ul li:hover a {
+  color: #09B559;
+}
+.sitemap__list ul li.--done a {
+  color: #09B559;
 }
 
 @media screen and (max-width: 1220px) {
