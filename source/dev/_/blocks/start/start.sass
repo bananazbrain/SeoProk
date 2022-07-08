@@ -2,12 +2,13 @@
 
 .start
 	color: #fff
+	position: relative
 	&__wrap
 		display: flex
 		flex-wrap: wrap
 	&__info
 		width: calc( 100% - 862px + 303px)
-		padding: 44px 128px 80px 0
+		padding: 44px 128px 82px 0
 		background: $main
 		position: relative
 		&:before
@@ -29,8 +30,11 @@
 		font-weight: 400
 		max-width: 254px
 	&__img
+		top: 0
+		right: -293px
 		width: 862px
-		margin-right: -303px
+		height: 100%
+		position: absolute
 
 @media screen and (max-width: 1220px)
 	.start
@@ -46,17 +50,25 @@
 		padding-bottom: 80px
 		&__img
 			order: 1
-			width: 100%
-			margin: 0 auto 60px
+			width: 135%
+			height: 400px
+			left: 50%
+			right: auto
+			transform: translateX(-50%)
 		&__info
 			order: 2
 			width: 100%
+			margin-top: calc( 400px + 60px )
 			padding: 0
 			&:before
 				display: none
 
 @media screen and (max-width: 767px)
 	.start
+		&__img
+			height: 350px
+		&__info
+			margin-top: calc( 350px + 60px )
 		&__title
 			margin-bottom: 38px
 		&__desc
@@ -67,7 +79,9 @@
 @media screen and (max-width: 580px)
 	.start
 		&__img
-			height: 250px
+			height: 300px
+		&__info
+			margin-top: calc( 300px + 60px )
 		&__title
 			padding-right: 70px
 		&__btn
@@ -78,6 +92,8 @@
 		padding-bottom: 83px
 		&__img
 			height: 212px
+		&__info
+			margin-top: calc( 212px + 60px )
 		&__title
 			padding-right: 0
 		&__desc
