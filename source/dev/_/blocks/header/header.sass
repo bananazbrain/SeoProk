@@ -334,6 +334,14 @@
 			padding: 0
 		&__bar
 			padding: 0
+		&.--toggle
+			.header
+				&__main, &__bg
+					opacity: 1
+					visibility: visible
+			.menu-fix
+				opacity: 1
+				visibility: visible
 
 	.h-panel
 		&__nav
@@ -392,6 +400,8 @@
 					&.has-subnav
 						&:before
 							display: none
+						// &:hover
+							// pointer-events: none
 					&:last-of-type
 						margin-bottom: 0
 
@@ -408,9 +418,6 @@
 		visibility: hidden
 		transition: .3s
 		position: absolute
-		&.--active
-			opacity: 1
-			visibility: visible
 
 @media screen and (max-width: 767px)
 	.header
@@ -459,6 +466,13 @@
 		&__bg
 			bottom: 0
 			height: calc( 100% - 84px )
+		&.--toggle
+			.menu-hide
+				opacity: 0
+				visibility: hidden
+			.menu-show
+				opacity: 1
+				visibility: visible
 
 	.h-panel
 		&__nav
@@ -485,8 +499,6 @@
 		opacity: 1
 		visibility: visible
 		&.--hide
-			opacity: 0
-			visibility: hidden
 
 	.menu-show
 		&.--show

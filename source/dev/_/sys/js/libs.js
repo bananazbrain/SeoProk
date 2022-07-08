@@ -27,11 +27,6 @@ class Check {
         return false;
       }
       if (this.type == 'checkbox') {
-        let dataList = this.element.closest('.data-acc__list');
-        if (dataList && dataList.querySelectorAll('.check.--checked').length <= 1 && this.element.classList.contains('--checked')) {
-          return false;
-        }
-
         this.element.classList.toggle('--checked');
         this.checked = this.input.getAttribute('checked');
 
@@ -61,7 +56,7 @@ class Check {
 
   checkChecked() {
     if (this.input.getAttribute('checked')) {
-      this.element.classList.add(Check.classChecked);
+      this.element.classList.add('--checked');
     }
   }
 }
