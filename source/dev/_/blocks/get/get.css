@@ -161,3 +161,31 @@
     width: calc( 100% + 63px );
   }
 }
+@media screen and (max-width: 390px) {
+  .get__title {
+    padding-right: 20px;
+    margin-bottom: 50px;
+  }
+  .get__img {
+    width: 40px;
+  }
+  .get__img img {
+    top: 7px;
+    width: 15px;
+  }
+  .get__img:before {
+    width: 40px;
+    height: 45px;
+  }
+  .get__info {
+    padding-top: 0;
+  }
+  .get__name {
+    margin-bottom: 21px;
+    line-height: 25px;
+  }
+  .get__text {
+    left: -46px;
+    width: calc( 100% + 40px );
+  }
+}

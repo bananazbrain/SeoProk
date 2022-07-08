@@ -93,6 +93,7 @@
 }
 @media screen and (max-width: 580px) {
   .start__img {
+    width: 145%;
     height: 300px;
   }
   .start__info {
