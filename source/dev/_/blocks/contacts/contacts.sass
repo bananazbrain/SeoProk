@@ -33,10 +33,50 @@
 	background: $gray
 
 @media screen and (max-width: 1220px)
-	// .contacts
+	.contacts
+		&__info
+			width: 340px
+		&__map
+			width: calc( 100% - 340px - 32px )
+			margin-left: 32px
 
 @media screen and (max-width: 992px)
-	// .contacts
+	.contacts
+		margin-top: -10px
+		padding-bottom: 58px
+		&__wrap
+			flex-direction: column
+		&__info
+			width: 100%
+			max-width: 450px
+			margin-bottom: 58px
+			padding-left: 0
+		&__map
+			width: 100%
+			height: 450px
+			margin-left: 0
 
 @media screen and (max-width: 767px)
-	// .contacts
+	.contacts
+		margin-top: -20px
+		&__note
+			max-width: 300px
+		&__map
+			height: 400px
+
+@media screen and (max-width: 580px)
+	.contacts
+		margin-top: -5px
+		&__map
+			height: 380px
+
+@media screen and (max-width: 390px)
+	.contacts
+		margin-top: 0
+		padding-top: 11px
+		&__info
+			padding-right: 20px
+		&__note
+			margin-top: 17px
+		&__map
+			height: 342px
