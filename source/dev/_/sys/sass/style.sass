@@ -242,6 +242,27 @@
 
 .t-links
 	margin-bottom: 74px
+	transition: .3s
+	&__current
+		color: $main
+		font-size: 18px
+		font-weight: 700
+		padding: 12px 10px
+		display: none
+		flex-wrap: wrap
+		align-items: center
+		justify-content: space-between
+		cursor: pointer
+		transition: .3s
+		span
+			width: calc( 100% - 19px )
+			padding-right: 20px
+			transition: .3s
+		img
+			width: 19px
+			top: 2px
+			transition: .3s
+			position: relative
 	&__item
 		width: auto !important
 		color: #fff
@@ -258,9 +279,9 @@
 			margin-right: 0
 		&:hover
 			background: $green
-		&.wide
+		&.--wide
 			min-width: 137px
-		&.active
+		&.--active
 			background: $green
 
 // SLIDER
@@ -400,7 +421,7 @@
 		margin-bottom: 54px
 		&__item
 			padding: 10px 20px
-			&.wide
+			&.--wide
 				min-width: 100px
 
 @media screen and (max-width: 767px)
@@ -425,24 +446,48 @@
 		line-height: 26px
 
 	.t-links
-		padding: 0 10px
+		overflow: visible
 		border: 1px solid $main
 		&__wrap
+			z-index: 10
+			height: 0
+			opacity: 0
+			transition: .3s
+			visibility: hidden
 			flex-direction: column
+			position: absolute
+			background: #fff
+			border: 1px solid $main
+			border-top: none
+			top: 48px
+			left: 50%
+			transform: translateX(-50%)
+		&__current
+			display: flex
 		&__item
 			color: rgba($main, 50%)
 			padding: 10px 0
+			margin: 0 10px
 			border-bottom: 1px solid $dark-gray
 			margin-right: 0
 			text-align: left
 			background: transparent
-			&.wide
-				min-width: auto
-			&.active
-				background: transparent
 			&:hover
 				color: $green
 				background: transparent
+			&.--wide
+				min-width: auto
+			&.--active
+				background: transparent
+		&.--toggle
+			.t-links
+				&__current
+					img
+						transform: scale(1, -1)
+				&__wrap
+					height: auto
+					opacity: 1
+					visibility: visible
 
 	.swiper-pagination-fraction
 		font-size: 25px

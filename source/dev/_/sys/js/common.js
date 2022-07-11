@@ -274,7 +274,39 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // INCLUDE TOGGLES
+  // LINKS TOGGLES - responsive
+  let toggleLinks = document.querySelectorAll('.t-links');
+  if (toggleLinks.length > 0) {
+    toggleLinks.forEach((links) => {
+      links.el = {
+        current: links.querySelector('.t-links__current span'),
+        items: links.querySelectorAll('.t-links__item'),
+      };
+
+      links.addEventListener('click', () => {
+        links.classList.toggle(cls.toggle);
+      });
+
+      links.el.items.forEach((item) => {
+        if (item.classList.contains(cls.active)) {
+          links.current = item;
+          links.el.current.innerHTML = item.innerHTML
+        }
+        item.addEventListener('click', () => {
+          if (links.current) {
+            links.current.classList.remove(cls.active);
+          }
+
+          links.current = item;
+          links.current.classList.add(cls.active);
+          links.el.current.innerHTML = item.innerHTML
+        })
+      });
+    });
+  }
+
+
+  // INCLUDE TOGGLES - responsive
   // let includeItems = document.querySelectorAll('.include__item');
 
   // if (includeItems && (document.body.offsetWidth < 992)) {
@@ -391,35 +423,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-  const selectLinks = document.querySelectorAll('.sl');
-  if (selectLinks.length > 0) {
-    selectLinks.forEach((links) => {
-      links.el = {
-        current: links.querySelector('.sl__current span'),
-        items: links.querySelectorAll('.sl__item'),
-      };
-
-      links.addEventListener('click', () => {
-        links.classList.toggle('--open');
-      });
-
-      links.el.items.forEach((item) => {
-        if (item.classList.contains('--active')) {
-          links.current = item;
-          links.el.current.innerHTML = item.innerHTML
-        }
-        item.addEventListener('click', () => {
-          if (links.current) {
-            links.current.classList.remove('--active');
-          }
-
-          links.current = item;
-          links.current.classList.add('--active');
-          links.el.current.innerHTML = item.innerHTML
-        })
-      });
-
-    });
-  }
 
 })

@@ -703,6 +703,30 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
 
 .t-links {
   margin-bottom: 74px;
+  transition: 0.3s;
+}
+.t-links__current {
+  color: #272727;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 12px 10px;
+  display: none;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.t-links__current span {
+  width: calc( 100% - 19px );
+  padding-right: 20px;
+  transition: 0.3s;
+}
+.t-links__current img {
+  width: 19px;
+  top: 2px;
+  transition: 0.3s;
+  position: relative;
 }
 .t-links__item {
   width: auto !important;
@@ -723,10 +747,10 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
 .t-links__item:hover {
   background: #09B559;
 }
-.t-links__item.wide {
+.t-links__item.--wide {
   min-width: 137px;
 }
-.t-links__item.active {
+.t-links__item.--active {
   background: #09B559;
 }
 
@@ -888,7 +912,7 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
   .t-links__item {
     padding: 10px 20px;
   }
-  .t-links__item.wide {
+  .t-links__item.--wide {
     min-width: 100px;
   }
 }
@@ -919,29 +943,53 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
   }
 
   .t-links {
-    padding: 0 10px;
+    overflow: visible;
     border: 1px solid #272727;
   }
   .t-links__wrap {
+    z-index: 10;
+    height: 0;
+    opacity: 0;
+    transition: 0.3s;
+    visibility: hidden;
     flex-direction: column;
+    position: absolute;
+    background: #fff;
+    border: 1px solid #272727;
+    border-top: none;
+    top: 48px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .t-links__current {
+    display: flex;
   }
   .t-links__item {
     color: rgba(39, 39, 39, 0.5);
     padding: 10px 0;
+    margin: 0 10px;
     border-bottom: 1px solid #CCCCCC;
     margin-right: 0;
     text-align: left;
     background: transparent;
   }
-  .t-links__item.wide {
-    min-width: auto;
-  }
-  .t-links__item.active {
-    background: transparent;
-  }
   .t-links__item:hover {
     color: #09B559;
     background: transparent;
+  }
+  .t-links__item.--wide {
+    min-width: auto;
+  }
+  .t-links__item.--active {
+    background: transparent;
+  }
+  .t-links.--toggle .t-links__current img {
+    transform: scale(1, -1);
+  }
+  .t-links.--toggle .t-links__wrap {
+    height: auto;
+    opacity: 1;
+    visibility: visible;
   }
 
   .swiper-pagination-fraction {
