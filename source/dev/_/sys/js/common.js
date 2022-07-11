@@ -288,6 +288,7 @@ document.addEventListener('DOMContentLoaded', function () {
   //   });
   // }
 
+  // PAGE TEXT TOGGLES
   let toggs = document.querySelector('.toggs');
   if (toggs) {
 
@@ -331,5 +332,62 @@ document.addEventListener('DOMContentLoaded', function () {
     console.log(toggs.items);
     // toggs.app
   }
+
+  // MAP
+  let $map = document.querySelector('#map');
+
+  if ($map && ymaps) {
+    ymaps.ready(mapInit);
+
+    function mapInit() {
+      let mapPosition, mapPlaceholder;
+
+      mapPosition = $map.getAttribute('data-map');
+      mapPosition = mapPosition.split(',');
+
+      for (let i = 0; i < mapPosition.length; i++) {
+        mapPosition[i] = Number(mapPosition[i]);
+      }
+
+      mapPlaceholder = $map.getAttribute('data-map');
+      mapPlaceholder = mapPlaceholder.split(',');
+
+      let ymap = new ymaps.Map($map, {
+        center: [mapPosition[0], mapPosition[1]],
+        zoom: 14,
+        controls: []
+      });
+
+      // let placemark = new ymaps.Placemark(mapPlaceholder, {
+      // }, {
+      //   iconLayout: 'default#image',
+      //   iconImageHref: '_/uploads/icons/placemark.svg',
+      //   iconImageSize: [40, 56],
+      //   iconImageOffset: [-20, -60],
+      // }, {});
+
+      // ymap.geoObjects.add(placemark);
+
+      ymap.behaviors.disable('scrollZoom');
+
+      // function setMapPostion() {
+      //   let dw = window.innerWidth;
+
+      //   if (dw > 1220) {
+      //     ymap.setCenter([mapPosition[0], mapPosition[1]]);
+      //   } else if (dw <= 1220 && dw > 767) {
+      //     ymap.setCenter([mapPosition[0], mapPosition[1] - 0.01]);
+      //   } else {
+      //     ymap.setCenter(mapPosition);
+      //   }
+      // }
+
+      // setMapPostion();
+      // window.addEventListener('resize', () => {
+      //   setMapPostion();
+      // });
+    }
+  }
+
 
 })
