@@ -1,0 +1,41 @@
+.success {
+  padding: 87px 0 112px;
+}
+.success__title {
+  max-width: 660px;
+  margin-bottom: 57px;
+  margin-left: 4px;
+}
+.success__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -43px -40px;
+}
+.success__item {
+  width: calc( 100% / 3 - 86px);
+  margin: 0 43px 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.success__icon {
+  width: 85px;
+  position: relative;
+}
+.success__icon:before {
+  content: "";
+  width: 14px;
+  height: 15px;
+  top: 15px;
+  left: 50%;
+  margin-left: 2px;
+  transform: translateX(-50%);
+  background: url("../../sys/imgs/arrow-right.svg") no-repeat;
+  position: absolute;
+}
+.success__name {
+  width: calc( 100% - 85px );
+  padding-top: 18px;
+  padding-left: 27px;
+  font-weight: 700;
+  line-height: 25px;
+}

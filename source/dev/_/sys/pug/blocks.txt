@@ -94,3 +94,7 @@ include ../../blocks/interface/interface
 +style('solve', 'blocks')
 include ../../blocks/solve/solve
 
+//- success 
++style('success', 'blocks')
+include ../../blocks/success/success
+
