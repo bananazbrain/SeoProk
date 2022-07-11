@@ -2,11 +2,16 @@ extends ../../templates/default
 block vars
 	-
 		title = "Акции"
+		promosMain = true
 
 block content
 
-		+style('voucher', 'blocks')
-		include ../../blocks/voucher/voucher
+	.page
+		.case
+			.page__title.h1 #[h1 Акции]
 
-		+style('offer', 'blocks')
-		include ../../blocks/offer/offer
+	+style('voucher', 'blocks')
+	include ../../blocks/voucher/voucher
+
+	+style('offer', 'blocks')
+	include ../../blocks/offer/offer

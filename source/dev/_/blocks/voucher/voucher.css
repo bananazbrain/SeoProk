@@ -84,6 +84,13 @@
   transition: 0.6s;
   left: 98%;
 }
+.voucher.--promosMain {
+  padding: 0 0 83px;
+  margin-top: -3px;
+}
+.voucher.--promosMain .voucher__title {
+  display: none;
+}
 
 @media screen and (max-width: 1360px) {
   .voucher__value {
@@ -197,6 +204,9 @@
   }
   .voucher__line:before {
     left: 94%;
+  }
+  .voucher.--promosMain {
+    margin-top: 0;
   }
 }
 @media screen and (max-width: 390px) {
