@@ -90,3 +90,7 @@ include ../../blocks/contacts/contacts
 +style('interface', 'blocks')
 include ../../blocks/interface/interface
 
+//- solve 
++style('solve', 'blocks')
+include ../../blocks/solve/solve
+
