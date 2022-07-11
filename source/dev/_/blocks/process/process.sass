@@ -1,0 +1,93 @@
+@import ../../sys/sass/vars
+
+.process
+	padding: 94px 0 118px
+	background: $gray
+	&__title
+		margin-bottom: 89px
+		margin-left: 4px
+	&__list
+		display: flex
+		flex-wrap: wrap
+	&__item
+		width: calc( 100% / 4 )
+		margin-right: 50px
+		&:nth-of-type(3)
+			margin-right: 50px
+		&:last-of-type
+			margin-right: 0
+	&__bar
+		margin-bottom: 48px
+		position: relative
+		img
+			max-width: 194px
+		&:before, &:after
+			content: ""
+			top: 50%
+			right: 0
+			width: 21px
+			height: 33px
+			transform: translateY(-50%)
+			background: url('../../sys/imgs/chevron-green.svg') no-repeat
+			position: absolute
+		&:before
+			right: 15px
+			opacity: .64
+		&:after
+			opacity: .35
+
+	&__elems
+		padding-left: 42px
+		position: relative
+		&:before
+			content: ""
+			width: 1px
+			height: 100%
+			min-height: 273px
+			top: 0
+			left: 8px
+			background: $green
+			position: absolute
+	&__elem
+		top: -6px
+		font-size: 21px
+		font-weight: 700
+		margin-bottom: 63px
+		line-height: 27px
+		position: relative
+		&:before
+			content: ""
+			top: 6px
+			left: -42px
+			width: 16px
+			height: 16px
+			background: $green
+			border-radius: 50%
+			position: absolute
+		&:last-of-type
+			margin-bottom: 0
+		&.--mt
+			margin-top: 90px
+		&.--final
+			color: $green
+			font-size: 28px
+			line-height: 33px
+			&:after
+				content: ""
+				top: -5px
+				left: -47px
+				width: 26px
+				height: 26px
+				background: $green
+				border-radius: 50%
+				opacity: .26
+				position: absolute
+
+@media screen and (max-width: 1220px)
+	// .process
+
+@media screen and (max-width: 992px)
+	// .process
+
+@media screen and (max-width: 767px)
+	// .process

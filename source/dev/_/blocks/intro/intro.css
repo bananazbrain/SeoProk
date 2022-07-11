@@ -121,7 +121,7 @@
   top: 0;
   left: 0;
   height: 1px;
-  background: url("../../sys/imgs/line-2.svg") repeat-x;
+  background: url("../../sys/imgs/line.svg") repeat-x;
   opacity: 0.8;
   background-size: contain;
   position: absolute;

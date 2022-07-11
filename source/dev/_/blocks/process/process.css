@@ -1,0 +1,100 @@
+.process {
+  padding: 94px 0 118px;
+  background: #F7F7F7;
+}
+.process__title {
+  margin-bottom: 89px;
+  margin-left: 4px;
+}
+.process__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.process__item {
+  width: calc( 100% / 4 );
+  margin-right: 50px;
+}
+.process__item:nth-of-type(3) {
+  margin-right: 50px;
+}
+.process__item:last-of-type {
+  margin-right: 0;
+}
+.process__bar {
+  margin-bottom: 48px;
+  position: relative;
+}
+.process__bar img {
+  max-width: 194px;
+}
+.process__bar:before, .process__bar:after {
+  content: "";
+  top: 50%;
+  right: 0;
+  width: 21px;
+  height: 33px;
+  transform: translateY(-50%);
+  background: url("../../sys/imgs/chevron-green.svg") no-repeat;
+  position: absolute;
+}
+.process__bar:before {
+  right: 15px;
+  opacity: 0.64;
+}
+.process__bar:after {
+  opacity: 0.35;
+}
+.process__elems {
+  padding-left: 42px;
+  position: relative;
+}
+.process__elems:before {
+  content: "";
+  width: 1px;
+  height: 100%;
+  min-height: 273px;
+  top: 0;
+  left: 8px;
+  background: #09B559;
+  position: absolute;
+}
+.process__elem {
+  top: -6px;
+  font-size: 21px;
+  font-weight: 700;
+  margin-bottom: 63px;
+  line-height: 27px;
+  position: relative;
+}
+.process__elem:before {
+  content: "";
+  top: 6px;
+  left: -42px;
+  width: 16px;
+  height: 16px;
+  background: #09B559;
+  border-radius: 50%;
+  position: absolute;
+}
+.process__elem:last-of-type {
+  margin-bottom: 0;
+}
+.process__elem.--mt {
+  margin-top: 90px;
+}
+.process__elem.--final {
+  color: #09B559;
+  font-size: 28px;
+  line-height: 33px;
+}
+.process__elem.--final:after {
+  content: "";
+  top: -5px;
+  left: -47px;
+  width: 26px;
+  height: 26px;
+  background: #09B559;
+  border-radius: 50%;
+  opacity: 0.26;
+  position: absolute;
+}
