@@ -332,4 +332,36 @@ document.addEventListener('DOMContentLoaded', function () {
     // toggs.app
   }
 
+
+  const selectLinks = document.querySelectorAll('.sl');
+  if (selectLinks.length > 0) {
+    selectLinks.forEach((links) => {
+      links.el = {
+        current: links.querySelector('.sl__current span'),
+        items: links.querySelectorAll('.sl__item'),
+      };
+
+      links.addEventListener('click', () => {
+        links.classList.toggle('--open');
+      });
+
+      links.el.items.forEach((item) => {
+        if (item.classList.contains('--active')) {
+          links.current = item;
+          links.el.current.innerHTML = item.innerHTML
+        }
+        item.addEventListener('click', () => {
+          if (links.current) {
+            links.current.classList.remove('--active');
+          }
+
+          links.current = item;
+          links.current.classList.add('--active');
+          links.el.current.innerHTML = item.innerHTML
+        })
+      });
+
+    });
+  }
+
 })
