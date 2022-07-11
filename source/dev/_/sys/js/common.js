@@ -386,19 +386,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
       let ymap = new ymaps.Map($map, {
         center: [mapPosition[0], mapPosition[1]],
-        zoom: 14,
+        zoom: 16,
         controls: []
       });
 
-      // let placemark = new ymaps.Placemark(mapPlaceholder, {
-      // }, {
-      //   iconLayout: 'default#image',
-      //   iconImageHref: '_/uploads/icons/placemark.svg',
-      //   iconImageSize: [40, 56],
-      //   iconImageOffset: [-20, -60],
-      // }, {});
+      let placemark = new ymaps.Placemark(mapPlaceholder, {
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: '_/uploads/icons/placemark-green.svg',
+      }, {});
 
-      // ymap.geoObjects.add(placemark);
+      ymap.geoObjects.add(placemark);
 
       ymap.behaviors.disable('scrollZoom');
 
