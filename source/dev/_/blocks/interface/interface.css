@@ -1,0 +1,33 @@
+.interface {
+  padding: 87px 0;
+}
+.interface__title {
+  margin-bottom: 103px;
+  margin-left: 3px;
+}
+.interface__list {
+  margin-right: 18px;
+}
+.interface__list-wrap {
+  margin: 0 -5px -70px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.interface__item {
+  width: calc( 100% / 3 - 10px);
+  margin: 0 5px 70px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.interface__item:nth-of-type(n+4) {
+  margin: 0 5px 84px;
+}
+.interface__icon {
+  width: 49px;
+}
+.interface__name {
+  width: calc( 100% - 49px );
+  padding-top: 4px;
+  padding-left: 19px;
+  line-height: 34px;
+}

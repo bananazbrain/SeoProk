@@ -1,0 +1,37 @@
+@import ../../sys/sass/vars
+
+.interface
+	padding: 87px 0
+	&__title
+		margin-bottom: 103px
+		margin-left: 3px
+	&__list
+		margin-right: 18px
+	&__list-wrap
+		margin: 0 -5px -70px
+		display: flex
+		flex-wrap: wrap
+	&__item
+		width: calc( 100% / 3 - 10px)
+		margin: 0 5px 70px
+		display: flex
+		flex-wrap: wrap
+		&:nth-of-type(n+4)
+			margin: 0 5px 84px
+
+	&__icon
+		width: 49px
+	&__name
+		width: calc( 100% - 49px )
+		padding-top: 4px
+		padding-left: 19px
+		line-height: 34px
+
+@media screen and (max-width: 1220px)
+	// .interface
+
+@media screen and (max-width: 992px)
+	// .interface
+
+@media screen and (max-width: 767px)
+	// .interface

@@ -1,0 +1,21 @@
+include ../../sys/pug/vars
+
+.interface
+	.case
+		.interface__title.h3 #[h3 Разрабатываем интерфейсы]
+		.interface__list
+			.interface__list-wrap
+				mixin interface(name)
+					.interface__item
+						.interface__icon
+							img(src="_/uploads/icons/cube-3.svg", alt="")
+						.interface__name.h5 #[h5!= name]
+				+interface('Онлайн-сервисы')
+				+interface('Интернет-магазины <br>и маркетплейсы')
+				+interface('Погружаемся <br>в специфику бизнеса')
+				+interface('Личные кабинеты')
+				+interface('Дашборды')
+				+interface('Интернет — порталы')
+				+interface('Мобильные <br>приложения')
+				+interface('IT-стартапы')
+				+interface('IoT-устройства и промышленное оборудование')
