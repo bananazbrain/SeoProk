@@ -2,28 +2,6 @@
 
 .cases
 	padding-bottom: 88px
-	&__links
-		margin-bottom: 74px
-	&__link
-		width: auto !important
-		color: #fff
-		font-size: 18px
-		font-weight: 700
-		line-height: 26px
-		background: #ABABAB
-		padding: 13px 21px
-		transition: .3s
-		text-align: center
-		cursor: pointer
-		margin-right: 12px
-		&:last-of-type
-			margin-right: 0
-		&:hover
-			background: $green
-		&.wide
-			min-width: 137px
-		&.active
-			background: $green
 	&__list
 		display: flex
 		flex-wrap: wrap
@@ -89,8 +67,6 @@
 
 @media screen and (max-width: 1220px)
 	.cases
-		&__links
-			overflow: visible
 		&__list
 			gap: 30px 25px
 			grid-gap: 30px 25px
@@ -121,10 +97,6 @@
 
 @media screen and (max-width: 992px)
 	.cases
-		&__links
-			margin-bottom: 54px
-		&__link
-			padding: 10px 20px
 		&__list
 			gap: 25px
 			grid-gap: 25px
@@ -153,25 +125,6 @@
 				min-height: 50px
 
 @media screen and (max-width: 767px)
-	.cases
-		&__links
-			overflow: hidden
-			border: 1px solid $main
-		&__links-wrap
-			padding: 0 10px
-			flex-direction: column
-		&__link
-			color: rgba($main, 50%)
-			padding: 10px 0
-			border-bottom: 1px solid $dark-gray
-			text-align: left
-			background: transparent
-			&.active
-				background: transparent
-			&:hover
-				color: $green
-				background: transparent
-
 	.case-item
 		&__extra
 			.case-elem
@@ -220,8 +173,6 @@
 @media screen and (max-width: 390px)
 	.cases
 		padding-bottom: 57px
-		&__links
-			margin-bottom: 33px
 		&__list
 			gap: 13px
 			grid-gap: 13px
