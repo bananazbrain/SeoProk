@@ -167,6 +167,42 @@
   line-height: 24px;
   text-align: center;
 }
+.intro.--ux {
+  padding: 96px 0 6px;
+}
+.intro.--ux .intro__info {
+  width: 590px;
+}
+.intro.--ux .intro__title {
+  margin-bottom: 36px;
+}
+.intro.--ux .intro__subtitle {
+  margin-bottom: 40px;
+}
+.intro.--ux .intro__fields {
+  max-width: 482px;
+}
+.intro.--ux .intro__preview {
+  width: calc( 100% - 590px - 52px);
+  top: -48px;
+  right: -25px;
+}
+.intro.--ux .intro__shape {
+  top: 28px;
+  left: 15px;
+}
+.intro.--ux .intro__circle-item:nth-of-type(1) {
+  top: -64px;
+}
+.intro.--ux .intro__circle-item:nth-of-type(2) {
+  bottom: 220px;
+}
+.intro.--ux .intro__circle-item:nth-of-type(3) {
+  top: -97px;
+}
+.intro.--ux .intro__circle-item:nth-of-type(4) {
+  bottom: 15px;
+}
 .intro.--about {
   padding: 96px 0 83px;
 }
