@@ -303,6 +303,8 @@ document.addEventListener('DOMContentLoaded', function () {
           links.el.current.innerHTML = item.innerHTML
         }
         item.addEventListener('click', () => {
+          links.el.current = links.querySelector('.t-links__current span');
+
           if (links.current) {
             links.current.classList.remove(cls.active);
           }
