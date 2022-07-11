@@ -171,9 +171,6 @@
   position: absolute;
   cursor: pointer;
 }
-.h-bar__nav ul li.has-subnav a {
-  color: #09B559;
-}
 .h-bar__nav ul li.has-subnav ul.subnav {
   z-index: 10;
   top: 40px;
