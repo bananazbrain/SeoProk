@@ -3,17 +3,19 @@ include ../../sys/pug/vars
 .works
 	.case
 		.works__wrap
-			.works__links.t-links.swiper
-				.works__links-wrap.t-links__wrap.swiper-wrapper
-					.works__link.t-links__item.swiper-slide.wide.active Все
-					.works__link.t-links__item.swiper-slide Нейминг
-					.works__link.t-links__item.swiper-slide Дизайн
-					.works__link.t-links__item.swiper-slide Лендинги
-					.works__link.t-links__item.swiper-slide Сайты-визитки
-					.works__link.t-links__item.swiper-slide Корпоративные сайты
-					.works__link.t-links__item.swiper-slide Сайты-каталоги
-					.works__link.t-links__item.swiper-slide Интернет-магазины
-					.works__link.t-links__item.swiper-slide Порталы
+			.works__links.t-links.swiper.sl
+				.cases__link.sl__current
+					span
+				.works__links-wrap.t-links__wrap.swiper-wrapper.sl__list
+					.works__link.t-links__item.swiper-slide.wide.sl__item.--active Все
+					.works__link.t-links__item.swiper-slide.sl__item Нейминг
+					.works__link.t-links__item.swiper-slide.sl__item Дизайн
+					.works__link.t-links__item.swiper-slide.sl__item Лендинги
+					.works__link.t-links__item.swiper-slide.sl__item Сайты-визитки
+					.works__link.t-links__item.swiper-slide.sl__item Корпоративные сайты
+					.works__link.t-links__item.swiper-slide.sl__item Сайты-каталоги
+					.works__link.t-links__item.swiper-slide.sl__item Интернет-магазины
+					.works__link.t-links__item.swiper-slide.sl__item Порталы
 			.works__list
 				mixin works(img, cls)
 					a.works__item(href="" class=cls)
