@@ -214,7 +214,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // BLOG SLIDER
   let blogSlider = document.querySelector('.blog__slider-inner');
-
   if (blogSlider) {
     let blogSliderSwiper = new Swiper(blogSlider, {
       slidesPerView: 3,
@@ -251,7 +250,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // WORKS SLIDER
   let worksSlider = document.querySelector('.works__links');
-
   if (worksSlider) {
     new SwiperIniter(767, 'less', 'works__links', 'works__links-wrap', 'works__link', {
       slidesPerView: 'auto',
@@ -262,7 +260,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // CASES SLIDER
   let casesSlider = document.querySelector('.cases__links');
-
   if (casesSlider) {
     new SwiperIniter(767, 'less', 'cases__links', 'cases__links-wrap', 'cases__link', {
       slidesPerView: 'auto',
@@ -317,20 +314,20 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-
   // INCLUDE TOGGLES - responsive
-  // let includeItems = document.querySelectorAll('.include__item');
+  let includeItems = document.querySelectorAll('.include__item');
+  if (includeItems && (document.body.offsetWidth < 992)) {
+    includeItems.forEach((item) => {
+      item.head = item.querySelector('.include__head');
+      item.links = item.querySelector('.include__links');
 
-  // if (includeItems && (document.body.offsetWidth < 992)) {
-  //   includeItems.forEach((includeItem) => {
-  //     includeItem.question = includeItem.querySelector('.include__head');
-  //     includeItem.answer = includeItem.querySelector('.include__links');
-
-  //     includeItem.question.addEventListener('click', () => {
-  //       includeItem.classList.toggle(cls.active);
-  //     });
-  //   });
-  // }
+      if (item.head) {
+        item.head.addEventListener('click', () => {
+          item.classList.toggle(cls.active);
+        });
+      }
+    });
+  }
 
   // PAGE TEXT TOGGLES
   let toggs = document.querySelector('.toggs');
@@ -379,7 +376,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // MAP
   let $map = document.querySelector('#map');
-
   if ($map && ymaps) {
     ymaps.ready(mapInit);
 
