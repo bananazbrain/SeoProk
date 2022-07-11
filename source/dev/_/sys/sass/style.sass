@@ -240,6 +240,29 @@
 		cursor: default
 		margin-right: 10px
 
+.t-links
+	margin-bottom: 74px
+	&__item
+		width: auto !important
+		color: #fff
+		font-size: 18px
+		font-weight: 700
+		line-height: 26px
+		background: #ABABAB
+		padding: 13px 21px
+		transition: .3s
+		text-align: center
+		cursor: pointer
+		margin-right: 12px
+		&:last-of-type
+			margin-right: 0
+		&:hover
+			background: $green
+		&.wide
+			min-width: 137px
+		&.active
+			background: $green
+
 // SLIDER
 .swiper-button-prev, .swiper-button-next
 	z-index: 50
@@ -373,6 +396,13 @@
 		h4
 			margin-left: 0
 
+	.t-links
+		margin-bottom: 54px
+		&__item
+			padding: 10px 20px
+			&.wide
+				min-width: 100px
+
 @media screen and (max-width: 767px)
 	.h1
 		font-size: 35px
@@ -393,6 +423,26 @@
 	.t1
 		font-size: 16px
 		line-height: 26px
+
+	.t-links
+		padding: 0 10px
+		border: 1px solid $main
+		&__wrap
+			flex-direction: column
+		&__item
+			color: rgba($main, 50%)
+			padding: 10px 0
+			border-bottom: 1px solid $dark-gray
+			margin-right: 0
+			text-align: left
+			background: transparent
+			&.wide
+				min-width: auto
+			&.active
+				background: transparent
+			&:hover
+				color: $green
+				background: transparent
 
 	.swiper-pagination-fraction
 		font-size: 25px
@@ -437,3 +487,6 @@
 		padding-top: 22px
 		&__title
 			margin-bottom: 15px
+
+	.t-links
+		margin-bottom: 33px

@@ -3,17 +3,17 @@ include ../../sys/pug/vars
 .works
 	.case
 		.works__wrap
-			.works__links.swiper
-				.works__links-wrap.swiper-wrapper
-					.works__link.swiper-slide.wide.active Все
-					.works__link.swiper-slide Нейминг
-					.works__link.swiper-slide Дизайн
-					.works__link.swiper-slide Лендинги
-					.works__link.swiper-slide Сайты-визитки
-					.works__link.swiper-slide Корпоративные сайты
-					.works__link.swiper-slide Сайты-каталоги
-					.works__link.swiper-slide Интернет-магазины
-					.works__link.swiper-slide Порталы
+			.works__links.t-links.swiper
+				.works__links-wrap.t-links__wrap.swiper-wrapper
+					.works__link.t-links__item.swiper-slide.wide.active Все
+					.works__link.t-links__item.swiper-slide Нейминг
+					.works__link.t-links__item.swiper-slide Дизайн
+					.works__link.t-links__item.swiper-slide Лендинги
+					.works__link.t-links__item.swiper-slide Сайты-визитки
+					.works__link.t-links__item.swiper-slide Корпоративные сайты
+					.works__link.t-links__item.swiper-slide Сайты-каталоги
+					.works__link.t-links__item.swiper-slide Интернет-магазины
+					.works__link.t-links__item.swiper-slide Порталы
 			.works__list
 				mixin works(img, cls)
 					a.works__item(href="" class=cls)

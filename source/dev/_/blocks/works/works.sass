@@ -2,28 +2,6 @@
 
 .works
 	padding-bottom: 85px
-	&__links
-		margin-bottom: 74px
-	&__link
-		width: auto !important
-		color: #fff
-		font-size: 18px
-		font-weight: 700
-		line-height: 26px
-		background: #ABABAB
-		padding: 13px 21px
-		transition: .3s
-		text-align: center
-		cursor: pointer
-		margin-right: 12px
-		&:last-of-type
-			margin-right: 0
-		&:hover
-			background: $green
-		&.wide
-			min-width: 137px
-		&.active
-			background: $green
 	&__list
 		display: flex
 		flex-wrap: wrap
@@ -44,17 +22,11 @@
 
 @media screen and (max-width: 1220px)
 	.works
-		&__links
-			overflow: visible
 		&__item
 			height: 290px
 
 @media screen and (max-width: 992px)
 	.works
-		&__links
-			margin-bottom: 54px
-		&__link
-			padding: 10px 20px
 		&__list
 			gap: 25px
 			grid-gap: 25px
@@ -64,23 +36,6 @@
 
 @media screen and (max-width: 767px)
 	.works
-		&__links
-			overflow: hidden
-			border: 1px solid $main
-		&__links-wrap
-			padding: 0 10px
-			flex-direction: column
-		&__link
-			color: rgba($main, 50%)
-			padding: 10px 0
-			border-bottom: 1px solid $dark-gray
-			text-align: left
-			background: transparent
-			&.active
-				background: transparent
-			&:hover
-				color: $green
-				background: transparent
 		&__item
 			height: 260px
 

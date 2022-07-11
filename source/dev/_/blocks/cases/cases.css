@@ -1,34 +1,6 @@
 .cases {
   padding-bottom: 88px;
 }
-.cases__links {
-  margin-bottom: 74px;
-}
-.cases__link {
-  width: auto !important;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 26px;
-  background: #ABABAB;
-  padding: 13px 21px;
-  transition: 0.3s;
-  text-align: center;
-  cursor: pointer;
-  margin-right: 12px;
-}
-.cases__link:last-of-type {
-  margin-right: 0;
-}
-.cases__link:hover {
-  background: #09B559;
-}
-.cases__link.wide {
-  min-width: 137px;
-}
-.cases__link.active {
-  background: #09B559;
-}
 .cases__list {
   display: flex;
   flex-wrap: wrap;
@@ -108,9 +80,6 @@
 }
 
 @media screen and (max-width: 1220px) {
-  .cases__links {
-    overflow: visible;
-  }
   .cases__list {
     gap: 30px 25px;
     grid-gap: 30px 25px;
@@ -146,12 +115,6 @@
   }
 }
 @media screen and (max-width: 992px) {
-  .cases__links {
-    margin-bottom: 54px;
-  }
-  .cases__link {
-    padding: 10px 20px;
-  }
   .cases__list {
     gap: 25px;
     grid-gap: 25px;
@@ -184,29 +147,6 @@
   }
 }
 @media screen and (max-width: 767px) {
-  .cases__links {
-    overflow: hidden;
-    border: 1px solid #272727;
-  }
-  .cases__links-wrap {
-    padding: 0 10px;
-    flex-direction: column;
-  }
-  .cases__link {
-    color: rgba(39, 39, 39, 0.5);
-    padding: 10px 0;
-    border-bottom: 1px solid #CCCCCC;
-    text-align: left;
-    background: transparent;
-  }
-  .cases__link.active {
-    background: transparent;
-  }
-  .cases__link:hover {
-    color: #09B559;
-    background: transparent;
-  }
-
   .case-item__extra .case-elem {
     min-height: 400px;
   }
@@ -263,9 +203,6 @@
 @media screen and (max-width: 390px) {
   .cases {
     padding-bottom: 57px;
-  }
-  .cases__links {
-    margin-bottom: 33px;
   }
   .cases__list {
     gap: 13px;
