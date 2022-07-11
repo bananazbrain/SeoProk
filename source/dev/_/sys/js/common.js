@@ -32,6 +32,13 @@ class SwiperIniter {
         items: slider.querySelectorAll('.' + classItems),
       };
 
+      slider.oldClass = slider.className;
+      slider.el.wrapper.oldClass = slider.el.wrapper.className;
+
+      slider.el.items.forEach((item) => {
+        item.oldClass = item.className;
+      });
+
       this.init(slider);
 
       window.addEventListener('resize', () => {
@@ -45,26 +52,29 @@ class SwiperIniter {
 
   init(slider) {
     this.condition = this.type == 'less' ? this.width < window.innerWidth : this.width >= window.innerWidth;
+    slider.el = {
+      wrapper: slider.querySelector('.' + this.classWrapper),
+      items: slider.querySelectorAll('.' + this.classItems),
+    };
 
     if (this.condition) {
-      slider.classList.add('swiper');
-      slider.el.wrapper.classList.add('swiper-wrapper');
+      slider.className = slider.oldClass + ' swiper';
+      slider.el.wrapper.className = slider.el.wrapper.oldClass + ' swiper';
 
       slider.el.items.forEach((item) => {
-        item.classList.add('swiper-slide');
+        item.className = item.oldClass + ' swiper-slide';
       });
       this.swiper = new Swiper(slider, this.options)
     } else {
       if (this.swiper) {
-        console.log(this.swiper);
-        slider.className = this.classSlider;
+        slider.className = slider.oldClass;
         slider.removeAttribute('style');
 
-        slider.el.wrapper.className = this.classWrapper;
+        slider.el.wrapper.className = slider.el.wrapper.oldClass;
         slider.el.wrapper.removeAttribute('style');
 
         slider.el.items.forEach((item) => {
-          item.className = this.classItems;
+          item.className = item.oldClass;
           item.removeAttribute('style');
         });
 
@@ -418,8 +428,5 @@ document.addEventListener('DOMContentLoaded', function () {
       // });
     }
   }
-
-
-
 
 })
