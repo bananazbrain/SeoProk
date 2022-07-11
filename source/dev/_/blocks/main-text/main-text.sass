@@ -9,9 +9,10 @@
 	&__info
 		width: 585px
 		color: #fff
-		background: $main
 		padding: 65px 36px 96px 12px
+		transition: .3s
 		position: relative
+		cursor: pointer
 		&:before
 			z-index: -1
 			content: ""
@@ -20,7 +21,15 @@
 			top: 0
 			right: -5px
 			background: $main
+			transition: .3s
 			position: absolute
+		&:hover
+			&:before
+				background: $green
+			.main-text
+				&__line
+					&:before
+						left: 100%
 	&__title
 		line-height: 48px
 		margin-bottom: 52px
@@ -39,6 +48,7 @@
 			background: #fff
 			position: absolute
 			transform: translateY(-50%)
+			transition: .6s
 	&__text
 		line-height: 33px
 		width: calc( 100% - 585px )

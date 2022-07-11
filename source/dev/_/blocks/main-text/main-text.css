@@ -9,9 +9,10 @@
 .main-text__info {
   width: 585px;
   color: #fff;
-  background: #272727;
   padding: 65px 36px 96px 12px;
+  transition: 0.3s;
   position: relative;
+  cursor: pointer;
 }
 .main-text__info:before {
   z-index: -1;
@@ -21,7 +22,14 @@
   top: 0;
   right: -5px;
   background: #272727;
+  transition: 0.3s;
   position: absolute;
+}
+.main-text__info:hover:before {
+  background: #09B559;
+}
+.main-text__info:hover .main-text__line:before {
+  left: 100%;
 }
 .main-text__title {
   line-height: 48px;
@@ -43,6 +51,7 @@
   background: #fff;
   position: absolute;
   transform: translateY(-50%);
+  transition: 0.6s;
 }
 .main-text__text {
   line-height: 33px;
