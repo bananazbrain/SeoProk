@@ -98,3 +98,7 @@ include ../../blocks/solve/solve
 +style('success', 'blocks')
 include ../../blocks/success/success
 
+//- comp 
++style('comp', 'blocks')
+include ../../blocks/comp/comp
+
