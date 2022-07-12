@@ -337,6 +337,32 @@
   .intro__stat {
     width: 430px;
   }
+  .intro.--ux {
+    padding: 70px 0 80px;
+  }
+  .intro.--ux .intro__info {
+    width: 430px;
+  }
+  .intro.--ux .intro__desc {
+    max-width: 100%;
+  }
+  .intro.--ux .intro__desc br {
+    display: none;
+  }
+  .intro.--ux .intro__preview {
+    right: -50px;
+    width: calc( 100% - 500px );
+  }
+  .intro.--ux .intro__img {
+    width: 570px;
+    left: -50px;
+  }
+  .intro.--ux .intro__shape {
+    top: 78px;
+  }
+  .intro.--ux .intro__circle-item:nth-of-type(4) {
+    bottom: 0;
+  }
   .intro.--about {
     padding: 70px 0 80px;
   }

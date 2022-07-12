@@ -131,6 +131,20 @@
 		&__desc
 			margin-left: 10px
 
+		&.--ux
+			.price
+				&__list
+					left: 0
+				&__list-wrap
+					margin: 0 -5px -20px
+				&__item
+					width: calc( 100% / 4 - 10px)
+					margin: 0 5px 20px
+					&:nth-of-type(1), &:nth-of-type(2)
+						.price
+							&__rate
+								margin-bottom: 23px
+
 @media screen and (max-width: 1220px)
 	.price
 		padding: 60px 0
@@ -150,6 +164,17 @@
 			margin-left: 35px
 		&__pagination
 			display: none
+
+		&.--ux
+			.price
+				&__list-wrap
+					margin: 0 -10px -20px
+				&__item
+					width: calc( 100% / 2 - 20px)
+					margin: 0 10px 20px
+					min-height: auto
+				&__info
+					min-height: 425px
 
 @media screen and (max-width: 992px)
 	.price

@@ -31,3 +31,28 @@
   padding-left: 19px;
   line-height: 34px;
 }
+
+@media screen and (max-width: 1220px) {
+  .interface {
+    padding: 80px 0;
+  }
+  .interface__title {
+    margin-bottom: 70px;
+  }
+  .interface__list {
+    margin-right: 0;
+  }
+  .interface__list-wrap {
+    margin: 0 -15px -60px;
+  }
+  .interface__item {
+    width: calc( 100% / 3 - 30px);
+    margin: 0 15px 60px;
+  }
+  .interface__item:nth-of-type(n+4) {
+    margin: 0 15px 60px;
+  }
+  .interface__name {
+    padding-left: 15px;
+  }
+}

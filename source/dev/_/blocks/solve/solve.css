@@ -43,6 +43,7 @@
 }
 .solve__text {
   line-height: 31px;
+  margin-bottom: 20px;
 }
 .solve__text p {
   margin-bottom: 30px;
@@ -59,4 +60,15 @@
 }
 .solve__btn.--md {
   min-height: 53px;
+}
+
+@media screen and (max-width: 1220px) {
+  .solve__list-wrap {
+    margin-bottom: -30px;
+  }
+  .solve__item {
+    width: calc( 50% - 5px );
+    padding: 30px 40px;
+    margin-bottom: 30px;
+  }
 }

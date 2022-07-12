@@ -47,3 +47,15 @@
 .comp__text {
   line-height: 25px;
 }
+
+@media screen and (max-width: 1220px) {
+  .comp {
+    padding-bottom: 80px;
+  }
+  .comp__desc {
+    margin-left: 0;
+  }
+  .comp__info {
+    padding: 30px 30px 32px 42px;
+  }
+}

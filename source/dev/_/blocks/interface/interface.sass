@@ -28,7 +28,21 @@
 		line-height: 34px
 
 @media screen and (max-width: 1220px)
-	// .interface
+	.interface
+		padding: 80px 0
+		&__title
+			margin-bottom: 70px
+		&__list
+			margin-right: 0
+		&__list-wrap
+			margin: 0 -15px -60px
+		&__item
+			width: calc( 100% / 3 - 30px)
+			margin: 0 15px 60px
+			&:nth-of-type(n+4)
+				margin: 0 15px 60px
+		&__name
+			padding-left: 15px
 
 @media screen and (max-width: 992px)
 	// .interface
