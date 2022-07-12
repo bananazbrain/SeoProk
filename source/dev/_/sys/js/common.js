@@ -129,6 +129,7 @@ class File {
 
   createItem(name = '') {
     const item = document.createElement('div');
+    item.className = 'file__item';
     item.innerHTML = `
       <div class="file__item-name"></div>
       <div class="file__item-remove"></div>
