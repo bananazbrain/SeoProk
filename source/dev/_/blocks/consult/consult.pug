@@ -50,10 +50,12 @@ include ../../sys/pug/vars
 							input.input__area(type="tel" name="tel" placeholder="+7 (" autocomplete="off")
 			.consult__col
 				.consult__field
-					.consult__input.input.--gray.--file
-						.input__wrap
-							label.input__label Прикрепить файл
-							input.input__area(type="file" name="file" placeholder="Прикрепить файл")
+					.consult__input.file.--gray.--file
+						input.file__input(type="file" name="file")
+						.file__wrap
+							label.file__label Прикрепить файл
+							.file__list
+							
 				.consult__field
 					.consult__textarea.textarea.--gray.--required
 						label.textarea__label *Текст сообщения
