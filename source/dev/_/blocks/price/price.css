@@ -11,12 +11,12 @@
 .price__list-wrap {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -15px -30px;
+  margin: 0 -17px -30px;
 }
 .price__item {
-  width: calc( 100% / 4 - 30px);
+  width: calc( 100% / 4 - 34px);
   min-height: 480px;
-  margin: 0 15px 30px;
+  margin: 0 17px 30px;
   display: flex;
   flex-direction: column;
   box-shadow: 0px 4px 19px rgba(39, 39, 39, 0.08);
@@ -24,6 +24,13 @@
   cursor: pointer;
 }
 .price__item:hover .price__main {
+  background: #09B559;
+}
+.price__item:hover .price__main.--green {
+  background: #fff;
+}
+.price__item:hover .price__main.--green .price__btn {
+  color: #fff;
   background: #09B559;
 }
 .price__item:hover .price__btn.--green {
@@ -67,6 +74,9 @@
   padding: 6px 30px 25px;
   transition: 0.3s;
 }
+.price__main.--green {
+  background: #09B559;
+}
 .price__desc {
   font-weight: 700;
   margin-left: 35px;
@@ -79,6 +89,60 @@
 }
 .price__btn {
   margin-top: 8px;
+}
+.price.--ux .price__title {
+  margin-bottom: 56px;
+}
+.price.--ux .price__item {
+  min-height: 636px;
+}
+.price.--ux .price__item:nth-of-type(1) .price__rate, .price.--ux .price__item:nth-of-type(2) .price__rate {
+  margin-bottom: 42px;
+}
+.price.--ux .price__info {
+  min-height: 467px;
+  padding: 15px 18px 25px 22px;
+  display: flex;
+  flex-direction: column;
+}
+.price.--ux .price__rate {
+  margin-left: 5px;
+}
+.price.--ux .price__name {
+  margin-bottom: 25px;
+}
+.price.--ux .price__inner {
+  margin-top: auto;
+}
+.price.--ux .price__inner-item {
+  padding-bottom: 17px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+.price.--ux .price__inner-item p {
+  margin-bottom: 9px;
+}
+.price.--ux .price__inner-item p:last-of-type {
+  margin-bottom: 0;
+}
+.price.--ux .price__inner-item p:nth-of-type(1) {
+  color: #09B559;
+}
+.price.--ux .price__inner-item p:nth-of-type(3) {
+  opacity: 0.6;
+}
+.price.--ux .price__inner-item:last-of-type {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+.price.--ux .price__main {
+  padding: 20px 28px 37px 34px;
+}
+.price.--ux .price__desc {
+  margin-left: 0;
+}
+.price.--ux .price__btn {
+  margin-top: 23px;
 }
 
 @media screen and (max-width: 1360px) {

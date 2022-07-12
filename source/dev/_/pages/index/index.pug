@@ -53,7 +53,64 @@ block content
 	include ../../blocks/certs/certs
 
 	+style('price', 'blocks')
-	include ../../blocks/price/price
+	.price.pad-none
+		.case
+			.price__title.h3 #[h3 Стоимость наших услуг]
+			.price__list
+				.price__list-wrap
+					a.price__item(href="")
+						.price__info
+							.price__rate
+								.price__rate-icon
+									img(src="_/uploads/icons/cube-1.svg", alt="")
+								.price__rate-title Тариф
+							.price__name.h5 #[h5 SEO продвижение сайта]
+							.price__text в ТОП органической, поисковой выдачи Яндекс, Google
+						.price__main
+							.price__desc
+								.price__value #[u 25 000] руб./мес
+								.price__note + РК бюджет
+							.price__btn.btn.--green.--md Выбрать тариф
+					a.price__item(href="")
+						.price__info
+							.price__rate
+								.price__rate-icon
+									img(src="_/uploads/icons/cube-2.svg", alt="")
+								.price__rate-title Тариф
+							.price__name.h5 #[h5 SEM продвижение сайта]
+							.price__text настройка, мониторинг, поддержка: Яндекс.Справочник, Яндекс.Карты, Яндекс.Услуги, Яндекс.Бизнес, 2 ГИС и пр
+						.price__main
+							.price__desc
+								.price__value #[u 15 000] руб./мес
+								.price__note + РК бюджет
+							.price__btn.btn.--green.--md Выбрать тариф
+					a.price__item(href="")
+						.price__info
+							.price__rate
+								.price__rate-icon
+									img(src="_/uploads/icons/cube-2.svg", alt="")
+								.price__rate-title Тариф
+							.price__name.h5 #[h5 Аудит #[br]сайта / РК]
+							.price__text включает аудит: продвижения, юзабилити, производительности, безопасности, технический, текстовый
+						.price__main
+							.price__desc
+								.price__value #[u 5 000] руб./мес
+								.price__note + анализ, отчёт
+							.price__btn.btn.--green.--md Выбрать тариф
+					a.price__item(href="")
+						.price__info
+							.price__rate
+								.price__rate-icon
+									img(src="_/uploads/icons/cube-2.svg", alt="")
+								.price__rate-title Тариф
+							.price__name.h5 #[h5 PPC / контекст]
+							.price__text Настройка контекстной рекламы Яндекс.Директ, #[br]Google Ads
+						.price__main
+							.price__desc
+								.price__value #[u 10 000] руб./мес
+								.price__note + РК бюджет
+							.price__btn.btn.--green.--md Выбрать тариф
+			.price__pagination.swiper-pagination
 
 	+style('voucher', 'blocks')
 	include ../../blocks/voucher/voucher

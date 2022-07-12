@@ -10,11 +10,11 @@
 	&__list-wrap
 		display: flex
 		flex-wrap: wrap
-		margin: 0 -15px -30px
+		margin: 0 -17px -30px
 	&__item
-		width: calc( 100% / 4 - 30px)
+		width: calc( 100% / 4 - 34px)
 		min-height: 480px
-		margin: 0 15px 30px
+		margin: 0 17px 30px
 		display: flex
 		flex-direction: column
 		box-shadow: 0px 4px 19px rgba($main, 0.08)
@@ -24,6 +24,12 @@
 			.price
 				&__main
 					background: $green
+					&.--green
+						background: #fff
+						.price
+							&__btn
+								color: #fff
+								background: $green
 				&__btn
 					&.--green
 						color: $main
@@ -58,6 +64,9 @@
 		background: #fff
 		padding: 6px 30px 25px
 		transition: .3s
+		&.--green
+			background: $green
+
 	&__desc
 		font-weight: 700
 		margin-left: 35px
@@ -67,6 +76,49 @@
 			font-size: 28px
 	&__btn
 		margin-top: 8px
+
+	&.--ux
+		.price
+			&__title
+				margin-bottom: 56px
+			&__item
+				min-height: 636px
+				&:nth-of-type(1), &:nth-of-type(2)
+					.price
+						&__rate
+							margin-bottom: 42px
+			&__info
+				min-height: 467px
+				padding: 15px 18px 25px 22px
+				display: flex
+				flex-direction: column
+			&__rate
+				margin-left: 5px
+			&__name
+				margin-bottom: 25px
+			&__inner
+				margin-top: auto
+				&-item
+					padding-bottom: 17px
+					margin-bottom: 15px
+					border-bottom: 1px solid rgba(#fff, .25)
+					p
+						margin-bottom: 9px
+						&:last-of-type
+							margin-bottom: 0
+						&:nth-of-type(1)
+							color: $green
+						&:nth-of-type(3)
+							opacity: .6
+					&:last-of-type
+						margin-bottom: 0
+						border-bottom: none
+			&__main
+				padding: 20px 28px 37px 34px
+			&__desc
+				margin-left: 0
+			&__btn
+				margin-top: 23px
 
 @media screen and (max-width: 1360px)
 	.price
