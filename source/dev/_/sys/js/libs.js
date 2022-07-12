@@ -62,226 +62,120 @@ class Check {
 }
 
 // SELECT
+"use strict";
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 class Select {
-  constructor(element) {
-    _defineProperty(this, "classWrap", 'select__wrap');
-
-    _defineProperty(this, "classArea", 'select__area');
-
-    _defineProperty(this, "classTitle", 'select__title');
-
-    _defineProperty(this, "classPlaceholder", 'select__placeholder');
-
-    _defineProperty(this, "classLabel", 'select__label');
-
-    _defineProperty(this, "classIcon", 'select__icon');
-
-    _defineProperty(this, "classDrop", 'select__drop');
-
-    _defineProperty(this, "classList", 'select__list');
-
-    _defineProperty(this, "classItem", 'select__item');
-
-    _defineProperty(this, "classSelected", '--selected');
-
-    _defineProperty(this, "classOpen", '--open');
-
-    var wrap = document.createElement('div'),
-      area = document.createElement('div'),
-      title = document.createElement('div'),
-      icon = document.createElement('div'),
-      drop = document.createElement('div'),
-      list = document.createElement('div'),
-      placeholderEl = document.createElement('div'),
-      labelEl = document.createElement('div'),
-      options = element.querySelectorAll('option'),
-      placeholder = element.getAttribute('data-placeholder'),
-      label = element.getAttribute('data-label'),
-      current = placeholder || label ? null : options[0];
-
-    wrap.className = this.classWrap;
-    area.className = this.classArea;
-    title.className = this.classTitle;
-    icon.className = this.classIcon;
-    drop.className = this.classDrop;
-    list.className = this.classList;
-    placeholderEl.className = this.classPlaceholder;
-    labelEl.className = this.classPlaceholder;
-    element.append(wrap);
-    wrap.append(area);
-    area.append(title);
-    area.append(icon);
-    wrap.append(drop);
-    drop.append(list);
-
-    if (placeholder) {
-      area.append(placeholderEl);
-      placeholderEl.innerText = placeholder;
-    }
-
-    if (label) {
-      area.append(labelEl);
-      labelEl.innerText = label;
-    }
-
-    this.title = title;
-    this.select = element.select = element.querySelector('select');
-    this.options = options;
-    options.forEach(option => {
-      var item = document.createElement('div'),
-        text = option.innerText,
-        value = option.getAttribute('value'),
-        selected = option.getAttribute('selected'),
-        group = option.getAttribute('data-group');
-      item.className = this.classItem;
-      list.append(item);
-      item.innerText = text;
-
-      option.item = item;
-      option.value = value;
-
-      if (value) {
-        item.setAttribute('data-value', value);
-      }
-
-      if (selected) {
-        current = option;
-      }
-
-      if (group) {
-        item.setAttribute('data-group', group);
+  constructor(element, settings = {
+    closeSelects: true
+  }) {
+    this.element = element;
+    this.settings = settings;
+    this.title = element.querySelector('.select__title');
+    this.parse = this.element.querySelector('.select__parse');
+    this.options = this.parse.querySelectorAll('option');
+    this.placeholder = this.element.getAttribute('data-placeholder');
+    this.field = this.element.querySelector('.field');
+    this.items = [];
+    this.options = Array.from(this.options);
+    let selectedOption = this.options.find(item => {
+      if (item.getAttribute('selected')) {
+        return item;
       }
     });
+    this.placeholder = selectedOption ? selectedOption.innerText : this.placeholder ? this.placeholder : this.options[0].innerText;
+    this.title.innerText = this.placeholder;
+    this.onClick();
+    this.createList();
+    this.createItems();
 
-    if (current) {
-      title.innerText = current.innerText;
-      element.classList.add('--filled');
+    if (this.field) {
+      this.onKeyUpField();
     }
-
-    this.current = current;
-
-    if (current) {
-      current.setAttribute('selected', 'selected');
-      var currentItem = list.querySelector('.' + this.classItem + '[data-value = "' + current.getAttribute('value') + '"]');
-      currentItem.classList.add(this.classSelected);
-      this.select.value = current.value;
-    }
-
-    area.addEventListener('click', event => {
-      if (!element.classList.contains(this.classOpen)) {
-        let prevSelect = document.querySelector('.select.--open');
-
-        if (prevSelect) {
-          document.querySelector('.select.--open').classList.remove(this.classOpen);
-        }
-        element.classList.add(this.classOpen);
-        element.classList.remove('--error');
-      } else {
-        element.classList.remove(this.classOpen);
-      }
-    });
-
-    document.addEventListener('click', (event) => {
-      if (!event.target.closest('.select')) {
-        element.classList.remove(this.classOpen);
-      }
-    });
-
-    element.select.dispatchEvent(new Event('change'));
-
-    var items = element.querySelectorAll('.' + this.classItem);
-    items.forEach(item => {
-      item.addEventListener('click', () => {
-        if (!item.classList.contains(this.classSelected)) {
-          var value = item.getAttribute('data-value');
-
-          if (element.classList.contains('--title-value')) {
-            title.innerText = value;
-          } else {
-            title.innerText = item.innerText;
-          }
-
-          options.forEach(option => {
-            option.removeAttribute('selected');
-          });
-          items.forEach(itemsItem => {
-            itemsItem.classList.remove(this.classSelected);
-          });
-          var option = element.querySelector('option[value = "' + value + '"]');
-          option.setAttribute('selected', 'selected');
-          item.classList.add(this.classSelected);
-          element.classList.remove(this.classOpen);
-
-          this.select.value = option.value;
-          element.classList.add('--filled');
-          element.select.dispatchEvent(new Event('change'));
-        }
-      });
-    });
-
-    if (element.getAttribute('data-input')) {
-      var inputName = element.getAttribute('data-input-name'),
-        inputMods = element.getAttribute('data-input-mods'),
-        inputPlaceholder = element.getAttribute('data-input-placeholder');
-      var input = document.createElement('div');
-      input.classList = 'select__input input';
-      var inputWrap = document.createElement('div');
-      inputWrap.classList = 'input__wrap';
-      var inputArea = document.createElement('input');
-      inputArea.classList = 'input__area';
-
-      if (inputMods) {
-        input.classList += '' + inputMods;
-      }
-
-      if (inputName) {
-        inputArea.name += inputName;
-      }
-
-      if (inputPlaceholder) {
-        inputArea.placeholder = inputPlaceholder;
-      }
-
-      drop.prepend(input);
-      input.append(inputWrap);
-      inputWrap.append(inputArea);
-      inputArea.addEventListener('keyup', () => {
-        var value = inputArea.value;
-        items.forEach(item => {
-          var text = item.innerText;
-
-          if (text.indexOf(value) < 0) {
-            item.classList.add('--hide');
-          } else {
-            item.classList.remove('--hide');
-          }
-        });
-      });
-    }
-
-    this.select.Select = element.Select = this;
   }
-  setItem(val) {
-    let elIndex = this.options.find((option, i) => {
-      if (val == option.value) {
-        return elIndex;
-      } else {
+
+  createList() {
+    this.list = document.createElement('div');
+    this.list.className = 'select__list';
+    this.element.querySelector('.select__drop').append(this.list);
+  }
+
+  createItems() {
+    this.options.forEach(item => {
+      let divItem = document.createElement('div');
+      divItem.className = 'select__item';
+      divItem.innerText = item.innerText;
+      divItem.option = item;
+
+      if (item.getAttribute('selected')) {
+        divItem.classList.add(Select.classSelected);
+      }
+
+      this.list.append(divItem);
+      this.items.push(divItem);
+      divItem.addEventListener('click', () => {
+        this.onClickItem(divItem);
+      });
+    });
+  }
+
+  onClickItem(item) {
+    this.options.forEach(option => {
+      option.removeAttribute('selected');
+    });
+    this.items.forEach(item => {
+      item.classList.remove(Select.classSelected);
+    });
+    item.option.setAttribute('selected', 'selected');
+    item.classList.add(Select.classSelected);
+    this.title.innerText = item.innerText;
+    let event = new Event('change');
+    this.parse.dispatchEvent(event);
+  }
+
+  onClick() {
+    this.element.addEventListener('click', event => {
+      if (this.settings.closeSelects == true) {
+        let selects = document.querySelectorAll('.select');
+
+        if (selects) {
+          selects.forEach(select => {
+            if (select == this.element) {
+              return false;
+            }
+
+            select.classList.remove(Select.classOpen);
+          });
+        }
+      }
+
+      if (event.target.closest('.field')) {
         return false;
       }
+
+      this.element.classList.toggle(Select.classOpen);
     });
-
-    if (elIndex) {
-      this.current.removeAttribute('selected', 'selected');
-      currentItem.classList.add(this.classSelected);
-
-      this.current = options[elIndex];
-      this.current.setAttribute('selected', 'selected');
-      currentItem = current.item;
-      currentItem.classList.add(this.classSelected);
-
-      element.select.value = current.value;
-
-      title.innerText = current.innerText;
-    }
   }
+
+  onKeyUpField() {
+    this.field.area.addEventListener('input', () => {
+      this.items.forEach(item => {
+        if (item.innerText.toLowerCase().indexOf(this.field.area.value.toLowerCase()) < 0) {
+          item.classList.add(Select.classHidden);
+        } else {
+          item.classList.remove(Select.classHidden);
+        }
+      });
+    });
+  }
+
 }
+
+_defineProperty(Select, "classOpen", '--open');
+
+_defineProperty(Select, "classSelected", '--selected');
+
+_defineProperty(Select, "classHidden", '--hidden');
+
+_defineProperty(Select, "classError", '--error');
