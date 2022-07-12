@@ -1,3 +1,14 @@
+textarea {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
 .textarea__wrap {
   position: relative;
 }
@@ -40,4 +51,23 @@
 }
 .textarea.--sm .textarea__area {
   min-height: 134px;
+}
+
+@media screen and (max-width: 767px) {
+  .textarea__label {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .textarea__area {
+    padding: 6px 10px;
+  }
+  .textarea__label {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .textarea.--sm .textarea__area {
+    min-height: 200px;
+  }
 }

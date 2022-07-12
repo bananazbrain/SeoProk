@@ -1,5 +1,15 @@
 @import ../../sys/sass/vars
 
+textarea
+	appearance: none
+	-webkit-appearance: none
+	-moz-appearance: none
+	border-radius: 0px
+	-webkit-border-radius: 0px
+	-moz-border-radius: 0px
+	outline: none !important
+	-webkit-tap-highlight-color: transparent
+
 .textarea
 	&__wrap
 		position: relative
@@ -42,3 +52,22 @@
 		.textarea
 			&__area
 				min-height: 134px
+
+@media screen and (max-width: 767px)
+	.textarea
+		&__label
+			font-size: 16px
+			line-height: 26px
+
+@media screen and (max-width: 390px)
+	.textarea
+		&__area
+			padding: 6px 10px
+		&__label
+			font-size: 14px
+			line-height: 22px
+
+		&.--sm
+			.textarea
+				&__area
+					min-height: 200px

@@ -101,6 +101,12 @@ input
 				&__area
 					border-bottom-color: $red
 
+@media screen and (max-width: 767px)
+	.input
+		&__label
+			font-size: 16px
+			line-height: 26px
+
 @media screen and (max-width: 580px)
 	.input
 		&.--b-white
@@ -110,6 +116,18 @@ input
 
 @media screen and (max-width: 390px)
 	.input
+		&__label
+			font-size: 14px
+			line-height: 22px
+
+		&.--gray
+			.input
+				&__area
+					font-size: 12px
+					padding: 6px 10px
+					&::placeholder
+						font-size: 12px
+
 		&.--b-black
 			.input
 				&__area

@@ -1,11 +1,11 @@
 @import ../../sys/sass/vars
 
 .pay
+	margin-top: -14px
 	padding-bottom: 92px
 	&__text
 		text-align: justify
 		margin-left: 5px
-		margin-top: -14px
 		margin-bottom: 55px
 		a
 			color: $green
@@ -28,6 +28,14 @@
 		margin-bottom: 17px
 		&:last-of-type
 			margin-bottom: 0
+	&__note
+		font-size: 14px
+		line-height: 22px
+		margin-top: 20px
+		p
+			margin-bottom: 10px
+			&:last-of-type
+				margin-bottom: 0
 	&__btn
 		margin-top: 20px
 		font-size: 18px
@@ -39,11 +47,69 @@
 		margin-right: -90px
 		margin-left: auto
 
+@media screen and (max-width: 1360px)
+	.pay
+		&__wrap
+			align-items: center
+		&__form
+			width: 630px
+		&__img
+			margin-top: 0
+			max-width: 560px
+
 @media screen and (max-width: 1220px)
-	// .pay
+	.pay
+		&__form
+			width: 500px
+		&__img
+			max-width: 480px
 
 @media screen and (max-width: 992px)
-	// .pay
+	.pay
+		&__text
+			margin-bottom: 40px
+		&__form
+			width: 100%
+		&__img
+			display: none
 
 @media screen and (max-width: 767px)
-	// .pay
+	.pay
+		padding-bottom: 84px
+		&__text
+			margin-left: 0
+			margin-bottom: 30px
+		&__subtitle
+			margin-left: 0
+			margin-bottom: 30px
+
+@media screen and (max-width: 580px)
+	.pay
+		margin-top: -10px
+		&__form
+			padding: 20px 20px 30px
+		&__field
+			margin-bottom: 13px
+		&__note
+			font-size: 13px
+			line-height: 19px
+
+@media screen and (max-width: 390px)
+	.pay
+		margin-top: 0
+		&__text
+			font-size: 14px
+			line-height: 22px
+			margin-bottom: 17px
+		&__subtitle
+			font-size: 14px
+			line-height: 22px
+		&__form
+			padding: 18px 12px 30px
+		&__note
+			font-size: 12px
+			margin-top: 15px
+			p
+				margin-bottom: 4px
+		&__btn
+			max-width: 165px
