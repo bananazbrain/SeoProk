@@ -118,3 +118,7 @@ include ../../blocks/other/other
 +style('consult', 'blocks')
 include ../../blocks/consult/consult
 
+//- pay 
++style('pay', 'blocks')
+include ../../blocks/pay/pay
+

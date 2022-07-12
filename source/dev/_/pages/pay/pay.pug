@@ -1,0 +1,12 @@
+extends ../../templates/default
+block vars
+	-
+		title = "Онлайн оплата услуг"
+
+block content
+	.page
+		.case
+			.page__title.h1 #[h1 Онлайн оплата услуг]
+
+	+style('pay', 'blocks')
+	include ../../blocks/pay/pay

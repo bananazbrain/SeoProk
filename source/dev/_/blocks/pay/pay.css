@@ -1,0 +1,49 @@
+.pay {
+  padding-bottom: 92px;
+}
+.pay__text {
+  text-align: justify;
+  margin-left: 5px;
+  margin-top: -14px;
+  margin-bottom: 55px;
+}
+.pay__text a {
+  color: #09B559;
+  border-bottom: 1px solid #09B559;
+}
+.pay__text a:hover {
+  border-color: transparent;
+}
+.pay__subtitle {
+  font-weight: 700;
+  margin-bottom: 42px;
+  margin-left: 5px;
+}
+.pay__wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.pay__form {
+  width: 664px;
+  background: #fff;
+  padding: 25px 30px 48px;
+  box-shadow: 0px 4px 19px rgba(39, 39, 39, 0.08);
+}
+.pay__field {
+  margin-bottom: 17px;
+}
+.pay__field:last-of-type {
+  margin-bottom: 0;
+}
+.pay__btn {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  max-width: 155px;
+}
+.pay__img {
+  max-width: 592px;
+  margin-top: 30px;
+  margin-right: -90px;
+  margin-left: auto;
+}

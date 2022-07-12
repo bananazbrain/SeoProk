@@ -592,6 +592,9 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
 .textarea.--gray .textarea__area:focus {
   border-color: #272727;
 }
+.textarea.--sm .textarea__area {
+  min-height: 134px;
+}
 
 .h1 {
   font-size: 50px;

@@ -38,3 +38,6 @@
 .textarea.--gray .textarea__area:focus {
   border-color: #272727;
 }
+.textarea.--sm .textarea__area {
+  min-height: 134px;
+}
