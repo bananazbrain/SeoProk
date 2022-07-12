@@ -282,6 +282,33 @@
 		&.--active
 			background: $green
 
+.file
+	transition: .3s
+	cursor: pointer
+	&__input
+		display: none
+	&__label
+		font-size: 18px
+		line-height: 28px
+		margin-bottom: 9px
+		display: block
+	&__wrap
+		width: 100%
+		color: $main
+		font-size: $fzMain
+		transition: .3s
+		padding: 8.5px 12px
+		border: 1px solid $dark-gray
+		background: transparent
+		position: relative
+	&__placeholder
+		color: $dark-gray
+		transition: .3s
+	&.--filled
+		.file
+			&__placeholder
+				display: none
+
 // SLIDER
 .swiper-button-prev, .swiper-button-next
 	z-index: 50

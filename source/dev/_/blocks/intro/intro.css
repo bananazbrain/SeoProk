@@ -350,7 +350,7 @@
     display: none;
   }
   .intro.--ux .intro__preview {
-    right: -50px;
+    right: -70px;
     width: calc( 100% - 500px );
   }
   .intro.--ux .intro__img {

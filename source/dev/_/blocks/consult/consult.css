@@ -29,7 +29,8 @@
 .consult__note {
   font-size: 14px;
   line-height: 22px;
-  margin-bottom: 23px;
+  margin-top: 20px;
+  margin-bottom: 17px;
 }
 .consult__note p {
   margin-bottom: 13px;
@@ -41,4 +42,27 @@
   font-size: 18px;
   font-weight: 400;
   max-width: 165px;
+}
+
+@media screen and (max-width: 1220px) {
+  .consult {
+    padding-bottom: 80px;
+  }
+  .consult__title {
+    margin-left: 0;
+  }
+  .consult__text {
+    margin-left: 0;
+    margin-bottom: 50px;
+  }
+  .consult__col {
+    width: calc( 50% - 15px );
+  }
+  .consult__note {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .consult__note p {
+    margin-bottom: 5px;
+  }
 }
