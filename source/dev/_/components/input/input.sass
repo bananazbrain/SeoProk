@@ -1,116 +1,121 @@
 @import ../../sys/sass/vars
 
 input
-  appearance: none
-  -webkit-appearance: none
-  -moz-appearance: none
-  border-radius: 0px
-  -webkit-border-radius: 0px
-  -moz-border-radius: 0px
-  outline: none !important
-  -webkit-tap-highlight-color: transparent
-  &[type=text], &[type=tel], &[type=email]
-    appearance: none
-    -webkit-appearance: none
-    -moz-appearance: none
-    border-radius: 0px
-    -webkit-border-radius: 0px
-    -moz-border-radius: 0px
-    outline: none !important
-    -webkit-tap-highlight-color: transparent
-  &[type=number]
-    &::-webkit-outer-spin-button, &::-webkit-inner-spin-button
-      appearance: none
-      -webkit-appearance: none
-      -moz-appearance: none
+	appearance: none
+	-webkit-appearance: none
+	-moz-appearance: none
+	border-radius: 0px
+	-webkit-border-radius: 0px
+	-moz-border-radius: 0px
+	outline: none !important
+	-webkit-tap-highlight-color: transparent
+	&[type=text], &[type=tel], &[type=email]
+		appearance: none
+		-webkit-appearance: none
+		-moz-appearance: none
+		border-radius: 0px
+		-webkit-border-radius: 0px
+		-moz-border-radius: 0px
+		outline: none !important
+		-webkit-tap-highlight-color: transparent
+	&[type=number]
+		&::-webkit-outer-spin-button, &::-webkit-inner-spin-button
+			appearance: none
+			-webkit-appearance: none
+			-moz-appearance: none
 
 .input
-  width: 100%
-  display: block
-  transition: .3s
-  position: relative
-  &__wrap
-    position: relative
-  &__label
-    font-size: 18px
-    line-height: 28px
-    margin-bottom: 9px
-    display: block
-  &__area
-    width: 100%
-    color: $main
-    font-size: $fzMain
-    font-family: $ffMain
-    transition: .3s
-    background: transparent
-    position: relative
-    &::placeholder
-      color: $main
-      font-size: $fzMain
-      font-family: $ffMain
-      transition: .3s
-    &:focus
-      &::placeholder
-        opacity: 0
-  &__error
-    color: $red
-    font-size: 12px
-    margin-top: 2px
-    transition: .3s
+	width: 100%
+	display: block
+	transition: .3s
+	position: relative
+	&__wrap
+		position: relative
+	&__label
+		font-size: 18px
+		line-height: 28px
+		margin-bottom: 9px
+		display: block
+	&__area
+		width: 100%
+		color: $main
+		font-size: $fzMain
+		font-family: $ffMain
+		transition: .3s
+		background: transparent
+		position: relative
+		&::placeholder
+			color: $main
+			font-size: $fzMain
+			font-family: $ffMain
+			transition: .3s
+		&:focus
+			&::placeholder
+				opacity: 0
+	&__error
+		color: $red
+		font-size: 12px
+		margin-top: 2px
+		transition: .3s
 
-  &.--gray
-    .input
-      &__area
-        padding: 8px 12px
-        border: 1px solid $dark-gray
-        &::placeholder
-          color: $dark-gray
-        &:focus
-          border-color: $main
-    &.--error
-      .input
-        &__area
-          border-color: $red
+	// &.--file
+	// 	.input
+	// 		&__area
+	// 			display: none
 
-  &.--b-black
-    .input
-      &__area
-        font-size: 18px
-        padding-bottom: 8px
-        border-bottom: 1px solid $main
-        &::placeholder
-          color: #B7B7B7
-          font-size: 18px
-    &.--error
-      .input
-        &__area
-          border-bottom-color: $red
+	&.--gray
+		.input
+			&__area
+				padding: 8.5px 12px
+				border: 1px solid $dark-gray
+				&::placeholder
+					color: $dark-gray
+				&:focus
+					border-color: $main
+		&.--error
+			.input
+				&__area
+					border-color: $red
 
-  &.--b-white
-    .input
-      &__area
-        color: #fff
-        font-size: 18px
-        padding-bottom: 8px
-        border-bottom: 1px solid rgba(#fff, .44)
-        &::placeholder
-          color: rgba(#fff, .44)
-          font-size: 18px
-    &.--error
-      .input
-        &__area
-          border-bottom-color: $red
+	&.--b-black
+		.input
+			&__area
+				font-size: 18px
+				padding-bottom: 8px
+				border-bottom: 1px solid $main
+				&::placeholder
+					color: #B7B7B7
+					font-size: 18px
+		&.--error
+			.input
+				&__area
+					border-bottom-color: $red
+
+	&.--b-white
+		.input
+			&__area
+				color: #fff
+				font-size: 18px
+				padding-bottom: 8px
+				border-bottom: 1px solid rgba(#fff, .44)
+				&::placeholder
+					color: rgba(#fff, .44)
+					font-size: 18px
+		&.--error
+			.input
+				&__area
+					border-bottom-color: $red
 
 @media screen and (max-width: 580px)
-  .input
-    &.--b-white
-      .input
-        &__area
-          border-bottom-color: #fff
+	.input
+		&.--b-white
+			.input
+				&__area
+					border-bottom-color: #fff
 
 @media screen and (max-width: 390px)
-  .input
-    &.--b-black
-      .input
-        &__area
-          padding-bottom: 10px
+	.input
+		&.--b-black
+			.input
+				&__area
+					padding-bottom: 10px

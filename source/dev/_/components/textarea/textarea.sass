@@ -1,1 +1,39 @@
 @import ../../sys/sass/vars
+
+.textarea
+	&__wrap
+		position: relative
+	&__label
+		font-size: 18px
+		font-family: $ffMain
+		line-height: 28px
+		margin-bottom: 9px
+		display: block
+	&__area
+		width: 100%
+		min-height: 250px
+		color: $main
+		font-size: $fzMain
+		font-family: $ffMain
+		font-weight: 400
+		transition: .3s
+		background: transparent
+		position: relative
+		resize: none
+		&::placeholder
+			color: $main
+			font-size: $fzMain
+			font-family: $ffMain
+			font-weight: 400
+			transition: .3s
+			opacity: 1
+
+	&.--gray
+		.textarea
+			&__area
+				padding: 13px 12px
+				border: 1px solid $dark-gray
+				&::placeholder
+					color: $dark-gray
+				&:focus
+					border-color: $main

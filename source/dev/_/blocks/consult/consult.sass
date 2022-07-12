@@ -1,15 +1,19 @@
 @import ../../sys/sass/vars
 
 .consult
+	padding-bottom: 87px
 	&__title
 		margin-bottom: 26px
+		margin-left: 2px
 	&__text
+		margin-left: 5px
 		margin-bottom: 74px
+		text-align: justify
 	&__form
 		display: flex
 		flex-wrap: wrap
 		justify-content: space-between
-		padding: 24px 32px 40px
+		padding: 23px 32px 40px
 		box-shadow: 0px 4px 19px rgba($main, 0.08)
 	&__col
 		width: calc( 50% - 22px )
@@ -17,6 +21,18 @@
 		margin-bottom: 17px
 		&:last-of-type
 			margin-bottom: 0
+	&__note
+		font-size: 14px
+		line-height: 22px
+		margin-bottom: 23px
+		p
+			margin-bottom: 13px
+			&:last-of-type
+				margin-bottom: 0
+	&__btn
+		font-size: 18px
+		font-weight: 400
+		max-width: 165px
 
 @media screen and (max-width: 1220px)
 	// .consult

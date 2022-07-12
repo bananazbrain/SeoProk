@@ -1,0 +1,40 @@
+.textarea__wrap {
+  position: relative;
+}
+.textarea__label {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 28px;
+  margin-bottom: 9px;
+  display: block;
+}
+.textarea__area {
+  width: 100%;
+  min-height: 250px;
+  color: #272727;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  transition: 0.3s;
+  background: transparent;
+  position: relative;
+  resize: none;
+}
+.textarea__area::placeholder {
+  color: #272727;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  transition: 0.3s;
+  opacity: 1;
+}
+.textarea.--gray .textarea__area {
+  padding: 13px 12px;
+  border: 1px solid #CCCCCC;
+}
+.textarea.--gray .textarea__area::placeholder {
+  color: #CCCCCC;
+}
+.textarea.--gray .textarea__area:focus {
+  border-color: #272727;
+}

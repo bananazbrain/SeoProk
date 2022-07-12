@@ -1,14 +1,20 @@
+.consult {
+  padding-bottom: 87px;
+}
 .consult__title {
   margin-bottom: 26px;
+  margin-left: 2px;
 }
 .consult__text {
+  margin-left: 5px;
   margin-bottom: 74px;
+  text-align: justify;
 }
 .consult__form {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 24px 32px 40px;
+  padding: 23px 32px 40px;
   box-shadow: 0px 4px 19px rgba(39, 39, 39, 0.08);
 }
 .consult__col {
@@ -19,4 +25,20 @@
 }
 .consult__field:last-of-type {
   margin-bottom: 0;
+}
+.consult__note {
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 23px;
+}
+.consult__note p {
+  margin-bottom: 13px;
+}
+.consult__note p:last-of-type {
+  margin-bottom: 0;
+}
+.consult__btn {
+  font-size: 18px;
+  font-weight: 400;
+  max-width: 165px;
 }
