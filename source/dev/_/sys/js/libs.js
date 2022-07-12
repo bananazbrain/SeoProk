@@ -183,3 +183,71 @@ _defineProperty(Select, "classSelected", '--selected');
 _defineProperty(Select, "classHidden", '--hidden');
 
 _defineProperty(Select, "classError", '--error');
+
+
+// FILE ATTACH
+class File {
+  constructor(element) {
+    this.element = element;
+
+    if (!this.element) {
+      return false;
+    }
+
+    this.el = {
+      input: this.element.querySelector('input'),
+      list: this.element.querySelector('.file__list')
+    }
+
+    this.element.addEventListener('click', () => {
+      this.el.input.click();
+    });
+
+    this.el.input.addEventListener('change', () => {
+      this.element.dispatchEvent(new Event('change'));
+    });
+
+    this.element.addEventListener('change', () => {
+      this.el.list.innerHTML = '';
+
+
+      if (this.el.input.files.length > 0) {
+        for (let file of this.el.input.files) {
+          const item = this.createItem(file.name);
+          this.el.list.append(item);
+        }
+        this.element.classList.add('--filled');
+      } else {
+        this.element.classList.remove('--filled');
+      }
+
+
+    });
+
+    this.element.File = this;
+  }
+
+  createItem(name = '') {
+    const item = document.createElement('div');
+    item.className = 'file__item';
+    item.innerHTML = `
+      <div class="file__item-name"></div>
+      <div class="file__item-remove"></div>
+    `
+    item.el = {
+      name: item.querySelector('.file__item-name')
+    };
+
+    item.el.name.innerHTML = name;
+
+    return item;
+  }
+  static init() {
+    const files = document.querySelectorAll('.file');
+    if (files.length > 0) {
+      files.forEach((file) => {
+        new File(file);
+      });
+    }
+  }
+}

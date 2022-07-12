@@ -86,73 +86,6 @@ class SwiperIniter {
   }
 }
 
-class File {
-  constructor(element) {
-    this.element = element;
-
-    if (!this.element) {
-      return false;
-    }
-
-    this.el = {
-      input: this.element.querySelector('input'),
-      list: this.element.querySelector('.file__list')
-    }
-
-    this.element.addEventListener('click', () => {
-      this.el.input.click();
-    });
-
-    this.el.input.addEventListener('change', () => {
-      this.element.dispatchEvent(new Event('change'));
-    });
-
-    this.element.addEventListener('change', () => {
-      this.el.list.innerHTML = '';
-
-
-      if (this.el.input.files.length > 0) {
-        for (let file of this.el.input.files) {
-          const item = this.createItem(file.name);
-          this.el.list.append(item);
-        }
-        this.element.classList.add('--filled');
-      } else {
-        this.element.classList.remove('--filled');
-      }
-
-
-    });
-
-    this.element.File = this;
-  }
-
-  createItem(name = '') {
-    const item = document.createElement('div');
-    item.className = 'file__item';
-    item.innerHTML = `
-      <div class="file__item-name"></div>
-      <div class="file__item-remove"></div>
-    `
-    item.el = {
-      name: item.querySelector('.file__item-name')
-    };
-
-    item.el.name.innerHTML = name;
-
-    return item;
-  }
-  static init() {
-    const files = document.querySelectorAll('.file');
-    if (files.length > 0) {
-      files.forEach((file) => {
-        new File(file);
-      });
-    }
-  }
-}
-
-
 document.addEventListener('DOMContentLoaded', function () {
   // CHECK INIT
   let checks = document.querySelectorAll('.check');
@@ -178,6 +111,9 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     })
   }
+
+  // FILE INIT
+  File.init()
 
   // ANIMATION
   let anBlocks = document.querySelectorAll('.an');
@@ -238,7 +174,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // VIDEO SLIDER
   let videoSlider = document.querySelector('.video__slider-inner');
-
   if (videoSlider) {
     new SwiperIniter(580, 'less', 'video__slider-inner', 'video__slider-wrap', 'video__slider-item', {
       slidesPerView: 3,
@@ -265,36 +200,6 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   }
-
-  // PRICE SLIDER
-  new SwiperIniter(992, 'more', 'price__list', 'price__list-wrap', 'price__item', {
-    slidesPerView: 2,
-    spaceBetween: 21,
-    speed: 900,
-    pagination: {
-      el: ".price__pagination.swiper-pagination",
-      type: "fraction",
-    },
-    breakpoints: {
-      0: {
-        slidesPerView: 1.25,
-      },
-      581: {
-        slidesPerView: 2,
-      },
-    }
-  });
-
-  // CERTS SLIDER
-  new SwiperIniter(992, 'more', 'certs__list', 'certs__list-wrap', 'certs__item', {
-    slidesPerView: 'auto',
-    spaceBetween: 20,
-    speed: 900,
-    navigation: {
-      prevEl: '.certs__arrow.swiper-button-prev',
-      nextEl: '.certs__arrow.swiper-button-next',
-    },
-  });
 
   // BLOG SLIDER
   let blogSlider = document.querySelector('.blog__slider-inner');
@@ -351,6 +256,48 @@ document.addEventListener('DOMContentLoaded', function () {
       speed: 900,
     });
   }
+
+  // PRICE SLIDER
+  new SwiperIniter(992, 'more', 'price__list', 'price__list-wrap', 'price__item', {
+    slidesPerView: 2,
+    spaceBetween: 21,
+    speed: 900,
+    pagination: {
+      el: ".price__pagination.swiper-pagination",
+      type: "fraction",
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1.25,
+      },
+      581: {
+        slidesPerView: 2,
+      },
+    }
+  });
+
+  // CERTS SLIDER
+  new SwiperIniter(992, 'more', 'certs__list', 'certs__list-wrap', 'certs__item', {
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+    speed: 900,
+    navigation: {
+      prevEl: '.certs__arrow.swiper-button-prev',
+      nextEl: '.certs__arrow.swiper-button-next',
+    },
+  });
+
+  // OTHER SERVICES SLIDER
+  new SwiperIniter(767, 'more', 'other__inner', 'other__list', 'other__item', {
+    slidesPerView: 2,
+    spaceBetween: 20,
+    speed: 900,
+    pagination: {
+      el: ".other__pagination.swiper-pagination",
+      type: "bullets",
+      clickable: true,
+    },
+  });
 
   // FAQ TOGGLES
   let faqs = document.querySelectorAll('.faq__item');
@@ -510,7 +457,5 @@ document.addEventListener('DOMContentLoaded', function () {
       // });
     }
   }
-
-  File.init()
 
 })

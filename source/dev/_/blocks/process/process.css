@@ -337,3 +337,11 @@
     }
   }
 }
+@media screen and (max-width: 767px) {
+  .process__elem {
+    font-size: 20px;
+  }
+  .process__elem.--final {
+    font-size: 25px;
+  }
+}

@@ -479,6 +479,35 @@
 					height: 130px
 					bottom: -70px
 
+		&.--ux
+			padding: 25px 0 70px
+			.intro
+				&__info
+					width: 330px
+				&__subtitle
+					max-width: 280px
+				&__preview
+					top: 30px
+					right: 10px
+					width: calc( 100% - 330px )
+				&__img
+					width: 430px
+				&__shape
+					top: 30px
+					width: 420px
+				&__circle
+					&-item
+						&:nth-of-type(1)
+							top: -30px
+
+		&.--about
+			padding: 25px 0 70px
+			.intro
+				&__circle
+					&-item
+						&:nth-of-type(1)
+							top: -30px
+
 @media screen and (max-width: 580px)
 	.intro
 		padding: 22px 0 80px

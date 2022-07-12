@@ -72,3 +72,24 @@
     margin: 0 15px 40px;
   }
 }
+@media screen and (max-width: 767px) {
+  .interface__list-wrap {
+    margin: 0 -10px -30px;
+  }
+  .interface__item {
+    width: calc( 100% / 2 - 20px);
+    margin: 0 10px 30px;
+  }
+  .interface__item:nth-of-type(n+4) {
+    margin: 0 10px 30px;
+  }
+  .interface__icon {
+    width: 42px;
+  }
+  .interface__name {
+    width: calc( 100% - 42px );
+    padding-left: 12px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+}

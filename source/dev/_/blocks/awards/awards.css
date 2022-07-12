@@ -89,3 +89,35 @@
     line-height: 22px;
   }
 }
+@media screen and (max-width: 767px) {
+  .awards {
+    padding: 50px 0 100px;
+  }
+  .awards__title {
+    margin-bottom: 50px;
+    margin-left: 0;
+    text-align: left;
+  }
+  .awards__list {
+    flex-direction: column;
+  }
+  .awards__item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .awards__item:nth-of-type(2) {
+    right: 0;
+  }
+  .awards__item:last-of-type {
+    margin-bottom: 0;
+  }
+  .awards__name {
+    font-size: 50px;
+  }
+  .awards__text {
+    padding-right: 100px;
+  }
+  .awards__text br {
+    display: none;
+  }
+}

@@ -552,6 +552,36 @@
     height: 130px;
     bottom: -70px;
   }
+  .intro.--ux {
+    padding: 25px 0 70px;
+  }
+  .intro.--ux .intro__info {
+    width: 330px;
+  }
+  .intro.--ux .intro__subtitle {
+    max-width: 280px;
+  }
+  .intro.--ux .intro__preview {
+    top: 30px;
+    right: 10px;
+    width: calc( 100% - 330px );
+  }
+  .intro.--ux .intro__img {
+    width: 430px;
+  }
+  .intro.--ux .intro__shape {
+    top: 30px;
+    width: 420px;
+  }
+  .intro.--ux .intro__circle-item:nth-of-type(1) {
+    top: -30px;
+  }
+  .intro.--about {
+    padding: 25px 0 70px;
+  }
+  .intro.--about .intro__circle-item:nth-of-type(1) {
+    top: -30px;
+  }
 }
 @media screen and (max-width: 580px) {
   .intro {

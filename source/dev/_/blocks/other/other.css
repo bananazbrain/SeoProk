@@ -99,3 +99,16 @@
     line-height: 32px;
   }
 }
+@media screen and (max-width: 767px) {
+  .other__title {
+    margin-bottom: 40px;
+  }
+  .other__list {
+    gap: 0;
+    grid-gap: 0;
+    flex-wrap: nowrap;
+  }
+  .other__item {
+    width: auto;
+  }
+}

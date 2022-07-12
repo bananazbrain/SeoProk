@@ -83,3 +83,13 @@
     padding: 110px 25px 30px;
   }
 }
+@media screen and (max-width: 767px) {
+  .comp__num {
+    font-size: 35px;
+    width: 100px;
+    height: 100px;
+  }
+  .comp__info {
+    padding: 90px 25px 30px;
+  }
+}

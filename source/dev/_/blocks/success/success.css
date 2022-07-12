@@ -54,6 +54,9 @@
   .success__icon {
     width: 70px;
   }
+  .success__icon:before {
+    top: 12px;
+  }
   .success__name {
     width: calc( 100% - 70px );
     padding-top: 15px;
@@ -74,5 +77,26 @@
   }
   .success__name {
     padding-top: 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .success__title {
+    margin-bottom: 41px;
+  }
+  .success__list {
+    padding-right: 0;
+  }
+  .success__icon {
+    width: 60px;
+  }
+  .success__icon:before {
+    top: 10px;
+    width: 12px;
+    height: 13px;
+    background-size: contain;
+  }
+  .success__name {
+    width: calc( 100% - 60px );
+    padding-top: 5px;
   }
 }
