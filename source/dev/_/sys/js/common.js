@@ -102,13 +102,13 @@ document.addEventListener('DOMContentLoaded', function () {
     let Y = window.scrollY;
     let visibleHeight = window.innerHeight - 100;
     anBlocks.forEach((block) => {
-      if (!block.classList.contains('--loaded')) {
+      if (!block.classList.contains('loaded')) {
         let timeout = block.getAttribute('data-timeout');
         if (timeout) {
           block.style.transitionDelay = timeout;
         }
         if (block.getBoundingClientRect().top < visibleHeight) {
-          block.classList.add('--loaded');
+          block.classList.add('loaded');
         }
       }
     });

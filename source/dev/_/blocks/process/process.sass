@@ -1,7 +1,7 @@
 @import ../../sys/sass/vars
 
 .process
-	padding: 94px 0 118px
+	padding: 94px 0 112px
 	background: $gray
 	&__title
 		margin-bottom: 89px
@@ -10,12 +10,21 @@
 		display: flex
 		flex-wrap: wrap
 	&__item
-		width: calc( 100% / 4 )
-		margin-right: 50px
-		&:nth-of-type(3)
-			margin-right: 50px
+		width: 100%
+		max-width: 304px
+		position: relative
+		&:nth-of-type(1)
+			max-width: 290px
+			margin-right: 70px
+		&:nth-of-type(2)
+			margin-right: 70px
 		&:last-of-type
-			margin-right: 0
+			right: -68px
+			margin-right: -100%
+			.process
+				&__bar
+					&:before, &:after
+						display: none
 	&__bar
 		margin-bottom: 48px
 		position: relative
@@ -33,11 +42,12 @@
 		&:before
 			right: 15px
 			opacity: .64
+			animation: move-1 1.7s infinite
 		&:after
 			opacity: .35
-
+			animation: move-2 1.7s infinite
 	&__elems
-		padding-left: 42px
+		padding-left: 43px
 		position: relative
 		&:before
 			content: ""
@@ -70,18 +80,57 @@
 			margin-top: 90px
 		&.--final
 			color: $green
-			font-size: 28px
+			font-size: 27px
 			line-height: 33px
-			&:after
-				content: ""
-				top: -5px
-				left: -47px
-				width: 26px
-				height: 26px
-				background: $green
+			&:before
+				display: none
+			span
+				top: 6px
+				left: -42px
+				width: 16px
+				height: 16px
 				border-radius: 50%
-				opacity: .26
 				position: absolute
+				background: $green
+				&:before
+					content: ""
+					top: 50%
+					left: 50%
+					width: 26px
+					height: 26px
+					background: $green
+					border-radius: 50%
+					opacity: .26
+					position: absolute
+					transform: translate(-50%, -50%)
+					animation: p-pulse 1.7s infinite
+
+	@keyframes move-1
+		0%
+			transform: translateY(-50%) translateX(0)
+		50%
+			transform: translateY(-50%) translateX(7px)
+		100%
+			transform: translateY(-50%) translateX(0)
+
+	@keyframes move-2
+		0%
+			transform: translateY(-50%) translateX(0)
+		40%
+			transform: translateY(-50%) translateX(7px)
+		100%
+			transform: translateY(-50%) translateX(0)
+
+	@keyframes p-pulse
+		0%
+			width: 16px
+			height: 16px
+		50%
+			width: 26px
+			height: 26px
+		100%
+			width: 16px
+			height: 16px
 
 @media screen and (max-width: 1220px)
 	// .process

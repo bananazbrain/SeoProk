@@ -106,3 +106,7 @@ include ../../blocks/comp/comp
 +style('process', 'blocks')
 include ../../blocks/process/process
 
+//- awards 
++style('awards', 'blocks')
+include ../../blocks/awards/awards
+
