@@ -110,3 +110,7 @@ include ../../blocks/process/process
 +style('awards', 'blocks')
 include ../../blocks/awards/awards
 
+//- other 
++style('other', 'blocks')
+include ../../blocks/other/other
+

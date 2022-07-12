@@ -1,0 +1,77 @@
+@import ../../sys/sass/vars
+
+.other
+	padding: 88px 0 87px
+	&__title
+		margin-bottom: 56px
+	&__list
+		display: flex
+		flex-wrap: wrap
+		gap: 29px 28px
+		grid-gap: 29px 28px
+	&__item
+		width: calc( 100% / 4 - 21px)
+		min-height: 388px
+		&:hover
+			.other
+				&__btn
+					color: #fff
+					background: $main
+		&.--sm
+			.other
+				&__value
+					margin-top: 0
+		&.--md
+			.other
+				&__name
+					margin-bottom: 22px
+	&__info
+		color: #fff
+		background: #393939
+		padding: 27px 34px 20px 34px
+		min-height: 225px
+		display: flex
+		flex-direction: column
+	&__name
+		line-height: 40px
+		margin-bottom: 33px
+	&__text
+		p
+			opacity: .6
+			line-height: 25px
+		&.--flex
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between
+			padding-right: 10px
+			p
+				&:nth-of-type(even)
+					opacity: 1
+	&__main
+		background: $green
+		min-height: 163px
+		padding: 8px 32px 34px
+		display: flex
+		flex-direction: column
+	&__value
+		font-size: 18px
+		font-weight: 700
+		margin-top: 12px
+		u
+			font-size: 25px
+		span
+			display: block
+			font-size: 14px
+			u
+				font-size: 22px
+	&__btn
+		margin-top: auto
+
+@media screen and (max-width: 1220px)
+	// .other
+
+@media screen and (max-width: 992px)
+	// .other
+
+@media screen and (max-width: 767px)
+	// .other
