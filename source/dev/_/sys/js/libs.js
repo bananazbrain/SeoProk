@@ -109,6 +109,7 @@ class Select {
       divItem.option = item;
 
       if (item.getAttribute('selected')) {
+        this.element.classList.add(Select.classFilled);
         divItem.classList.add(Select.classSelected);
       }
 
@@ -116,6 +117,7 @@ class Select {
       this.items.push(divItem);
       divItem.addEventListener('click', () => {
         this.onClickItem(divItem);
+        this.element.classList.add(Select.classFilled);
       });
     });
   }
@@ -173,6 +175,8 @@ class Select {
 }
 
 _defineProperty(Select, "classOpen", '--open');
+
+_defineProperty(Select, "classFilled", '--filled');
 
 _defineProperty(Select, "classSelected", '--selected');
 
