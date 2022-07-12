@@ -66,3 +66,16 @@
     margin-bottom: 5px;
   }
 }
+@media screen and (max-width: 992px) {
+  .consult__col {
+    width: 100%;
+    margin-bottom: 17px;
+  }
+  .consult__col:last-of-type {
+    margin-bottom: 0;
+  }
+  .consult__note {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}

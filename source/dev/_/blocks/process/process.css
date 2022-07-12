@@ -42,7 +42,7 @@
   right: 0;
   width: 21px;
   height: 33px;
-  transform: translateY(-50%);
+  transform: translateX(-50%);
   background: url("../../sys/imgs/chevron-green.svg") no-repeat;
   position: absolute;
 }
@@ -125,24 +125,24 @@
 }
 @keyframes move-1 {
   0% {
-    transform: translateY(-50%) translateX(0);
+    transform: translateX(0);
   }
   50% {
-    transform: translateY(-50%) translateX(7px);
+    transform: translateX(7px);
   }
   100% {
-    transform: translateY(-50%) translateX(0);
+    transform: translateX(0);
   }
 }
 @keyframes move-2 {
   0% {
-    transform: translateY(-50%) translateX(0);
+    transform: translateX(0);
   }
   40% {
-    transform: translateY(-50%) translateX(7px);
+    transform: translateX(7px);
   }
   100% {
-    transform: translateY(-50%) translateX(0);
+    transform: translateX(0);
   }
 }
 @keyframes p-pulse {
@@ -203,5 +203,137 @@
   }
   .process__item:last-of-type {
     right: -30px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .process {
+    padding: 60px 0 100px;
+  }
+  .process__title {
+    margin-bottom: 70px;
+  }
+  .process__list {
+    margin-left: 20px;
+    flex-direction: column;
+  }
+  .process__item {
+    max-width: 100% !important;
+    margin-right: 0 !important;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .process__item:last-of-type {
+    right: 0;
+    margin-bottom: 0;
+  }
+  .process__item:last-of-type .process__elems:before {
+    display: none;
+  }
+  .process__bar {
+    width: 33px;
+    margin-bottom: 0;
+    margin-left: 20px;
+  }
+  .process__bar img {
+    display: none;
+  }
+  .process__bar:before, .process__bar:after {
+    top: auto;
+    bottom: 10px;
+    transform: rotate(90deg);
+  }
+  .process__bar:before {
+    right: 0px;
+  }
+  .process__bar:after {
+    right: 0px;
+    bottom: -5px;
+  }
+  .process__info {
+    width: calc( 100% - 33px - 20px );
+    padding-left: 60px;
+  }
+  .process__elems {
+    padding-left: 40px;
+  }
+  .process__elems:before {
+    width: 3px;
+    left: -72px;
+    height: calc( 100% - 40px );
+    min-height: auto;
+    background: url("../../sys/imgs/line-2.svg") no-repeat;
+  }
+  .process__elem {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+  .process__elem br {
+    display: none;
+  }
+  .process__elem:before {
+    left: -47px;
+  }
+  .process__elem:after {
+    content: "";
+    width: 1px;
+    height: 55px;
+    top: 10px;
+    left: -40px;
+    background: #09B559;
+    position: absolute;
+  }
+  .process__elem:last-of-type:after {
+    display: none;
+  }
+  .process__elem.--mt {
+    margin-top: 0;
+  }
+  .process__elem.--final {
+    top: 0;
+    font-size: 27px;
+    position: relative;
+  }
+  .process__elem.--final span {
+    top: 10px;
+    left: -46px;
+  }
+  .process__elem.--final span:after {
+    content: "";
+    top: 0;
+    left: 7px;
+    width: 1px;
+    height: 50px;
+    background: #09B559;
+    position: absolute;
+  }
+
+  @keyframes move-1 {
+    0% {
+      transform: translateY(0) rotate(90deg);
+    }
+    50% {
+      transform: translateY(7px) rotate(90deg);
+    }
+    100% {
+      transform: translateY(0) rotate(90deg);
+    }
+  }
+  @keyframes move-2 {
+    0% {
+      transform: translateY(0) rotate(90deg);
+    }
+    40% {
+      transform: translateY(7px) rotate(90deg);
+    }
+    100% {
+      transform: translateY(0) rotate(90deg);
+    }
+  }
+  @keyframes p-pulse {
+    50% {
+      width: 30px;
+      height: 30px;
+    }
   }
 }

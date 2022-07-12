@@ -46,7 +46,16 @@
 			padding-left: 15px
 
 @media screen and (max-width: 992px)
-	// .interface
+	.interface
+		&__title
+			margin-bottom: 50px
+		&__list-wrap
+			margin: 0 -15px -40px
+		&__item
+			width: calc( 100% / 2 - 30px)
+			margin: 0 15px 40px
+			&:nth-of-type(n+4)
+				margin: 0 15px 40px
 
 @media screen and (max-width: 767px)
 	// .interface

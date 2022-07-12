@@ -244,6 +244,23 @@
     display: flex;
     justify-content: flex-end;
   }
+  .price.--ux {
+    padding: 80px 0;
+  }
+  .price.--ux .price__title {
+    margin-bottom: 46px;
+  }
+  .price.--ux .price__list-wrap {
+    margin: 0;
+    flex-wrap: nowrap;
+  }
+  .price.--ux .price__item {
+    margin: 0;
+    height: auto;
+  }
+  .price.--ux .price__name br {
+    display: block;
+  }
 }
 @media screen and (max-width: 767px) {
   .price__title {

@@ -436,6 +436,33 @@
     align-items: center;
     justify-content: space-between;
   }
+  .intro.--ux {
+    padding: 60px 0 70px;
+  }
+  .intro.--ux .intro__info {
+    width: 400px;
+  }
+  .intro.--ux .intro__subtitle {
+    margin-bottom: 30px;
+  }
+  .intro.--ux .intro__preview {
+    top: 0;
+    right: -20px;
+    width: calc( 100% - 400px );
+  }
+  .intro.--ux .intro__img {
+    top: 0;
+    left: 0;
+    width: 480px;
+  }
+  .intro.--ux .intro__shape {
+    top: 0;
+    left: 0;
+    width: 510px;
+  }
+  .intro.--ux .intro__circle-item:nth-of-type(4) {
+    bottom: -40px;
+  }
   .intro.--about {
     padding: 60px 0 70px;
   }

@@ -60,3 +60,19 @@
     padding-left: 15px;
   }
 }
+@media screen and (max-width: 992px) {
+  .success__title {
+    margin-bottom: 50px;
+  }
+  .success__list {
+    margin: 0 0 -30px;
+    padding-right: 90px;
+  }
+  .success__item {
+    width: 100%;
+    margin: 0 0 30px;
+  }
+  .success__name {
+    padding-top: 10px;
+  }
+}

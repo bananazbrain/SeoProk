@@ -57,3 +57,18 @@
     padding-left: 15px;
   }
 }
+@media screen and (max-width: 992px) {
+  .interface__title {
+    margin-bottom: 50px;
+  }
+  .interface__list-wrap {
+    margin: 0 -15px -40px;
+  }
+  .interface__item {
+    width: calc( 100% / 2 - 30px);
+    margin: 0 15px 40px;
+  }
+  .interface__item:nth-of-type(n+4) {
+    margin: 0 15px 40px;
+  }
+}

@@ -56,15 +56,37 @@
 
 @media screen and (max-width: 1220px)
 	.solve
+		&__title
+			margin-left: 0
 		&__list-wrap
 			margin-bottom: -30px
 		&__item
 			width: calc( 50% - 5px )
 			padding: 30px 40px
 			margin-bottom: 30px
+			&:nth-of-type(even)
+				right: 0
 
 @media screen and (max-width: 992px)
-	// .solve
+	.solve
+		&__title
+			margin-bottom: 50px
+		&__list-wrap
+			margin-bottom: 0
+			flex-direction: column
+		&__item
+			width: 100%
+			min-height: auto
+			padding: 20px 30px
+			margin-bottom: 20px
+			&:last-of-type
+				margin-bottom: 0
+		&__name
+			br
+				display: none
+		&__text
+			margin-bottom: 25px
+			line-height: 28px
 
 @media screen and (max-width: 767px)
 	// .solve

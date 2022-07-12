@@ -59,3 +59,27 @@
     padding: 30px 30px 32px 42px;
   }
 }
+@media screen and (max-width: 992px) {
+  .comp__desc {
+    margin-bottom: 35px;
+  }
+  .comp__desc br {
+    display: none;
+  }
+  .comp__item {
+    position: relative;
+    margin-bottom: 50px;
+  }
+  .comp__num {
+    top: -25px;
+    left: 25px;
+    width: 120px;
+    height: 120px;
+    min-height: auto;
+    position: absolute;
+  }
+  .comp__info {
+    width: 100%;
+    padding: 110px 25px 30px;
+  }
+}
