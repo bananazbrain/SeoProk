@@ -31,6 +31,11 @@ input
   position: relative
   &__wrap
     position: relative
+  &__label
+    font-size: 18px
+    line-height: 28px
+    margin-bottom: 9px
+    display: block
   &__area
     width: 100%
     color: $main
@@ -47,6 +52,25 @@ input
     &:focus
       &::placeholder
         opacity: 0
+  &__error
+    color: $red
+    font-size: 12px
+    margin-top: 2px
+    transition: .3s
+
+  &.--gray
+    .input
+      &__area
+        padding: 8px 12px
+        border: 1px solid $dark-gray
+        &::placeholder
+          color: $dark-gray
+        &:focus
+          border-color: $main
+    &.--error
+      .input
+        &__area
+          border-color: $red
 
   &.--b-black
     .input

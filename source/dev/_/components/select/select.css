@@ -1,0 +1,100 @@
+.select {
+  z-index: 10;
+  width: 100%;
+  transition: 0.3s;
+  position: relative;
+  cursor: pointer;
+}
+.select select {
+  display: none;
+}
+.select__wrap {
+  position: relative;
+}
+.select__label {
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 9px;
+  display: block;
+}
+.select__area {
+  color: #272727;
+  font-size: 16px;
+  background: #fff;
+  border: 1px solid #CCCCCC;
+  padding: 8px 12px;
+  transition: 0.3s;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.select__title {
+  width: calc(100% - 21px);
+  padding-right: 20px;
+  transition: 0.3s;
+}
+.select__icon {
+  width: 21px;
+  height: 14px;
+  transition: 0.3s;
+  background: url(../../sys/imgs/chevron.svg) no-repeat;
+  position: relative;
+}
+.select__drop {
+  width: 100%;
+  top: 100%;
+  left: 0px;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  color: #272727;
+  background: #fff;
+  border: 1px solid #272727;
+  border-top: none;
+  overflow: auto;
+  border-radius: 0 0 5px 5px;
+  transition: 0.3s;
+  padding: 5px;
+  padding-left: 0;
+}
+.select__list {
+  max-height: 160px;
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #F7F7F7 #fff;
+}
+.select__list::-webkit-scrollbar {
+  width: 4px;
+}
+.select__list::-webkit-scrollbar-thumb {
+  background: #F7F7F7;
+  border-radius: 20px;
+}
+.select__item {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 8px 20px;
+  transition: 0.3s;
+}
+.select.--open {
+  z-index: 100;
+}
+.select.--open .select__area {
+  z-index: 2;
+  border-color: #272727;
+  border-bottom: none;
+}
+.select.--open .select__icon {
+  transform: scale(1, -1);
+}
+.select.--open .select__drop {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+}

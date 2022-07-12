@@ -95,6 +95,14 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  // SELECT INIT
+  let selects = document.querySelectorAll('.select');
+  if (selects) {
+    selects.forEach(select => {
+      new Select(select);
+    });
+  }
+
   // ANIMATION
   let anBlocks = document.querySelectorAll('.an');
 

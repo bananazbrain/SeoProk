@@ -1,1 +1,88 @@
 @import ../../sys/sass/vars
+
+.select
+  z-index: 10
+  width: 100%
+  transition: .3s
+  position: relative
+  cursor: pointer
+  select
+    display: none
+  &__wrap
+    position: relative
+  &__label
+    font-size: 18px
+    line-height: 28px
+    margin-bottom: 9px
+    display: block
+  &__area
+    color: $main
+    font-size: 16px
+    background: #fff
+    border: 1px solid $dark-gray
+    padding: 8px 12px
+    transition: .3s
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__title
+    width: calc(100% - 21px)
+    padding-right: 20px
+    transition: .3s
+  &__icon
+    width: 21px
+    height: 14px
+    transition: .3s
+    background: url(../../sys/imgs/chevron.svg) no-repeat
+    position: relative
+  &__drop
+    width: 100%
+    top: 100%
+    left: 0px
+    right: 0
+    opacity: 0
+    visibility: hidden
+    position: absolute
+    color: $main
+    background: #fff
+    border: 1px solid $main
+    border-top: none
+    overflow: auto
+    border-radius: 0 0 5px 5px
+    transition: .3s
+    padding: 5px
+    padding-left: 0
+  &__list
+    max-height: 160px
+    overflow: auto
+    scrollbar-width: thin
+    scrollbar-color: $gray #fff
+    &::-webkit-scrollbar
+      width: 4px
+    &::-webkit-scrollbar-thumb
+      background: $gray
+      border-radius: 20px
+  &__item
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    font-size: 13px
+    font-weight: 500
+    padding: 8px 20px
+    transition: .3s
+
+  &.--open
+    z-index: 100
+    .select
+      &__area
+        z-index: 2
+        border-color: $main
+        border-bottom: none
+      &__icon
+        transform: scale(1, -1)
+      &__drop
+        opacity: 1
+        visibility: visible
+        transform: translateY(0px)

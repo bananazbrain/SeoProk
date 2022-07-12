@@ -33,6 +33,12 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
 .input__wrap {
   position: relative;
 }
+.input__label {
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 9px;
+  display: block;
+}
 .input__area {
   width: 100%;
   color: #272727;
@@ -50,6 +56,25 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
 }
 .input__area:focus::placeholder {
   opacity: 0;
+}
+.input__error {
+  color: #C00000;
+  font-size: 12px;
+  margin-top: 2px;
+  transition: 0.3s;
+}
+.input.--gray .input__area {
+  padding: 8px 12px;
+  border: 1px solid #CCCCCC;
+}
+.input.--gray .input__area::placeholder {
+  color: #CCCCCC;
+}
+.input.--gray .input__area:focus {
+  border-color: #272727;
+}
+.input.--gray.--error .input__area {
+  border-color: #C00000;
 }
 .input.--b-black .input__area {
   font-size: 18px;

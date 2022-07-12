@@ -1,0 +1,22 @@
+.consult__title {
+  margin-bottom: 26px;
+}
+.consult__text {
+  margin-bottom: 74px;
+}
+.consult__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 24px 32px 40px;
+  box-shadow: 0px 4px 19px rgba(39, 39, 39, 0.08);
+}
+.consult__col {
+  width: calc( 50% - 22px );
+}
+.consult__field {
+  margin-bottom: 17px;
+}
+.consult__field:last-of-type {
+  margin-bottom: 0;
+}

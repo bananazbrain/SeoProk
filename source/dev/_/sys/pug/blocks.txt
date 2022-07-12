@@ -114,3 +114,7 @@ include ../../blocks/awards/awards
 +style('other', 'blocks')
 include ../../blocks/other/other
 
+//- consult 
++style('consult', 'blocks')
+include ../../blocks/consult/consult
+
