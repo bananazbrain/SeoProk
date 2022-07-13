@@ -1,0 +1,13 @@
+.reg {
+  background: #fff;
+  padding: 88px 0 84px;
+}
+.reg__title {
+  color: #09B559;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 74px;
+  text-align: center;
+  max-width: 927px;
+  margin: 0 auto;
+}

@@ -142,3 +142,15 @@ include ../../blocks/watch/watch
 +style('google', 'blocks')
 include ../../blocks/google/google
 
+//- reg 
++style('reg', 'blocks')
+include ../../blocks/reg/reg
+
+//- pros 
++style('pros', 'blocks')
+include ../../blocks/pros/pros
+
+//- why 
++style('why', 'blocks')
+include ../../blocks/why/why
+

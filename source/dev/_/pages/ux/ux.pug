@@ -55,8 +55,20 @@ block content
 	+style('process', 'blocks')
 	include ../../blocks/process/process
 
-	+style('awards', 'blocks')
-	include ../../blocks/awards/awards
+	+style('pros', 'blocks')
+	.pros
+		.case
+			.pros__title.h3 #[h3 Наши награды и достижения]
+			.pros__list
+				.pros__item.an.fadeIn
+					.pros__name 1 место
+					.pros__text В рейтинге AdIndex #[br]по независимой оценке
+				.pros__item.an.fadeIn(data-timeout="0.1s")
+					.pros__name 67 место
+					.pros__text По специализации "Веб-разработка" #[br]в официальном рейтинге Freelance.ru по РФ
+				.pros__item.an.fadeIn(data-timeout="0.1s")
+					.pros__name 72 место
+					.pros__text По специализации #[br]"Интернет продвижение и реклама, #[br]Классическая реклама и маркетинг", #[br]в официальном рейтинге Freelance.ru по РФ
 
 	+style('price', 'blocks')
 	.price.--ux
