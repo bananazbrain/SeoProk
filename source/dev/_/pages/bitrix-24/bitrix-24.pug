@@ -5,87 +5,104 @@ block vars
 
 block content
 
-//- 	+style('intro', 'blocks')
-//- 	.intro.--context
-//- 		.case
-//- 			.intro__wrap
-//- 				.intro__info
-//- 					.intro__title.h1 #[h1 Настройка и ведение контекстной рекламы в Москве]
-//- 					.intro__subtitle.t1 Работаем комплексно в Яндекс.Директ и Google Ads по KPI
-//- 					form.intro__form
-//- 						.intro__desc.h6 #[h6 Напишите нам и мы проанализируем Вашу сферу и #[br]подберём наилучший вариант сайта для вашего бизнеса]
-//- 						.intro__fields
-//- 							.intro__inputs
-//- 								.intro__input.input.--b-black.--required.--name
-//- 									.input__wrap
-//- 										input.input__area(type="text" name="name" placeholder="Имя" autocomplete="off")
-//- 								.intro__input.input.--b-black.--required.--tel
-//- 									.input__wrap
-//- 										input.input__area(type="tel" name="tel" placeholder="Телефон" autocomplete="off")
-//- 							.intro__actions
-//- 								button.intro__btn.btn.--green.--h-dark.--sm Получить предложение
-//- 									<svg width="22" height="8" viewBox="0 0 22 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.3536 4.35355C21.5488 4.15829 21.5488 3.84171 21.3536 3.64645L18.1716 0.464466C17.9763 0.269204 17.6597 0.269204 17.4645 0.464466C17.2692 0.659728 17.2692 0.976311 17.4645 1.17157L20.2929 4L17.4645 6.82843C17.2692 7.02369 17.2692 7.34027 17.4645 7.53553C17.6597 7.7308 17.9763 7.7308 18.1716 7.53553L21.3536 4.35355ZM0 4.5H21V3.5H0V4.5Z" fill="white"/></svg>
-//- 				.intro__preview
-//- 					.intro__img
-//- 						img(src="_/uploads/context-img.svg", alt="")
-//- 					.intro__shape
-//- 						img(src="_/uploads/intro-shape.png", alt="")
-//- 				.intro__circle
-//- 					.intro__circle-item
-//- 						img(src="_/uploads/intro-circle.png", alt="")
-//- 					.intro__circle-item
-//- 						img(src="_/uploads/intro-circle-2.png", alt="")
-//- 					.intro__circle-item
-//- 						img(src="_/uploads/intro-circle-3.png", alt="")
-//- 					.intro__circle-item
-//- 						img(src="_/uploads/intro-circle-4.png", alt="")
-	
-//- 	+style('offer', 'blocks')
-//- 	include ../../blocks/offer/offer
+	+style('intro', 'blocks')
+	.intro.--about
+		.case
+			.intro__wrap
+				.intro__info
+					.intro__title.h1 #[h1 Услуги по настройки и внедрению сервиса «1С-Битрикс24»]
+					.intro__text.t1 Наша компания, как официальный бизнес-партнёр «Битрикс24», оказывает услуги по настройки и внедрению сервиса «Битрикс24» для управления Вашим бизнесом
+					.intro__desc.h6 #[h6 Битрикс24 помогает бизнесу работать. #[br]Бесплатно. Неограниченно. Онлайн.]
+				.intro__preview
+					.intro__preview-title Наши #[br]преимущества #[br]в цифрах
+					.intro__stat
+						.intro__stat-item
+							.intro__stat-value 12
+							.intro__stat-text лет #[br]на рынке
+						.intro__stat-item.wide
+							.intro__stat-value 370+
+							.intro__stat-text разработанных web-сайтов
+						.intro__stat-item.sm
+							.intro__stat-value 1500+
+							.intro__stat-text рекламных кампании
+					.intro__shape
+						img(src="_/uploads/intro-shape.png", alt="")
+				.intro__circle
+					.intro__circle-item
+						img(src="_/uploads/intro-circle.png", alt="")
+					.intro__circle-item
+						img(src="_/uploads/intro-circle-2.png", alt="")
+					.intro__circle-item
+						img(src="_/uploads/intro-circle-3.png", alt="")
+					.intro__circle-item
 
-//- 	+style('steps', 'blocks')
-//- 	.steps.--bitrix
-//- 		.case
-//- 			.steps__title.h3 #[h3 Почему именно «1С-Битрикс»?]
-//- 			.steps__list
-//- 				.steps__item
-//- 					.steps__img
-//- 						img(src="_/uploads/steps-1.svg", alt="")
-//- 					.steps__info
-//- 						.steps__name.h6 #[h6 Обновления и поддержка]
-//- 						.steps__desc Надёжная поддержка и постоянные обновления продуктов компании
-//- 				.steps__item
-//- 					.steps__img
-//- 						img(src="_/uploads/steps-10.svg", alt="")
-//- 					.steps__info
-//- 						.steps__name.h6 #[h6 Безопасность]
-//- 						.steps__desc Максимум возможностей для безопасности и безотказной работы
-//- 				.steps__item
-//- 					.steps__img
-//- 						img(src="_/uploads/steps-11.svg", alt="")
-//- 					.steps__info
-//- 						.steps__name.h6 #[h6 Российская разработка]
-//- 						.steps__desc Соответствие законодательству, огромное русcкоязычное сообщество разработчиков
+	+style('bitrix-24', 'blocks')
+	include ../../blocks/bitrix-24/bitrix-24
 
-//- 	+style('pros', 'blocks')
-//- 	.pros.--bitrix
-//- 		.case
-//- 			.pros__title.h3 #[h3 Наши преимущества в цифрах]
-//- 			.pros__list
-//- 				.pros__item.an.fadeIn
-//- 					.pros__name 275 000 +
-//- 					.pros__text Веб-проектов
-//- 				.pros__item.an.fadeIn(data-timeout="0.1s")
-//- 					.pros__name 21 +
-//- 					.pros__text Год на рынке
-//- 				.pros__item.an.fadeIn(data-timeout="0.1s")
-//- 					.pros__name 21 000 +
-//- 					.pros__text 21 000 + Партнёров
-//- 				.pros__item.an.fadeIn(data-timeout="0.1s")
-//- 					.pros__name 10 млн +
-//- 					.pros__text 10 млн + Компаний в Битрикс24
+	+style('price', 'blocks')
+	.price.--bitrix
+		.case
+			.price__title.h3 #[h3 Продукты]
+			.price__list
+				.price__list-wrap
+					a.price__item(href="")
+						.price__info
+							.price__rate
+								.price__rate-icon
+									img(src="_/uploads/icons/cube-1.svg", alt="")
+								.price__rate-title Тариф
+							.price__name.h5 #[h5 Битрикс24]
+							.price__text Набор из пяти важных и полезных инструментов, которые помогают бизнесу работать.
+						.price__main
+							.price__desc
+								.price__value #[u 25 000] руб./мес
+								.price__note + РК бюджет
+							.price__btn.btn.--green.--md Выбрать тариф
+					a.price__item(href="")
+						.price__info
+							.price__rate
+								.price__rate-icon
+									img(src="_/uploads/icons/cube-2.svg", alt="")
+								.price__rate-title Тариф
+							.price__name.h5 #[h5 Управление #[br]сайтом]
+							.price__text Профессиональная система для создания, поддержки и успешного развития веб-проектов.
+						.price__main
+							.price__desc
+								.price__value #[u 15 000] руб./мес
+								.price__note + РК бюджет
+							.price__btn.btn.--green.--md Выбрать тариф
+					a.price__item(href="")
+						.price__info
+							.price__rate
+								.price__rate-icon
+									img(src="_/uploads/icons/cube-2.svg", alt="")
+								.price__rate-title Тариф
+							.price__name.h5 #[h5 Интернет-#[br]магазин + CRM]
+							.price__text Роботизированная eCommerce-платформа для создания совершенных интернет-магазинов.
+						.price__main
+							.price__desc
+								.price__value #[u 5 000] руб./мес
+								.price__note + анализ, отчёт
+							.price__btn.btn.--green.--md Выбрать тариф
+					a.price__item(href="")
+						.price__info
+							.price__rate
+								.price__rate-icon
+									img(src="_/uploads/icons/cube-2.svg", alt="")
+								.price__rate-title Тариф
+							.price__name.h5 #[h5 Enterprise]
+							.price__text Продукты и решения для крупного бизнеса, корпораций и государственных структур.
+						.price__main
+							.price__desc
+								.price__value #[u 10 000] руб./мес
+								.price__note + РК бюджет
+							.price__btn.btn.--green.--md Выбрать тариф
+			.price__pagination.swiper-pagination
 
-//- 	+style('reg', 'blocks')
-//- 	.reg
-//- 		.case
-//- 			.reg__title Более 4 000 000 компаний зарегистрировано в 1С-Битрикс24
+	+style('offer', 'blocks')
+	include ../../blocks/offer/offer
+
+	+style('reg', 'blocks')
+	.reg
+		.case
+			.reg__title Более 4 000 000 компаний зарегистрировано в 1С-Битрикс24
