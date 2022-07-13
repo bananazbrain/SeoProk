@@ -101,7 +101,7 @@
     margin-bottom: 29px;
   }
   .comp__desc {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
   }
   .comp__subtitle {
     line-height: 26px;
@@ -121,5 +121,34 @@
   }
   .comp__text {
     font-size: 15px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .comp__title {
+    font-size: 23px;
+    line-height: 34px;
+    margin-left: 4px;
+  }
+  .comp__desc {
+    line-height: 28px;
+  }
+  .comp__item {
+    margin-bottom: 45px;
+  }
+  .comp__num {
+    font-size: 30px;
+    width: 58px;
+    height: 58px;
+    top: -22px;
+    left: 11px;
+  }
+  .comp__info {
+    padding: 49px 11px 22px;
+  }
+  .comp__name {
+    margin-bottom: 11px;
+  }
+  .comp__text {
+    font-size: 14px;
   }
 }

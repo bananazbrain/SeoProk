@@ -113,4 +113,10 @@
     font-size: 14px;
     line-height: 22px;
   }
+  .select__area {
+    padding: 6px 10px;
+  }
+  .select__title {
+    font-size: 12px;
+  }
 }

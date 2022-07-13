@@ -85,6 +85,8 @@
 		&__item
 			width: 100%
 			margin-bottom: 30px
+			&:after
+				left: 0
 			&:nth-of-type(2)
 				right: 0
 			&:last-of-type
@@ -98,11 +100,21 @@
 
 @media screen and (max-width: 580px)
 	.awards
-		padding: 40px 0 75px
+		padding: 40px 0 69px
 		&__title
 			max-width: 210px
 		&__text
 			padding-right: 30px
 
 @media screen and (max-width: 390px)
-	// .awards
+	.awards
+		&__item
+			margin-bottom: 22px
+			&:after
+				top: 74px
+		&__text
+			font-size: 14px
+			line-height: 23px
+			padding-right: 11px
+			br
+				display: block

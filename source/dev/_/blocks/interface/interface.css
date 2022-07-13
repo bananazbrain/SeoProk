@@ -129,3 +129,19 @@
     padding-left: 18px;
   }
 }
+@media screen and (max-width: 390px) {
+  .interface__item {
+    margin-bottom: 17px;
+    align-items: flex-start;
+  }
+  .interface__icon {
+    width: 37px;
+  }
+  .interface__name {
+    width: calc( 100% - 37px );
+    padding-top: 5px;
+    padding-left: 12px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

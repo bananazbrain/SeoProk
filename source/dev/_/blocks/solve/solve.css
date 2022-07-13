@@ -82,6 +82,9 @@
   .solve__title {
     margin-bottom: 50px;
   }
+  .solve__list {
+    margin: 0;
+  }
   .solve__list-wrap {
     margin-bottom: 0;
     flex-direction: column;
@@ -124,5 +127,66 @@
   }
   .solve__btn {
     width: 100%;
+  }
+}
+@media screen and (max-width: 390px) {
+  .solve__item {
+    padding: 28px 11px 47px;
+    margin-bottom: 12px;
+  }
+  .solve__item.--green {
+    color: #272727;
+    background: #F7F7F7;
+  }
+  .solve__item.--green .solve__btn {
+    color: #fff;
+    background: #09B559;
+  }
+  .solve__item.--green .solve__btn svg path {
+    fill: #fff;
+  }
+  .solve__item.--green .solve__btn:hover {
+    color: #09B559;
+    background: #fff;
+  }
+  .solve__item.--green .solve__btn:hover svg path {
+    fill: #09B559;
+  }
+  .solve__item:nth-of-type(odd) {
+    color: #fff;
+    background: #09B559;
+  }
+  .solve__item:nth-of-type(odd) .solve__btn {
+    color: #09B559;
+    background: #fff;
+  }
+  .solve__item:nth-of-type(odd) .solve__btn svg path {
+    fill: #09B559;
+  }
+  .solve__item:nth-of-type(odd) .solve__btn:hover {
+    color: #fff;
+    background: #272727;
+  }
+  .solve__item:nth-of-type(odd) .solve__btn:hover svg path {
+    fill: #fff;
+  }
+  .solve__name {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 25px;
+  }
+  .solve__name br {
+    display: block;
+  }
+  .solve__text {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .solve__text p {
+    margin-bottom: 24px;
+  }
+  .solve__btn {
+    font-size: 14px;
+    padding: 0 5px;
   }
 }

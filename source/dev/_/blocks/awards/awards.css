@@ -105,6 +105,9 @@
     width: 100%;
     margin-bottom: 30px;
   }
+  .awards__item:after {
+    left: 0;
+  }
   .awards__item:nth-of-type(2) {
     right: 0;
   }
@@ -123,12 +126,28 @@
 }
 @media screen and (max-width: 580px) {
   .awards {
-    padding: 40px 0 75px;
+    padding: 40px 0 69px;
   }
   .awards__title {
     max-width: 210px;
   }
   .awards__text {
     padding-right: 30px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .awards__item {
+    margin-bottom: 22px;
+  }
+  .awards__item:after {
+    top: 74px;
+  }
+  .awards__text {
+    font-size: 14px;
+    line-height: 23px;
+    padding-right: 11px;
+  }
+  .awards__text br {
+    display: block;
   }
 }

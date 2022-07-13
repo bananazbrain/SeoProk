@@ -687,7 +687,7 @@
     width: 100%;
     max-width: 100%;
     padding-right: 80px;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
   }
   .intro.--ux .intro__preview {
     display: none;
@@ -738,6 +738,15 @@
   }
   .intro__preview-title {
     font-size: 26px;
+  }
+  .intro.--ux .intro__subtitle {
+    padding-right: 0;
+  }
+  .intro.--ux .intro__form {
+    padding-top: 22px;
+  }
+  .intro.--ux .intro__desc {
+    margin-bottom: 14px;
   }
   .intro.--about .intro__info {
     margin-bottom: 53px;

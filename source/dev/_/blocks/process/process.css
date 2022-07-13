@@ -3,7 +3,7 @@
   background: #F7F7F7;
 }
 .process__title {
-  margin-bottom: 89px;
+  margin-bottom: 88px;
   margin-left: 4px;
 }
 .process__list {
@@ -17,20 +17,20 @@
 }
 .process__item:nth-of-type(1) {
   max-width: 290px;
-  margin-right: 70px;
+  margin-right: 69px;
 }
 .process__item:nth-of-type(2) {
-  margin-right: 70px;
+  margin-right: 69px;
 }
 .process__item:last-of-type {
-  right: -68px;
+  right: -69px;
   margin-right: -100%;
 }
 .process__item:last-of-type .process__bar:before, .process__item:last-of-type .process__bar:after {
   display: none;
 }
 .process__bar {
-  margin-bottom: 48px;
+  margin-bottom: 49px;
   position: relative;
 }
 .process__bar img {
@@ -42,12 +42,14 @@
   right: 0;
   width: 21px;
   height: 33px;
+  margin-top: -15px;
+  margin-right: -12px;
   transform: translateX(-50%);
   background: url("../../sys/imgs/chevron-green.svg") no-repeat;
   position: absolute;
 }
 .process__bar:before {
-  right: 15px;
+  right: 16px;
   opacity: 0.64;
   animation: move-1 1.7s infinite;
 }
@@ -56,22 +58,23 @@
   animation: move-2 1.7s infinite;
 }
 .process__elems {
-  padding-left: 43px;
+  padding-left: 44px;
   position: relative;
 }
 .process__elems:before {
   content: "";
   width: 1px;
   height: 100%;
-  min-height: 273px;
+  min-height: 288px;
   top: 0;
-  left: 8px;
+  left: 9px;
   background: #09B559;
   position: absolute;
 }
 .process__elem {
   top: -6px;
-  font-size: 21px;
+  font-size: 23px;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   margin-bottom: 63px;
   line-height: 27px;
@@ -94,6 +97,8 @@
   margin-top: 90px;
 }
 .process__elem.--final {
+  top: -12px;
+  right: 8px;
   color: #09B559;
   font-size: 27px;
   line-height: 33px;
@@ -102,8 +107,8 @@
   display: none;
 }
 .process__elem.--final span {
-  top: 6px;
-  left: -42px;
+  top: 11px;
+  left: -35px;
   width: 16px;
   height: 16px;
   border-radius: 50%;
@@ -173,17 +178,23 @@
   }
 }
 @media screen and (max-width: 1220px) {
+  .process__title {
+    margin-bottom: 75px;
+  }
   .process__bar img {
     width: 175px;
   }
+  .process__bar:before, .process__bar:after {
+    margin-right: -5px;
+  }
   .process__elems {
-    padding-left: 25px;
+    padding-left: 35px;
   }
   .process__elem {
     font-size: 20px;
   }
   .process__elem:before {
-    left: -24px;
+    left: -33px;
   }
   .process__elem.--final {
     font-size: 25px;
@@ -243,6 +254,8 @@
     top: auto;
     bottom: 10px;
     transform: rotate(90deg);
+    margin-top: 0;
+    margin-right: 0;
   }
   .process__bar:before {
     right: 0px;
@@ -292,6 +305,7 @@
   }
   .process__elem.--final {
     top: 0;
+    right: 0;
     font-size: 27px;
     position: relative;
   }
@@ -387,5 +401,75 @@
     font-size: 22px;
     line-height: 26px;
     padding-top: 5px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .process {
+    padding: 0 0 107px;
+  }
+  .process__title {
+    padding-right: 10px;
+    margin-bottom: 75px;
+  }
+  .process__bar {
+    margin-left: 17px;
+  }
+  .process__bar:before {
+    bottom: 15px;
+  }
+  .process__bar:after {
+    bottom: 0;
+  }
+  .process__info {
+    width: calc( 100% - 33px - 17px );
+    padding-left: 38px;
+  }
+  .process__elems {
+    padding-left: 28px;
+  }
+  .process__elems:before {
+    left: -50px;
+    height: calc( 100% - 45px );
+  }
+  .process__elem {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .process__elem:before {
+    left: -41px;
+  }
+  .process__elem:after {
+    left: -34px;
+  }
+  .process__elem.--md {
+    margin-top: 33px;
+  }
+  .process__elem.--mt {
+    margin-top: 50px;
+  }
+  .process__elem.--final {
+    font-size: 16px;
+    line-height: 19px;
+    top: 12px;
+    padding-top: 0;
+  }
+  .process__elem.--final span {
+    top: 5px;
+    left: -41px;
+  }
+
+  @keyframes p-pulse {
+    0% {
+      width: 16px;
+      height: 16px;
+    }
+    50% {
+      width: 26px;
+      height: 26px;
+    }
+    100% {
+      width: 16px;
+      height: 16px;
+    }
   }
 }

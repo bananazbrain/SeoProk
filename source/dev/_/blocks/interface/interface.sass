@@ -97,10 +97,20 @@
 				margin-bottom: 20px
 				&:last-of-type
 					margin-bottom: 0
-
 		&__name
 			padding-top: 0
 			padding-left: 18px
 
 @media screen and (max-width: 390px)
-	// .interface
+	.interface
+		&__item
+			margin-bottom: 17px
+			align-items: flex-start
+		&__icon
+			width: 37px
+		&__name
+			width: calc( 100% - 37px )
+			padding-top: 5px
+			padding-left: 12px
+			font-size: 16px
+			line-height: 24px

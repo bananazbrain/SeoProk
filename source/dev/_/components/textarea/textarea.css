@@ -61,7 +61,11 @@ textarea {
 }
 @media screen and (max-width: 390px) {
   .textarea__area {
+    min-height: 200px;
     padding: 6px 10px;
+  }
+  .textarea__area::placeholder {
+    font-size: 12px;
   }
   .textarea__label {
     font-size: 14px;

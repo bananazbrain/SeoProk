@@ -71,6 +71,8 @@
 	.solve
 		&__title
 			margin-bottom: 50px
+		&__list
+			margin: 0
 		&__list-wrap
 			margin-bottom: 0
 			flex-direction: column
@@ -109,4 +111,53 @@
 			width: 100%
 
 @media screen and (max-width: 390px)
-	// .solve
+	.solve
+		&__item
+			padding: 28px 11px 47px
+			margin-bottom: 12px
+			&.--green
+				color: $main
+				background: $gray
+				.solve
+					&__btn
+						color: #fff
+						background: $green
+						svg
+							path
+								fill: #fff
+						&:hover
+							color: $green
+							background: #fff
+							svg
+								path
+									fill: $green
+			&:nth-of-type(odd)
+				color: #fff
+				background: $green
+				.solve
+					&__btn
+						color: $green
+						background: #fff
+						svg
+							path
+								fill: $green
+						&:hover
+							color: #fff
+							background: $main
+							svg
+								path
+									fill: #fff
+		&__name
+			font-size: 18px
+			line-height: 26px
+			margin-bottom: 25px
+			br
+				display: block
+		&__text
+			font-size: 14px
+			line-height: 24px
+			p
+				margin-bottom: 24px
+		&__btn
+			font-size: 14px
+			padding: 0 5px
