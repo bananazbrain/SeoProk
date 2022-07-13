@@ -1,13 +1,55 @@
 @import ../../sys/sass/vars
 
-// .c-get
+.c-get
+	padding: 87px 0
+	&__title
+		margin-bottom: 57px
+	&__list
+		margin-right: 6px
+	&__list-wrap
+		margin-bottom: -42px
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+	&__item
+		width: calc( 50% - 23px )
+		min-height: 488px
+		padding: 60px 75px 42px 60px
+		margin-bottom: 42px
+		background: $gray
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		position: relative
+		&:nth-of-type(even)
+			right: -9px
+		&.--green
+			color: #fff
+			background: $green
+			.c-get
+				&__btn
+					svg
+						path
+							fill: $green
+					&:hover
+						svg
+							path
+								fill: #fff
+	&__name
+		margin-bottom: 34px
+	&__text
+		line-height: 31px
+		margin-bottom: 20px
+		p
+			margin-bottom: 34px
+			&:last-of-type
+				margin-bottom: 0
 
 @media screen and (max-width: 1220px)
 	// .c-get
-		
+
 @media screen and (max-width: 992px)
 	// .c-get
-		
+
 @media screen and (max-width: 767px)
 	// .c-get
-		

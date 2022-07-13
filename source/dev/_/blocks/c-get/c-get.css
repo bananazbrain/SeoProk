@@ -1,0 +1,52 @@
+.c-get {
+  padding: 87px 0;
+}
+.c-get__title {
+  margin-bottom: 57px;
+}
+.c-get__list {
+  margin-right: 6px;
+}
+.c-get__list-wrap {
+  margin-bottom: -42px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.c-get__item {
+  width: calc( 50% - 23px );
+  min-height: 488px;
+  padding: 60px 75px 42px 60px;
+  margin-bottom: 42px;
+  background: #F7F7F7;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+.c-get__item:nth-of-type(even) {
+  right: -9px;
+}
+.c-get__item.--green {
+  color: #fff;
+  background: #09B559;
+}
+.c-get__item.--green .c-get__btn svg path {
+  fill: #09B559;
+}
+.c-get__item.--green .c-get__btn:hover svg path {
+  fill: #fff;
+}
+.c-get__name {
+  margin-bottom: 34px;
+}
+.c-get__text {
+  line-height: 31px;
+  margin-bottom: 20px;
+}
+.c-get__text p {
+  margin-bottom: 34px;
+}
+.c-get__text p:last-of-type {
+  margin-bottom: 0;
+}

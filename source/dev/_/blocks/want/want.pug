@@ -2,4 +2,11 @@ include ../../sys/pug/vars
 
 .want
 	.case
-		
+		.want__wrap
+			.want__title.h2 #[h2 Хотите выбрать эффективный инструмент #[br]рекламы или подобрать комплексное решение?]
+			.want__desc.t1 Уточните свои контактные данные, чтобы наши менеджеры связались с вами #[br]для бесплатной консультации и обсуждения бюджета
+			form.want__form
+				.want__input.input.--b-white.--required.--tel
+					.input__wrap
+						input.input__area(type="tel" name="tel" placeholder="Введите Ваш номер телефона" autocomplete="off")
+				.want__btn.btn.--white.--md Отправить

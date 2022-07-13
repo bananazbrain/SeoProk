@@ -1,0 +1,123 @@
+.c-price {
+  padding: 87px 0 0;
+}
+.c-price__wrap {
+  background: #F1F1F1;
+  padding: 55px 42px;
+}
+.c-price__title {
+  margin-bottom: 57px;
+  text-align: center;
+}
+.c-price__row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-bottom: 1px solid #CACACA;
+}
+.c-price__row.--head {
+  border-bottom: none;
+}
+.c-price__row.--head .c-price__info {
+  color: #868686;
+  font-size: 23px;
+  line-height: 34px;
+  font-weight: 700;
+  position: relative;
+  top: -20px;
+}
+.c-price__row.--head .c-price__value {
+  color: #868686;
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 17px;
+  padding-bottom: 50px;
+  display: block;
+}
+.c-price__row.--head .c-price__value u {
+  margin-top: 4px;
+  display: block;
+}
+.c-price__row.--check .c-price__value {
+  padding-top: 8px;
+  padding-bottom: 9px;
+}
+.c-price__row.--price .c-price__info {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.c-price__row.--price .c-price__value {
+  font-weight: 700;
+  padding-top: 17px;
+  padding-bottom: 15px;
+}
+.c-price__row.--btn .c-price__info {
+  font-size: 14px;
+  line-height: 24px;
+}
+.c-price__row.--btn .c-price__value {
+  padding-top: 28px;
+  padding-bottom: 31px;
+}
+.c-price__info {
+  width: calc( 100% - 380px);
+  padding-left: 2px;
+  padding-right: 50px;
+  line-height: 28px;
+}
+.c-price__values {
+  width: 380px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.c-price__value {
+  z-index: 1;
+  width: 50%;
+  padding-top: 11px;
+  padding-bottom: 15px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.c-price__value:nth-of-type(1):before {
+  z-index: -1;
+  content: "";
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc( 100% + 4px );
+  height: 100%;
+  background: #fff;
+  opacity: 76%;
+  position: absolute;
+}
+.c-price__check {
+  width: 32px;
+  height: 32px;
+  background: #09B559;
+  border-radius: 50%;
+  position: relative;
+}
+.c-price__check:before {
+  content: "";
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 14px;
+  transform: translate(-50%, -50%);
+  background: url(../../sys/imgs/check-white-2.svg) no-repeat;
+  position: absolute;
+}
+.c-price__check.--none {
+  background: #F1F1F1;
+}
+.c-price__check.--none:before {
+  display: none;
+}
+.c-price__btn {
+  max-width: 126px;
+}

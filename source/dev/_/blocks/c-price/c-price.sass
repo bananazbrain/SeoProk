@@ -1,13 +1,120 @@
 @import ../../sys/sass/vars
 
-// .c-price
+.c-price
+	padding: 87px 0 0
+	&__wrap
+		background: #F1F1F1
+		padding: 55px 42px
+	&__title
+		margin-bottom: 57px
+		text-align: center
+	&__row
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		border-bottom: 1px solid #CACACA
+		&.--head
+			border-bottom: none
+			.c-price
+				&__info
+					color: #868686
+					font-size: 23px
+					line-height: 34px
+					font-weight: 700
+					position: relative
+					top: -20px
+				&__value
+					color: #868686
+					font-size: 18px
+					font-weight: 700
+					padding-top: 17px
+					padding-bottom: 50px
+					display: block
+					u
+						margin-top: 4px
+						display: block
+		&.--check
+			.c-price
+				&__value
+					padding-top: 8px
+					padding-bottom: 9px
+		&.--price
+			.c-price
+				&__info
+					font-size: 14px
+					font-weight: 700
+					line-height: 24px
+				&__value
+					font-weight: 700
+					padding-top: 17px
+					padding-bottom: 15px
+		&.--btn
+			.c-price
+				&__info
+					font-size: 14px
+					line-height: 24px
+				&__value
+					padding-top: 28px
+					padding-bottom: 31px
+	&__info
+		width: calc( 100% - 380px)
+		padding-left: 2px
+		padding-right: 50px
+		line-height: 28px
+	&__values
+		width: 380px
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+	&__value
+		z-index: 1
+		width: 50%
+		padding-top: 11px
+		padding-bottom: 15px
+		text-align: center
+		display: flex
+		align-items: center
+		justify-content: center
+		position: relative
+		&:nth-of-type(1)
+			&:before
+				z-index: -1
+				content: ""
+				top: 0
+				left: 50%
+				transform: translateX(-50%)
+				width: calc( 100% + 4px )
+				height: 100%
+				background: #fff
+				opacity: 76%
+				position: absolute
+	&__check
+		width: 32px
+		height: 32px
+		background: $green
+		border-radius: 50%
+		position: relative
+		&:before
+			content: ""
+			top: 50%
+			left: 50%
+			width: 20px
+			height: 14px
+			transform: translate(-50%, -50%)
+			background: url(../../sys/imgs/check-white-2.svg) no-repeat
+			position: absolute
+		&.--none
+			background: #F1F1F1
+			&:before
+				display: none
+	&__btn
+		max-width: 126px
 
 @media screen and (max-width: 1220px)
 	// .c-price
-		
+
 @media screen and (max-width: 992px)
 	// .c-price
-		
+
 @media screen and (max-width: 767px)
 	// .c-price
-		

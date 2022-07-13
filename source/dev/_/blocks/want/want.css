@@ -1,0 +1,27 @@
+.want {
+  color: #fff;
+  background: #272727;
+  padding: 75px 0 100px;
+}
+.want__wrap {
+  max-width: 920px;
+  margin: 0 auto;
+  text-align: center;
+}
+.want__title {
+  margin-bottom: 14px;
+}
+.want__desc {
+  margin-bottom: 57px;
+}
+.want__form {
+  max-width: 482px;
+  margin: 0 auto;
+}
+.want__input .input__area {
+  text-align: center;
+}
+.want__btn {
+  max-width: 158px;
+  margin: 33px auto 0;
+}

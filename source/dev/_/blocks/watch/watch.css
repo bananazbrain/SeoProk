@@ -1,0 +1,25 @@
+.watch {
+  padding: 94px 0 87px;
+}
+.watch__title {
+  margin-bottom: 57px;
+  text-align: center;
+}
+.watch__video {
+  max-width: 1007px;
+  margin: 0 auto;
+  transition: 0.3s;
+  position: relative;
+  cursor: pointer;
+}
+.watch__play {
+  top: 50%;
+  left: 50%;
+  margin-top: -8px;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+  position: absolute;
+}
+.watch__play:hover svg path#red {
+  fill: #2C2C2C;
+}
