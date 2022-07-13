@@ -1,0 +1,35 @@
+.solution {
+  padding: 87px 0 0;
+}
+.solution__title {
+  margin-bottom: 47px;
+  margin-left: 3px;
+}
+.solution__links {
+  margin-bottom: 28px;
+}
+.solution__link {
+  padding: 13px 12px;
+}
+.solution__link.--wide {
+  min-width: 230px;
+}
+.solution__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -25px -50px;
+}
+.solution__item {
+  width: calc( 100% / 3 - 50px );
+  min-height: 238px;
+  margin: 0 25px 50px;
+  padding: 24px 22px 25px;
+  background: #F7F7F7;
+}
+.solution__name {
+  color: #09B559;
+  margin-bottom: 21px;
+}
+.solution__text {
+  line-height: 28px;
+}

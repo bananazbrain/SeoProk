@@ -154,3 +154,7 @@ include ../../blocks/pros/pros
 +style('why', 'blocks')
 include ../../blocks/why/why
 
+//- solution 
++style('solution', 'blocks')
+include ../../blocks/solution/solution
+

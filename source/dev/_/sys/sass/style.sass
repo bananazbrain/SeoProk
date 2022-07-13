@@ -310,6 +310,25 @@
 			&:last-of-type
 				margin-bottom: 0
 
+.list-ar
+	ul
+		flex-direction: column
+		li
+			padding-left: 35px
+			margin-bottom: 22px
+			position: relative
+			&:before
+				content: ""
+				z-index: 1
+				top: 7px
+				left: 0
+				width: 22px
+				height: 16px
+				background: url('../../sys/imgs/arrow-green.svg') no-repeat
+				position: absolute
+			&:last-of-type
+				margin-bottom: 0
+
 .file
 	transition: .3s
 	cursor: pointer

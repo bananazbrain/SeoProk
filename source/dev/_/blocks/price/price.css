@@ -90,6 +90,15 @@
 .price__btn {
   margin-top: 8px;
 }
+.price.--bitrix {
+  padding: 88px 0 0;
+}
+.price.--bitrix .price__title {
+  margin-bottom: 67px;
+}
+.price.--bitrix .price__info {
+  padding: 15px 23px 25px 29px;
+}
 .price.--ux .price__title {
   margin-bottom: 56px;
 }

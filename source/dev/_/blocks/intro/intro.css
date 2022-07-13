@@ -167,6 +167,51 @@
   line-height: 24px;
   text-align: center;
 }
+.intro.--bitrix {
+  padding: 97px 0 0;
+  background: linear-gradient(120deg, #fcfcfc00 47.26%, #09b559ad 84.78%);
+}
+.intro.--bitrix .intro__info {
+  width: 580px;
+}
+.intro.--bitrix .intro__title {
+  margin-bottom: 44px;
+}
+.intro.--bitrix .intro__list {
+  margin-bottom: 46px;
+}
+.intro.--bitrix .intro__preview {
+  z-index: -1;
+  top: 0;
+  right: -47px;
+  margin-top: -22px;
+  margin-bottom: -18px;
+  width: calc( 100% - 580px - 52px);
+}
+.intro.--bitrix .intro__img {
+  width: 1032px;
+}
+.intro.--bitrix .intro__circle-item:nth-of-type(1) {
+  top: -65px;
+}
+.intro.--bitrix .intro__circle-item:nth-of-type(2) {
+  bottom: 150px;
+}
+.intro.--bitrix .intro__circle-item:nth-of-type(3) {
+  top: -100px;
+}
+.intro.--bitrix .intro__circle-item:nth-of-type(4) {
+  bottom: -80px;
+}
+.intro.--bitrix .intro__circle-item:nth-of-type(5) {
+  bottom: -60px;
+  left: 722px;
+  width: 321px;
+  height: 321px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 20%;
+}
 .intro.--context {
   padding: 97px 0 21px;
 }

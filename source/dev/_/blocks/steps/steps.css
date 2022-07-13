@@ -43,6 +43,12 @@
 .steps__desc {
   line-height: 25px;
 }
+.steps.--bitrix .steps__title {
+  margin-bottom: 66px;
+}
+.steps.--bitrix .steps__info {
+  padding: 42px 68px;
+}
 .steps.--context .steps__text {
   max-width: 710px;
   margin-bottom: 55px;
