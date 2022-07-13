@@ -81,6 +81,17 @@
   line-height: 33px;
   transition: 0.3s;
 }
+.faq.--context {
+  padding: 51px 0 114px;
+}
+.faq.--context .faq__title {
+  margin-left: 6px;
+  margin-bottom: 21px;
+}
+.faq.--context .faq__text {
+  margin-left: 6px;
+  margin-bottom: 55px;
+}
 
 @media screen and (max-width: 1220px) {
   .faq {

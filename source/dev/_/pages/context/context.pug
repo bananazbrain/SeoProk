@@ -1,0 +1,179 @@
+extends ../../templates/default
+block vars
+	-
+		title = "Контекстная реклама"
+
+block content
+
+	+style('intro', 'blocks')
+	.intro.--context
+		.case
+			.intro__wrap
+				.intro__info
+					.intro__title.h1 #[h1 Дизайн сложных интерфейсов]
+					.intro__subtitle.t1 Проектируем и создаём IT-системы, а не просто набор экранов
+					form.intro__form
+						.intro__desc.h6 #[h6 Напишите нам и мы проанализируем Вашу сферу и #[br]подберём наилучший вариант сайта для вашего бизнеса]
+						.intro__fields
+							.intro__inputs
+								.intro__input.input.--b-black.--required.--name
+									.input__wrap
+										input.input__area(type="text" name="name" placeholder="Имя" autocomplete="off")
+								.intro__input.input.--b-black.--required.--tel
+									.input__wrap
+										input.input__area(type="tel" name="tel" placeholder="Телефон" autocomplete="off")
+							.intro__actions
+								button.intro__btn.btn.--green.--h-dark.--sm Получить предложение
+									<svg width="22" height="8" viewBox="0 0 22 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.3536 4.35355C21.5488 4.15829 21.5488 3.84171 21.3536 3.64645L18.1716 0.464466C17.9763 0.269204 17.6597 0.269204 17.4645 0.464466C17.2692 0.659728 17.2692 0.976311 17.4645 1.17157L20.2929 4L17.4645 6.82843C17.2692 7.02369 17.2692 7.34027 17.4645 7.53553C17.6597 7.7308 17.9763 7.7308 18.1716 7.53553L21.3536 4.35355ZM0 4.5H21V3.5H0V4.5Z" fill="white"/></svg>
+				.intro__preview
+					.intro__img
+						img(src="_/uploads/ux-img.svg", alt="")
+					.intro__shape
+						img(src="_/uploads/intro-shape.png", alt="")
+				.intro__circle
+					.intro__circle-item
+						img(src="_/uploads/intro-circle.png", alt="")
+					.intro__circle-item
+						img(src="_/uploads/intro-circle-2.png", alt="")
+					.intro__circle-item
+						img(src="_/uploads/intro-circle-3.png", alt="")
+					.intro__circle-item
+						img(src="_/uploads/intro-circle-4.png", alt="")
+
+	+style('c-price', 'blocks')
+	include ../../blocks/c-price/c-price
+
+	+style('c-get', 'blocks')
+	include ../../blocks/c-get/c-get
+
+	+style('want', 'blocks')
+	include ../../blocks/want/want
+
+	+style('watch', 'blocks')
+	include ../../blocks/watch/watch
+
+	+style('google', 'blocks')
+	include ../../blocks/google/google
+
+	+style('steps', 'blocks')
+	.steps.--context
+		.case
+			.steps__title.h3 #[h3 С чего мы начинаем работу по контекстной рекламе]
+			.steps__text.t1 Наша команда включает в себя специалистов высокой квалификации, которые обладают знаниями в различных областях интернет-маркетинга
+			.steps__list
+				.steps__item
+					.steps__img
+						img(src="_/uploads/steps-3.svg", alt="")
+					.steps__info
+						.steps__name.h6 #[h6 Аудит существующего сайта]
+						.steps__desc Мы оценим насколько ваш сайт соответствует требованиям пользователей, какую имеет поисковую выдачу, а также какие ключевые запросы тратят бюджет зря, в случае, если РК уже настроена;
+				.steps__item
+					.steps__img
+						img(src="_/uploads/steps-7.svg", alt="")
+					.steps__info
+						.steps__name.h6 #[h6 Настройка Google Adwords и Yandex Direct]
+						.steps__desc Подбираем ключевые слова, создаем объявления, которые помогут заинтересовать потенциальных клиентов. Выставляем ставки, продумываем совместно с клиентом интересное предложение;
+				.steps__item
+					.steps__img
+						img(src="_/uploads/steps-8.svg", alt="")
+					.steps__info
+						.steps__name.h6 #[h6 Ведение кампании и анализ ее эффективности]
+						.steps__desc Анализируем трафик, возвращаем ушедших пользователей ретаргетингом, корректируем содержимое сайта, проводим сплит-тестирование, меняем настройки кампании для получения новых заявок;
+				.steps__item
+					.steps__img
+						img(src="_/uploads/steps-1.svg", alt="")
+					.steps__info
+						.steps__name.h6 #[h6 Определяем цели и KPI]
+						.steps__desc Определяем цели в рекламной кампании (заявки, звонки) на те действия, которые нам нужны от посетителей. Выбираем приоритетные инструменты для продвижения: Яндекс.Директ, Google Ads;
+				.steps__item
+					.steps__img
+						img(src="_/uploads/steps-5.svg", alt="")
+					.steps__info
+						.steps__name.h6 #[h6 Проходим модерацию и запускаем рекламу]
+						.steps__desc Подбираем ключевые слова, создаем объявления, которые помогут заинтересовать потенциальных клиентов. Выставляем ставки, продумываем совместно с клиентом интересное предложение;
+				.steps__item
+					.steps__img
+						img(src="_/uploads/steps-9.svg", alt="")
+					.steps__info
+						.steps__name.h6 #[h6 Подводим итоги и корректируем процесс]
+						.steps__desc Вы узнаете все о целевом трафике и его активности по завершении каждого месяца. Мы предоставим подробный отчет с дальнейшими рекомендациями. При совместном с вами решении можем скорректировать ведение РК в будущем.
+
+	+style('offer', 'blocks')
+	include ../../blocks/offer/offer
+
+	+style('faq', 'blocks')
+	.faq.--context
+		.case
+			.faq__title.h3 #[h3 Мы подготовили ответы на самые популярные вопросы #[br]о продвижении сайтов в поисковых системах]
+			.faq__text Мы подготовили ответы на самые популярные вопросы о настройке #[br]и ведении контекстной рекламы в поисковых системах
+			.faq__list
+				.faq__item
+					.faq__question
+						.faq__question-icon
+							img(src="_/uploads/icons/arrow-down.svg", alt="")
+						.faq__question-title Сколько ключевых слов будет в моей рекламной кампании?
+					.faq__answer
+						.faq__answer-text Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga maiores doloremque molestiae blanditiis rerum architecto laborum eveniet quod ex dolorem praesentium repellat sed iure beatae animi culpa modi, esse voluptatem.
+				.faq__item
+					.faq__question
+						.faq__question-icon
+							img(src="_/uploads/icons/arrow-down.svg", alt="")
+						.faq__question-title Какие гарантии даете на контекстную рекламу?
+					.faq__answer
+						.faq__answer-text Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nam officia illo. Nemo, quibusdam libero? Nihil perferendis, officia repudiandae consequuntur nulla iure dicta quia veritatis inventore accusantium porro quasi quis?Nemo explicabo aspernatur error id exercitationem aperiam sapiente, distinctio officia harum fugiat recusandae repudiandae, dignissimos totam, at eaque quos. Iure perspiciatis optio magni doloremque vitae culpa accusantium ab, eveniet quas?
+				.faq__item
+					.faq__question
+						.faq__question-icon
+							img(src="_/uploads/icons/arrow-down.svg", alt="")
+						.faq__question-title Почему ваши услуги стоят так дорого?
+					.faq__answer
+						.faq__answer-text Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure veritatis, error tempore ullam, numquam nesciunt ea deserunt sit voluptatem consequuntur et nihil provident molestias sed?
+				.faq__item
+					.faq__question
+						.faq__question-icon
+							img(src="_/uploads/icons/arrow-down.svg", alt="")
+						.faq__question-title Вы предоставляете отчет о проделанной работе по контекстной рекламе?
+					.faq__answer
+						.faq__answer-text Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam libero nobis pariatur, ipsum veniam tempora culpa non, impedit corrupti, error itaque beatae eos ex aut accusamus. Optio tenetur nostrum inventore!
+				.faq__item
+					.faq__question
+						.faq__question-icon
+							img(src="_/uploads/icons/arrow-down.svg", alt="")
+						.faq__question-title Вы только настраивайте рекламную кампанию?
+					.faq__answer
+						.faq__answer-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, facilis quas nam quasi delectus at culpa dolorum impedit, maiores tempora quae voluptatibus aspernatur saepe cumque nisi, voluptate vero aperiam magnam! culpa dolorum impedit, maiores tempora quae voluptatibus aspernatur saepe cumque nisi, voluptate vero aperiam magnam!
+				.faq__item
+					.faq__question
+						.faq__question-icon
+							img(src="_/uploads/icons/arrow-down.svg", alt="")
+						.faq__question-title Что меняется из месяца в месяц по рекламной кампании, #[br]за что мы ежемесячно платим деньги?
+					.faq__answer
+						.faq__answer-text Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure veritatis, error tempore ullam, numquam nesciunt ea deserunt sit voluptatem consequuntur et nihil provident molestias sed?
+				.faq__item
+					.faq__question
+						.faq__question-icon
+							img(src="_/uploads/icons/arrow-down.svg", alt="")
+						.faq__question-title Вы работаете по системе «оплата за лиды»?
+					.faq__answer
+						.faq__answer-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, facilis quas nam quasi delectus at culpa dolorum impedit, maiores tempora quae voluptatibus aspernatur saepe cumque nisi, voluptate vero aperiam magnam! culpa dolorum impedit, maiores tempora quae voluptatibus aspernatur saepe cumque nisi, voluptate vero aperiam magnam!
+				.faq__item
+					.faq__question
+						.faq__question-icon
+							img(src="_/uploads/icons/arrow-down.svg", alt="")
+						.faq__question-title Конкуренты будут «скликивать» мой бюджет?
+					.faq__answer
+						.faq__answer-text Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nam officia illo. Nemo, quibusdam libero? Nihil perferendis, officia repudiandae consequuntur nulla iure dicta quia veritatis inventore accusantium porro quasi quis?Nemo explicabo aspernatur error id exercitationem aperiam sapiente, distinctio officia harum fugiat recusandae repudiandae, dignissimos totam, at eaque quos.
+				.faq__item
+					.faq__question
+						.faq__question-icon
+							img(src="_/uploads/icons/arrow-down.svg", alt="")
+						.faq__question-title Как вы формируете прогноз рекламной кампании?
+					.faq__answer
+						.faq__answer-text Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure veritatis, error tempore ullam, numquam nesciunt ea deserunt sit voluptatem consequuntur et nihil provident molestias sed?
+				.faq__item.--active
+					.faq__question
+						.faq__question-icon
+							img(src="_/uploads/icons/arrow-down.svg", alt="")
+						.faq__question-title Можно у вас настроить рекламную кампанию, #[br]а вести ее мы будем самостоятельно?
+					.faq__answer
+						.faq__answer-text Да, мы можем настроить Вам рекламную кампанию а вести вы ее будете самостоятельно. 

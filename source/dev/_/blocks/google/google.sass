@@ -1,0 +1,60 @@
+@import ../../sys/sass/vars
+
+.google
+	padding: 87px 0 2px
+	&__head
+		margin-bottom: 21px
+		position: relative
+		&:before, &:after
+			content: ""
+			background: $green
+			border-radius: 50%
+			position: absolute
+		&:before
+			top: 95px
+			right: 260px
+			width: 44px
+			height: 44px
+			opacity: 22%
+		&:after
+			top: 18px
+			right: 156px
+			width: 100px
+			height: 100px
+			opacity: 40%
+	&__title
+		margin-bottom: 35px
+	&__desc
+		max-width: 650px
+		line-height: 31px
+	&__wrap
+		display: flex
+		flex-wrap: wrap
+	&__img
+		top: 20px
+		max-width: 460px
+		margin-left: 32px
+		position: relative
+	&__info
+		width: calc( 100% - 460px - 32px )
+		padding-left: 65px
+	&__subtitle
+		margin-bottom: 52px
+	&__list
+		font-weight: 700
+		margin-bottom: 56px
+	&__text
+		line-height: 31px
+		p
+			margin-bottom: 30px
+			&:last-of-type
+				margin-bottom: 0
+
+@media screen and (max-width: 1220px)
+	// .google
+
+@media screen and (max-width: 992px)
+	// .google
+
+@media screen and (max-width: 767px)
+	// .google

@@ -122,3 +122,23 @@ include ../../blocks/consult/consult
 +style('pay', 'blocks')
 include ../../blocks/pay/pay
 
+//- c-price 
++style('c-price', 'blocks')
+include ../../blocks/c-price/c-price
+
+//- c-get 
++style('c-get', 'blocks')
+include ../../blocks/c-get/c-get
+
+//- want 
++style('want', 'blocks')
+include ../../blocks/want/want
+
+//- watch 
++style('watch', 'blocks')
+include ../../blocks/watch/watch
+
+//- google 
++style('google', 'blocks')
+include ../../blocks/google/google
+

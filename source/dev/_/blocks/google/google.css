@@ -1,0 +1,64 @@
+.google {
+  padding: 87px 0 2px;
+}
+.google__head {
+  margin-bottom: 21px;
+  position: relative;
+}
+.google__head:before, .google__head:after {
+  content: "";
+  background: #09B559;
+  border-radius: 50%;
+  position: absolute;
+}
+.google__head:before {
+  top: 95px;
+  right: 260px;
+  width: 44px;
+  height: 44px;
+  opacity: 22%;
+}
+.google__head:after {
+  top: 18px;
+  right: 156px;
+  width: 100px;
+  height: 100px;
+  opacity: 40%;
+}
+.google__title {
+  margin-bottom: 35px;
+}
+.google__desc {
+  max-width: 650px;
+  line-height: 31px;
+}
+.google__wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.google__img {
+  top: 20px;
+  max-width: 460px;
+  margin-left: 32px;
+  position: relative;
+}
+.google__info {
+  width: calc( 100% - 460px - 32px );
+  padding-left: 65px;
+}
+.google__subtitle {
+  margin-bottom: 52px;
+}
+.google__list {
+  font-weight: 700;
+  margin-bottom: 56px;
+}
+.google__text {
+  line-height: 31px;
+}
+.google__text p {
+  margin-bottom: 30px;
+}
+.google__text p:last-of-type {
+  margin-bottom: 0;
+}

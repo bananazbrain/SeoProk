@@ -282,6 +282,34 @@
 		&.--active
 			background: $green
 
+.list-check
+	ul
+		flex-direction: column
+		li
+			padding-top: 5px
+			padding-left: 52px
+			margin-bottom: 40px
+			position: relative
+			&:before, &:after
+				content: ""
+				position: absolute
+			&:before
+				top: 0
+				left: 0
+				width: 32px
+				height: 32px
+				background: $green
+				border-radius: 50%
+			&:after
+				z-index: 1
+				top: 9px
+				left: 7px
+				width: 20px
+				height: 14px
+				background: url('../../sys/imgs/check-white-2.svg') no-repeat
+			&:last-of-type
+				margin-bottom: 0
+
 .file
 	transition: .3s
 	cursor: pointer

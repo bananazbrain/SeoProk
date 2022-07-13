@@ -995,6 +995,39 @@ textarea {
   background: #09B559;
 }
 
+.list-check ul {
+  flex-direction: column;
+}
+.list-check ul li {
+  padding-top: 5px;
+  padding-left: 52px;
+  margin-bottom: 40px;
+  position: relative;
+}
+.list-check ul li:before, .list-check ul li:after {
+  content: "";
+  position: absolute;
+}
+.list-check ul li:before {
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 32px;
+  background: #09B559;
+  border-radius: 50%;
+}
+.list-check ul li:after {
+  z-index: 1;
+  top: 9px;
+  left: 7px;
+  width: 20px;
+  height: 14px;
+  background: url("../../sys/imgs/check-white-2.svg") no-repeat;
+}
+.list-check ul li:last-of-type {
+  margin-bottom: 0;
+}
+
 .file {
   transition: 0.3s;
   cursor: pointer;
