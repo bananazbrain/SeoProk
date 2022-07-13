@@ -1262,6 +1262,11 @@ textarea {
     visibility: visible;
   }
 
+  .file__label {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
   .swiper-pagination-fraction {
     font-size: 25px;
   }
@@ -1331,6 +1336,11 @@ textarea {
 
   .t-links {
     margin-bottom: 33px;
+  }
+
+  .file__label {
+    font-size: 14px;
+    line-height: 22px;
   }
 
   .sitemap {

@@ -66,6 +66,7 @@
 @media screen and (max-width: 992px) {
   .success__title {
     margin-bottom: 50px;
+    margin-left: 0;
   }
   .success__list {
     margin: 0 0 -30px;
@@ -98,5 +99,20 @@
   .success__name {
     width: calc( 100% - 60px );
     padding-top: 5px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .success__icon {
+    width: 50px;
+  }
+  .success__icon:before {
+    top: 8px;
+    width: 11px;
+    height: 12px;
+  }
+  .success__text {
+    width: calc( 100% - 50px );
+    padding-left: 17px;
+    font-size: 15px;
   }
 }

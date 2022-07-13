@@ -561,6 +561,9 @@
   .intro.--ux .intro__subtitle {
     max-width: 280px;
   }
+  .intro.--ux .intro__btn {
+    margin-bottom: 0;
+  }
   .intro.--ux .intro__preview {
     top: 30px;
     right: 10px;
@@ -670,6 +673,24 @@
     font-weight: 400;
     text-align: left;
     max-width: 150px;
+  }
+  .intro.--ux {
+    padding: 22px 0 80px;
+  }
+  .intro.--ux .intro__info {
+    width: 100%;
+  }
+  .intro.--ux .intro__title {
+    margin-bottom: 38px;
+  }
+  .intro.--ux .intro__subtitle {
+    width: 100%;
+    max-width: 100%;
+    padding-right: 80px;
+    margin-bottom: 22px;
+  }
+  .intro.--ux .intro__preview {
+    display: none;
   }
   .intro.--about {
     padding: 22px 0 0;

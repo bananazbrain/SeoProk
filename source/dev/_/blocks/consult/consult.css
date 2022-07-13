@@ -79,3 +79,21 @@
     line-height: 22px;
   }
 }
+@media screen and (max-width: 580px) {
+  .consult__title {
+    margin-bottom: 23px;
+  }
+  .consult__text {
+    font-size: 15px;
+    margin-bottom: 40px;
+  }
+  .consult__form {
+    padding: 20px 15px 50px;
+  }
+  .consult__col {
+    margin-bottom: 14px;
+  }
+  .consult__field {
+    margin-bottom: 14px;
+  }
+}

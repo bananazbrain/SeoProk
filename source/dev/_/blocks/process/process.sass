@@ -172,6 +172,7 @@
 		padding: 60px 0 100px
 		&__title
 			margin-bottom: 70px
+			margin-left: 0
 		&__list
 			margin-left: 20px
 			flex-direction: column
@@ -279,7 +280,37 @@
 				font-size: 25px
 
 @media screen and (max-width: 580px)
-	// .process
+	.process
+		padding: 0 0 95px
+		background: transparent
+		&__title
+			margin-bottom: 68px
+		&__list
+			margin-left: 0
+		&__bar
+			&:before
+				bottom: 25px
+			&:after
+				bottom: 10px
+		&__elems
+			&:before
+				height: calc( 100% - 55px )
+		&__elem
+			font-size: 18px
+			line-height: 25px
+			margin-bottom: 26px
+			br
+				display: block
+			&:before
+				top: 3px
+			&:after
+				height: 70px
+			&.--mt
+				margin-top: 36px
+			&.--final
+				font-size: 22px
+				line-height: 26px
+				padding-top: 5px
 
 @media screen and (max-width: 390px)
 	// .process

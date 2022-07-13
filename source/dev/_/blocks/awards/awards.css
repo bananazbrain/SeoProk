@@ -121,3 +121,14 @@
     display: none;
   }
 }
+@media screen and (max-width: 580px) {
+  .awards {
+    padding: 40px 0 75px;
+  }
+  .awards__title {
+    max-width: 210px;
+  }
+  .awards__text {
+    padding-right: 30px;
+  }
+}
