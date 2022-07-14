@@ -65,7 +65,49 @@
 			width: calc( 100% - 390px )
 
 @media screen and (max-width: 992px)
-	// .google
+	.google
+		&__head
+			&:before
+				right: 100px
+			&:after
+				right: 0
+		&__title
+			margin-bottom: 23px
+		&__desc
+			max-width: 530px
+			br
+				display: none
+		&__img
+			max-width: 300px
+		&__info
+			width: calc( 100% - 300px )
+			padding-left: 35px
+		&__subtitle
+			margin-bottom: 38px
+		&__list
+			margin-bottom: 38px
+		&__text
+			margin-left: -335px
 
 @media screen and (max-width: 767px)
+	.google
+		&__head
+			margin-bottom: 47px
+			&:before, &:after
+				display: none
+		&__desc
+			max-width: 100%
+			line-height: 28px
+		&__img
+			display: none
+		&__info
+			width: 100%
+			padding-left: 0
+		&__text
+			margin-left: 0
+
+@media screen and (max-width: 580px)
+	// .google
+
+@media screen and (max-width: 390px)
 	// .google

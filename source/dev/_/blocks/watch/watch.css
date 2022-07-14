@@ -13,6 +13,7 @@
   cursor: pointer;
 }
 .watch__play {
+  width: 144px;
   top: 50%;
   left: 50%;
   margin-top: -8px;
@@ -33,5 +34,23 @@
   }
   .watch__video {
     max-width: 850px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .watch__play {
+    width: 120px;
+    margin-top: 0;
+  }
+  .watch__play svg {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .watch__title {
+    max-width: 500px;
+    margin: 0 auto 40px;
+  }
+  .watch__play {
+    width: 100px;
   }
 }

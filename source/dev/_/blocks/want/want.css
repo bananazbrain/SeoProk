@@ -25,3 +25,29 @@
   max-width: 158px;
   margin: 33px auto 0;
 }
+
+@media screen and (max-width: 992px) {
+  .want {
+    padding: 60px 0 80px;
+  }
+  .want__wrap {
+    max-width: 100%;
+  }
+  .want__title {
+    margin-bottom: 30px;
+  }
+  .want__title br {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .want__desc {
+    margin-bottom: 50px;
+  }
+  .want__desc br {
+    display: none;
+  }
+  .want__form {
+    max-width: 420px;
+  }
+}

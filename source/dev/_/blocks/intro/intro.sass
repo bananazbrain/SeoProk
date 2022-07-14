@@ -472,6 +472,24 @@
 			align-items: center
 			justify-content: space-between
 
+		&.--context
+			padding: 60px 0 70px
+			.intro
+				&__form
+					max-width: 400px
+				&__preview
+					right: 0
+				&__img
+					top: 80px
+					left: -120px
+					width: 480px
+				&__shape
+					left: -110px
+				&__circle
+					&-item
+						&:nth-of-type(4)
+							display: none
+
 		&.--ux
 			padding: 60px 0 70px
 			.intro
@@ -570,6 +588,33 @@
 					width: 130px
 					height: 130px
 					bottom: -70px
+
+		&.--context
+			padding: 25px 0 70px
+			.intro
+				&__info
+					width: 400px
+				&__subtitle
+					max-width: 280px
+					margin-bottom: 30px
+				&__form
+					max-width: 320px
+				&__preview
+					width: calc( 100% - 400px )
+				&__img
+					left: -100px
+					width: 390px
+				&__shape
+					left: -80px
+					top: 110px
+				&__circle
+					&-item
+						&:nth-of-type(1)
+							top: -30px
+						&:nth-of-type(4)
+							display: block
+							bottom: -40px
+							right: -50px
 
 		&.--ux
 			padding: 25px 0 70px

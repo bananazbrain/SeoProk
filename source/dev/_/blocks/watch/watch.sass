@@ -12,6 +12,7 @@
 		position: relative
 		cursor: pointer
 	&__play
+		width: 144px
 		top: 50%
 		left: 50%
 		margin-top: -8px
@@ -32,7 +33,23 @@
 			max-width: 850px
 
 @media screen and (max-width: 992px)
-	// .watch
+	.watch
+		&__play
+			width: 120px
+			margin-top: 0
+			svg
+				width: 100%
 
 @media screen and (max-width: 767px)
+	.watch
+		&__title
+			max-width: 500px
+			margin: 0 auto 40px
+		&__play
+			width: 100px
+
+@media screen and (max-width: 580px)
+	// .watch
+
+@media screen and (max-width: 390px)
 	// .watch

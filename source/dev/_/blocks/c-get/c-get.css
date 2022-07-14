@@ -53,6 +53,9 @@
 
 @media screen and (max-width: 1220px) {
   .c-get__list {
+    margin-right: 0;
+  }
+  .c-get__list-wrap {
     margin-bottom: -25px;
   }
   .c-get__item {
@@ -60,9 +63,56 @@
     padding: 40px 50px;
     margin-bottom: 25px;
   }
+  .c-get__item:nth-of-type(even) {
+    right: 0;
+  }
 }
 @media screen and (max-width: 992px) {
   .c-get {
     padding: 80px 0;
+  }
+  .c-get__title {
+    margin-bottom: 50px;
+  }
+  .c-get__list-wrap {
+    margin-bottom: -20px;
+  }
+  .c-get__item {
+    padding: 30px;
+    margin-bottom: 20px;
+  }
+  .c-get__name {
+    margin-bottom: 30px;
+  }
+  .c-get__text {
+    line-height: 28px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .c-get__list-wrap {
+    margin-bottom: 0;
+  }
+  .c-get__item {
+    width: 100%;
+    min-height: auto;
+  }
+  .c-get__item.--green {
+    color: #272727;
+    background: #F7F7F7;
+  }
+  .c-get__item:last-of-type {
+    margin-bottom: 0;
+  }
+  .c-get__item:nth-of-type(odd) {
+    color: #fff;
+    background: #09B559;
+  }
+  .c-get__name {
+    font-size: 26px;
+    line-height: 38px;
+    margin-bottom: 22px;
+  }
+  .c-get__text p {
+    margin-bottom: 20px;
   }
 }

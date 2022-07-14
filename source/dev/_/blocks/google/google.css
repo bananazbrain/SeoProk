@@ -81,3 +81,58 @@
     width: calc( 100% - 390px );
   }
 }
+@media screen and (max-width: 992px) {
+  .google__head:before {
+    right: 100px;
+  }
+  .google__head:after {
+    right: 0;
+  }
+  .google__title {
+    margin-bottom: 23px;
+  }
+  .google__desc {
+    max-width: 530px;
+  }
+  .google__desc br {
+    display: none;
+  }
+  .google__img {
+    max-width: 300px;
+  }
+  .google__info {
+    width: calc( 100% - 300px );
+    padding-left: 35px;
+  }
+  .google__subtitle {
+    margin-bottom: 38px;
+  }
+  .google__list {
+    margin-bottom: 38px;
+  }
+  .google__text {
+    margin-left: -335px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .google__head {
+    margin-bottom: 47px;
+  }
+  .google__head:before, .google__head:after {
+    display: none;
+  }
+  .google__desc {
+    max-width: 100%;
+    line-height: 28px;
+  }
+  .google__img {
+    display: none;
+  }
+  .google__info {
+    width: 100%;
+    padding-left: 0;
+  }
+  .google__text {
+    margin-left: 0;
+  }
+}

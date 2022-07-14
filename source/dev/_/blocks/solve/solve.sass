@@ -59,11 +59,11 @@
 		&__title
 			margin-left: 0
 		&__list-wrap
-			margin-bottom: -30px
+			margin-bottom: -25px
 		&__item
-			width: calc( 50% - 5px )
+			width: calc( 50% - 10px )
 			padding: 30px 40px
-			margin-bottom: 30px
+			margin-bottom: 25px
 			&:nth-of-type(even)
 				right: 0
 
@@ -83,38 +83,6 @@
 			margin-bottom: 20px
 			&:last-of-type
 				margin-bottom: 0
-		&__name
-			br
-				display: none
-		&__text
-			margin-bottom: 25px
-			line-height: 28px
-
-@media screen and (max-width: 767px)
-	.solve
-		&__text
-			p
-				margin-bottom: 20px
-		&__btn
-			font-size: 16px
-
-@media screen and (max-width: 580px)
-	.solve
-		&__item
-			padding: 28px 20px 45px
-		&__name
-			font-size: 20px
-		&__text
-			font-size: 15px
-			line-height: 25px
-		&__btn
-			width: 100%
-
-@media screen and (max-width: 390px)
-	.solve
-		&__item
-			padding: 28px 11px 47px
-			margin-bottom: 12px
 			&.--green
 				color: $main
 				background: $gray
@@ -147,6 +115,38 @@
 							svg
 								path
 									fill: #fff
+		&__name
+			br
+				display: none
+		&__text
+			margin-bottom: 25px
+			line-height: 28px
+
+@media screen and (max-width: 767px)
+	.solve
+		&__text
+			p
+				margin-bottom: 20px
+		&__btn
+			font-size: 16px
+
+@media screen and (max-width: 580px)
+	.solve
+		&__item
+			padding: 28px 20px 45px
+		&__name
+			font-size: 20px
+		&__text
+			font-size: 15px
+			line-height: 25px
+		&__btn
+			width: 100%
+
+@media screen and (max-width: 390px)
+	.solve
+		&__item
+			padding: 28px 11px 47px
+			margin-bottom: 12px
 		&__name
 			font-size: 18px
 			line-height: 26px

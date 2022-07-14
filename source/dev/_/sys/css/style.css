@@ -1244,6 +1244,10 @@ textarea {
     min-width: 100px;
   }
 
+  .list-check ul li {
+    margin-bottom: 30px;
+  }
+
   .sitemap__list ul {
     width: 50%;
     margin-bottom: 40px;

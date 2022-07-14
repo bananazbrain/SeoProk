@@ -48,15 +48,56 @@
 @media screen and (max-width: 1220px)
 	.c-get
 		&__list
+			margin-right: 0
+		&__list-wrap
 			margin-bottom: -25px
 		&__item
 			width: calc( 50% - 10px )
 			padding: 40px 50px
 			margin-bottom: 25px
+			&:nth-of-type(even)
+				right: 0
 
 @media screen and (max-width: 992px)
 	.c-get
 		padding: 80px 0
+		&__title
+			margin-bottom: 50px
+		&__list-wrap
+			margin-bottom: -20px
+		&__item
+			padding: 30px
+			margin-bottom: 20px
+		&__name
+			margin-bottom: 30px
+		&__text
+			line-height: 28px
 
 @media screen and (max-width: 767px)
+	.c-get
+		&__list-wrap
+			margin-bottom: 0
+		&__item
+			width: 100%
+			min-height: auto
+			&.--green
+				color: $main
+				background: $gray
+			&:last-of-type
+				margin-bottom: 0
+			&:nth-of-type(odd)
+				color: #fff
+				background: $green
+		&__name
+			font-size: 26px
+			line-height: 38px
+			margin-bottom: 22px
+		&__text
+			p
+				margin-bottom: 20px
+
+@media screen and (max-width: 580px)
+	// .c-get
+
+@media screen and (max-width: 390px)
 	// .c-get
