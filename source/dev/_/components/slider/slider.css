@@ -1,0 +1,49 @@
+.swiper-button-prev, .swiper-button-next {
+  z-index: 50;
+  width: auto;
+  transition: 0.3s;
+}
+.swiper-button-prev:before, .swiper-button-prev:after, .swiper-button-next:before, .swiper-button-next:after {
+  display: none;
+}
+.swiper-button-prev.--black:hover svg path, .swiper-button-next.--black:hover svg path {
+  stroke: #09B559;
+}
+.swiper-button-prev.--gray, .swiper-button-next.--gray {
+  border: 1px solid #B6B6B6;
+}
+.swiper-button-prev.--gray:hover, .swiper-button-next.--gray:hover {
+  border-color: #09B559;
+}
+.swiper-button-prev.--gray:hover svg path, .swiper-button-next.--gray:hover svg path {
+  fill: #09B559;
+}
+
+.swiper-button-prev img {
+  transform: scale(-1, 1);
+}
+
+.swiper-pagination-fraction {
+  font-size: 28px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+.swiper-pagination-fraction .swiper-pagination-current {
+  color: #09B559;
+  transition: 0.3s;
+}
+
+.swiper-pagination-bullets .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #09B559;
+  margin: 0 5.5px !important;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-pagination-fraction {
+    font-size: 25px;
+  }
+}

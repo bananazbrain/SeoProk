@@ -10,26 +10,26 @@ block content
 		.case
 			.intro__wrap
 				.intro__info
-					.intro__title.h1 #[h1 Новый 1С-Битрикс.#[br]Сиэтл]
-					.intro__list.t1.list-ar
+					.intro__title.h1.an.fadeIn-up #[h1 Новый 1С-Битрикс.#[br]Сиэтл]
+					.intro__list.t1.list-ar.an.fadeIn(data-timeout="0.1s")
 						ul
 							li Бесплатный складской учёт в CRM
 							li Виртуальный WhatsApp для продаж в мессенджере
 							li Скрам для системной работы над проектами и многое другое
-					.intro__desc.h6 Все уже доступно!
+					.intro__desc.h6.an.fadeIn(data-timeout="0.2s") Все уже доступно!
 				.intro__preview
-					.intro__img
+					.intro__img.an.fadeIn(data-timeout="0.3s")
 						img(src="_/uploads/bitrix-img.png", alt="")
 				.intro__circle
-					.intro__circle-item
-						img(src="_/uploads/intro-circle.png", alt="")
-					.intro__circle-item
-						img(src="_/uploads/intro-circle-2.png", alt="")
-					.intro__circle-item
-						img(src="_/uploads/intro-circle-3.png", alt="")
-					.intro__circle-item
-						img(src="_/uploads/intro-circle-4.png", alt="")
-					.intro__circle-item
+					.intro__circle-item.an.fadeIn
+						img(src="_/uploads/intro-circle.png", alt="").move(data-value="4")
+					.intro__circle-item.an.fadeIn
+						img(src="_/uploads/intro-circle-2.png", alt="").move(data-value="-3")
+					.intro__circle-item.an.fadeIn
+						img(src="_/uploads/intro-circle-3.png", alt="").move(data-value="6")
+					.intro__circle-item.an.fadeIn
+						img(src="_/uploads/intro-circle-4.png", alt="").move(data-value="3")
+					.intro__circle-item.an.fadeIn
 	
 	+style('solution', 'blocks')
 	include ../../blocks/solution/solution
@@ -37,10 +37,10 @@ block content
 	+style('price', 'blocks')
 	.price.--bitrix
 		.case
-			.price__title.h3 #[h3 Продукты]
+			.price__title.h3.an.fadeIn-up #[h3 Продукты]
 			.price__list
 				.price__list-wrap
-					a.price__item(href="")
+					a.price__item(href="").an.fadeIn
 						.price__info
 							.price__rate
 								.price__rate-icon
@@ -53,7 +53,7 @@ block content
 								.price__value #[u 25 000] руб./мес
 								.price__note + РК бюджет
 							.price__btn.btn.--green.--md Выбрать тариф
-					a.price__item(href="")
+					a.price__item(href="").an.fadeIn(data-timeout="0.1s")
 						.price__info
 							.price__rate
 								.price__rate-icon
@@ -66,7 +66,7 @@ block content
 								.price__value #[u 15 000] руб./мес
 								.price__note + РК бюджет
 							.price__btn.btn.--green.--md Выбрать тариф
-					a.price__item(href="")
+					a.price__item(href="").an.fadeIn(data-timeout="0.2s")
 						.price__info
 							.price__rate
 								.price__rate-icon
@@ -79,7 +79,7 @@ block content
 								.price__value #[u 5 000] руб./мес
 								.price__note + анализ, отчёт
 							.price__btn.btn.--green.--md Выбрать тариф
-					a.price__item(href="")
+					a.price__item(href="").an.fadeIn(data-timeout="0.3s")
 						.price__info
 							.price__rate
 								.price__rate-icon
@@ -92,13 +92,13 @@ block content
 								.price__value #[u 10 000] руб./мес
 								.price__note + РК бюджет
 							.price__btn.btn.--green.--md Выбрать тариф
-			.price__pagination.swiper-pagination
+			.price__pagination.swiper-pagination.an.fadeIn
 
 	+style('steps', 'blocks')
 	.steps.--bitrix
 		.case
-			.steps__title.h3 #[h3 Почему именно «1С-Битрикс»?]
-			.steps__list
+			.steps__title.h3.an.fadeIn-up #[h3 Почему именно «1С-Битрикс»?]
+			.steps__list.an.fadeIn(data-timeout="0.1s")
 				.steps__item
 					.steps__img
 						img(src="_/uploads/steps-1.svg", alt="")
@@ -121,7 +121,7 @@ block content
 	+style('pros', 'blocks')
 	.pros.--bitrix
 		.case
-			.pros__title.h3 #[h3 Наши преимущества в цифрах]
+			.pros__title.h3.an.fadeIn-up #[h3 Наши преимущества в цифрах]
 			.pros__list
 				.pros__item.an.fadeIn
 					.pros__name 275 000 +
@@ -129,14 +129,14 @@ block content
 				.pros__item.an.fadeIn(data-timeout="0.1s")
 					.pros__name 21 +
 					.pros__text Год на рынке
-				.pros__item.an.fadeIn(data-timeout="0.1s")
+				.pros__item.an.fadeIn(data-timeout="0.2s")
 					.pros__name 21 000 +
 					.pros__text 21 000 + Партнёров
-				.pros__item.an.fadeIn(data-timeout="0.1s")
+				.pros__item.an.fadeIn(data-timeout="0.3s")
 					.pros__name 10 млн +
 					.pros__text 10 млн + Компаний в Битрикс24
 
 	+style('reg', 'blocks')
 	.reg
 		.case
-			.reg__title Более 4 000 000 компаний зарегистрировано в 1С-Битрикс
+			.reg__title.an.fadeIn-up Более 4 000 000 компаний зарегистрировано в 1С-Битрикс

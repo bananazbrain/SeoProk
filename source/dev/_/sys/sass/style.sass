@@ -8,6 +8,8 @@
 @import ../../components/check/check
 @import ../../components/select/select
 @import ../../components/textarea/textarea
+@import ../../components/file/file
+@import ../../components/slider/slider
 
 // TYPOGRAPHY	
 .h1
@@ -329,75 +331,6 @@
 			&:last-of-type
 				margin-bottom: 0
 
-.file
-	transition: .3s
-	cursor: pointer
-	&__input
-		display: none
-	&__label
-		font-size: 18px
-		line-height: 28px
-		margin-bottom: 9px
-		display: block
-	&__wrap
-		width: 100%
-		color: $main
-		font-size: $fzMain
-		transition: .3s
-		padding: 8.5px 12px
-		border: 1px solid $dark-gray
-		background: transparent
-		position: relative
-	&__placeholder
-		color: $dark-gray
-		transition: .3s
-		display: block
-	&.--filled
-		.file
-			&__placeholder
-				display: none
-
-// SLIDER
-.swiper-button-prev, .swiper-button-next
-	z-index: 50
-	width: auto
-	transition: .3s
-	&:before, &:after
-		display: none
-	&.--black
-		&:hover
-			svg
-				path
-					stroke: $green
-	&.--gray
-		border: 1px solid #B6B6B6
-		&:hover
-			border-color: $green
-			svg
-				path
-					fill: $green
-
-.swiper-button-prev
-	img
-		transform: scale(-1, 1)
-
-.swiper-pagination-fraction
-	font-size: 28px
-	font-weight: 700
-	transition: .3s
-	.swiper-pagination-current
-		color: $green
-		transition: .3s
-
-.swiper-pagination-bullets
-	.swiper-pagination-bullet
-		width: 10px
-		height: 10px
-		background: $green
-		margin: 0 5.5px !important
-		transition: .3s
-		cursor: pointer
-
 // ANIMATION
 .fadeIn
 	opacity: 0
@@ -598,14 +531,6 @@
 					opacity: 1
 					visibility: visible
 
-	.file
-		&__label
-			font-size: 16px
-			line-height: 26px
-
-	.swiper-pagination-fraction
-		font-size: 25px
-
 	.sitemap
 		padding: 50px 0 70px
 		&__list
@@ -663,15 +588,6 @@
 
 	.t-links
 		margin-bottom: 33px
-
-	.file
-		&__label
-			font-size: 14px
-			line-height: 22px
-		&__wrap
-			padding: 6px 10px
-		&__placeholder
-			font-size: 12px
 
 	.sitemap
 		padding: 25px 0 50px

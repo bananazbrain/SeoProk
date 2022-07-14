@@ -1,0 +1,45 @@
+@import ../../sys/sass/vars
+
+.file
+  transition: .3s
+  cursor: pointer
+  &__input
+    display: none
+  &__label
+    font-size: 18px
+    line-height: 28px
+    margin-bottom: 9px
+    display: block
+  &__wrap
+    width: 100%
+    color: $main
+    font-size: $fzMain
+    transition: .3s
+    padding: 8.5px 12px
+    border: 1px solid $dark-gray
+    background: transparent
+    position: relative
+  &__placeholder
+    color: $dark-gray
+    transition: .3s
+    display: block
+  &.--filled
+    .file
+      &__placeholder
+        display: none
+
+@media screen and (max-width: 767px)
+  .file
+    &__label
+      font-size: 16px
+      line-height: 26px
+
+@media screen and (max-width: 390px)
+  .file
+    &__label
+      font-size: 14px
+      line-height: 22px
+    &__wrap
+      padding: 6px 10px
+    &__placeholder
+      font-size: 12px
