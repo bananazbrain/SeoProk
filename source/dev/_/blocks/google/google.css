@@ -62,3 +62,22 @@
 .google__text p:last-of-type {
   margin-bottom: 0;
 }
+
+@media screen and (max-width: 1220px) {
+  .google__head {
+    margin-bottom: 40px;
+  }
+  .google__head:before {
+    right: 160px;
+  }
+  .google__head:after {
+    right: 45px;
+  }
+  .google__img {
+    max-width: 390px;
+    margin-left: 0;
+  }
+  .google__info {
+    width: calc( 100% - 390px );
+  }
+}

@@ -215,9 +215,6 @@
 .intro.--context {
   padding: 97px 0 21px;
 }
-.intro.--context .intro__wrap {
-  align-items: flex-start;
-}
 .intro.--context .intro__info {
   width: 590px;
 }
@@ -416,6 +413,40 @@
   }
   .intro__stat {
     width: 430px;
+  }
+  .intro.--context {
+    padding: 70px 0 80px;
+  }
+  .intro.--context .intro__info {
+    width: 510px;
+  }
+  .intro.--context .intro__subtitle {
+    max-width: 350px;
+  }
+  .intro.--context .intro__form {
+    max-width: 430px;
+  }
+  .intro.--context .intro__desc {
+    max-width: 100%;
+  }
+  .intro.--context .intro__desc br {
+    display: none;
+  }
+  .intro.--context .intro__preview {
+    width: calc( 100% - 510px );
+    margin-top: 0;
+  }
+  .intro.--context .intro__img {
+    top: 0;
+    left: -30px;
+    width: 520px;
+  }
+  .intro.--context .intro__shape {
+    left: -45px;
+  }
+  .intro.--context .intro__circle-item:nth-of-type(4) {
+    right: 20px;
+    bottom: -60px;
   }
   .intro.--ux {
     padding: 70px 0 80px;

@@ -12,7 +12,6 @@
 .c-price__row {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   border-bottom: 1px solid #CACACA;
 }
 .c-price__row.--head {
@@ -62,9 +61,10 @@
 }
 .c-price__info {
   width: calc( 100% - 380px);
-  padding-left: 2px;
-  padding-right: 50px;
+  padding: 10px 50px 10px 2px;
   line-height: 28px;
+  display: flex;
+  align-items: center;
 }
 .c-price__values {
   width: 380px;

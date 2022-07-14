@@ -184,8 +184,6 @@
 	&.--context
 		padding: 97px 0 21px
 		.intro
-			&__wrap
-				align-items: flex-start
 			&__info
 				width: 590px
 			&__subtitle
@@ -358,6 +356,34 @@
 					bottom: -90px
 		&__stat
 			width: 430px
+
+		&.--context
+			padding: 70px 0 80px
+			.intro
+				&__info
+					width: 510px
+				&__subtitle
+					max-width: 350px
+				&__form
+					max-width: 430px
+				&__desc
+					max-width: 100%
+					br
+						display: none
+				&__preview
+					width: calc( 100% - 510px )
+					margin-top: 0
+				&__img
+					top: 0
+					left: -30px
+					width: 520px
+				&__shape
+					left: -45px
+				&__circle
+					&-item
+						&:nth-of-type(4)
+							right: 20px
+							bottom: -60px
 
 		&.--ux
 			padding: 70px 0 80px

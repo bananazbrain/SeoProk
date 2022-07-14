@@ -23,3 +23,15 @@
 .watch__play:hover svg path#red {
   fill: #2C2C2C;
 }
+
+@media screen and (max-width: 1220px) {
+  .watch {
+    padding: 80px 0 90px;
+  }
+  .watch__title {
+    margin-bottom: 50px;
+  }
+  .watch__video {
+    max-width: 850px;
+  }
+}
