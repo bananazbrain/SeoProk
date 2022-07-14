@@ -116,3 +116,12 @@
     margin-bottom: 20px;
   }
 }
+@media screen and (max-width: 580px) {
+  .c-get__item {
+    padding: 28px 20px 40px;
+  }
+  .c-get__text {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}

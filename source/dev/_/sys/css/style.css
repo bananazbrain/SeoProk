@@ -210,6 +210,10 @@ path, circle, rect, line {
 .btn.--h-white:hover svg path {
   fill: #09B559;
 }
+.btn.--h-green:hover {
+  color: #fff;
+  background: #09B559;
+}
 .btn.--sm {
   min-height: 46px;
 }
@@ -1245,6 +1249,7 @@ textarea {
   }
 
   .list-check ul li {
+    padding-top: 0;
     margin-bottom: 30px;
   }
 

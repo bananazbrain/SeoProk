@@ -54,3 +54,8 @@
     width: 100px;
   }
 }
+@media screen and (max-width: 580px) {
+  .watch__play {
+    width: 80px;
+  }
+}

@@ -136,3 +136,14 @@
     margin-left: 0;
   }
 }
+@media screen and (max-width: 580px) {
+  .google__desc {
+    line-height: 26px;
+  }
+  .google__text {
+    line-height: 26px;
+  }
+  .google__text p {
+    margin-bottom: 20px;
+  }
+}

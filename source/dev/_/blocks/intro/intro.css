@@ -837,6 +837,24 @@
     text-align: left;
     max-width: 150px;
   }
+  .intro.--context {
+    padding: 22px 0 80px;
+  }
+  .intro.--context .intro__info {
+    width: 100%;
+  }
+  .intro.--context .intro__subtitle {
+    width: 100%;
+    max-width: 100%;
+    padding-right: 70px;
+    margin-bottom: 20px;
+  }
+  .intro.--context .intro__form {
+    max-width: 100%;
+  }
+  .intro.--context .intro__preview {
+    display: none;
+  }
   .intro.--ux {
     padding: 22px 0 80px;
   }
