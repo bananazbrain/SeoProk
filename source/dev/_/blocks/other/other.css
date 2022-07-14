@@ -75,6 +75,21 @@
   margin-top: auto;
 }
 
+@media screen and (max-width: 1360px) {
+  .other__list {
+    gap: 29px 20px;
+    grid-gap: 29px 20px;
+  }
+  .other__item {
+    width: calc( 100% / 4 - 15px);
+  }
+  .other__info {
+    padding: 25px 25px 20px 25px;
+  }
+  .other__main {
+    padding: 8px 25px 30px;
+  }
+}
 @media screen and (max-width: 1220px) {
   .other {
     padding: 80px 0;

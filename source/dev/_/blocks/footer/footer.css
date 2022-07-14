@@ -101,13 +101,14 @@
   justify-content: space-between;
 }
 .footer__text {
+  top: 10px;
   font-size: 14px;
   line-height: 23px;
   width: 100%;
   max-width: 350px;
   margin-right: 61px;
+  margin-left: auto;
   position: relative;
-  top: 10px;
 }
 .footer__btns {
   width: 100%;
@@ -150,6 +151,10 @@
   .footer__contacts-text {
     max-width: 300px;
   }
+  .footer__text {
+    top: 0;
+    margin-right: -50px;
+  }
 }
 @media screen and (max-width: 1220px) {
   .footer__logo {
@@ -167,7 +172,7 @@
   }
   .footer__text {
     max-width: 320px;
-    margin-right: 20px;
+    margin-right: -20px;
   }
   .footer__btns {
     max-width: 100%;
@@ -228,7 +233,6 @@
     position: relative;
   }
   .footer__text {
-    top: 0;
     margin: 0 auto;
     text-align: center;
   }

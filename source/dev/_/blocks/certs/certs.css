@@ -23,6 +23,7 @@
   height: 347px;
   margin: 0 25px 50px;
   box-shadow: 0px 4px 19px rgba(39, 39, 39, 0.1);
+  position: relative;
 }
 .certs__item img {
   width: 100%;

@@ -63,14 +63,14 @@
   padding-bottom: 31px;
 }
 .c-price__info {
-  width: calc( 100% - 380px);
+  width: calc( 100% - 410px);
   padding: 10px 50px 10px 2px;
   line-height: 28px;
   display: flex;
   align-items: center;
 }
 .c-price__values {
-  width: 380px;
+  width: 410px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -86,16 +86,18 @@
   justify-content: center;
   position: relative;
 }
-.c-price__value:nth-of-type(1):before {
+.c-price__value:before {
   z-index: -1;
   content: "";
   top: 0;
   left: 50%;
-  transform: translateX(-50%);
   width: calc( 100% + 4px );
   height: 100%;
   background: #fff;
-  opacity: 76%;
+  transition: 0.3s;
+  transform: translateX(-50%);
+  opacity: 0;
+  visibility: hidden;
   position: absolute;
 }
 .c-price__check {

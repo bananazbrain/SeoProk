@@ -3,9 +3,9 @@ include ../../sys/pug/vars
 .want
 	.case
 		.want__wrap
-			.want__title.h2 #[h2 Хотите выбрать эффективный инструмент #[br]рекламы или подобрать комплексное решение?]
-			.want__desc.t1 Уточните свои контактные данные, чтобы наши менеджеры связались с вами #[br]для бесплатной консультации и обсуждения бюджета
-			form.want__form
+			.want__title.h2.an.fadeIn-up #[h2 Хотите выбрать эффективный инструмент #[br]рекламы или подобрать комплексное решение?]
+			.want__desc.t1.an.fadeIn-up(data-timeout="0.1s")  Уточните свои контактные данные, чтобы наши менеджеры связались с вами #[br]для бесплатной консультации и обсуждения бюджета
+			form.want__form.an.fadeIn(data-timeout="0.2s")
 				.want__input.input.--b-white.--required.--tel
 					.input__wrap
 						input.input__area(type="tel" name="tel" placeholder="Введите Ваш номер телефона" autocomplete="off")

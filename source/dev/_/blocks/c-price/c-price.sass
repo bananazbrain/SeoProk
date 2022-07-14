@@ -57,13 +57,13 @@
 					padding-top: 28px
 					padding-bottom: 31px
 	&__info
-		width: calc( 100% - 380px)
+		width: calc( 100% - 410px)
 		padding: 10px 50px 10px 2px
 		line-height: 28px
 		display: flex
 		align-items: center
 	&__values
-		width: 380px
+		width: 410px
 		display: flex
 		flex-wrap: wrap
 		justify-content: space-between
@@ -77,18 +77,19 @@
 		align-items: center
 		justify-content: center
 		position: relative
-		&:nth-of-type(1)
-			&:before
-				z-index: -1
-				content: ""
-				top: 0
-				left: 50%
-				transform: translateX(-50%)
-				width: calc( 100% + 4px )
-				height: 100%
-				background: #fff
-				opacity: 76%
-				position: absolute
+		&:before
+			z-index: -1
+			content: ""
+			top: 0
+			left: 50%
+			width: calc( 100% + 4px )
+			height: 100%
+			background: #fff
+			transition: .3s
+			transform: translateX(-50%)
+			opacity: 0
+			visibility: hidden
+			position: absolute
 	&__check
 		width: 32px
 		height: 32px

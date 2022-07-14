@@ -83,13 +83,14 @@
 		flex-wrap: wrap
 		justify-content: space-between
 	&__text
+		top: 10px
 		font-size: 14px
 		line-height: 23px
 		width: 100%
 		max-width: 350px
 		margin-right: 61px
+		margin-left: auto
 		position: relative
-		top: 10px
 	&__btns
 		width: 100%
 		max-width: 177px
@@ -123,6 +124,9 @@
 		&__contacts
 			&-text
 				max-width: 300px
+		&__text
+			top: 0
+			margin-right: -50px
 
 @media screen and (max-width: 1220px)
 	.footer
@@ -139,7 +143,7 @@
 				font-size: 15px
 		&__text
 			max-width: 320px
-			margin-right: 20px
+			margin-right: -20px
 		&__btns
 			max-width: 100%
 			margin-top: 30px
@@ -189,7 +193,6 @@
 			margin-top: 10px
 			position: relative
 		&__text
-			top: 0
 			margin: 0 auto
 			text-align: center
 		&__socials

@@ -11,10 +11,6 @@ html, body {
   -webkit-text-size-adjust: 100%;
 }
 
-html.with-fancybox {
-  overflow: hidden;
-}
-
 body {
   color: #272727;
   font-weight: 400;

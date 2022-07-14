@@ -86,7 +86,7 @@ class SwiperIniter {
   }
 }
 
-document.addEventListener('DOMContentLoaded', function () {
+window.onload = () => {
   // CHECK INIT
   let checks = document.querySelectorAll('.check');
   if (checks) {
@@ -116,12 +116,23 @@ document.addEventListener('DOMContentLoaded', function () {
   File.init()
 
   // ANIMATION
-  let anBlocks = document.querySelectorAll('.an');
+  var anBlocks = document.querySelectorAll('.an');
+  if (anBlocks) {
+    anBlocks.forEach((block) => {
+      if (block.classList.contains('parallax')) {
+        block.inner = document.createElement('div');
+        block.inner.innerHTML = block.innerHTML;
+        block.innerHTML = '';
+        block.append(block.inner);
+      }
+    })
+  }
 
   function animatedBlocks() {
-    let Y = window.scrollY;
+    var Y = window.scrollY;
     let visibleHeight = window.innerHeight - 100;
     anBlocks.forEach((block) => {
+
       if (!block.classList.contains('loaded')) {
         let timeout = block.getAttribute('data-timeout');
         if (timeout) {
@@ -130,6 +141,14 @@ document.addEventListener('DOMContentLoaded', function () {
         if (block.getBoundingClientRect().top < visibleHeight) {
           block.classList.add('loaded');
         }
+      }
+
+      if (block.classList.contains('parallax')) {
+        let percentVal = (block.getBoundingClientRect().y + (window.innerHeight / 2)) / 10
+        if (percentVal > 200 || percentVal < -200) {
+          return false;
+        }
+        block.inner.style.transform = 'translateY(' + (percentVal) + 'px)';
       }
     });
   }
@@ -140,6 +159,20 @@ document.addEventListener('DOMContentLoaded', function () {
       animatedBlocks();
     });
   }, 500);
+
+  // PARALLAX OBJECTS
+  if (document.body.offsetWidth >= 992) {
+    document.addEventListener("mousemove", parallax);
+  }
+  function parallax(event) {
+    this.querySelectorAll('.move').forEach((item) => {
+      const position = item.getAttribute("data-value");
+      const x = (window.innerWidth - event.pageX * position) / 250;
+      const y = (window.innerHeight - event.pageY * position) / 250;
+
+      item.style.transform = `translateX(${x}px) translateY(${y}px)`;
+    });
+  }
 
   // HEADER MENU NAV
   let header = document.querySelector('.header');
@@ -405,6 +438,11 @@ document.addEventListener('DOMContentLoaded', function () {
     // toggs.app
   }
 
+  // let priceValues = document.querySelectorAll('.c-price__values');
+  //   if (priceValues) {
+  //     let priceValue = priceValues.querySelectorAll('.c-price__value');
+  //   }
+
   // MAP
   let $map = document.querySelector('#map');
   if ($map && ymaps) {
@@ -458,4 +496,4 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
-})
+}

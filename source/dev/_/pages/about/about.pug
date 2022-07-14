@@ -10,31 +10,31 @@ block content
 		.case
 			.intro__wrap
 				.intro__info
-					.intro__title.h1 #[h1 О компании SeoProk]
-					.intro__desc.h6 #[h6 Компания SeoProk – это современное агентство интернет-маркетинга, которое начало свою деятельность на рынке #[u]в 2010 году]
-					.intro__text.t1 На сегодня нами реализовано более 2 700 проектов, продолжающих #[br]с каждым днём приносить своим владельцам существенную прибыль. #[br]Цель нашей деятельности — развитие вашего бизнеса при помощи инновационных стратегий и передовых решений в интернет-#[br]пространстве.
+					.intro__title.h1.an.fadeIn-up #[h1 О компании SeoProk]
+					.intro__desc.h6.an.fadeIn-up(data-timeout="0.1s") #[h6 Компания SeoProk – это современное агентство интернет-маркетинга, которое начало свою деятельность на рынке #[u]в 2010 году]
+					.intro__text.t1.an.fadeIn-up(data-timeout="0.2s") На сегодня нами реализовано более 2 700 проектов, продолжающих #[br]с каждым днём приносить своим владельцам существенную прибыль. #[br]Цель нашей деятельности — развитие вашего бизнеса при помощи инновационных стратегий и передовых решений в интернет-#[br]пространстве.
 				.intro__preview
 					.intro__preview-title Наши #[br]преимущества #[br]в цифрах
 					.intro__stat
-						.intro__stat-item
+						.intro__stat-item.an.fadeIn-scale
 							.intro__stat-value 12
 							.intro__stat-text лет #[br]на рынке
-						.intro__stat-item.wide
+						.intro__stat-item.wide.an.fadeIn-scale(data-timeout="0.1s")
 							.intro__stat-value 370+
 							.intro__stat-text разработанных web-сайтов
-						.intro__stat-item.sm
+						.intro__stat-item.sm.an.fadeIn-scale(data-timeout="0.2s")
 							.intro__stat-value 1500+
 							.intro__stat-text рекламных кампании
 					.intro__shape
 						img(src="_/uploads/intro-shape.png", alt="")
 				.intro__circle
-					.intro__circle-item
-						img(src="_/uploads/intro-circle.png", alt="")
-					.intro__circle-item
-						img(src="_/uploads/intro-circle-2.png", alt="")
-					.intro__circle-item
-						img(src="_/uploads/intro-circle-3.png", alt="")
-					.intro__circle-item
+					.intro__circle-item.an.fadeIn
+						img(src="_/uploads/intro-circle.png", alt="").move(data-value="4")
+					.intro__circle-item.an.fadeIn
+						img(src="_/uploads/intro-circle-2.png", alt="").move(data-value="-3")
+					.intro__circle-item.an.fadeIn
+						img(src="_/uploads/intro-circle-3.png", alt="").move(data-value="6")
+					.intro__circle-item.an.fadeIn
 						
 	+style('start', 'blocks')
 	include ../../blocks/start/start
@@ -54,9 +54,9 @@ block content
 	+style('faq', 'blocks')
 	.faq.--about
 		.case
-			.faq__title.h3 #[h3 Мы подготовили ответы на самые популярные вопросы #[br]о продвижении сайтов в поисковых системах]
-			.faq__text Перед тем как заказать создание сайта, #[br]предлагаем ознакомиться с ответами на популярные вопросы
-			.faq__list
+			.faq__title.h3.an.fadeIn-up #[h3 Мы подготовили ответы на самые популярные вопросы #[br]о продвижении сайтов в поисковых системах]
+			.faq__text.an.fadeIn(data-timeout="0.1s") Перед тем как заказать создание сайта, #[br]предлагаем ознакомиться с ответами на популярные вопросы
+			.faq__list.an.fadeIn(data-timeout="0.2s")
 				.faq__item
 					.faq__question
 						.faq__question-icon

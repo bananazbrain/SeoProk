@@ -3,7 +3,7 @@ include ../../sys/pug/vars
 .contacts
 	.case
 		.contacts__wrap
-			.contacts__info
+			.contacts__info.an.fadeIn
 				.contacts__item
 					.contacts__name Телефон:
 					.contacts__text #[a(href="79298611011") +7 (929) 861-10-11]
@@ -14,6 +14,6 @@ include ../../sys/pug/vars
 					.contacts__name Адрес:
 					.contacts__text 350090, Краснодарский край, г. Краснодар, проезд 2-й им. Гастелло, д.12
 					.contacts__note Адрес для корреспонденции, #[br]прием клиентов ведется по предварительной записи
-			.contacts__map.map
+			.contacts__map.map.an.fadeIn(data-timeout="0.1s")
 				.map__area#map(data-map="45.080485, 38.980802" data-placeholder="45.080485, 38.980802")
 				script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU")
