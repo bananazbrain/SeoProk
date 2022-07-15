@@ -9,6 +9,7 @@
 }
 .video__slider-item:hover .video__slider-name {
   opacity: 1;
+  transform: translateY(-5px);
 }
 .video__slider-img {
   height: 210px;
@@ -69,6 +70,9 @@
   }
   .video__slider-inner {
     width: 400px;
+  }
+  .video__slider-item:hover .video__slider-name {
+    transform: none;
   }
   .video__slider-img {
     height: 220px;

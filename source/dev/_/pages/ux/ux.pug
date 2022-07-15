@@ -10,9 +10,9 @@ block content
 		.case
 			.intro__wrap
 				.intro__info
-					.intro__title.h1 #[h1 Дизайн сложных интерфейсов]
-					.intro__subtitle.t1 Проектируем и создаём IT-системы, а не просто набор экранов
-					form.intro__form
+					.intro__title.h1.an.fadeIn-up #[h1 Дизайн сложных интерфейсов]
+					.intro__subtitle.t1.an.fadeIn-up(data-timeout="0.1s") Проектируем и создаём IT-системы, а не просто набор экранов
+					form.intro__form.an.fadeIn(data-timeout="0.2s")
 						.intro__desc.h6 #[h6 Напишите нам и мы проанализируем Вашу сферу и #[br]подберём наилучший вариант сайта для вашего бизнеса]
 						.intro__fields
 							.intro__inputs
@@ -26,19 +26,19 @@ block content
 								button.intro__btn.btn.--green.--h-dark.--sm Получить предложение
 									<svg width="22" height="8" viewBox="0 0 22 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.3536 4.35355C21.5488 4.15829 21.5488 3.84171 21.3536 3.64645L18.1716 0.464466C17.9763 0.269204 17.6597 0.269204 17.4645 0.464466C17.2692 0.659728 17.2692 0.976311 17.4645 1.17157L20.2929 4L17.4645 6.82843C17.2692 7.02369 17.2692 7.34027 17.4645 7.53553C17.6597 7.7308 17.9763 7.7308 18.1716 7.53553L21.3536 4.35355ZM0 4.5H21V3.5H0V4.5Z" fill="white"/></svg>
 				.intro__preview
-					.intro__img
+					.intro__img.an.fadeIn(data-timeout="0.3s")
 						img(src="_/uploads/ux-img.svg", alt="")
 					.intro__shape
 						img(src="_/uploads/intro-shape.png", alt="")
 				.intro__circle
-					.intro__circle-item
-						img(src="_/uploads/intro-circle.png", alt="")
-					.intro__circle-item
-						img(src="_/uploads/intro-circle-2.png", alt="")
-					.intro__circle-item
-						img(src="_/uploads/intro-circle-3.png", alt="")
-					.intro__circle-item
-						img(src="_/uploads/intro-circle-4.png", alt="")
+					.intro__circle-item.an.fadeIn
+						img(src="_/uploads/intro-circle.png", alt="").move(data-value="4")
+					.intro__circle-item.an.fadeIn
+						img(src="_/uploads/intro-circle-2.png", alt="").move(data-value="-3")
+					.intro__circle-item.an.fadeIn
+						img(src="_/uploads/intro-circle-3.png", alt="").move(data-value="6")
+					.intro__circle-item.an.fadeIn
+						img(src="_/uploads/intro-circle-4.png", alt="").move(data-value="3")
 
 	+style('interface', 'blocks')
 	include ../../blocks/interface/interface
@@ -58,25 +58,25 @@ block content
 	+style('pros', 'blocks')
 	.pros
 		.case
-			.pros__title.h3 #[h3 Наши награды и достижения]
+			.pros__title.h3.an.fadeIn-up #[h3 Наши награды и достижения]
 			.pros__list
-				.pros__item.an.fadeIn
+				.pros__item.an.fadeIn-left(data-timeout="0.1s")
 					.pros__name 1 место
 					.pros__text В рейтинге AdIndex #[br]по независимой оценке
-				.pros__item.an.fadeIn(data-timeout="0.1s")
+				.pros__item.an.fadeIn-left(data-timeout="0.2s")
 					.pros__name 67 место
 					.pros__text По специализации "Веб-разработка" #[br]в официальном рейтинге Freelance.ru по РФ
-				.pros__item.an.fadeIn(data-timeout="0.1s")
+				.pros__item.an.fadeIn-left(data-timeout="0.3s")
 					.pros__name 72 место
 					.pros__text По специализации #[br]"Интернет продвижение и реклама, #[br]Классическая реклама и маркетинг", #[br]в официальном рейтинге Freelance.ru по РФ
 
 	+style('price', 'blocks')
 	.price.--ux
 		.case
-			.price__title.h3 #[h3 Стоимость наших услуг]
+			.price__title.h3.an.fadeIn-up #[h3 Стоимость наших услуг]
 			.price__list
 				.price__list-wrap
-					a.price__item(href="")
+					a.price__item(href="").an.fadeIn
 						.price__info
 							.price__rate
 								.price__rate-icon
@@ -96,7 +96,7 @@ block content
 							.price__desc
 								.price__value от #[u 180 000] руб.
 							.price__btn.btn.--g-white.--md Выбрать услугу
-					a.price__item(href="")
+					a.price__item(href="").an.fadeIn(data-timeout="0.1s")
 						.price__info
 							.price__rate
 								.price__rate-icon
@@ -116,7 +116,7 @@ block content
 							.price__desc
 								.price__value от #[u 165 000] руб.
 							.price__btn.btn.--g-white.--md Выбрать услугу
-					a.price__item(href="")
+					a.price__item(href="").an.fadeIn(data-timeout="0.2s")
 						.price__info
 							.price__rate
 								.price__rate-icon
@@ -136,7 +136,7 @@ block content
 							.price__desc
 								.price__value от #[u 580 000] руб.
 							.price__btn.btn.--g-white.--md Выбрать услугу
-					a.price__item(href="")
+					a.price__item(href="").an.fadeIn(data-timeout="0.3s")
 						.price__info
 							.price__rate
 								.price__rate-icon

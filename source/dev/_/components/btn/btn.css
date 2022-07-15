@@ -18,7 +18,9 @@
   outline: none;
 }
 .btn svg {
+  top: 1px;
   margin-left: 10px;
+  position: relative;
 }
 .btn.--white {
   color: #272727;

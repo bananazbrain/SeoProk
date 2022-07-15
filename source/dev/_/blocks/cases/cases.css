@@ -1,6 +1,9 @@
 .cases {
   padding-bottom: 88px;
 }
+.cases__link {
+  padding: 13px 17px;
+}
 .cases__list {
   display: flex;
   flex-wrap: wrap;
@@ -12,9 +15,11 @@
 }
 
 .case-item {
+  padding-top: 2px;
   padding-bottom: 88px;
 }
 .case-item__main {
+  padding-left: 3px;
   padding-bottom: 84px;
 }
 .case-item__main h2 {
@@ -123,6 +128,9 @@
     width: calc( 100% / 2 - 13px );
   }
 
+  .case-item__main {
+    padding-left: 0;
+  }
   .case-item__main h2 {
     font-size: 26px;
     line-height: 38px;
@@ -249,6 +257,11 @@
   .case-elem__btn {
     font-size: 13px;
     max-width: 119px;
+  }
+  .case-elem__btn svg {
+    top: 1px;
+    margin-left: 6px;
+    width: 18px;
   }
   .case-elem__btn.--md {
     min-height: 36px;

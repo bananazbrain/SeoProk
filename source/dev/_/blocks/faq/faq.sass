@@ -73,6 +73,15 @@
 			line-height: 33px
 			transition: .3s
 
+	&.--about
+		.faq
+			&__title
+				margin-left: 3px
+				margin-bottom: 21px
+			&__text
+				margin-left: 4px
+				margin-bottom: 56px
+
 	&.--context
 		padding: 51px 0 114px
 		.faq
@@ -101,6 +110,20 @@
 			&-text
 				font-size: 17px
 				line-height: 27px
+
+		&.--about
+			.faq
+				&__title
+					margin-left: 0
+				&__text
+					margin-left: 0
+
+		&.--context
+			.faq
+				&__title
+					margin-left: 0
+				&__text
+					margin-left: 0
 
 @media screen and (max-width: 767px)
 	.faq

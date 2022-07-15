@@ -81,6 +81,14 @@
   line-height: 33px;
   transition: 0.3s;
 }
+.faq.--about .faq__title {
+  margin-left: 3px;
+  margin-bottom: 21px;
+}
+.faq.--about .faq__text {
+  margin-left: 4px;
+  margin-bottom: 56px;
+}
 .faq.--context {
   padding: 51px 0 114px;
 }
@@ -114,6 +122,18 @@
   .faq__answer-text {
     font-size: 17px;
     line-height: 27px;
+  }
+  .faq.--about .faq__title {
+    margin-left: 0;
+  }
+  .faq.--about .faq__text {
+    margin-left: 0;
+  }
+  .faq.--context .faq__title {
+    margin-left: 0;
+  }
+  .faq.--context .faq__text {
+    margin-left: 0;
   }
 }
 @media screen and (max-width: 767px) {

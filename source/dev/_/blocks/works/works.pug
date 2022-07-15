@@ -2,8 +2,8 @@ include ../../sys/pug/vars
 
 .works
 	.case
-		.works__wrap
-			.works__links.t-links.swiper.an.fadeIn
+		.works__wrap.an.fadeIn(data-timeout="0.1s")
+			.works__links.t-links.swiper
 				.t-links__current
 					span
 					img(src="_/uploads/icons/chevron-down.svg", alt="")
@@ -17,7 +17,7 @@ include ../../sys/pug/vars
 					.works__link.t-links__item.swiper-slide Сайты-каталоги
 					.works__link.t-links__item.swiper-slide Интернет-магазины
 					.works__link.t-links__item.swiper-slide Порталы
-			.works__list.an.fadeIn(data-timeout="0.1s")
+			.works__list
 				mixin works(img, cls)
 					a.works__item(href="" class=cls)
 						img(src=img, alt="")

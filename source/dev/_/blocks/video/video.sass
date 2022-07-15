@@ -13,6 +13,7 @@
 					&__slider
 						&-name
 							opacity: 1
+							transform: translateY(-5px)
 		&-img
 			height: 210px
 			margin-bottom: 30px
@@ -65,6 +66,12 @@
 		&__slider
 			&-inner
 				width: 400px
+			&-item
+				&:hover
+					.video
+						&__slider
+							&-name
+								transform: none
 			&-img
 				height: 220px
 			&-name

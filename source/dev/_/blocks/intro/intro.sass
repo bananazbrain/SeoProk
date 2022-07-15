@@ -687,10 +687,15 @@
 				margin-bottom: 23px
 				&:last-of-type
 					margin-bottom: 0
+				&.fadeIn-scale
+					transform: translateX(-40px)
+					&.loaded
+						transform: translateX(0)
 			&-value
 				font-family: $ffRoboto
 				font-size: 50px !important
 				margin-bottom: 32px
+				padding-left: 26px
 				width: auto !important
 				height: auto !important
 				border-radius: 0
@@ -718,6 +723,7 @@
 				font-weight: 400
 				text-align: left
 				max-width: 150px
+				padding-left: 26px
 
 		&.--context
 			padding: 22px 0 80px
@@ -813,9 +819,6 @@
 				&__text
 					font-size: 14px
 				&__stat
-					&-value
-						padding-left: 26px
 					&-text
 						font-size: 14px
 						line-height: 22px
-						padding-left: 26px

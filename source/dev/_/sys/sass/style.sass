@@ -342,6 +342,14 @@
 			transition: 1s
 			transition-property: opacity, transform
 			transform: translateY(0)
+	&-left
+		opacity: 0
+		transform: translateX(-40px)
+		&.loaded
+			opacity: 1
+			transition: 1s
+			transition-property: opacity, transform
+			transform: translateX(0)
 
 	&-scale
 		opacity: 0
@@ -414,6 +422,9 @@
 	.h5
 		font-size: 21px
 		line-height: 31px
+
+	// .t-links
+	// 	overflow: visible
 
 @media screen and (max-width: 992px)
 	.h1
@@ -504,11 +515,12 @@
 			top: 48px
 			left: 50%
 			transform: translateX(-50%)
+			padding-bottom: 24px
 		&__current
 			display: flex
 		&__item
 			color: rgba($main, 50%)
-			padding: 10px 0
+			padding: 10px 0 !important
 			margin: 0 10px
 			border-bottom: 1px solid $dark-gray
 			margin-right: 0
@@ -588,6 +600,8 @@
 
 	.t-links
 		margin-bottom: 33px
+		&__item
+			padding: 7px 0 !important
 
 	.sitemap
 		padding: 25px 0 50px

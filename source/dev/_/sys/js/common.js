@@ -394,54 +394,43 @@ window.onload = () => {
   }
 
   // PAGE TEXT TOGGLES
-  let toggs = document.querySelector('.toggs');
-  if (toggs) {
+  // let toggs = document.querySelector('.toggs');
+  // if (toggs) {
 
-    toggs.items = [];
-    toggs.currentItem = null;
+  //   toggs.items = [];
+  //   toggs.currentItem = null;
 
-    console.log(toggs.children);
-    for (let el of toggs.children) {
-      console.log(el);
-      if (el.tagName.toLowerCase() == 'h5') {
-        toggs.currentItem = null;
+  //   for (let el of toggs.children) {
+  //     console.log(el);
+  //     if (el.tagName.toLowerCase() == 'h5') {
+  //       toggs.currentItem = null;
 
-        toggs.currentItem = document.createElement('div');
-        toggs.currentItem.className = 'toggs__item';
-        toggs.currentItem.head = document.createElement('div');
-        toggs.currentItem.head.className = 'toggs__head';
+  //       toggs.currentItem = document.createElement('div');
+  //       toggs.currentItem.className = 'toggs__item';
+  //       toggs.currentItem.head = document.createElement('div');
+  //       toggs.currentItem.head.className = 'toggs__head';
 
-        toggs.currentItem.body = document.createElement('div');
-        toggs.currentItem.body.className = 'toggs__body';
-        toggs.currentItem.append(toggs.currentItem.head);
-        toggs.currentItem.append(toggs.currentItem.body);
+  //       toggs.currentItem.body = document.createElement('div');
+  //       toggs.currentItem.body.className = 'toggs__body';
+  //       toggs.currentItem.append(toggs.currentItem.head);
+  //       toggs.currentItem.append(toggs.currentItem.body);
 
+  //       toggs.items.push(toggs.currentItem);
 
-
-        toggs.items.push(toggs.currentItem);
-
-        toggs.currentItem.head.append(el);
-      } else {
-        toggs.currentItem.body.append(el);
-      }
-    }
-
-    toggs.innerHTML = '';
-    toggs.items.forEach((item) => {
-      item.head.addEventListener('click', () => {
-        item.classList.toggle('--open');
-      });
-      toggs.append(item);
-    });
-
-    console.log(toggs.items);
-    // toggs.app
-  }
-
-  // let priceValues = document.querySelectorAll('.c-price__values');
-  //   if (priceValues) {
-  //     let priceValue = priceValues.querySelectorAll('.c-price__value');
+  //       toggs.currentItem.head.append(el);
+  //     } else {
+  //       toggs.currentItem.body.append(el);
+  //     }
   //   }
+
+  //   toggs.innerHTML = '';
+  //   toggs.items.forEach((item) => {
+  //     item.head.addEventListener('click', () => {
+  //       item.classList.toggle('--open');
+  //     });
+  //     toggs.append(item);
+  //   });
+  // }
 
   // MAP
   let $map = document.querySelector('#map');

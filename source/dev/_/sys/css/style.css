@@ -159,7 +159,9 @@ path, circle, rect, line {
   outline: none;
 }
 .btn svg {
+  top: 1px;
   margin-left: 10px;
+  position: relative;
 }
 .btn.--white {
   color: #272727;
@@ -1166,6 +1168,16 @@ textarea {
   transition-property: opacity, transform;
   transform: translateY(0);
 }
+.fadeIn-left {
+  opacity: 0;
+  transform: translateX(-40px);
+}
+.fadeIn-left.loaded {
+  opacity: 1;
+  transition: 1s;
+  transition-property: opacity, transform;
+  transform: translateX(0);
+}
 .fadeIn-scale {
   opacity: 0;
   transform: scale(0.7);
@@ -1354,13 +1366,14 @@ textarea {
     top: 48px;
     left: 50%;
     transform: translateX(-50%);
+    padding-bottom: 24px;
   }
   .t-links__current {
     display: flex;
   }
   .t-links__item {
     color: rgba(39, 39, 39, 0.5);
-    padding: 10px 0;
+    padding: 10px 0 !important;
     margin: 0 10px;
     border-bottom: 1px solid #CCCCCC;
     margin-right: 0;
@@ -1451,6 +1464,9 @@ textarea {
 
   .t-links {
     margin-bottom: 33px;
+  }
+  .t-links__item {
+    padding: 7px 0 !important;
   }
 
   .sitemap {
