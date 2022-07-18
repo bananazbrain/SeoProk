@@ -17,13 +17,13 @@
 .solution__list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -25px -50px;
+  margin: 0 -27px -52px;
 }
 .solution__item {
-  width: calc( 100% / 3 - 50px );
+  width: calc( 100% / 3 - 54px );
   min-height: 238px;
-  margin: 0 25px 50px;
-  padding: 24px 22px 25px;
+  margin: 0 27px 52px;
+  padding: 24px 28px 25px 22px;
   background: #F7F7F7;
 }
 .solution__name {
@@ -32,4 +32,33 @@
 }
 .solution__text {
   line-height: 28px;
+}
+
+@media screen and (max-width: 1220px) {
+  .solution__list {
+    margin: 0 -10px -20px;
+  }
+  .solution__item {
+    width: calc( 100% / 3 - 20px );
+    margin: 0 10px 20px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .solution {
+    padding: 80px 0 0;
+  }
+  .solution__link {
+    padding: 10px 20px;
+  }
+  .solution__item {
+    width: calc( 100% / 2 - 20px );
+  }
+  .solution__name {
+    margin-bottom: 8px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .solution {
+    padding: 0;
+  }
 }

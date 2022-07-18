@@ -14,12 +14,12 @@
 	&__list
 		display: flex
 		flex-wrap: wrap
-		margin: 0 -25px -50px
+		margin: 0 -27px -52px
 	&__item
-		width: calc( 100% / 3 - 50px )
+		width: calc( 100% / 3 - 54px )
 		min-height: 238px
-		margin: 0 25px 50px
-		padding: 24px 22px 25px
+		margin: 0 27px 52px
+		padding: 24px 28px 25px 22px
 		background: $gray
 	&__name
 		color: $green
@@ -28,10 +28,26 @@
 		line-height: 28px
 
 @media screen and (max-width: 1220px)
-	// .solution
+	.solution
+		&__list
+			margin: 0 -10px -20px
+		&__item
+			width: calc( 100% / 3 - 20px )
+			margin: 0 10px 20px
 
 @media screen and (max-width: 992px)
-	// .solution
+	.solution
+		padding: 80px 0 0
+		&__link
+			padding: 10px 20px
+		&__item
+			width: calc( 100% / 2 - 20px )
+		&__name
+			margin-bottom: 8px
 
 @media screen and (max-width: 767px)
 	// .solution
+
+@media screen and (max-width: 580px)
+	.solution
+		padding: 0

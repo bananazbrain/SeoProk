@@ -78,6 +78,17 @@
 		&__name
 			font-size: 48px
 
+		&.--bitrix
+			padding: 80px 0 150px
+			.pros
+				&__item
+					&:nth-of-type(3)
+						right: 15px
+					&:nth-of-type(4)
+						right: 15px
+				&__name
+					font-size: 42px
+
 @media screen and (max-width: 992px)
 	.pros
 		padding: 60px 0 130px
@@ -88,6 +99,18 @@
 		&__text
 			font-size: 15px
 			line-height: 22px
+
+		&.--bitrix
+			padding: 60px 0 130px
+			.pros
+				&__title
+					margin-bottom: 60px
+				&__list
+					margin-bottom: -40px
+				&__item
+					width: 50%
+					margin-bottom: 40px
+					right: 0 !important
 
 @media screen and (max-width: 767px)
 	.pros
@@ -114,6 +137,21 @@
 			br
 				display: none
 
+		&.--bitrix
+			padding: 50px 0 100px
+			.pros
+				&__title
+					margin-bottom: 50px
+				&__list
+					margin-bottom: 0
+				&__item
+					width: 100%
+					margin-bottom: 30px
+					&:last-of-type
+						margin-bottom: 0
+				&__name
+					font-size: 50px
+
 @media screen and (max-width: 580px)
 	.pros
 		padding: 40px 0 69px
@@ -121,6 +159,9 @@
 			max-width: 210px
 		&__text
 			padding-right: 30px
+
+		&.--bitrix
+			padding: 40px 0 69px
 
 @media screen and (max-width: 390px)
 	.pros

@@ -154,6 +154,8 @@
 				margin-bottom: 44px
 			&__list
 				margin-bottom: 46px
+			&__desc
+				margin-bottom: 0
 			&__preview
 				z-index: -1
 				top: 0
@@ -358,6 +360,28 @@
 		&__stat
 			width: 430px
 
+		&.--bitrix
+			padding: 70px 0 80px
+			.intro
+				&__info
+					width: 490px
+				&__preview
+					margin-bottom: 0
+					width: calc( 100% - 490px )
+				&__img
+					width: 850px
+				&__circle
+					&-item
+						&:nth-of-type(3)
+							z-index: -2
+							display: block
+							top: -80px
+							right: -60px
+						&:nth-of-type(5)
+							width: 270px
+							height: 270px
+							left: 500px
+
 		&.--context
 			padding: 70px 0 80px
 			.intro
@@ -472,6 +496,31 @@
 			flex-wrap: wrap
 			align-items: center
 			justify-content: space-between
+
+		&.--bitrix
+			padding: 60px 0 70px
+			.intro
+				&__info
+					width: 430px
+				&__list
+					max-width: 400px
+				&__preview
+					right: -25px
+					width: calc( 100% - 430px )
+				&__img
+					width: 700px
+				&__circle
+					&-item
+						&:nth-of-type(3)
+							right: -150px
+						&:nth-of-type(4)
+							right: 20px
+							bottom: -40px
+						&:nth-of-type(5)
+							width: 200px
+							height: 200px
+							left: 330px
+							bottom: 0
 
 		&.--context
 			padding: 60px 0 70px
@@ -590,6 +639,35 @@
 					height: 130px
 					bottom: -70px
 
+		&.--bitrix
+			padding: 25px 0 70px
+			.intro
+				&__info
+					width: 360px
+				&__list
+					max-width: 310px
+				&__preview
+					right: 45px
+					margin-top: 2px
+					width: calc( 100% - 360px )
+				&__img
+					left: 0
+					width: 630px
+				&__circle
+					&-item
+						&:nth-of-type(1)
+							top: -30px
+						&:nth-of-type(3)
+							display: none
+						&:nth-of-type(4)
+							right: -50px
+							bottom: -70px
+						&:nth-of-type(5)
+							width: 150px
+							height: 150px
+							left: 290px
+							bottom: -20px
+
 		&.--context
 			padding: 25px 0 70px
 			.intro
@@ -653,6 +731,8 @@
 	.intro
 		padding: 22px 0 80px
 		background: #fff
+		&__info
+			width: 100% !important
 		&__title
 			margin-bottom: 11px
 		&__subtitle
@@ -676,6 +756,8 @@
 			margin-bottom: 14px
 		&__btn
 			font-size: 18px
+		&__preview
+			display: none
 		&__img
 			display: none
 		&__shape
@@ -725,6 +807,15 @@
 				text-align: left
 				max-width: 150px
 				padding-left: 26px
+
+		&.--bitrix
+			padding: 22px 0 74px
+			background: #fff
+			.intro
+				&__title
+					margin-bottom: 30px
+				&__list
+					margin-bottom: 30px
 
 		&.--context
 			padding: 22px 0 80px
@@ -796,6 +887,17 @@
 		&__preview
 			&-title
 				font-size: 26px
+
+		&.--bitrix
+			.intro
+				&__title
+					font-size: 26px
+					line-height: 38px
+					margin-bottom: 16px
+				&__list
+					margin-bottom: 19px
+				&__desc
+					font-size: 14px
 
 		&.--context
 			padding: 22px 0 55px

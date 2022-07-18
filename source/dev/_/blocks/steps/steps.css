@@ -46,6 +46,9 @@
 .steps.--bitrix .steps__title {
   margin-bottom: 66px;
 }
+.steps.--bitrix .steps__title br {
+  display: none;
+}
 .steps.--bitrix .steps__info {
   padding: 42px 68px;
 }
@@ -63,6 +66,9 @@
   }
   .steps__desc br {
     display: none;
+  }
+  .steps.--bitrix .steps__info {
+    padding: 40px 45px;
   }
 }
 @media screen and (max-width: 992px) {
@@ -94,6 +100,9 @@
     width: 100%;
     padding: 110px 25px 30px;
   }
+  .steps.--bitrix .steps__info {
+    padding: 110px 25px 30px;
+  }
 }
 @media screen and (max-width: 767px) {
   .steps__text {
@@ -111,6 +120,9 @@
     height: 55px;
   }
   .steps__info {
+    padding: 90px 25px 30px;
+  }
+  .steps.--bitrix .steps__info {
     padding: 90px 25px 30px;
   }
 }
@@ -137,6 +149,12 @@
   }
   .steps__desc {
     font-size: 14px;
+  }
+  .steps.--bitrix .steps__title br {
+    display: block;
+  }
+  .steps.--bitrix .steps__info {
+    padding: 50px 20px 25px;
   }
 }
 @media screen and (max-width: 390px) {

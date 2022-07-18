@@ -11,3 +11,37 @@
   max-width: 927px;
   margin: 0 auto;
 }
+.reg__title br {
+  display: none;
+}
+
+@media screen and (max-width: 1220px) {
+  .reg__title {
+    font-size: 45px;
+    line-height: 60px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .reg {
+    padding: 80px 0;
+  }
+  .reg__title {
+    font-size: 40px;
+    line-height: 55px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .reg__title {
+    font-size: 35px;
+    line-height: 45px;
+  }
+  .reg__title br {
+    display: block;
+  }
+}
+@media screen and (max-width: 580px) {
+  .reg__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}

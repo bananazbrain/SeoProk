@@ -1455,6 +1455,12 @@ textarea {
   .sitemap__list ul {
     width: 100%;
   }
+
+  .list-ar ul li {
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 18px;
+  }
 }
 @media screen and (max-width: 390px) {
   .socials__item {
@@ -1489,6 +1495,19 @@ textarea {
     font-size: 14px;
     line-height: 20px;
     margin-bottom: 20px;
+  }
+
+  .list-ar ul li {
+    font-size: 14px;
+    line-height: 22px;
+    padding-left: 25px;
+    margin-bottom: 15px;
+  }
+  .list-ar ul li:before {
+    top: 5px;
+    width: 18px;
+    height: 13px;
+    background-size: contain;
   }
 
   .sitemap {
