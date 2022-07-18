@@ -309,6 +309,18 @@ window.onload = () => {
     }
   });
 
+  // C-PRICE SLIDER
+  new SwiperIniter(767, 'more', 'c-price__values-wrap', 'c-price__values', 'c-price__value', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    speed: 900,
+    pagination: {
+      el: ".c-price__pagination.swiper-pagination",
+      type: "bullets",
+      clickable: true,
+    },
+  });
+
   // CERTS SLIDER
   new SwiperIniter(992, 'more', 'certs__list', 'certs__list-wrap', 'certs__item', {
     slidesPerView: 'auto',
@@ -331,6 +343,7 @@ window.onload = () => {
       clickable: true,
     },
   });
+
 
   // FAQ TOGGLES
   let faqs = document.querySelectorAll('.faq__item');

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap");
 *, :before, :after {
@@ -281,8 +282,11 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
 .input__error {
   color: #C00000;
   font-size: 12px;
-  margin-top: 2px;
   transition: 0.3s;
+  border: 1px solid #C00000;
+  padding: 7px 12px 10px;
+  opacity: 0;
+  visibility: hidden;
 }
 .input.--gray .input__area {
   padding: 8.5px 12px;
@@ -321,6 +325,17 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
 }
 .input.--b-white.--error .input__area {
   border-bottom-color: #C00000;
+}
+.input.--required.--error .input__wrap:before {
+  left: 0;
+  bottom: -17px;
+  width: 100%;
+  height: auto;
+  color: #C00000;
+  font-size: 12px;
+  transition: 0.3s;
+  position: absolute;
+  content: "Поле обязательно для заполнения";
 }
 
 @media screen and (max-width: 767px) {
@@ -1467,6 +1482,13 @@ textarea {
   }
   .t-links__item {
     padding: 7px 0 !important;
+  }
+
+  .list-check ul li {
+    padding-top: 7px;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 20px;
   }
 
   .sitemap {

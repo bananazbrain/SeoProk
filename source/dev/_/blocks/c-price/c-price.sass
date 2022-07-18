@@ -58,10 +58,14 @@
 					padding-bottom: 31px
 	&__info
 		width: calc( 100% - 410px)
-		padding: 10px 50px 10px 2px
+		padding: 10px 20px 10px 2px
 		line-height: 28px
 		display: flex
 		align-items: center
+	&__values-wrap
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
 	&__values
 		width: 410px
 		display: flex
@@ -123,26 +127,53 @@
 
 @media screen and (max-width: 992px)
 	.c-price
+		margin: 80px 0 0
+		padding: 35px 0
+		background: $gray
+		&__wrap
+			padding: 0
+			background: transparent
 		&__title
 			margin-bottom: 50px
 		&__row
 			&.--head
 				.c-price
 					&__info
-						font-size: 20px
-						line-height: 30px
+						font-size: 18px
+						line-height: 26px
 					&__value
 						font-size: 16px
 		&__info
 			width: calc( 100% - 280px)
-			padding: 10px 30px 10px 2px
+			padding: 8px 20px 8px 0
 			font-size: 15px
 			line-height: 26px
 		&__values
 			width: 280px
 		&__value
-			font-size: 15px
+			font-size: 14px
+			padding: 8px 0
+		&__check
+			width: 28px
+			height: 28px
+			&:before
+				width: 15px
+				height: 11px
+				background-size: contain
 
 @media screen and (max-width: 767px)
 	.c-price
-		padding: 0
+		padding: 30px 0
+		&__title
+			max-width: 370px
+			margin: 0 auto 30px
+
+@media screen and (max-width: 767px)
+	.c-price
+		margin: 0
+
+@media screen and (max-width: 390px)
+	.c-price
+		padding: 20px 0
+		&__title
+			text-align: left

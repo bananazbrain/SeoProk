@@ -36,16 +36,45 @@
 			margin-bottom: 10px
 			&:last-of-type
 				margin-bottom: 0
+		a
+			&:hover
+				color: $green
 	&__btn
 		margin-top: 20px
 		font-size: 18px
 		font-weight: 400
 		max-width: 155px
-	&__img
+	&__preview
 		max-width: 592px
-		margin-top: 30px
-		margin-right: -90px
 		margin-left: auto
+		position: relative
+	&__img
+		margin-top: 95px
+		margin-right: -88px
+	&__circle
+		&-item
+			border-radius: 50%
+			position: absolute
+			&:nth-of-type(1)
+				width: 81px
+				height: 81px
+				top: 30px
+				left: -38px
+				background: linear-gradient(149.21deg, #09B559 2%, rgba(9, 181, 89, 0.22) 87.78%)
+			&:nth-of-type(2)
+				width: 52px
+				height: 52px
+				top: 125px
+				left: 38px
+				background: linear-gradient(149.21deg, rgba(9, 181, 89, 0.74) 2%, rgba(9, 181, 89, 0.22) 87.78%)
+				opacity: 42%
+			&:nth-of-type(3)
+				width: 205px
+				height: 205px
+				right: -80px
+				bottom: 150px
+				background: #fff
+				opacity: 40%
 
 @media screen and (max-width: 1360px)
 	.pay
@@ -53,16 +82,38 @@
 			align-items: center
 		&__form
 			width: 630px
-		&__img
-			margin-top: 0
+		&__preview
 			max-width: 560px
+		&__circle
+			&-item
+				&:nth-of-type(1)
+					top: 30px
+					left: -30px
+				&:nth-of-type(3)
+					bottom: 0
 
 @media screen and (max-width: 1220px)
 	.pay
 		&__form
 			width: 500px
+		&__preview
+			max-width: 400px
 		&__img
-			max-width: 480px
+			margin-top: 0
+			margin-right: -50px
+		&__circle
+			&-item
+				&.move
+					transform: none !important
+				&:nth-of-type(1)
+					top: -80px
+					left: 60px
+				&:nth-of-type(2)
+					top: 0
+					left: 30px
+				&:nth-of-type(3)
+					bottom: -50px
+					right: -50px
 
 @media screen and (max-width: 992px)
 	.pay
@@ -70,7 +121,7 @@
 			margin-bottom: 40px
 		&__form
 			width: 100%
-		&__img
+		&__preview
 			display: none
 
 @media screen and (max-width: 767px)

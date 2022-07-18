@@ -51,3 +51,22 @@
     max-width: 420px;
   }
 }
+@media screen and (max-width: 390px) {
+  .want {
+    padding: 41px 0 50px;
+  }
+  .want__title {
+    margin-bottom: 37px;
+  }
+  .want__desc {
+    font-size: 14px;
+    margin-bottom: 37px;
+  }
+  .want__input.--b-white .input__area {
+    font-size: 14px;
+    padding-bottom: 15px;
+  }
+  .want__input.--b-white .input__area::placeholder {
+    font-size: 14px;
+  }
+}

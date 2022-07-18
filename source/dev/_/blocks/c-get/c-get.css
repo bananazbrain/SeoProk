@@ -125,3 +125,13 @@
     line-height: 25px;
   }
 }
+@media screen and (max-width: 390px) {
+  .c-get__item {
+    padding: 28px 11px 20px;
+    margin-bottom: 12px;
+  }
+  .c-get__text {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}

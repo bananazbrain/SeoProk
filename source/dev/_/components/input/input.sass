@@ -55,8 +55,11 @@ input
 	&__error
 		color: $red
 		font-size: 12px
-		margin-top: 2px
 		transition: .3s
+		border: 1px solid $red
+		padding: 7px 12px 10px
+		opacity: 0
+		visibility: hidden
 
 	&.--gray
 		.input
@@ -100,6 +103,21 @@ input
 			.input
 				&__area
 					border-bottom-color: $red
+
+	&.--required
+		&.--error
+			.input
+				&__wrap
+					&:before
+						left: 0
+						bottom: -17px
+						width: 100%
+						height: auto
+						color: $red
+						font-size: 12px
+						transition: .3s
+						position: absolute
+						content: "Поле обязательно для заполнения"
 
 @media screen and (max-width: 767px)
 	.input

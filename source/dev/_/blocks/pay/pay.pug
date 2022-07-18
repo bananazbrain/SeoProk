@@ -2,15 +2,15 @@ include ../../sys/pug/vars
 
 .pay
 	.case
-		.pay__text.t1 Внимание! Перед оплатой услуг, согласование ТЗ (технического задания), определение стоимости и сроков по проекту — обязательны. Заказы, оплаченные без согласования — аннулируются. Оплачивая услуги и нажимая кнопку «Оплатить», вы принимаете #[a(href="offer.html" taget="_blank") «Договор оферты»] и соглашаетесь с #[a(href="policy.html" taget="_blank") «Политикой конфиденциальности»].
-		.pay__subtitle.t1 Для совершения оплаты, заполните поля ниже:
+		.pay__text.t1.an.fadeIn(data-timeout="0.1s") Внимание! Перед оплатой услуг, согласование ТЗ (технического задания), определение стоимости и сроков по проекту — обязательны. Заказы, оплаченные без согласования — аннулируются. Оплачивая услуги и нажимая кнопку «Оплатить», вы принимаете #[a(href="offer.html" taget="_blank") «Договор оферты»] и соглашаетесь с #[a(href="policy.html" taget="_blank") «Политикой конфиденциальности»].
+		.pay__subtitle.t1.an.fadeIn(data-timeout="0.2s") Для совершения оплаты, заполните поля ниже:
 		.pay__wrap
-			form.pay__form
+			form.pay__form.an.fadeIn(data-timeout="0.2s")
 				.pay__field
 					.pay__input.input.--gray.--required.--num
 						.input__wrap
 							label.input__label Укажите сумму платежа:*
-							input.input__area(type="number" name="sum" autocomplete="off")
+							input.input__area(type="number" step="10" name="sum" autocomplete="off")
 				.pay__field
 					.pay__input.input.--gray.--required.--name
 						.input__wrap
@@ -32,8 +32,13 @@ include ../../sys/pug/vars
 						textarea.textarea__area(name="comment")
 				.pay__note
 					p *-обязательное поле для заполнения
-					p Нажимая на кнопку «Отправить», я даю согласие на обработку #[a(href="" target="_blank") персональных данных] и соглашаюсь c #[a(href="policy.html" target="_blank") политикой конфиденциальности]
-				button.pay__btn.btn.--green.--md.--h-dark Оплатить
+					p Нажимая на кнопку «Отправить», я даю согласие на обработку #[a(href="offer.html" target="_blank") персональных данных] и соглашаюсь c #[a(href="policy.html" target="_blank") политикой конфиденциальности]
+				button.pay__btn.btn.--green.--md.--h-dark Отправить
 					<svg width="22" height="8" viewBox="0 0 22 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.3536 4.35355C21.5488 4.15829 21.5488 3.84171 21.3536 3.64645L18.1716 0.464466C17.9763 0.269204 17.6597 0.269204 17.4645 0.464466C17.2692 0.659728 17.2692 0.976311 17.4645 1.17157L20.2929 4L17.4645 6.82843C17.2692 7.02369 17.2692 7.34027 17.4645 7.53553C17.6597 7.7308 17.9763 7.7308 18.1716 7.53553L21.3536 4.35355ZM0 4.5H21V3.5H0V4.5Z" fill="white"/></svg>
-			.pay__img
-				img(src="_/uploads/pay-img.svg", alt="")
+			.pay__preview.an.fadeIn(data-timeout="0.3s")
+				.pay__img
+					img(src="_/uploads/pay-img.svg", alt="")
+				.pay__circle
+					.pay__circle-item.move(data-value="-3")
+					.pay__circle-item.move(data-value="1")
+					.pay__circle-item.move(data-value="4")
