@@ -70,6 +70,7 @@
 	&__circle
 		&-item
 			position: absolute
+			border-radius: 50%
 			&:nth-of-type(1)
 				z-index: -1
 				top: -30px
@@ -183,6 +184,81 @@
 						border-radius: 50%
 						background: #fff
 						opacity: 20%
+
+	&.--bitrix24
+		padding: 96px 0 68px
+		.intro
+			&__info
+				width: 600px
+			&__title
+				margin-bottom: 25px
+			&__subtitle
+				margin-bottom: 38px
+			&__preview
+				top: 0
+				right: 0
+				width: calc( 100% - 600px - 52px)
+			&__stat
+				margin-top: -55px
+				&-item
+					display: flex
+					flex-direction: column
+					align-items: center
+					&:nth-of-type(1)
+						&:before
+							top: 87px
+							left: 140px
+							width: 79px
+							transform: rotate(18deg)
+					&:nth-of-type(2)
+						margin-top: -92px
+						&:before
+							top: 148px
+							left: -250px
+							width: 230px
+							transform: rotate(-18deg)
+					&:nth-of-type(3)
+						&:before
+							top: 110px
+							left: 150px
+							width: 79px
+							transform: rotate(18deg)
+					&:nth-of-type(4)
+						margin-top: -50px
+						margin-left: 260px
+						white-space: nowrap
+						&:before
+							top: 138px
+							left: -100px
+							width: 98px
+							transform: rotate(-37deg)
+					&:nth-of-type(5)
+						margin-top: 20px
+						margin-left: 36px
+						white-space: nowrap
+						&:before
+							display: none
+				&-value
+					margin-bottom: 10px
+			&__shape
+				top: -18px
+				left: 30px
+			&__circle
+				&-item
+					&:nth-of-type(1)
+						top: -64px
+					&:nth-of-type(2)
+						bottom: 170px
+					&:nth-of-type(3)
+						top: -100px
+					&:nth-of-type(4)
+						bottom: -45px
+					&:nth-of-type(5)
+						right: -54px
+						bottom: 76px
+						width: 205px
+						height: 205px
+						background: linear-gradient(149.21deg, rgba(255, 255, 255, 0.42) 2%, rgba(255, 255, 255, 0) 87.78%)
 
 	&.--context
 		padding: 97px 0 21px

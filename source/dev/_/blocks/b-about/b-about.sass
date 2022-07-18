@@ -1,0 +1,64 @@
+@import ../../sys/sass/vars
+
+.b-about
+	padding: 87px 0
+	&__main
+		margin-bottom: 87px
+		box-shadow: $shadow
+		display: flex
+		flex-wrap: wrap
+	&__info
+		width: calc( 100% - 472px )
+		padding: 45px 58px 42px 71px
+	&__title
+		font-weight: 700
+		margin-bottom: 30px
+	&__desc
+		line-height: 31px
+	&__form
+		width: 472px
+		padding: 53px 42px
+		background: $green
+		color: #fff
+		text-align: center
+		transition: .3s
+		&:hover
+			background: $main
+			.b-about
+				&__btn
+					color: #fff
+					background: $green
+	&__subtitle
+		margin-bottom: 23px
+	&__subdesc
+		line-height: 32px
+		margin-bottom: 37px
+	&__btn
+		max-width: 204px
+		margin: 0 auto
+	&__list
+		margin: 0 -13px -26px
+		display: flex
+		flex-wrap: wrap
+	&__item
+		width: calc( 100% / 3 - 26px)
+		margin: 0 13px 26px
+		padding: 40px 40px 54px
+		background: $green
+		color: #fff
+		&.--gray
+			background: $gray
+			color: $main
+	&__name
+		margin-bottom: 30px
+	&__text
+		line-height: 32px
+
+@media screen and (max-width: 1220px)
+	// .b-about
+
+@media screen and (max-width: 992px)
+	// .b-about
+
+@media screen and (max-width: 767px)
+	// .b-about

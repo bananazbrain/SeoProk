@@ -1,0 +1,68 @@
+.b-about {
+  padding: 87px 0;
+}
+.b-about__main {
+  margin-bottom: 87px;
+  box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-wrap: wrap;
+}
+.b-about__info {
+  width: calc( 100% - 472px );
+  padding: 45px 58px 42px 71px;
+}
+.b-about__title {
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.b-about__desc {
+  line-height: 31px;
+}
+.b-about__form {
+  width: 472px;
+  padding: 53px 42px;
+  background: #09B559;
+  color: #fff;
+  text-align: center;
+  transition: 0.3s;
+}
+.b-about__form:hover {
+  background: #272727;
+}
+.b-about__form:hover .b-about__btn {
+  color: #fff;
+  background: #09B559;
+}
+.b-about__subtitle {
+  margin-bottom: 23px;
+}
+.b-about__subdesc {
+  line-height: 32px;
+  margin-bottom: 37px;
+}
+.b-about__btn {
+  max-width: 204px;
+  margin: 0 auto;
+}
+.b-about__list {
+  margin: 0 -13px -26px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.b-about__item {
+  width: calc( 100% / 3 - 26px);
+  margin: 0 13px 26px;
+  padding: 40px 40px 54px;
+  background: #09B559;
+  color: #fff;
+}
+.b-about__item.--gray {
+  background: #F7F7F7;
+  color: #272727;
+}
+.b-about__name {
+  margin-bottom: 30px;
+}
+.b-about__text {
+  line-height: 32px;
+}

@@ -84,6 +84,7 @@
 }
 .intro__circle-item {
   position: absolute;
+  border-radius: 50%;
 }
 .intro__circle-item:nth-of-type(1) {
   z-index: -1;
@@ -214,6 +215,97 @@
   border-radius: 50%;
   background: #fff;
   opacity: 20%;
+}
+.intro.--bitrix24 {
+  padding: 96px 0 68px;
+}
+.intro.--bitrix24 .intro__info {
+  width: 600px;
+}
+.intro.--bitrix24 .intro__title {
+  margin-bottom: 25px;
+}
+.intro.--bitrix24 .intro__subtitle {
+  margin-bottom: 38px;
+}
+.intro.--bitrix24 .intro__preview {
+  top: 0;
+  right: 0;
+  width: calc( 100% - 600px - 52px);
+}
+.intro.--bitrix24 .intro__stat {
+  margin-top: -55px;
+}
+.intro.--bitrix24 .intro__stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.intro.--bitrix24 .intro__stat-item:nth-of-type(1):before {
+  top: 87px;
+  left: 140px;
+  width: 79px;
+  transform: rotate(18deg);
+}
+.intro.--bitrix24 .intro__stat-item:nth-of-type(2) {
+  margin-top: -92px;
+}
+.intro.--bitrix24 .intro__stat-item:nth-of-type(2):before {
+  top: 148px;
+  left: -250px;
+  width: 230px;
+  transform: rotate(-18deg);
+}
+.intro.--bitrix24 .intro__stat-item:nth-of-type(3):before {
+  top: 110px;
+  left: 150px;
+  width: 79px;
+  transform: rotate(18deg);
+}
+.intro.--bitrix24 .intro__stat-item:nth-of-type(4) {
+  margin-top: -50px;
+  margin-left: 260px;
+  white-space: nowrap;
+}
+.intro.--bitrix24 .intro__stat-item:nth-of-type(4):before {
+  top: 138px;
+  left: -100px;
+  width: 98px;
+  transform: rotate(-37deg);
+}
+.intro.--bitrix24 .intro__stat-item:nth-of-type(5) {
+  margin-top: 20px;
+  margin-left: 36px;
+  white-space: nowrap;
+}
+.intro.--bitrix24 .intro__stat-item:nth-of-type(5):before {
+  display: none;
+}
+.intro.--bitrix24 .intro__stat-value {
+  margin-bottom: 10px;
+}
+.intro.--bitrix24 .intro__shape {
+  top: -18px;
+  left: 30px;
+}
+.intro.--bitrix24 .intro__circle-item:nth-of-type(1) {
+  top: -64px;
+}
+.intro.--bitrix24 .intro__circle-item:nth-of-type(2) {
+  bottom: 170px;
+}
+.intro.--bitrix24 .intro__circle-item:nth-of-type(3) {
+  top: -100px;
+}
+.intro.--bitrix24 .intro__circle-item:nth-of-type(4) {
+  bottom: -45px;
+}
+.intro.--bitrix24 .intro__circle-item:nth-of-type(5) {
+  right: -54px;
+  bottom: 76px;
+  width: 205px;
+  height: 205px;
+  background: linear-gradient(149.21deg, rgba(255, 255, 255, 0.42) 2%, rgba(255, 255, 255, 0) 87.78%);
 }
 .intro.--context {
   padding: 97px 0 21px;

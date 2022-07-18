@@ -162,3 +162,7 @@ include ../../blocks/solution/solution
 +style('bitrix-24', 'blocks')
 include ../../blocks/bitrix-24/bitrix-24
 
+//- b-about 
++style('b-about', 'blocks')
+include ../../blocks/b-about/b-about
+
