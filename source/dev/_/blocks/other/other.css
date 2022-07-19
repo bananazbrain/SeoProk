@@ -36,9 +36,11 @@
   line-height: 40px;
   margin-bottom: 33px;
 }
+.other__text {
+  line-height: 25px;
+}
 .other__text p {
   opacity: 0.6;
-  line-height: 25px;
 }
 .other__text.--flex {
   display: flex;
@@ -74,6 +76,9 @@
 .other__btn {
   margin-top: auto;
 }
+.other__pagintaion {
+  display: none;
+}
 
 @media screen and (max-width: 1360px) {
   .other__list {
@@ -103,27 +108,60 @@
   }
 }
 @media screen and (max-width: 992px) {
-  .other__item {
-    width: calc( 100% / 2 - 10px);
-    min-height: auto;
-  }
-  .other__info {
-    min-height: 200px;
-  }
-  .other__name {
-    line-height: 32px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .other__title {
-    margin-bottom: 40px;
+  .other__inner {
+    overflow: visible;
   }
   .other__list {
     gap: 0;
     grid-gap: 0;
     flex-wrap: nowrap;
   }
-  .other__item {
-    width: auto;
+  .other__name {
+    line-height: 35px;
+    padding-right: 50px;
+  }
+  .other__name br {
+    display: none;
+  }
+  .other__text.--flex {
+    padding-right: 30px;
+  }
+  .other__pagination {
+    margin-top: 40px;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+}
+@media screen and (max-width: 767px) {
+  .other__title {
+    margin-bottom: 40px;
+  }
+  .other__info {
+    padding: 20px 25px;
+    min-height: 210px;
+  }
+  .other__name {
+    line-height: 32px;
+    padding-right: 0;
+    margin-bottom: 24px;
+  }
+  .other__text {
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .other__text.--flex {
+    padding-right: 0;
+  }
+  .other__main {
+    padding: 8px 20px 25px;
+    min-height: 150px;
+  }
+  .other__value u {
+    font-size: 23px;
+  }
+  .other__btn.--md {
+    min-height: 46px;
   }
 }

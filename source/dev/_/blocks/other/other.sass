@@ -36,9 +36,9 @@
 		line-height: 40px
 		margin-bottom: 33px
 	&__text
+		line-height: 25px
 		p
 			opacity: .6
-			line-height: 25px
 		&.--flex
 			display: flex
 			flex-wrap: wrap
@@ -66,6 +66,8 @@
 				font-size: 22px
 	&__btn
 		margin-top: auto
+	&__pagintaion
+		display: none
 
 @media screen and (max-width: 1360px)
 	.other
@@ -90,24 +92,52 @@
 
 @media screen and (max-width: 992px)
 	.other
-		&__item
-			width: calc( 100% / 2 - 10px)
-			min-height: auto
-		&__info
-			min-height: 200px
+		&__inner
+			overflow: visible
+		&__list
+			gap: 0
+			grid-gap: 0
+			flex-wrap: nowrap
 		&__name
-			line-height: 32px
+			line-height: 35px
+			padding-right: 50px
+			br
+				display: none
+		&__text
+			&.--flex
+				padding-right: 30px
+		&__pagination
+			margin-top: 40px
+			bottom: 0
+			display: flex
+			justify-content: center
+			position: relative
 
 @media screen and (max-width: 767px)
 	.other
 		&__title
 			margin-bottom: 40px
-		&__list
-			gap: 0
-			grid-gap: 0
-			flex-wrap: nowrap
-		&__item
-			width: auto
+		&__info
+			padding: 20px 25px
+			min-height: 210px
+		&__name
+			line-height: 32px
+			padding-right: 0
+			margin-bottom: 24px
+		&__text
+			font-size: 15px
+			line-height: 24px
+			&.--flex
+				padding-right: 0
+		&__main
+			padding: 8px 20px 25px
+			min-height: 150px
+		&__value
+			u
+				font-size: 23px
+		&__btn
+			&.--md
+				min-height: 46px
 
 @media screen and (max-width: 580px)
 	// .other

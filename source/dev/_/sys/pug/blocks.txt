@@ -166,3 +166,11 @@ include ../../blocks/bitrix-24/bitrix-24
 +style('b-about', 'blocks')
 include ../../blocks/b-about/b-about
 
+//- brands 
++style('brands', 'blocks')
+include ../../blocks/brands/brands
+
+//- audit 
++style('audit', 'blocks')
+include ../../blocks/audit/audit
+

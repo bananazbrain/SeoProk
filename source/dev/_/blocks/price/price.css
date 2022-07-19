@@ -219,6 +219,9 @@
   .price.--ux .price__info {
     min-height: 425px;
   }
+  .price.--ux .price__rate {
+    margin-left: 0;
+  }
 }
 @media screen and (max-width: 992px) {
   .price__title {

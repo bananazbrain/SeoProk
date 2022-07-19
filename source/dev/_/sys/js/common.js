@@ -290,6 +290,16 @@ window.onload = () => {
     });
   }
 
+  // solution SLIDER
+  let solutionSlider = document.querySelector('.solution__links');
+  if (solutionSlider) {
+    new SwiperIniter(767, 'less', 'solution__links', 'solution__links-wrap', 'solution__link', {
+      slidesPerView: 'auto',
+      spaceBetween: 12,
+      speed: 900,
+    });
+  }
+
   // PRICE SLIDER
   new SwiperIniter(992, 'more', 'price__list', 'price__list-wrap', 'price__item', {
     slidesPerView: 2,
@@ -333,7 +343,7 @@ window.onload = () => {
   });
 
   // OTHER SERVICES SLIDER
-  new SwiperIniter(767, 'more', 'other__inner', 'other__list', 'other__item', {
+  new SwiperIniter(992, 'more', 'other__inner', 'other__list', 'other__item', {
     slidesPerView: 2,
     spaceBetween: 20,
     speed: 900,
@@ -342,6 +352,14 @@ window.onload = () => {
       type: "bullets",
       clickable: true,
     },
+    breakpoints: {
+      0: {
+        slidesPerView: 1.25,
+      },
+      581: {
+        slidesPerView: 2,
+      },
+    }
   });
 
 

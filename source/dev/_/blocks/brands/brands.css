@@ -1,0 +1,29 @@
+.brands {
+  background: #E9E9E9;
+  padding: 89px 0 114px;
+}
+.brands__title {
+  margin-bottom: 54px;
+  margin-left: 4px;
+}
+.brands__list {
+  margin: 0 -17px;
+}
+.brands__list-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: -53px;
+}
+.brands__item {
+  width: calc( 100% / 6 );
+  margin-bottom: 53px;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.brands__item:hover {
+  transform: translateY(-5px);
+}

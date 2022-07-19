@@ -1,0 +1,38 @@
+.audit {
+  color: #fff;
+  background: #272727;
+  padding: 84px 0 98px;
+}
+.audit__wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.audit__info {
+  width: calc( 100% - 576px );
+  padding-right: 74px;
+}
+.audit__title {
+  margin-bottom: 32px;
+}
+.audit__text {
+  margin-bottom: 57px;
+  line-height: 26px;
+}
+.audit__btn {
+  max-width: 240px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.audit__preview {
+  z-index: 1;
+  width: 576px;
+  margin-right: -40px;
+  margin-left: auto;
+  position: relative;
+}
+.audit__shape {
+  z-index: -1;
+  top: 5px;
+  left: -46px;
+  position: absolute;
+}

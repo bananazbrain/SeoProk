@@ -1,0 +1,92 @@
+extends ../../templates/default
+block vars
+	-
+		title = "Продвижение сайтов"
+
+block content
+
+	+style('audit', 'blocks')
+	include ../../blocks/audit/audit
+
+	+style('faq', 'blocks') 
+	.faq
+		.case
+			.faq__title.h3.an.fadeIn-up #[h3 Мы подготовили ответы на самые популярные вопросы #[br]о продвижении сайтов в поисковых системах]
+			.faq__text.an.fadeIn(data-timeout="0.1s") Здесь вы можете найти ответы на самые популярные вопросы
+			.faq__list.an.fadeIn(data-timeout="0.2s")
+				.faq__item
+					.faq__question
+						.faq__question-icon
+							img(src="_/uploads/icons/arrow-down.svg", alt="")
+						.faq__question-title Даёте ли вы гарантии на продвижение сайта в ТОП 10?
+					.faq__answer
+						.faq__answer-text Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga maiores doloremque molestiae blanditiis rerum architecto laborum eveniet quod ex dolorem praesentium repellat sed iure beatae animi culpa modi, esse voluptatem.
+				.faq__item
+					.faq__question
+						.faq__question-icon
+							img(src="_/uploads/icons/arrow-down.svg", alt="")
+						.faq__question-title Через сколько времени мой сайт будет в ТОП 10?
+					.faq__answer
+						.faq__answer-text Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nam officia illo. Nemo, quibusdam libero? Nihil perferendis, officia repudiandae consequuntur nulla iure dicta quia veritatis inventore accusantium porro quasi quis?Nemo explicabo aspernatur error id exercitationem aperiam sapiente, distinctio officia harum fugiat recusandae repudiandae, dignissimos totam, at eaque quos. Iure perspiciatis optio magni doloremque vitae culpa accusantium ab, eveniet quas?
+				.faq__item
+					.faq__question
+						.faq__question-icon
+							img(src="_/uploads/icons/arrow-down.svg", alt="")
+						.faq__question-title Что входит в стоимость услуг?
+					.faq__answer
+						.faq__answer-text Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure veritatis, error tempore ullam, numquam nesciunt ea deserunt sit voluptatem consequuntur et nihil provident molestias sed?
+				.faq__item
+					.faq__question
+						.faq__question-icon
+							img(src="_/uploads/icons/arrow-down.svg", alt="")
+						.faq__question-title Чем отличаются тарифы между собой?
+					.faq__answer
+						.faq__answer-text Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam libero nobis pariatur, ipsum veniam tempora culpa non, impedit corrupti, error itaque beatae eos ex aut accusamus. Optio tenetur nostrum inventore!
+				.faq__item
+					.faq__question
+						.faq__question-icon
+							img(src="_/uploads/icons/arrow-down.svg", alt="")
+						.faq__question-title Какой тариф подходит моему сайту?
+					.faq__answer
+						.faq__answer-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, facilis quas nam quasi delectus at culpa dolorum impedit, maiores tempora quae voluptatibus aspernatur saepe cumque nisi, voluptate vero aperiam magnam! culpa dolorum impedit, maiores tempora quae voluptatibus aspernatur saepe cumque nisi, voluptate vero aperiam magnam!
+				.faq__item
+					.faq__question
+						.faq__question-icon
+							img(src="_/uploads/icons/arrow-down.svg", alt="")
+						.faq__question-title По каким KPI я могу оценивать вашу работу?
+					.faq__answer
+						.faq__answer-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae deserunt placeat molestiae! Recusandae maxime aliquam eius esse molestias reiciendis qui, itaque voluptatibus sequi. Delectus iste neque a facilis debitis ex.
+				.faq__item.--active
+					.faq__question
+						.faq__question-icon
+							img(src="_/uploads/icons/arrow-down.svg", alt="")
+						.faq__question-title Нужно ли сейчас наращивать ссылочную массу?
+					.faq__answer
+						.faq__answer-text Ссылки долго были главной мерой трастовости сайтов. Сейчас значимость этого фактора гораздо ниже, однако он продолжает учитываться. На первый план вышло качество ссылок, а не их количество. Сначала нужно провести анализ ссылочного профиля сайта и ключевых конкурентов, определить стратегию, а затем только приступать к работам.
+
+	+style('brands', 'blocks')
+	include ../../blocks/brands/brands
+
+	+style('video', 'blocks')
+	include ../../blocks/video/video
+
+	+style('certs', 'blocks')
+	include ../../blocks/certs/certs
+ 
+	+style('pros', 'blocks')
+	.pros
+		.case
+			.pros__title.h3.an.fadeIn-up #[h3 Наши награды и достижения]
+			.pros__list
+				.pros__item.an.fadeIn-left(data-timeout="0.1s")
+					.pros__name 1 место
+					.pros__text В рейтинге AdIndex #[br]по независимой оценке
+				.pros__item.an.fadeIn-left(data-timeout="0.2s")
+					.pros__name 67 место
+					.pros__text По специализации "Веб-разработка" #[br]в официальном рейтинге Freelance.ru по РФ
+				.pros__item.an.fadeIn-left(data-timeout="0.3s")
+					.pros__name 72 место
+					.pros__text По специализации #[br]"Интернет продвижение и реклама, #[br]Классическая реклама и маркетинг", #[br]в официальном рейтинге Freelance.ru по РФ
+
+	+style('consult', 'blocks')
+	include ../../blocks/consult/consult
