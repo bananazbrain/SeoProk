@@ -59,7 +59,7 @@ class SwiperIniter {
 
     if (this.condition) {
       slider.className = slider.oldClass + ' swiper';
-      slider.el.wrapper.className = slider.el.wrapper.oldClass + ' swiper';
+      slider.el.wrapper.className = slider.el.wrapper.oldClass + ' swiper-wrapper';
 
       slider.el.items.forEach((item) => {
         item.className = item.oldClass + ' swiper-slide';
