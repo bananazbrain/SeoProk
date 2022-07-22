@@ -27,6 +27,45 @@
   -webkit-touch-callout: none;
   -webkit-tap-highlight-color: transparent;
 }
+.check.--check .check__wrap {
+  align-items: flex-start;
+}
+.check.--check .check__point {
+  width: 13px;
+  height: 13px;
+  margin-top: 5px;
+  border: 1px solid #272727;
+  border-radius: 3px;
+}
+.check.--check .check__point:before {
+  content: "";
+  width: 9px;
+  height: 8px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 0.3s;
+  position: absolute;
+  background: url("../../sys/imgs/check.svg") no-repeat;
+  background-size: contain;
+  opacity: 0;
+  visibility: hidden;
+}
+.check.--check .check__text {
+  font-size: 12px;
+  line-height: 19px;
+  width: calc( 100% - 13px );
+  padding-left: 10px;
+  padding-right: 70px;
+}
+.check.--check .check__text a:hover {
+  color: #09B559;
+}
+.check.--check.--checked .check__point:before {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, -50%) scale(1);
+}
 .check.--sq .check__point {
   width: 29px;
   height: 29px;

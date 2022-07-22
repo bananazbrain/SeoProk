@@ -350,13 +350,12 @@
 			transition: 1s
 			transition-property: opacity, transform
 			transform: translateX(0)
-
 	&-scale
 		opacity: 0
-		transform: scale(.7)
+		transform: scale(.5)
 		&.loaded
 			opacity: 1
-			transition: 1s
+			transition: 1.5s
 			transition-property: opacity, transform
 			transform: scale(1)
 	&.loaded
@@ -371,11 +370,93 @@
 // MODALS
 .modal
 	width: 100%
-	background: rgba($main, 40%)
 	margin: 0 auto
+	background: #fff
 	position: relative
 	transition: .3s
 	display: none
+	&__close
+		z-index: 1
+		width: 32px
+		height: 32px
+		cursor: pointer
+		position: absolute
+		top: 26px
+		right: 26px
+		&:before, &:after
+			top: 15px
+			content: ""
+			width: 32px
+			height: 4px
+			background: $dark-gray
+			position: absolute
+			transition: .3s
+		&:before
+			transform: rotate(45deg)
+		&:after
+			transform: rotate(-45deg)
+		&:hover
+			&:before, &:after
+				background: $green
+	&__title
+		margin-bottom: 20px
+	&__field
+		margin-bottom: 20px
+		&:last-of-type
+			margin-bottom: 0
+	&__btn
+		font-size: 18px
+		font-weight: 400
+		max-width: 162px
+		margin-top: 30px
+	&.--form
+		max-width: 675px
+		padding: 20px 30px 30px
+	&.--thanks
+		max-width: 675px
+		padding: 20px 30px 30px
+		.modal
+			&__title
+				display: flex
+				img
+					margin-left: 14px
+
+.popup
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	transition: .3s
+	z-index: 999999
+	opacity: 0
+	visibility: hidden
+	position: fixed
+	&__inner
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		padding: 15px
+		display: flex
+		align-items: center
+		justify-content: center
+		position: absolute
+		margin: auto
+		overflow-y: auto
+	&__item
+		display: block
+		transition: .3s
+	&__bg
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		background: rgba(61, 61, 61, .7)
+		position: absolute
+		cursor: pointer
+	&.--show
+		opacity: 1
+		visibility: visible
 
 // SITEMAP
 .sitemap

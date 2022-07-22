@@ -25,6 +25,11 @@ body {
   background: #fff;
 }
 
+body.popup-show {
+  height: 100%;
+  overflow: hidden;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font: inherit;
   display: inline;
@@ -393,6 +398,45 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
   -webkit-user-select: none;
   -webkit-touch-callout: none;
   -webkit-tap-highlight-color: transparent;
+}
+.check.--check .check__wrap {
+  align-items: flex-start;
+}
+.check.--check .check__point {
+  width: 13px;
+  height: 13px;
+  margin-top: 5px;
+  border: 1px solid #272727;
+  border-radius: 3px;
+}
+.check.--check .check__point:before {
+  content: "";
+  width: 9px;
+  height: 8px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 0.3s;
+  position: absolute;
+  background: url("../../sys/imgs/check.svg") no-repeat;
+  background-size: contain;
+  opacity: 0;
+  visibility: hidden;
+}
+.check.--check .check__text {
+  font-size: 12px;
+  line-height: 19px;
+  width: calc( 100% - 13px );
+  padding-left: 10px;
+  padding-right: 70px;
+}
+.check.--check .check__text a:hover {
+  color: #09B559;
+}
+.check.--check.--checked .check__point:before {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, -50%) scale(1);
 }
 .check.--sq .check__point {
   width: 29px;
@@ -1195,11 +1239,11 @@ textarea {
 }
 .fadeIn-scale {
   opacity: 0;
-  transform: scale(0.7);
+  transform: scale(0.5);
 }
 .fadeIn-scale.loaded {
   opacity: 1;
-  transition: 1s;
+  transition: 1.5s;
   transition-property: opacity, transform;
   transform: scale(1);
 }
@@ -1216,11 +1260,109 @@ textarea {
 
 .modal {
   width: 100%;
-  background: rgba(39, 39, 39, 0.4);
   margin: 0 auto;
+  background: #fff;
   position: relative;
   transition: 0.3s;
   display: none;
+}
+.modal__close {
+  z-index: 1;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  position: absolute;
+  top: 26px;
+  right: 26px;
+}
+.modal__close:before, .modal__close:after {
+  top: 15px;
+  content: "";
+  width: 32px;
+  height: 4px;
+  background: #CCCCCC;
+  position: absolute;
+  transition: 0.3s;
+}
+.modal__close:before {
+  transform: rotate(45deg);
+}
+.modal__close:after {
+  transform: rotate(-45deg);
+}
+.modal__close:hover:before, .modal__close:hover:after {
+  background: #09B559;
+}
+.modal__title {
+  margin-bottom: 20px;
+}
+.modal__field {
+  margin-bottom: 20px;
+}
+.modal__field:last-of-type {
+  margin-bottom: 0;
+}
+.modal__btn {
+  font-size: 18px;
+  font-weight: 400;
+  max-width: 162px;
+  margin-top: 30px;
+}
+.modal.--form {
+  max-width: 675px;
+  padding: 20px 30px 30px;
+}
+.modal.--thanks {
+  max-width: 675px;
+  padding: 20px 30px 30px;
+}
+.modal.--thanks .modal__title {
+  display: flex;
+}
+.modal.--thanks .modal__title img {
+  margin-left: 14px;
+}
+
+.popup {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.3s;
+  z-index: 999999;
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+}
+.popup__inner {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin: auto;
+  overflow-y: auto;
+}
+.popup__item {
+  display: block;
+  transition: 0.3s;
+}
+.popup__bg {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(61, 61, 61, 0.7);
+  position: absolute;
+  cursor: pointer;
+}
+.popup.--show {
+  opacity: 1;
+  visibility: visible;
 }
 
 .sitemap {

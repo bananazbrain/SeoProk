@@ -36,7 +36,7 @@
   background: #F7F7F7;
   position: absolute;
 }
-.header__callback {
+.header__tel-mob {
   z-index: 1;
   width: 34px;
   height: 34px;
@@ -48,13 +48,13 @@
   position: relative;
   transition: 0.3s;
 }
-.header__callback img {
+.header__tel-mob img {
   width: 19px;
 }
-.header__callback img path {
+.header__tel-mob img path {
   fill: #fff;
 }
-.header__callback:before, .header__callback:after {
+.header__tel-mob:before, .header__tel-mob:after {
   z-index: -1;
   content: "";
   top: 50%;
@@ -64,18 +64,18 @@
   position: absolute;
   transition: 0.3s;
 }
-.header__callback:before {
+.header__tel-mob:before {
   width: 50px;
   height: 50px;
   background: rgba(9, 181, 89, 0.15);
   animation: pulse 1.7s infinite;
 }
-.header__callback:after {
+.header__tel-mob:after {
   width: 42px;
   height: 42px;
   background: rgba(9, 181, 89, 0.15);
 }
-.header__callback:hover:before, .header__callback:hover:after {
+.header__tel-mob:hover:before, .header__tel-mob:hover:after {
   width: 34px;
   height: 34px;
 }
@@ -383,7 +383,7 @@
     display: flex;
     margin-left: auto;
   }
-  .header__callback {
+  .header__tel-mob {
     display: flex;
     margin: 0 50px;
   }
@@ -414,6 +414,9 @@
   .header__main::-webkit-scrollbar {
     width: 0;
   }
+  .header.--toggle {
+    background: #fff;
+  }
   .header.--toggle .header__main {
     opacity: 1;
     visibility: visible;
@@ -426,7 +429,7 @@
     opacity: 1;
     visibility: visible;
   }
-  .header.--toggle .header__socials, .header.--toggle .header__callback {
+  .header.--toggle .header__socials, .header.--toggle .header__tel-mob {
     opacity: 0;
     visibility: hidden;
   }
@@ -560,19 +563,19 @@
   .header__logo {
     max-width: 60px;
   }
-  .header__callback {
+  .header__tel-mob {
     width: 32px;
     height: 32px;
     margin: 0 36px;
   }
-  .header__callback img {
+  .header__tel-mob img {
     width: 17px;
   }
-  .header__callback:before {
+  .header__tel-mob:before {
     width: 45px;
     height: 45px;
   }
-  .header__callback:after {
+  .header__tel-mob:after {
     width: 40px;
     height: 40px;
   }
@@ -644,12 +647,12 @@
   .header__socials {
     margin-top: -1px;
   }
-  .header__callback {
+  .header__tel-mob {
     width: 28px;
     height: 28px;
     margin: -1px 36px 0;
   }
-  .header__callback img {
+  .header__tel-mob img {
     width: 14px;
   }
   .header__btn {
